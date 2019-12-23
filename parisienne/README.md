@@ -22,7 +22,9 @@ It is based on [Johannes](https://github.com/melchoyce/johannes), a block-based 
 ## How this theme was developed
 
 The following resources helped to become familiar with the concepts applied in this theme:
+
 - [Block-based themes (Experimental)](https://developer.wordpress.org/block-editor/developers/themes/block-based-themes/)
+- [Full Site Editing feature development in Gutenberg](https://github.com/WordPress/gutenberg/labels/%5BFeature%5D%20Full%20Site%20Editing)
 - [Theme starter content](https://roots.io/using-and-customizing-wordpress-starter-content/)
 
 The steps to developing a theme using block templates with starter content are as follows: 
