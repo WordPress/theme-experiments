@@ -1,7 +1,7 @@
 /*
 Theme Name: Parisienne
 Text Domain: parisienne
-Version: 1.06
+Version: 1.08
 Requires at least: 5.3
 Description: A test theme using the new WordPress block templating system.
 Author: Jeff Ong 
@@ -434,6 +434,10 @@ figcaption a,
 	margin: 1em 0;
 }
 
+p.address-align {
+	text-align: right;
+}
+
 .site-header .wp-block-columns {
 	margin: 0 2rem;
 	margin-bottom: 0;
@@ -458,7 +462,7 @@ figcaption a,
 }
 
 .wp-block-navigation a:hover {
-	text-decoration: underline;
+	color: #aaa;
 }
 
 

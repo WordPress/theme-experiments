@@ -41,11 +41,12 @@ if ( ! function_exists( 'parisienne_theme_support' ) ) :
 					'post_content' => '<!-- wp:template-part {"slug":"cover","theme":"parisienne"} -->'
 				],
 				'about' => [
-					'post_content' => '<!-- wp:template-part {"slug":"image-quote","theme":"parisienne"} -->'
+					'post_content' => '<!-- wp:template-part {"slug":"about","theme":"parisienne"} -->'
 				],
 				'contact' => [
 					'post_content' => '<!-- wp:template-part {"slug":"contact","theme":"parisienne"} -->'
-				]
+				],
+				'blog'
 			]
 		]);
 
