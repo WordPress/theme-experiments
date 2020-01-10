@@ -1,0 +1,76 @@
+/*
+Theme Name: Twenty Nineteen Block Styles
+Author: the WordPress team
+Author URI: https://wordpress.org/
+Description: Twenty Nineteen, but only using block templates.
+Requires at least: WordPress 4.9.6
+Version: 0.1
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: twentynineteenblocks
+Tags: one-column, flexible-header, accessibility-ready, custom-colors, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, rtl-language-support, sticky-post, threaded-comments, translation-ready
+*/
+
+/* 
+ * Import the default Twenty Nineteen styles.
+ * File is identical to the original, except '.entry .entry-content' has been 
+ * replaced with '.wp-site-blocks .entry-content' to work with block templates.
+*/
+@import url('twentynineteen-styles/style.css');
+
+/* Site header and footer styles */
+
+.site-header,
+.site-footer {
+  margin: calc(2 * 1rem) 0;
+}
+
+.site-branding {
+	margin: 0;
+}
+
+.site-branding .wp-block-column:first-child {
+	flex-basis: 64px !important;
+	flex-shrink: 0;
+}
+
+@media only screen and (min-width: 768px) {
+	.site-header,
+	.site-footer {
+		margin: 0 calc(10% + 60px);
+	}
+
+	.site-branding .wp-block-column:not(:first-child) {
+		margin-left: 1rem;
+	}
+}
+
+/* Site navigation styles */
+
+.wp-block-navigation {
+	font-size: 1.125em;
+	font-weight: 700;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+.wp-block-navigation > ul > li > a {
+	padding: 0 0.5rem 0 0;
+	line-height: 1.6;
+}
+
+/* Large featured image headers inside of cover blocks */
+
+.entry-content .wp-block-cover.site-featured-image {
+	display: flex;
+	align-items: flex-end;
+	min-height: calc( 100vh - 268px );
+	margin-top: 0;
+}
+
+.entry-content .wp-block-cover.site-featured-image .wp-block-cover__inner-container {
+	width: 100%;
+}
+
+.entry-content .wp-block-cover.site-featured-image h2:before{
+	background: white;
+}
