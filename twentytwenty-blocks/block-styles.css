@@ -1,0 +1,24 @@
+.is-style-header-nav {
+	font-size: 1.8rem;
+	font-weight: 500;
+	letter-spacing: -0.0277em;
+	margin: -0.8rem 0 0 -1.6rem;
+	text-decoration: none;
+}
+
+.is-style-header-nav .wp-block-navigation-link {
+	margin: 0;
+}
+
+.is-style-header-nav .wp-block-navigation-link__content {
+	padding: 0;
+	margin: 0 16px 8px;
+}
+
+.is-style-header-site-title {
+	display: inline-block;
+	font-size: 2.4rem;
+	font-weight: 700;
+	line-height: 1;
+	margin-right: 2rem;
+}

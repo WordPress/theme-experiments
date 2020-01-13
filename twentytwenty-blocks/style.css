@@ -1,0 +1,64 @@
+/*
+Theme Name: Twenty Twenty
+Author: the WordPress team
+Author URI: https://wordpress.org/
+Description: Twenty Twenty, but only using block templates.
+Requires at least: WordPress 4.9.6
+Version: 0.01
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: twentytwenty
+Tags: one-column, flexible-header, accessibility-ready, custom-colors, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, rtl-language-support, sticky-post, threaded-comments, translation-ready
+*/
+
+/* 
+ * Import the default Twenty Twenty styles.
+*/
+@import url('twentytwenty-styles/style.css');
+
+/*
+** Header
+*/
+.site-header {
+	background-color: #fff;
+	padding: 2.8rem 0;
+}
+
+.site-header .wp-block-columns.alignfull {
+	margin-top: 0;
+}
+
+.site-description {
+	display: inline;
+}
+
+/*
+** Footer
+*/
+#site-footer, .site-footer {	
+	background-color: #fff;	
+	border-color: #dedfdf;	
+	border-style: solid;	
+	border-width: 0;	
+}	
+
+.site-footer .alignfull, .site-footer hr.wp-block-separator {	
+	margin: 4rem auto 0;	
+}	
+
+.site-footer h3 {	
+	margin-top: 0;	
+}	
+
+.site-footer .footer-menu a {	
+	font-family: "Inter var", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;	
+}	
+
+.site-footer .wp-block-jetpack-layout-grid .wp-block-jetpack-layout-grid-column.wp-block-jetpack-layout-grid__padding-huge {	
+	padding: 0 48px;	
+}	
+
+.footer-social .wp-social-link {	
+	width: auto;	
+	height: auto;	
+}
