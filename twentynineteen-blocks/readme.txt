@@ -10,7 +10,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Our 2019 default theme is designed to show off the power of the block editor. This version uses block templates.
 
 == Description ==
-Twenty Nineteen, but build using block templates. This also includes starter content to begin replicating the Twenty Ninteen demo site. 
+Twenty Nineteen, but built using block templates. This also includes starter content to begin replicating the Twenty Ninteen demo site. 
 
 To install: 
 
