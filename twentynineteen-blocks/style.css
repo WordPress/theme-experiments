@@ -13,8 +13,9 @@ Tags: one-column, flexible-header, accessibility-ready, custom-colors, custom-me
 
 /* 
  * Import the default Twenty Nineteen styles.
- * File is identical to the original, except '.entry .entry-content' has been 
- * replaced with '.wp-site-blocks .entry-content' to work with block templates.
+ * File is almost identical to the original, except the scope of some rules 
+ * has been adjusted to include the new .wp-site-blocks, .wp-block-header, 
+ * and .wp-block-footer areas. Most of these changes occurred in _blocks.scss. 
 */
 @import url('twentynineteen-styles/style.css');
 
