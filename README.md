@@ -2,7 +2,7 @@
 Experimenting with themes made out of blocks. 
 
 ## About
-This is a monorepo housing many experiments. Typically each sub-directory is a subcontained theme that explores some aspect of creating themes using blocks / block templates.
+This repository is dedicated to exploring how WordPress themes can best leverage Gutenberg blocks. Each sub-directory contains a WordPress theme that explores some aspect of creating themes using blocks or block templates.
 
 ## What's Here
 To be populated by you!
