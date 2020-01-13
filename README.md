@@ -4,9 +4,6 @@ Experimenting with themes made out of blocks.
 ## About
 This repository is dedicated to exploring how WordPress themes can best leverage Gutenberg blocks. Each sub-directory contains a WordPress theme that explores some aspect of creating themes using blocks or block templates.
 
-## What's Here
-To be populated by you!
-
 ## Submitting an experiment
 We encourage you to submit your experiment to be included! To get started, check out the [contributor's guide](https://github.com/WordPress/theme-experiments/blob/master/CONTRIBUTING.md).
 
