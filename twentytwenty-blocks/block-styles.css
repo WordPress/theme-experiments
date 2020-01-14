@@ -22,3 +22,36 @@
 	line-height: 1;
 	margin-right: 2rem;
 }
+
+.entry-content > .is-style-landing-page-columns.alignfull, 
+.entry-content > .is-style-landing-page-columns.alignfull h1 {
+	margin: 0;
+}
+
+@media ( min-width: 700px ){
+	.entry-content > .is-style-landing-page-columns.alignfull h1 {
+		margin: 12rem 0 5rem;
+	}
+}
+
+.is-style-featured-media-home::before {
+	background: #fff;
+	content: "";
+	display: block;
+	position: absolute;
+	bottom: 50%;
+	left: 0;
+	right: 0;
+	top: 0;
+}
+
+.is-style-header-cover.wp-block-cover.alignfull  {
+	align-items: flex-end;
+	background-attachment: fixed;
+	margin: 0;
+	min-height: 100vh;
+}
+
+.is-style-header-cover.wp-block-cover.alignfull .wp-block-cover__inner-container  {
+	padding: 6rem 0;
+}

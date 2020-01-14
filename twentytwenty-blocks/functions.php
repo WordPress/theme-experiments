@@ -105,33 +105,7 @@ if ( ! function_exists( 'twentytwentyblocks_theme_support' ) ) :
 				]
 			]);
 
-			/**
-			** Register stylesheet
-			**/
-			wp_register_style(
-				'block-styles-stylesheet',
-				get_template_directory_uri() . '/block-styles.css',
-				array(),
-				'1.1'
-			);
-
-			register_block_style(
-				'core/heading',
-					array(
-						'name'					=> 'header-site-title',
-						'label'					=> 'Header',
-						'style_handle'	=> 'block-styles-stylesheet',
-				)
-			);
-
-			register_block_style(
-				'core/navigation',
-					array(
-						'name'					=> 'header-nav',
-						'label'					=> 'Header',
-						'style_handle'	=> 'block-styles-stylesheet',
-				)
-			);
+			register_block_style_variations();
     }
 
     add_action( 'after_setup_theme', 'twentytwentyblocks_theme_support' );
@@ -140,6 +114,63 @@ endif;
 /**
  * Register and Enqueue Styles.
  */
+function register_block_style_variations() {
+	/**
+	** Register stylesheet
+	**/
+	wp_register_style(
+		'block-styles-stylesheet',
+		get_template_directory_uri() . '/block-styles.css',
+		array(),
+		'1.1'
+	);
+
+	register_block_style(
+		'core/heading',
+			array(
+				'name'					=> 'header-site-title',
+				'label'					=> 'Header',
+				'style_handle'	=> 'block-styles-stylesheet',
+		)
+	);
+
+	register_block_style(
+		'core/columns',
+			array(
+				'name'					=> 'landing-page-columns',
+				'label'					=> 'Landing Page',
+				'style_handle'	=> 'block-styles-stylesheet',
+		)
+	);
+
+	register_block_style(
+		'core/image',
+			array(
+				'name'					=> 'featured-media-home',
+				'label'					=> 'Home',
+				'style_handle'	=> 'block-styles-stylesheet',
+		)
+	);
+
+	register_block_style(
+		'core/navigation',
+			array(
+				'name'					=> 'header-nav',
+				'label'					=> 'Header',
+				'style_handle'	=> 'block-styles-stylesheet',
+		)
+	);
+
+	register_block_style(
+		'core/cover',
+			array(
+				'name'					=> 'header-cover',
+				'label'					=> 'Header',
+				'style_handle'	=> 'block-styles-stylesheet',
+		)
+	);
+}
+
 function twentytwentyblocks_register_styles() {
 	$theme_version = wp_get_theme()->get( 'Version' );
 	wp_enqueue_style( 'twentytwentyblocks-style', get_stylesheet_uri(), array(), $theme_version );
