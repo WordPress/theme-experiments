@@ -1,4 +1,4 @@
-=== gutenberg-starter-theme ===
+=== gutenberg-starter-theme-blocks ===
 
 Contributors: wordpressdotorg, aduth, artisticasad, crunnells, joen, joyously, karmatosed, kjellr, littlebigthing, marekhrabe, melchoyce, milana_cap, mor10, netweb, noisysocks, obenland, paulstonier, pento, richtabor, sharaz, shinichin, soean, sumobi
 Tags: translation-ready
@@ -36,4 +36,5 @@ Compare the resulting site to the Twenty Nineteen Demo site. It should look pret
 
 == Credits ==
 
+* CSS originally build on Underscores http://underscores.me/, (C) 2012-2017 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
 * normalize.css http://necolas.github.io/normalize.css/, (C) 2012-2016 Nicolas Gallagher and Jonathan Neal, [MIT](http://opensource.org/licenses/MIT)
