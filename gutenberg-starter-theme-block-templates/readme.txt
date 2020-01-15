@@ -24,7 +24,7 @@ This version of the Gutenberg Starter Theme is built as a block-based Theme.
 2. Clone this repository or upload a zip into the site’s themes directory
 3. Install the Gutenberg plugin
 4. Enable the Full Site Editing and Full Site Editing Demo Templates experiments in the Gutenberg > Experiments panel.
-5. Activate the "Twenty Nineteen Blocks" theme from within Appearance > Themes.
+5. Activate the "Gutenberg Starter Theme Blocks" theme from within Appearance > Themes.
 6. Visit the Customizer and hit "Publish".
 
 Compare the resulting site to the Twenty Nineteen Demo site. It should look pretty similar.
