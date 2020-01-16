@@ -95,6 +95,7 @@ if ( ! function_exists( 'twentynineteenblocks_theme_support' ) ) :
 			// Starter pages to include
 			'posts' => [
 				'home' => [
+					'post_title' => _x( 'Welcome', 'twenty-nineteen-blocks' ),
 					'post_content' => '<!-- wp:template-part {"slug":"home","theme":"twentynineteenblocks"} -->'
 				],
 				'about' => [
