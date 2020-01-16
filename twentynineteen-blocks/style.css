@@ -30,6 +30,20 @@ Tags: one-column, flexible-header, accessibility-ready, custom-colors, custom-me
 	margin: 0;
 }
 
+.site-branding h1,
+.site-branding .site-title {
+	display: inline-block;
+	color: #000;
+	font-size: 1.125em;
+	margin-bottom: 0;
+	margin-right: 0.5em;
+}
+
+.site-branding h1:before,
+.site-branding .site-title:before {
+	display: none;
+}
+
 .site-branding .wp-block-column:first-child {
 	flex-basis: 64px !important;
 	flex-shrink: 0;
