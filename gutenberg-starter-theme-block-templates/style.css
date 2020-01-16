@@ -32,7 +32,6 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
 # Alignments
 # Content
   ## Posts and pages
-  ## Comments
 # Media
   ## Captions
   ## Galleries
@@ -679,7 +678,6 @@ a:hover, a:active {
 .entry-header,
 .page-header,
 .entry-footer,
-.site-info,
 .not-found .page-content,
 .search .entry-summary {
   margin: 1.5em auto;
