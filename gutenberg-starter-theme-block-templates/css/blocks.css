@@ -30,7 +30,8 @@
 
 .entry-content > *,
 .site-header > *,
-.site-footer > * {
+.site-footer > *,
+.site-content > h1 {
   margin: 36px auto;
   max-width: 580px;
   padding-left: 14px;
@@ -53,7 +54,8 @@
 @media screen and (min-width: 608px) {
   .entry-content > *,
   .site-header > *,
-  .site-footer > * {
+  .site-footer > *,
+  .site-content > h1 {
     padding-left: 0px;
     padding-right: 0px;
   }
