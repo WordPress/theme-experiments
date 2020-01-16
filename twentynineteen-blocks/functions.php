@@ -90,7 +90,6 @@ if ( ! function_exists( 'twentynineteenblocks_theme_support' ) ) :
 			'options' => [
 				'show_on_front' => 'page',
 				'page_on_front' => '{{home}}',
-				'page_for_posts' => '{{blog}}',
 			],
 			// Starter pages to include
 			'posts' => [
@@ -104,7 +103,10 @@ if ( ! function_exists( 'twentynineteenblocks_theme_support' ) ) :
 				'contact' => [
 					'post_content' => '<!-- wp:template-part {"slug":"contact","theme":"twentynineteenblocks"} -->'
 				],
-				'blog'
+				'blog' => [
+					'post_title' => _x( 'Blog', 'twenty-nineteen-blocks' ),
+					'post_content' => '<!-- wp:template-part {"slug":"blog","theme":"twentynineteenblocks"} -->'
+				],
 			]
 		]);
 
