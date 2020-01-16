@@ -30,11 +30,9 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
   ## Links
 # Accessibility
 # Alignments
-# Widgets
 # Content
   ## Posts and pages
   ## Comments
-# Infinite scroll
 # Media
   ## Captions
   ## Galleries
@@ -648,23 +646,6 @@ a:hover, a:active {
   margin-right: auto;
 }
 
-
-/*--------------------------------------------------------------
-# Widgets
---------------------------------------------------------------*/
-.widget-area {
-  width: 25%;
-}
-
-.widget {
-  margin: 0 0 1.5em;
-  /* Make sure select elements fit in widgets. */
-}
-
-.widget select {
-  max-width: 100%;
-}
-
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
@@ -673,26 +654,11 @@ a:hover, a:active {
   max-width: 100%;
 }
 
-.site-branding {
-  text-align: center;
-  margin: 60px 0;
-}
-
-.site-footer {
-  margin: 1em 0;
-  color: #6c7781;
-  font-size: 90%;
-}
-
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
 .sticky {
   display: block;
-}
-
-.hentry {
-  margin: 60px 0;
 }
 
 .updated:not(.published) {
@@ -705,11 +671,6 @@ a:hover, a:active {
   margin: 1.5em 0 0;
 }
 
-.entry-meta {
-  color: #6c7781;
-  font-size: 90%;
-}
-
 .page-links {
   clear: both;
   margin: 0 0 1.5em;
@@ -719,10 +680,6 @@ a:hover, a:active {
 .page-header,
 .entry-footer,
 .site-info,
-.posts-navigation,
-.post-navigation,
-.page-navigation,
-.comments-area,
 .not-found .page-content,
 .search .entry-summary {
   margin: 1.5em auto;
@@ -751,41 +708,11 @@ a:hover, a:active {
   .page-header,
   .entry-footer,
   .site-info,
-  .posts-navigation,
-  .post-navigation,
-  .page-navigation,
-  .comments-area,
   .not-found .page-content,
   .search .entry-summary {
     padding-left: 0;
     padding-right: 0;
   }
-}
-
-/*--------------------------------------------------------------
-## Comments
---------------------------------------------------------------*/
-.comment-content a {
-  word-wrap: break-word;
-}
-
-.bypostauthor {
-  display: block;
-}
-
-/*--------------------------------------------------------------
-# Infinite scroll
---------------------------------------------------------------*/
-/* Globally hidden elements when Infinite Scroll is supported and in use. */
-.infinite-scroll .posts-navigation,
-.infinite-scroll.neverending .site-footer {
-  /* Theme Footer (when set to scrolling) */
-  display: none;
-}
-
-/* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before. */
-.infinity-end.neverending .site-footer {
-  display: block;
 }
 
 /*--------------------------------------------------------------
