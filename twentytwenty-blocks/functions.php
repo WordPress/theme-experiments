@@ -120,7 +120,7 @@ endif;
  * Register and Enqueue Styles.
  */
 if ( function_exists( 'register_block_style' ) ) {
-	function twentytwentyblocks_register_block_style_variations() {
+	function twentytwentyblocks_register_block_styles() {
 		
 		/**
 		** Register stylesheet
