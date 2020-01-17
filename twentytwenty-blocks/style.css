@@ -20,11 +20,19 @@ Tags: one-column, flexible-header, accessibility-ready, custom-colors, custom-me
 ** Header
 */
 .site-header {
-	/* background-color: #fff; */
+	background-color: #fff;
 	padding: 3.4rem 1rem 0;
 	position: absolute;
 	width: 100%;
 	z-index: 2;
+}
+
+.site-header.site-header-transparent {
+	background-color: transparent;
+}
+
+.site-header-transparent a, .site-header-transparent p, .site-header-transparent h1 {
+	color: white !important;
 }
 
 .site-header .wp-block-columns.alignfull {

@@ -93,15 +93,17 @@ if ( ! function_exists( 'twentytwentyblocks_theme_support' ) ) :
 				// Starter pages to include
 				'posts' => [
 					'home' => [
-						'post_content' => '<!-- wp:template-part {"slug":"home","theme":"twentytwentyblocks"} -->'
+						'post_content' => '<!-- wp:template-part {"slug":"home","theme":"twentytwenty"} -->'
 					],
 					'about' => [
-						'post_content' => '<!-- wp:template-part {"slug":"about","theme":"twentytwentyblocks"} -->'
+						'post_content' => '<!-- wp:template-part {"slug":"about","theme":"twentytwenty"} -->'
 					],
 					'contact' => [
-						'post_content' => '<!-- wp:template-part {"slug":"contact","theme":"twentytwentyblocks"} -->'
+						'post_content' => '<!-- wp:template-part {"slug":"contact","theme":"twentytwenty"} -->'
 					],
-					'blog'
+					'blog' => [
+						'post_content' => '<!-- wp:template-part {"slug":"blog","theme":"twentytwenty"} -->'
+					],
 				]
 			]);
 
