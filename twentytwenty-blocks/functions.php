@@ -372,9 +372,41 @@ if ( ! function_exists( 'twentytwentyblocks_theme_support' ) ) :
 									<!-- /wp:group -->'
 				],
 
-				'about',
+				'about' => [
+					'post_content' => '<!-- wp:columns {"align":"full"} -->
+						<div class="wp-block-columns alignfull"><!-- wp:column -->
+						<div class="wp-block-column"><!-- wp:heading {"level":1,"className":"is-style-header-site-title"} -->
+						<h1 class="is-style-header-site-title"><a href="/">Twenty Twenty</a></h1>
+						<!-- /wp:heading -->
 
-				'blog',
+						<!-- wp:paragraph {"className":"site-description"} -->
+						<p class="site-description">Just another WordPress site</p>
+						<!-- /wp:paragraph --></div>
+						<!-- /wp:column -->
+
+						<!-- wp:column -->
+						<div class="wp-block-column"><!-- wp:navigation {"className":"is-style-header-nav","itemsJustification":"right"} -->
+						<!-- wp:navigation-link {"label":"Home","title":"/","type":"page","url":"/"} /-->
+
+						<!-- wp:navigation-link {"label":"Exhibitions","title":"Exhibitions","type":"page","url":"/exhibitions/"} /-->
+
+						<!-- wp:navigation-link {"label":"About Us","title":"/about","type":"page","url":"/about","className":"has-submenu"} -->
+						<!-- wp:navigation-link {"label":"Contact","title":"/contact","url":"/contact"} /-->
+						<!-- /wp:navigation-link -->
+
+						<!-- wp:navigation-link {"label":"News","title":"News","type":"page","url":"/blog/"} /-->
+						<!-- /wp:navigation --></div>
+						<!-- /wp:column --></div>
+						<!-- /wp:columns -->'
+				],
+
+				'blog' => [
+					'post_content' => '<!-- wp:spacer -->
+					<div style="height:100px" aria-hidden="true" class="wp-block-spacer"></div>
+					<!-- /wp:spacer -->
+
+					<!-- wp:latest-posts {"align":"center","postsToShow":3,"displayPostContent":true,"displayPostContentRadio":"full_post","displayPostDate":true,"columns":2} /-->'
+				],
 
 			]
 		]);
