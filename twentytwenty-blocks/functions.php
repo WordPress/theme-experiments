@@ -111,8 +111,6 @@ if ( ! function_exists( 'twentytwentyblocks_theme_support' ) ) :
 				],
 			]
 		]);
-
-		register_block_style_variations();
     }
 
     add_action( 'after_setup_theme', 'twentytwentyblocks_theme_support' );
@@ -121,61 +119,66 @@ endif;
 /**
  * Register and Enqueue Styles.
  */
-function register_block_style_variations() {
-	/**
-	** Register stylesheet
-	**/
-	wp_register_style(
-		'block-styles-stylesheet',
-		get_template_directory_uri() . '/block-styles.css',
-		array(),
-		'1.1'
-	);
+if ( function_exists( 'register_block_style' ) ) {
+	function twentytwentyblocks_register_block_style_variations() {
+		
+		/**
+		** Register stylesheet
+		**/
+		wp_register_style(
+			'block-styles-stylesheet',
+			get_template_directory_uri() . '/block-styles.css',
+			array(),
+			'1.1'
+		);
 
-	register_block_style(
-		'core/heading',
-			array(
-				'name'					=> 'header-site-title',
-				'label'					=> 'Header',
-				'style_handle'	=> 'block-styles-stylesheet',
-		)
-	);
+		register_block_style(
+			'core/heading',
+				array(
+					'name'					=> 'header-site-title',
+					'label'					=> 'Header',
+					'style_handle'	=> 'block-styles-stylesheet',
+			)
+		);
 
-	register_block_style(
-		'core/columns',
-			array(
-				'name'					=> 'landing-page-columns',
-				'label'					=> 'Landing Page',
-				'style_handle'	=> 'block-styles-stylesheet',
-		)
-	);
+		register_block_style(
+			'core/columns',
+				array(
+					'name'					=> 'landing-page-columns',
+					'label'					=> 'Landing Page',
+					'style_handle'	=> 'block-styles-stylesheet',
+			)
+		);
 
-	register_block_style(
-		'core/image',
-			array(
-				'name'					=> 'featured-media-home',
-				'label'					=> 'Home',
-				'style_handle'	=> 'block-styles-stylesheet',
-		)
-	);
+		register_block_style(
+			'core/image',
+				array(
+					'name'					=> 'featured-media-home',
+					'label'					=> 'Home',
+					'style_handle'	=> 'block-styles-stylesheet',
+			)
+		);
 
-	register_block_style(
-		'core/navigation',
-			array(
-				'name'					=> 'header-nav',
-				'label'					=> 'Header',
-				'style_handle'	=> 'block-styles-stylesheet',
-		)
-	);
+		register_block_style(
+			'core/navigation',
+				array(
+					'name'					=> 'header-nav',
+					'label'					=> 'Header',
+					'style_handle'	=> 'block-styles-stylesheet',
+			)
+		);
 
-	register_block_style(
-		'core/cover',
-			array(
-				'name'					=> 'header-cover',
-				'label'					=> 'Header',
-				'style_handle'	=> 'block-styles-stylesheet',
-		)
-	);
+		register_block_style(
+			'core/cover',
+				array(
+					'name'					=> 'header-cover',
+					'label'					=> 'Header',
+					'style_handle'	=> 'block-styles-stylesheet',
+			)
+		);
+	}
+
+	add_action( 'init', 'twentytwentyblocks_register_block_styles' );
 }
 
 function twentytwentyblocks_register_styles() {
