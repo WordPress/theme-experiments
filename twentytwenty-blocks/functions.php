@@ -95,7 +95,7 @@ if ( ! function_exists( 'twentytwentyblocks_theme_support' ) ) :
 					'post_content' => '<!-- wp:template-part {"slug":"home","theme":"twentytwenty-blocks"} -->'
 				],
 				'about' => [
-					'post_content' => '<!-- wp:template {"slug":"about","theme":"twentytwenty-blocks"} -->'
+					'post_content' => '<!-- wp:template-part {"slug":"about","theme":"twentytwenty-blocks"} -->'
 				],
 				'exhibitions' => [
 					'post_content' => '<!-- wp:template-part {"slug":"exhibitions","theme":"twentytwenty-blocks"} -->'
