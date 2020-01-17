@@ -93,16 +93,22 @@ if ( ! function_exists( 'twentytwentyblocks_theme_support' ) ) :
 				// Starter pages to include
 				'posts' => [
 					'home' => [
-						'post_content' => '<!-- wp:template-part {"slug":"home","theme":"twentytwenty"} -->'
+						'post_content' => '<!-- wp:template-part {"slug":"home","theme":"twentytwenty-blocks"} -->'
 					],
 					'about' => [
-						'post_content' => '<!-- wp:template-part {"slug":"about","theme":"twentytwenty"} -->'
+						'post_content' => '<!-- wp:template-part {"slug":"about","theme":"twentytwenty-blocks"} -->'
+					],
+					'exhibitions' => [
+						'post_content' => '<!-- wp:template-part {"slug":"exhibitions","theme":"twentytwenty-blocks"} -->'
+					],
+					'exhibitions/from-signac-to-matisse' => [
+						'post_content' => '<!-- wp:template-part {"slug":"signac","theme":"twentytwenty-blocks"} -->'
 					],
 					'contact' => [
-						'post_content' => '<!-- wp:template-part {"slug":"contact","theme":"twentytwenty"} -->'
+						'post_content' => '<!-- wp:template-part {"slug":"contact","theme":"twentytwenty-blocks"} -->'
 					],
 					'blog' => [
-						'post_content' => '<!-- wp:template-part {"slug":"blog","theme":"twentytwenty"} -->'
+						'post_content' => '<!-- wp:template-part {"slug":"blog","theme":"twentytwenty-blocks"} -->'
 					],
 				]
 			]);
