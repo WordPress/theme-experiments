@@ -1,0 +1,109 @@
+.is-style-header-nav {
+	font-size: 1.8rem;
+	font-weight: 500;
+	letter-spacing: -0.0277em;
+	margin: -0.8rem 0 0 -1.6rem;
+	text-decoration: none;
+}
+
+.is-style-header-nav .wp-block-navigation-link {
+	padding: 0;
+	margin: 0 16px;
+}
+
+.is-style-header-nav .wp-block-navigation-link__content {
+	padding: 0;
+	text-decoration: none;
+}
+
+.is-style-header-nav .wp-block-navigation-link__content.has-submenu {
+	padding-bottom: 2rem;
+}
+
+.is-style-header-nav .wp-block-navigation-link__content:hover {
+	text-decoration: underline;
+}
+
+.is-style-header-nav > ul > li > a.wp-block-navigation-link__content {
+	padding-bottom: 2rem;
+}
+
+.is-style-header-nav .wp-block-navigation-link > ul {
+	background: #000;
+	border-color: #000;
+	border-radius: 0.4rem;
+	font-size: 1.7rem;
+	opacity: 0;
+	padding: 1rem 0;
+	transition: opacity 0.15s linear, transform 0.15s linear, right 0s 0.15s;
+	transform: translateY(0.6rem);
+}
+
+.is-style-header-nav .wp-block-navigation-link > ul:before {
+	border-color: transparent transparent black;
+}
+
+.is-style-header-nav .wp-block-navigation-link > ul:after {
+	border-color: transparent transparent black;
+}
+
+.is-style-header-nav .wp-block-navigation-link > ul a {
+	color: white;
+}
+
+@media (max-width: 699px) {
+	.is-style-header-nav.wp-block-navigation.items-justified-right>ul {
+		display: flex;
+		justify-content: space-between;
+	}
+}
+
+.is-style-header-site-title {
+	display: inline-block;
+	font-size: 2.4rem;
+	font-weight: 700;
+	line-height: 1;
+	margin-right: 2rem;
+}
+
+.is-style-header-site-title a {
+	color: black;
+	text-decoration: none;
+}
+
+.is-style-header-site-title a:hover {
+	text-decoration: underline;
+}
+
+.entry-content > .is-style-landing-page-columns.alignfull, 
+.entry-content > .is-style-landing-page-columns.alignfull h1 {
+	margin: 0;
+}
+
+@media ( min-width: 700px ){
+	.entry-content > .is-style-landing-page-columns.alignfull h1 {
+		margin: 12rem 0 5rem;
+	}
+}
+
+.is-style-featured-media-home::before {
+	background: #fff;
+	content: "";
+	display: block;
+	position: absolute;
+	bottom: 50%;
+	left: 0;
+	right: 0;
+	top: 0;
+}
+
+.is-style-header-cover.wp-block-cover.alignfull  {
+	align-items: flex-end;
+	background-attachment: fixed;
+	margin: 0;
+	min-height: 100vh;
+}
+
+.is-style-header-cover.wp-block-cover.alignfull .wp-block-cover__inner-container  {
+	padding: 6rem 0;
+}

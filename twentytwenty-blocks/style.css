@@ -1,0 +1,100 @@
+/*
+Theme Name: Twenty Twenty Blocks
+Author: the WordPress Theme team
+Author URI: https://wordpress.org/
+Description: Twenty Twenty, but only using block templates.
+Requires at least: WordPress 4.9.6
+Version: 0.1
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: twentytwenty-blocks
+Tags: one-column, flexible-header, accessibility-ready, custom-colors, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, rtl-language-support, sticky-post, threaded-comments, translation-ready
+*/
+
+/* 
+ * Import the default Twenty Twenty styles.
+*/
+@import url('twentytwenty-styles/style.css');
+
+/*
+** Header
+*/
+.site-header {
+	background-color: #fff;
+	padding: 3.4rem 1rem 0;
+	width: 100%;
+	z-index: 2;
+}
+
+.site-header.site-header-transparent {
+	background-color: transparent;
+}
+
+.site-header-transparent a, .site-header-transparent p, .site-header-transparent h1 {
+	color: white !important;
+}
+
+.site-header .wp-block-columns.alignfull {
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+.site-description {
+	display: inline;
+}
+
+.background-white {
+	background-color: #fff;
+}
+
+/*
+** Entry Header
+*/
+
+.site-content > h1:first-child {
+	width: 100%;
+	padding: 4rem 2rem;
+	margin: 0 0 4rem;
+	text-align: center;
+	background: #FFF;
+}
+
+@media screen and (min-width: 700px) {
+	.site-content > h1:first-child {
+		padding: 8rem 2rem;
+	}
+}
+
+/*
+** Footer
+*/
+#site-footer, .site-footer{
+	padding: 0 0 1px;
+}
+
+.site-footer .alignfull, .site-footer hr.wp-block-separator {	
+	margin: 4rem auto 0;	
+}	
+
+.site-footer h3 {	
+	margin-top: 0;	
+}	
+
+.site-footer .footer-top {
+	border-bottom: none;	
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+.site-footer .alignright {
+	justify-content: flex-end;
+}
+
+.site-footer .footer-menu a {	
+	font-family: "Inter var", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;	
+}	
+
+.footer-social .wp-social-link {	
+	width: auto;	
+	height: auto;	
+}
