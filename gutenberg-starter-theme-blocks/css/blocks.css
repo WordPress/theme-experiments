@@ -1,0 +1,373 @@
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# General Structure
+  ## Code
+  ## Cover
+  ## Embeds
+  ## Gallery
+  ## Group
+  ## Image
+  ## Latest Posts
+  ## List
+  ## More
+  ## Pullquote
+  ## Quote
+  ## Separator
+  ## Table
+  ## Video
+# Additional Theme Styles
+  ## Color Palette
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Block Styles
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+## General Structure
+--------------------------------------------------------------*/
+
+.entry-content > *,
+.site-header > *,
+.site-footer > *,
+.site-content > h1 {
+  margin: 36px auto;
+  max-width: 580px;
+  padding-left: 14px;
+  padding-right: 14px;
+}
+
+.entry-content > .alignwide,
+.site-header > .alignwide
+.site-footer > .alignwide {
+  max-width: 1070px;
+}
+
+.entry-content > .alignfull,
+.site-header > .alignfull,
+.site-footer > .alignfull {
+  margin: 1.5em 0;
+  max-width: 100%;
+}
+
+@media screen and (min-width: 608px) {
+  .entry-content > *,
+  .site-header > *,
+  .site-footer > *,
+  .site-content > h1 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+/*--------------------------------------------------------------
+## Code
+--------------------------------------------------------------*/
+
+.wp-block-code {
+  padding: 0.8em 1em;
+  margin-left: 14px;
+  margin-right: 14px;
+}
+
+@media screen and (min-width: 608px) {
+  .wp-block-code {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/*--------------------------------------------------------------
+## Cover
+--------------------------------------------------------------*/
+
+.wp-block-cover-text p {
+  padding: 1.5em 14px;
+}
+
+@media screen and (min-width: 608px) {
+  .wp-block-cover-text p {
+    padding: 1.5em 0;
+  }
+}
+
+/*--------------------------------------------------------------
+## Embeds
+--------------------------------------------------------------*/
+
+.wp-block-embed.type-video > .wp-block-embed__wrapper {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-top: 56.25%;
+}
+
+.wp-block-embed.type-video > .wp-block-embed__wrapper > iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+/*--------------------------------------------------------------
+# Gallery
+--------------------------------------------------------------*/
+
+.wp-block-gallery:not(.components-placeholder) {
+  margin: 1.5em auto;
+}
+
+/*--------------------------------------------------------------
+## Group
+--------------------------------------------------------------*/
+
+.wp-block-group > .wp-block-group__inner-container > * {
+  max-width: 580px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wp-block-group > .wp-block-group__inner-container > .alignwide {
+  max-width: 1070px;
+}
+
+.wp-block-group > .wp-block-group__inner-container > .alignfull {
+  max-width: 100%;
+}
+
+.wp-block-group.has-background > .wp-block-group__inner-container > :first-child {
+  margin-top: 0;
+}
+
+.wp-block-group.has-background > .wp-block-group__inner-container > .alignfull {
+  width: calc( 100% + 60px );
+  max-width: calc( 100% + 60px );
+  position: relative;
+  left: -30px;
+}
+
+/*--------------------------------------------------------------
+# Image
+--------------------------------------------------------------*/
+
+.wp-block-image img {
+  display: block;
+}
+
+.wp-block-image.alignleft,
+.wp-block-image.alignright {
+  width: 100%
+}
+
+.wp-block-image.alignfull img {
+  width: 100vw;
+}
+
+.wp-block-image .alignleft img,
+.wp-block-image .alignright img,
+.wp-block-image .alignleft figcaption,
+.wp-block-image .alignright figcaption {
+  max-width: 100%;
+  width: 100%;
+}
+
+/*--------------------------------------------------------------
+## Latest Posts
+--------------------------------------------------------------*/
+
+ul.wp-block-latest-posts.alignwide,
+ul.wp-block-latest-posts.alignfull,
+ul.wp-block-latest-posts.is-grid.alignwide,
+ul.wp-block-latest-posts.is-grid.alignwide {
+  padding: 0 14px;
+}
+
+/*--------------------------------------------------------------
+# List
+--------------------------------------------------------------*/
+
+.entry-content ul,
+.entry-content ol,
+.site-header ul,
+.site-header ol,
+.site-footer ul,
+.site-footer ol {
+  margin: 1.5em auto;
+  max-width: 580px;
+  list-style-position: outside;
+}
+
+.entry-content li,
+.site-header li,
+.site-footer li, {
+  margin-left: 2.5em;
+}
+
+.entry-content ul ul,
+.entry-content ol ol,
+.entry-content ul ol,
+.entry-content ol ul,
+.site-header ul ul,
+.site-header ol ol,
+.site-header ul ol,
+.site-header ol ul,
+.site-footer ul ul,
+.site-footer ol ol,
+.site-footer ul ol,
+.site-footer ol ul {
+  margin: 0 auto;
+}
+
+.entry-content ul ul li,
+.entry-content ol ol li,
+.entry-content ul ol li,
+.entry-content ol ul li,
+.site-header ul ul li,
+.site-header ol ol li,
+.site-header ul ol li,
+.site-header ol ul li
+.site-footer ul ul li,
+.site-footer ol ol li,
+.site-footer ul ol li,
+.site-footer ol ul li {
+  margin-left: 0;
+}
+
+/*--------------------------------------------------------------
+## More
+--------------------------------------------------------------*/
+
+.more-link {
+  display: block;
+}
+
+/*--------------------------------------------------------------
+## Pullquote
+--------------------------------------------------------------*/
+
+.wp-block-pullquote>p:first-child {
+  margin-top: 0;
+}
+
+/*--------------------------------------------------------------
+## Quote
+--------------------------------------------------------------*/
+
+.wp-block-quote {
+  margin-left: 14px;
+  margin-right: 14px;
+  padding: 0;
+}
+
+.wp-block-quote > * {
+  margin-left: 1rem;
+}
+
+.wp-block-quote.is-large, 
+.wp-block-quote.is-style-large {
+  margin: 36px auto;
+  padding: 0;
+}
+
+.wp-block-quote.is-large cite, 
+.wp-block-quote.is-large footer, 
+.wp-block-quote.is-style-large cite, 
+.wp-block-quote.is-style-large footer {
+  font-size: 13px;
+  font-size: 0.8125rem;
+}
+
+@media screen and (min-width: 644px) {
+  .wp-block-quote {
+    margin: 36px auto;
+  }
+}
+
+/*--------------------------------------------------------------
+## Separator
+--------------------------------------------------------------*/
+
+.wp-block-separator {
+  margin: 3em auto;
+  padding: 0;
+}
+
+/*--------------------------------------------------------------
+## Table
+--------------------------------------------------------------*/
+
+.wp-block-table {
+  overflow-x: auto;
+  margin-left: 14px;
+  margin-right: 14px;
+  width: calc( 100% - 28px );
+}
+
+.wp-block-table table {
+  border-collapse: collapse;
+  width: 100%
+}
+
+.wp-block-table td, .wp-block-table th {
+  padding: .5em;
+}
+
+@media screen and (min-width: 608px) {
+  .wp-block-table {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+}
+
+/*--------------------------------------------------------------
+## Video
+--------------------------------------------------------------*/
+
+.wp-block-video video {
+  max-width: 580px;
+}
+
+/*--------------------------------------------------------------
+# Additional Theme Styles
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+## Color Palette
+--------------------------------------------------------------*/
+
+.has-strong-blue-color {
+  color: #0073aa;
+}
+
+.has-strong-blue-background-color {
+  background-color: #0073aa;
+}
+
+.has-lighter-blue-color {
+  color: #229fd8;
+}
+
+.has-lighter-blue-background-color {
+  background-color: #229fd8;
+}
+
+.has-very-light-gray-color {
+  color: #eee;
+}
+
+.has-very-light-gray-background-color {
+  background-color: #eee;
+}
+
+.has-very-dark-gray-color {
+  color: #444;
+}
+
+.has-very-dark-gray-background-color {
+  background-color: #444;
+}
