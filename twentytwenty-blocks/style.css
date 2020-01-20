@@ -22,7 +22,6 @@ Tags: one-column, flexible-header, accessibility-ready, custom-colors, custom-me
 .site-header {
 	background-color: #fff;
 	padding: 3.4rem 1rem 0;
-	position: absolute;
 	width: 100%;
 	z-index: 2;
 }
@@ -46,6 +45,24 @@ Tags: one-column, flexible-header, accessibility-ready, custom-colors, custom-me
 
 .background-white {
 	background-color: #fff;
+}
+
+
+/*
+** Entry Header
+*/
+
+.site-content > h1:first-child {
+	margin: 4rem auto;
+	text-align: center;
+	max-width: calc(100% - 4rem);
+}
+
+@media screen and (min-width: 700px) {
+	.site-content > h1:first-child {
+		margin: 8rem auto;
+		max-width: calc(100% - 8rem);
+	}
 }
 
 
