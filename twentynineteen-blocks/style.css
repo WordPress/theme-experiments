@@ -51,6 +51,30 @@ Tags: one-column, flexible-header, accessibility-ready, custom-colors, custom-me
 	margin-bottom: 1rem;
 }
 
+/* Social links in the header  */
+
+.site-header .wp-block-social-links {
+	margin-top: 0;
+}
+
+.site-header .wp-block-social-links > .wp-social-link {
+	background-color: transparent;
+	color: #111;
+}
+
+.site-header .wp-block-social-links > .wp-social-link:hover {
+	color: #777;
+}
+
+.site-header .wp-block-social-links > .wp-social-link a {
+	padding-left: 0;
+}
+
+.site-header .wp-block-social-links > .wp-social-link svg {
+	height: 32px;
+	width: 32px;
+}
+
 @media screen and (min-width: 600px) {
 
 	/* Prevent site title & menu from shifting over unintentionally between 600-768px viewports. */
