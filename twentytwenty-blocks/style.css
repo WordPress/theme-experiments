@@ -47,24 +47,23 @@ Tags: one-column, flexible-header, accessibility-ready, custom-colors, custom-me
 	background-color: #fff;
 }
 
-
 /*
 ** Entry Header
 */
 
 .site-content > h1:first-child {
-	margin: 4rem auto;
+	width: 100%;
+	padding: 4rem 2rem;
+	margin: 0 0 4rem;
 	text-align: center;
-	max-width: calc(100% - 4rem);
+	background: #FFF;
 }
 
 @media screen and (min-width: 700px) {
 	.site-content > h1:first-child {
-		margin: 8rem auto;
-		max-width: calc(100% - 8rem);
+		padding: 8rem 2rem;
 	}
 }
-
 
 /*
 ** Footer
