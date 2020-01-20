@@ -224,7 +224,10 @@ if ( ! function_exists( 'twentytwentyblocks_theme_support' ) ) :
 					'post_type'    => 'page',
 					'post_title'   => __( 'Blog', 'twentytwenty-blocks' ),
 					'post_content' => join(
-						'<!-- wp:latest-posts {"postsToShow":100,"displayPostContent":true,"displayPostDate":true} /-->',
+						'',
+						array(
+							'<!-- wp:latest-posts {"postsToShow":100,"displayPostContent":true,"displayPostDate":true} /-->',
+						),
 					),
 				),
 			),
