@@ -23,26 +23,26 @@ if ( ! function_exists( 'twentynineteenblocks_theme_support' ) ) :
 			'editor-font-sizes',
 			array(
 				array(
-					'name'      => __( 'Small', 'twentynineteen' ),
-					'shortName' => __( 'S', 'twentynineteen' ),
+					'name'      => __( 'Small', 'twentynineteen-blocks' ),
+					'shortName' => __( 'S', 'twentynineteen-blocks' ),
 					'size'      => 19.5,
 					'slug'      => 'small',
 				),
 				array(
-					'name'      => __( 'Normal', 'twentynineteen' ),
-					'shortName' => __( 'M', 'twentynineteen' ),
+					'name'      => __( 'Normal', 'twentynineteen-blocks' ),
+					'shortName' => __( 'M', 'twentynineteen-blocks' ),
 					'size'      => 22,
 					'slug'      => 'normal',
 				),
 				array(
-					'name'      => __( 'Large', 'twentynineteen' ),
-					'shortName' => __( 'L', 'twentynineteen' ),
+					'name'      => __( 'Large', 'twentynineteen-blocks' ),
+					'shortName' => __( 'L', 'twentynineteen-blocks' ),
 					'size'      => 36.5,
 					'slug'      => 'large',
 				),
 				array(
-					'name'      => __( 'Huge', 'twentynineteen' ),
-					'shortName' => __( 'XL', 'twentynineteen' ),
+					'name'      => __( 'Huge', 'twentynineteen-blocks' ),
+					'shortName' => __( 'XL', 'twentynineteen-blocks' ),
 					'size'      => 49.5,
 					'slug'      => 'huge',
 				),
@@ -54,27 +54,27 @@ if ( ! function_exists( 'twentynineteenblocks_theme_support' ) ) :
 			'editor-color-palette',
 			array(
 				array(
-					'name'  => __( 'Primary', 'twentynineteen' ),
+					'name'  => __( 'Primary', 'twentynineteen-blocks' ),
 					'slug'  => 'primary',
 					'color' => '#0073AA',
 				),
 				array(
-					'name'  => __( 'Secondary', 'twentynineteen' ),
+					'name'  => __( 'Secondary', 'twentynineteen-blocks' ),
 					'slug'  => 'secondary',
 					'color' => '#005177',
 				),
 				array(
-					'name'  => __( 'Dark Gray', 'twentynineteen' ),
+					'name'  => __( 'Dark Gray', 'twentynineteen-blocks' ),
 					'slug'  => 'dark-gray',
 					'color' => '#111',
 				),
 				array(
-					'name'  => __( 'Light Gray', 'twentynineteen' ),
+					'name'  => __( 'Light Gray', 'twentynineteen-blocks' ),
 					'slug'  => 'light-gray',
 					'color' => '#767676',
 				),
 				array(
-					'name'  => __( 'White', 'twentynineteen' ),
+					'name'  => __( 'White', 'twentynineteen-blocks' ),
 					'slug'  => 'white',
 					'color' => '#FFF',
 				),
@@ -96,7 +96,7 @@ if ( ! function_exists( 'twentynineteenblocks_theme_support' ) ) :
 				'home',
 				'blog' => array(
 					'post_type'    => 'page',
-					'post_title'   => __( 'Blog', 'twentytwenty-blocks' ),
+					'post_title'   => __( 'Blog', 'twentynineteen-blocks' ),
 					'post_content' => join(
 						'',
 						array(
