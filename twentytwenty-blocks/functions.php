@@ -21,25 +21,25 @@ if ( ! function_exists( 'twentytwentyblocks_theme_support' ) ) :
 			'editor-font-sizes',
 			array(
 				array(
-					'name'      => __( 'Small', 'twentytwenty' ),
+					'name'      => __( 'Small', 'twentytwenty-blocks' ),
 					'shortName' => __( 'S', 'twentytwenty' ),
 					'size'      => 19.5,
 					'slug'      => 'small',
 				),
 				array(
-					'name'      => __( 'Normal', 'twentytwenty' ),
+					'name'      => __( 'Normal', 'twentytwenty-blocks' ),
 					'shortName' => __( 'M', 'twentytwenty' ),
 					'size'      => 22,
 					'slug'      => 'normal',
 				),
 				array(
-					'name'      => __( 'Large', 'twentytwenty' ),
+					'name'      => __( 'Large', 'twentytwenty-blocks' ),
 					'shortName' => __( 'L', 'twentytwenty' ),
 					'size'      => 36.5,
 					'slug'      => 'large',
 				),
 				array(
-					'name'      => __( 'Huge', 'twentytwenty' ),
+					'name'      => __( 'Huge', 'twentytwenty-blocks' ),
 					'shortName' => __( 'XL', 'twentytwenty' ),
 					'size'      => 49.5,
 					'slug'      => 'huge',
@@ -52,27 +52,27 @@ if ( ! function_exists( 'twentytwentyblocks_theme_support' ) ) :
 			'editor-color-palette',
 			array(
 				array(
-					'name'  => __( 'Primary', 'twentytwenty' ),
+					'name'  => __( 'Primary', 'twentytwenty-blocks' ),
 					'slug'  => 'primary',
 					'color' => '#0073AA',
 				),
 				array(
-					'name'  => __( 'Secondary', 'twentytwenty' ),
+					'name'  => __( 'Secondary', 'twentytwenty-blocks' ),
 					'slug'  => 'secondary',
 					'color' => '#005177',
 				),
 				array(
-					'name'  => __( 'Dark Gray', 'twentytwenty' ),
+					'name'  => __( 'Dark Gray', 'twentytwenty-blocks' ),
 					'slug'  => 'dark-gray',
 					'color' => '#111',
 				),
 				array(
-					'name'  => __( 'Light Gray', 'twentytwenty' ),
+					'name'  => __( 'Light Gray', 'twentytwenty-blocks' ),
 					'slug'  => 'light-gray',
 					'color' => '#767676',
 				),
 				array(
-					'name'  => __( 'White', 'twentytwenty' ),
+					'name'  => __( 'White', 'twentytwenty-blocks' ),
 					'slug'  => 'white',
 					'color' => '#FFF',
 				),
@@ -84,331 +84,150 @@ if ( ! function_exists( 'twentytwentyblocks_theme_support' ) ) :
 
 		// Starter content
 		add_theme_support('starter-content', [
-			// Static front page set to Home, posts page set to Blog
+			// Static front page set to Front
 			'options' => [
 				'show_on_front' => 'page',
-				'page_on_front' => '{{home}}',
+				'page_on_front' => '{{front}}',
 			],
-			// Starter pages to include
-			'posts' => [
-				'home' => [
+
+			// Create the custom image attachments used as post thumbnails for pages.
+			'attachments' => array(
+				'image-opening' => array(
+					'post_title' => _x( 'The New UMoMA Opens its Doors', 'Theme starter content', 'twentytwenty-blocks' ),
+					'file'       => 'assets/images/2020-landscape-1.png', // URL relative to the template directory.
+				),
+			),
+
+			// Specify the core-defined pages to create and add custom thumbnails to some of them.
+			'posts' => array(
+				'front' => array(
 					'post_type'    => 'page',
 					'post_title'   => __( 'The New UMoMA Opens its Doors', 'twentytwenty-blocks' ),
-					'post_content' => '<!-- wp:columns {"align":"full","className":"background-white is-style-landing-page-columns"} -->
-						<div class="wp-block-columns alignfull background-white is-style-landing-page-columns"><!-- wp:column {"width":10} -->
-						<div class="wp-block-column" style="flex-basis:10%"></div>
-						<!-- /wp:column -->
-						<!-- wp:column {"width":80} -->
-						<div class="wp-block-column" style="flex-basis:80%"><!-- wp:heading {"align":"center","level":1} -->
-						<h1 class="has-text-align-center">Welcome to the Swedish Museum of Modern Art</h1>
-						<!-- /wp:heading --></div>
-						<!-- /wp:column -->
-						<!-- wp:column {"width":10} -->
-						<div class="wp-block-column" style="flex-basis:10%"></div>
-						<!-- /wp:column --></div>
-						<!-- /wp:columns -->
-						<!-- wp:image {"align":"wide","sizeSlug":"large","className":"is-style-default"} -->
-						<figure class="wp-block-image alignwide size-large is-style-default"><img src="http://2020.wordpress.net/wp-content/uploads/2019/10/2020-landscape-1-1200x769.png" alt=""/></figure>
-						<!-- /wp:image -->
-						<!-- wp:heading {"align":"center","className":"alignwide"} -->
-						<h2 class="has-text-align-center alignwide">The premier destination for modern art in Sweden. Open 10 AM → 6 PM every day during winter.</h2>
-						<!-- /wp:heading -->
-						<!-- wp:columns {"align":"wide"} -->
-						<div class="wp-block-columns alignwide"><!-- wp:column -->
-						<div class="wp-block-column"><!-- wp:image {"id":40,"sizeSlug":"full"} -->
-						<figure class="wp-block-image size-full"><img src="http://2020.wordpress.net/wp-content/uploads/2019/10/2020-three-quarters-1.png" alt="" class="wp-image-40"/></figure>
-						<!-- /wp:image -->
-						<!-- wp:heading -->
-						<h2>Works and Days</h2>
-						<!-- /wp:heading -->
-						<!-- wp:paragraph {"fontSize":"larger"} -->
-						<p class="has-larger-font-size">August 1 -- December 1</p>
-						<!-- /wp:paragraph -->
-						<!-- wp:button {"className":"is-style-outline"} -->
-						<div class="wp-block-button is-style-outline"><a class="wp-block-button__link" href="/from-signac-to-matisse/">Read More</a></div>
-						<!-- /wp:button --></div>
-						<!-- /wp:column -->
-						<!-- wp:column -->
-						<div class="wp-block-column"><!-- wp:image {"id":41,"sizeSlug":"full"} -->
-						<figure class="wp-block-image size-full"><img src="http://2020.wordpress.net/wp-content/uploads/2019/10/2020-three-quarters-2.png" alt="" class="wp-image-41"/></figure>
-						<!-- /wp:image -->
-						<!-- wp:heading -->
-						<h2>The Life I Deserve</h2>
-						<!-- /wp:heading -->
-						<!-- wp:paragraph {"fontSize":"larger"} -->
-						<p class="has-larger-font-size">August 1 -- December 1</p>
-						<!-- /wp:paragraph -->
-						<!-- wp:button {"className":"is-style-outline"} -->
-						<div class="wp-block-button is-style-outline"><a class="wp-block-button__link" href="/from-signac-to-matisse/">Read More</a></div>
-						<!-- /wp:button --></div>
-						<!-- /wp:column --></div>
-						<!-- /wp:columns -->
-						<!-- wp:columns {"align":"wide"} -->
-						<div class="wp-block-columns alignwide"><!-- wp:column -->
-						<div class="wp-block-column"><!-- wp:image {"id":42,"sizeSlug":"full"} -->
-						<figure class="wp-block-image size-full"><img src="http://2020.wordpress.net/wp-content/uploads/2019/10/2020-three-quarters-3.png" alt="" class="wp-image-42"/></figure>
-						<!-- /wp:image -->
-						<!-- wp:heading -->
-						<h2>Theatre of Operations</h2>
-						<!-- /wp:heading -->
-						<!-- wp:paragraph {"fontSize":"larger"} -->
-						<p class="has-larger-font-size">October 1 -- December 1</p>
-						<!-- /wp:paragraph -->
-						<!-- wp:button {"className":"is-style-outline"} -->
-						<div class="wp-block-button is-style-outline"><a class="wp-block-button__link" href="/from-signac-to-matisse/">Read More</a></div>
-						<!-- /wp:button --></div>
-						<!-- /wp:column -->
-						<!-- wp:column -->
-						<div class="wp-block-column"><!-- wp:image {"id":43,"sizeSlug":"full"} -->
-						<figure class="wp-block-image size-full"><img src="http://2020.wordpress.net/wp-content/uploads/2019/10/2020-three-quarters-4.png" alt="" class="wp-image-43"/></figure>
-						<!-- /wp:image -->
-						<!-- wp:heading -->
-						<h2>From Signac to Matisse</h2>
-						<!-- /wp:heading -->
-						<!-- wp:paragraph {"fontSize":"larger"} -->
-						<p class="has-larger-font-size">October 1 -- December 1</p>
-						<!-- /wp:paragraph -->
-						<!-- wp:button {"className":"is-style-outline"} -->
-						<div class="wp-block-button is-style-outline"><a class="wp-block-button__link" href="/from-signac-to-matisse/">Read More</a></div>
-						<!-- /wp:button --></div>
-						<!-- /wp:column --></div>
-						<!-- /wp:columns -->
-						<!-- wp:image {"align":"full","id":37,"sizeSlug":"full"} -->
-						<figure class="wp-block-image alignfull size-full"><img src="http://2020.wordpress.net/wp-content/uploads/2019/10/2020-landscape-2.png" alt="" class="wp-image-37"/></figure>
-						<!-- /wp:image -->
-						<!-- wp:group {"align":"wide"} -->
-						<div class="wp-block-group alignwide"><div class="wp-block-group__inner-container"><!-- wp:heading {"align":"center","textColor":"accent","className":"alignwide"} -->
-						<h2 class="has-accent-color has-text-color has-text-align-center alignwide">”Cyborgs, as established by author Donna Haraway, are not reverent. They do not remember the cosmos.”</h2>
-						<!-- /wp:heading --></div></div>
-						<!-- /wp:group -->
-						<!-- wp:separator {"className":"is-style-wide"} -->
-						<hr class="wp-block-separator is-style-wide"/>
-						<!-- /wp:separator -->
-						<!-- wp:paragraph {"dropCap":true} -->
-						<p class="has-drop-cap">With seven floors of striking architecture, UMoMA shows exhibitions of international contemporary art, sometimes along with art historical retrospectives. Existential, political and philosophical issues are intrinsic to our programme. As visitor you are invited to guided tours artist talks, lectures, film screenings and other events with free admission</p>
-						<!-- /wp:paragraph -->
-						<!-- wp:paragraph -->
-						<p>The exhibitions are produced by UMoMA in collaboration with artists and museums around the world and they often attract international attention. UMoMA has received a Special Commendation from the European Museum of the Year, and was among the top candidates for the Swedish Museum of the Year Award as well as for the Council of Europe Museum Prize.</p>
-						<!-- /wp:paragraph -->
-						<!-- wp:group {"customBackgroundColor":"#ffffff","align":"wide"} -->
-						<div class="wp-block-group alignwide has-background" style="background-color:#ffffff"><div class="wp-block-group__inner-container"><!-- wp:group -->
-						<div class="wp-block-group"><div class="wp-block-group__inner-container"><!-- wp:heading {"align":"center"} -->
-						<h2 class="has-text-align-center">Become a Member and Get Exclusive Offers!</h2>
-						<!-- /wp:heading -->
-						<!-- wp:paragraph {"align":"center"} -->
-						<p class="has-text-align-center">Members get access to exclusive exhibits and sales. Our memberships cost $99.99 and are billed annually.</p>
-						<!-- /wp:paragraph -->
-						<!-- wp:button {"align":"center","className":"is-style-outline"} -->
-						<div class="wp-block-button aligncenter is-style-outline"><a class="wp-block-button__link" href="https://make.wordpress.org/core/2019/09/27/block-editor-theme-related-updates-in-wordpress-5-3/">Join the Club</a></div>
-						<!-- /wp:button --></div></div>
-						<!-- /wp:group --></div></div>
-						<!-- /wp:group -->
-						<!-- wp:gallery {"ids":[38,39],"align":"wide"} -->
-						<figure class="wp-block-gallery alignwide columns-2 is-cropped"><ul class="blocks-gallery-grid"><li class="blocks-gallery-item"><figure><img src="http://2020.wordpress.net/wp-content/uploads/2019/10/2020-square-1.png" alt="" data-id="38" data-full-url="http://2020.wordpress.net/wp-content/uploads/2019/10/2020-square-1.png" data-link="http://2020.wordpress.net/2020-square-1/" class="wp-image-38"/></figure></li><li class="blocks-gallery-item"><figure><img src="http://2020.wordpress.net/wp-content/uploads/2019/10/2020-square-2.png" alt="" data-id="39" data-full-url="http://2020.wordpress.net/wp-content/uploads/2019/10/2020-square-2.png" data-link="http://2020.wordpress.net/2020-square-2/" class="wp-image-39"/></figure></li></ul></figure>
-						<!-- /wp:gallery -->'
-				],
-
-				'exhibitions' => [
-					'post_content' => '<!-- wp:columns {"align":"full","className":"background-white is-style-landing-page-columns"} -->
-						<div class="wp-block-columns alignfull background-white is-style-landing-page-columns"><!-- wp:column {"width":10} -->
-						<div class="wp-block-column" style="flex-basis:10%"></div>
-						<!-- /wp:column -->
-						<!-- wp:column {"width":80} -->
-						<div class="wp-block-column" style="flex-basis:80%"><!-- wp:heading {"align":"center","level":1} -->
-						<h1 class="has-text-align-center">Exhibitions</h1>
-						<!-- /wp:heading --></div>
-						<!-- /wp:column -->
-						<!-- wp:column {"width":10} -->
-						<div class="wp-block-column" style="flex-basis:10%"></div>
-						<!-- /wp:column --></div>
-						<!-- /wp:columns -->
-						<!-- wp:group {"align":"wide"} -->
-						<div class="wp-block-group alignwide"><div class="wp-block-group__inner-container"><!-- wp:heading {"align":"center"} -->
-						<h2 class="has-text-align-center">Here you can find all exhibitions currently on display at the UMOMA. To see our past exhibitions,&nbsp;<a href="/">click here.</a></h2>
-						<!-- /wp:heading --></div></div>
-						<!-- /wp:group -->
-						<!-- wp:columns {"align":"wide"} -->
-						<div class="wp-block-columns alignwide"><!-- wp:column -->
-						<div class="wp-block-column"><!-- wp:image {"id":40,"sizeSlug":"full"} -->
-						<figure class="wp-block-image size-full"><img src="http://2020.wordpress.net/wp-content/uploads/2019/10/2020-three-quarters-1.png" alt="" class="wp-image-40"/></figure>
-						<!-- /wp:image -->
-						<!-- wp:heading -->
-						<h2>Works and Days</h2>
-						<!-- /wp:heading -->
-						<!-- wp:paragraph {"fontSize":"larger"} -->
-						<p class="has-larger-font-size">August 1 -- December 1</p>
-						<!-- /wp:paragraph -->
-						<!-- wp:button {"className":"is-style-outline"} -->
-						<div class="wp-block-button is-style-outline"><a class="wp-block-button__link" href="/from-signac-to-matisse/">Read More</a></div>
-						<!-- /wp:button --></div>
-						<!-- /wp:column -->
-						<!-- wp:column -->
-						<div class="wp-block-column"><!-- wp:image {"id":41,"sizeSlug":"full"} -->
-						<figure class="wp-block-image size-full"><img src="http://2020.wordpress.net/wp-content/uploads/2019/10/2020-three-quarters-2.png" alt="" class="wp-image-41"/></figure>
-						<!-- /wp:image -->
-						<!-- wp:heading -->
-						<h2>The Life I Deserve</h2>
-						<!-- /wp:heading -->
-						<!-- wp:paragraph {"fontSize":"larger"} -->
-						<p class="has-larger-font-size">August 1 -- December 1</p>
-						<!-- /wp:paragraph -->
-						<!-- wp:button {"className":"is-style-outline"} -->
-						<div class="wp-block-button is-style-outline"><a class="wp-block-button__link" href="/from-signac-to-matisse/">Read More</a></div>
-						<!-- /wp:button --></div>
-						<!-- /wp:column --></div>
-						<!-- /wp:columns -->'
-				],
-
-				'from-signac-to-matisse' => [
-					'post_content' => '<!-- wp:columns {"align":"full","className":"background-white is-style-landing-page-columns"} -->
-								<div class="wp-block-columns alignfull background-white is-style-landing-page-columns"><!-- wp:column {"width":10} -->
-								<div class="wp-block-column" style="flex-basis:10%"></div>
-								<!-- /wp:column -->
-								<!-- wp:column {"width":80} -->
-								<div class="wp-block-column" style="flex-basis:80%"><!-- wp:heading {"align":"center","level":1} -->
-								<h1 class="has-text-align-center">From Signac to Matisse</h1>
-								<!-- /wp:heading --></div>
-								<!-- /wp:column -->
-								<!-- wp:column {"width":10} -->
-								<div class="wp-block-column" style="flex-basis:10%"></div>
-								<!-- /wp:column --></div>
-								<!-- /wp:columns -->
-								<!-- wp:image {"align":"wide","sizeSlug":"large","className":"is-style-default"} -->
-								<figure class="wp-block-image alignwide size-large is-style-default"><img src="http://2020.wordpress.net/wp-content/uploads/2019/10/2020-landscape-3-1980x1196.png" alt=""/></figure>
-								<!-- /wp:image -->
-								<!-- wp:group {"align":"wide"} -->
-								<div class="wp-block-group alignwide"><div class="wp-block-group__inner-container"><!-- wp:heading {"align":"center"} -->
-								<h2 class="has-text-align-center">“It would not be a commonplace portrait, but a carefully composed picture, with very carefully arranged colors and lines. A rhythmic and angular pose.”</h2>
-								<!-- /wp:heading --></div></div>
-								<!-- /wp:group -->
-								<!-- wp:group {"backgroundColor":"primary","align":"wide"} -->
-								<div class="wp-block-group alignwide has-primary-background-color has-background"><div class="wp-block-group__inner-container"><!-- wp:columns -->
-								<div class="wp-block-columns"><!-- wp:column -->
-								<div class="wp-block-column"><!-- wp:paragraph {"align":"center","textColor":"background","fontSize":"large"} -->
-								<p class="has-text-color has-text-align-center has-large-font-size has-background-color"><em>Dates</em><br>Aug 1 — Dec 1</p>
-								<!-- /wp:paragraph --></div>
-								<!-- /wp:column -->
-								<!-- wp:column -->
-								<div class="wp-block-column"><!-- wp:paragraph {"align":"center","textColor":"background","fontSize":"large"} -->
-								<p class="has-text-color has-text-align-center has-large-font-size has-background-color"><em>Location</em><br>Exhibit Hall B</p>
-								<!-- /wp:paragraph --></div>
-								<!-- /wp:column -->
-								<!-- wp:column -->
-								<div class="wp-block-column"><!-- wp:paragraph {"align":"center","textColor":"background","fontSize":"large"} -->
-								<p class="has-text-color has-text-align-center has-large-font-size has-background-color"><em>Price</em><br>Included</p>
-								<!-- /wp:paragraph --></div>
-								<!-- /wp:column --></div>
-								<!-- /wp:columns --></div></div>
-								<!-- /wp:group -->
-								<!-- wp:paragraph {"dropCap":true} -->
-								<p class="has-drop-cap">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
-								<!-- /wp:paragraph -->
-								<!-- wp:paragraph -->
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-								<!-- /wp:paragraph -->
-								<!-- wp:template-part {"slug":"gallery","theme":"twentytwenty-blocks"} /-->
-								<!-- wp:pullquote {"align":"left"} -->
-								<figure class="wp-block-pullquote alignleft"><blockquote><p>The exhibition will feature some 160 objects, including major works that Fénéon admired.</p><cite>Exhibit Catalogue</cite></blockquote></figure>
-								<!-- /wp:pullquote -->
-								<!-- wp:paragraph -->
-								<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
-								<!-- /wp:paragraph -->
-								<!-- wp:paragraph -->
-								<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
-								<!-- /wp:paragraph -->
-								<!-- wp:image {"align":"full","id":37,"sizeSlug":"large"} -->
-								<figure class="wp-block-image alignfull size-large"><img src="http://2020.wordpress.net/wp-content/uploads/2019/10/2020-landscape-2-1980x963.png" alt="" class="wp-image-37"/></figure>
-								<!-- /wp:image -->
-								<!-- wp:paragraph -->
-								<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
-								<!-- /wp:paragraph -->
-								<!-- wp:separator {"className":"is-style-wide"} -->
-								<hr class="wp-block-separator is-style-wide"/>
-								<!-- /wp:separator -->
-								<!-- wp:heading {"align":"center","level":6,"textColor":"accent"} -->
-								<h6 class="has-accent-color has-text-color has-text-align-center">Other Exhibitions</h6>
-								<!-- /wp:heading -->
-								<!-- wp:template-part {"slug":"exhibitions-row-a","theme":"twentytwenty-blocks"} /-->'
-							],
-
-							'contact' => [
-								'post_content' => '<!-- wp:columns {"align":"full","className":"background-white is-style-landing-page-columns"} -->
-									<div class="wp-block-columns alignfull background-white is-style-landing-page-columns"><!-- wp:column {"width":10} -->
-									<div class="wp-block-column" style="flex-basis:10%"></div>
-									<!-- /wp:column -->
-									<!-- wp:column {"width":80} -->
-									<div class="wp-block-column" style="flex-basis:80%"><!-- wp:heading {"align":"center","level":1} -->
-									<h1 class="has-text-align-center">Contact Us</h1>
-									<!-- /wp:heading --></div>
-									<!-- /wp:column -->
-									<!-- wp:column {"width":10} -->
-									<div class="wp-block-column" style="flex-basis:10%"></div>
-									<!-- /wp:column --></div>
-									<!-- /wp:columns -->
-									<!-- wp:group {"align":"wide"} -->
-									<div class="wp-block-group alignwide"><div class="wp-block-group__inner-container"><!-- wp:heading {"align":"center"} -->
-									<h2 class="has-text-align-center">Do you have questions about the museum, our exhibitions or the store? Get in touch below!</h2>
-									<!-- /wp:heading --></div></div>
-									<!-- /wp:group -->
-									<!-- wp:group {"backgroundColor":"primary","align":"wide"} -->
-									<div class="wp-block-group alignwide has-primary-background-color has-background"><div class="wp-block-group__inner-container"><!-- wp:columns -->
-									<div class="wp-block-columns"><!-- wp:column -->
-									<div class="wp-block-column"><!-- wp:heading {"align":"center","level":6,"textColor":"background"} -->
-									<h6 class="has-background-color has-text-color has-text-align-center">Address</h6>
-									<!-- /wp:heading -->
-									<!-- wp:paragraph {"align":"center","textColor":"background","fontSize":"large"} -->
-									<p class="has-text-color has-text-align-center has-large-font-size has-background-color">123 Main Street<br>New York, NY 10001</p>
-									<!-- /wp:paragraph --></div>
-									<!-- /wp:column -->
-									<!-- wp:column -->
-									<div class="wp-block-column"><!-- wp:heading {"align":"center","level":6,"textColor":"background"} -->
-									<h6 class="has-background-color has-text-color has-text-align-center">Our Hours</h6>
-									<!-- /wp:heading -->
-									<!-- wp:paragraph {"align":"center","textColor":"background","fontSize":"large"} -->
-									<p class="has-text-color has-text-align-center has-large-font-size has-background-color">Weekdays  9:00 — 5:00<br>Weekends 11:00 — 3:00</p>
-									<!-- /wp:paragraph --></div>
-									<!-- /wp:column --></div>
-									<!-- /wp:columns --></div></div>
-									<!-- /wp:group -->'
-				],
-
-				'about' => [
-					'post_content' => '<!-- wp:columns {"align":"full"} -->
-						<div class="wp-block-columns alignfull"><!-- wp:column -->
-						<div class="wp-block-column"><!-- wp:heading {"level":1,"className":"is-style-header-site-title"} -->
-						<h1 class="is-style-header-site-title"><a href="/">Twenty Twenty</a></h1>
-						<!-- /wp:heading -->
-
-						<!-- wp:paragraph {"className":"site-description"} -->
-						<p class="site-description">Just another WordPress site</p>
-						<!-- /wp:paragraph --></div>
-						<!-- /wp:column -->
-
-						<!-- wp:column -->
-						<div class="wp-block-column"><!-- wp:navigation {"className":"is-style-header-nav","itemsJustification":"right"} -->
-						<!-- wp:navigation-link {"label":"Home","title":"/","type":"page","url":"/"} /-->
-
-						<!-- wp:navigation-link {"label":"Exhibitions","title":"Exhibitions","type":"page","url":"/exhibitions/"} /-->
-
-						<!-- wp:navigation-link {"label":"About Us","title":"/about","type":"page","url":"/about","className":"has-submenu"} -->
-						<!-- wp:navigation-link {"label":"Contact","title":"/contact","url":"/contact"} /-->
-						<!-- /wp:navigation-link -->
-
-						<!-- wp:navigation-link {"label":"News","title":"News","type":"page","url":"/blog/"} /-->
-						<!-- /wp:navigation --></div>
-						<!-- /wp:column --></div>
-						<!-- /wp:columns -->'
-				],
-
-				'blog' => [
-					'post_content' => '<!-- wp:spacer -->
-					<div style="height:100px" aria-hidden="true" class="wp-block-spacer"></div>
-					<!-- /wp:spacer -->
-
-					<!-- wp:latest-posts {"align":"center","postsToShow":3,"displayPostContent":true,"displayPostContentRadio":"full_post","displayPostDate":true,"columns":2} /-->'
-				],
-
-			]
+					// Use the above featured image with the predefined about page.
+					'thumbnail'    => '{{image-opening}}',
+					'post_content' => join(
+						'',
+						array(
+							'<!-- wp:image {"align":"wide","sizeSlug":"large","className":"is-style-default"} -->',
+							'<figure class="wp-block-image alignwide size-large is-style-default"><img src="' . get_theme_file_uri() . '/assets/images/2020-landscape-1.png" alt=""/></figure>',
+							'<!-- /wp:image -->',
+							'<!-- wp:group {"align":"wide"} -->',
+							'<div class="wp-block-group alignwide"><div class="wp-block-group__inner-container"><!-- wp:heading {"align":"center"} -->',
+							'<h2 class="has-text-align-center">' . __( 'The premier destination for modern art in Northern Sweden. Open from 10 AM to 6 PM every day during the summer months.', 'twentytwenty' ) . '</h2>',
+							'<!-- /wp:heading --></div></div>',
+							'<!-- /wp:group -->',
+							'<!-- wp:columns {"align":"wide"} -->',
+							'<div class="wp-block-columns alignwide"><!-- wp:column -->',
+							'<div class="wp-block-column"><!-- wp:group -->',
+							'<div class="wp-block-group"><div class="wp-block-group__inner-container">',
+							'<!-- wp:image {"align":"full","id":37,"sizeSlug":"full"} -->',
+							'<figure class="wp-block-image alignfull size-full"><img src="' . get_theme_file_uri() . '/assets/images/2020-three-quarters-1.png" alt="" class="wp-image-37"/></figure>',
+							'<!-- /wp:image -->',
+							'<!-- wp:heading {"level":3} -->',
+							'<h3>' . __( 'Works and Days', 'twentytwenty' ) . '</h3>',
+							'<!-- /wp:heading -->',
+							'<!-- wp:paragraph -->',
+							'<p>' . __( 'August 1 -- December 1', 'twentytwenty' ) . '</p>',
+							'<!-- /wp:paragraph -->',
+							'<!-- wp:button {"className":"is-style-outline"} -->',
+							'<div class="wp-block-button is-style-outline"><a class="wp-block-button__link" href="https://make.wordpress.org/core/2019/09/27/block-editor-theme-related-updates-in-wordpress-5-3/">' . __( 'Read More', 'twentytwenty' ) . '</a></div>',
+							'<!-- /wp:button --></div></div>',
+							'<!-- /wp:group -->',
+							'<!-- wp:group -->',
+							'<div class="wp-block-group"><div class="wp-block-group__inner-container">',
+							'<!-- wp:image {"align":"full","id":37,"sizeSlug":"full"} -->',
+							'<figure class="wp-block-image alignfull size-full"><img src="' . get_theme_file_uri() . '/assets/images/2020-three-quarters-3.png" alt="" class="wp-image-37"/></figure>',
+							'<!-- /wp:image -->',
+							'<!-- wp:heading {"level":3} -->',
+							'<h3>' . __( 'Theatre of Operations', 'twentytwenty' ) . '</h3>',
+							'<!-- /wp:heading -->',
+							'<!-- wp:paragraph -->',
+							'<p>' . __( 'October 1 -- December 1', 'twentytwenty' ) . '</p>',
+							'<!-- /wp:paragraph -->',
+							'<!-- wp:button {"className":"is-style-outline"} -->',
+							'<div class="wp-block-button is-style-outline"><a class="wp-block-button__link" href="https://make.wordpress.org/core/2019/09/27/block-editor-theme-related-updates-in-wordpress-5-3/">' . __( 'Read More', 'twentytwenty' ) . '</a></div>',
+							'<!-- /wp:button --></div></div>',
+							'<!-- /wp:group --></div>',
+							'<!-- /wp:column -->',
+							'<!-- wp:column -->',
+							'<div class="wp-block-column"><!-- wp:group -->',
+							'<div class="wp-block-group"><div class="wp-block-group__inner-container">',
+							'<!-- wp:image {"align":"full","id":37,"sizeSlug":"full"} -->',
+							'<figure class="wp-block-image alignfull size-full"><img src="' . get_theme_file_uri() . '/assets/images/2020-three-quarters-2.png" alt="" class="wp-image-37"/></figure>',
+							'<!-- /wp:image -->',
+							'<!-- wp:heading {"level":3} -->',
+							'<h3>' . __( 'The Life I Deserve', 'twentytwenty' ) . '</h3>',
+							'<!-- /wp:heading -->',
+							'<!-- wp:paragraph -->',
+							'<p>' . __( 'August 1 -- December 1', 'twentytwenty' ) . '</p>',
+							'<!-- /wp:paragraph -->',
+							'<!-- wp:button {"className":"is-style-outline"} -->',
+							'<div class="wp-block-button is-style-outline"><a class="wp-block-button__link" href="https://make.wordpress.org/core/2019/09/27/block-editor-theme-related-updates-in-wordpress-5-3/">' . __( 'Read More', 'twentytwenty' ) . '</a></div>',
+							'<!-- /wp:button --></div></div>',
+							'<!-- /wp:group -->',
+							'<!-- wp:group -->',
+							'<div class="wp-block-group"><div class="wp-block-group__inner-container">',
+							'<!-- wp:image {"align":"full","id":37,"sizeSlug":"full"} -->',
+							'<figure class="wp-block-image alignfull size-full"><img src="' . get_theme_file_uri() . '/assets/images/2020-three-quarters-4.png" alt="" class="wp-image-37"/></figure>',
+							'<!-- /wp:image -->',
+							'<!-- wp:heading {"level":3} -->',
+							'<h3>' . __( 'From Signac to Matisse', 'twentytwenty' ) . '</h3>',
+							'<!-- /wp:heading -->',
+							'<!-- wp:paragraph -->',
+							'<p>' . __( 'October 1 -- December 1', 'twentytwenty' ) . '</p>',
+							'<!-- /wp:paragraph -->',
+							'<!-- wp:button {"className":"is-style-outline"} -->',
+							'<div class="wp-block-button is-style-outline"><a class="wp-block-button__link" href="https://make.wordpress.org/core/2019/09/27/block-editor-theme-related-updates-in-wordpress-5-3/">' . __( 'Read More', 'twentytwenty' ) . '</a></div>',
+							'<!-- /wp:button --></div></div>',
+							'<!-- /wp:group --></div>',
+							'<!-- /wp:column --></div>',
+							'<!-- /wp:columns -->',
+							'<!-- wp:image {"align":"full","id":37,"sizeSlug":"full"} -->',
+							'<figure class="wp-block-image alignfull size-full"><img src="' . get_theme_file_uri() . '/assets/images/2020-landscape-2.png" alt="" class="wp-image-37"/></figure>',
+							'<!-- /wp:image -->',
+							'<!-- wp:group {"align":"wide"} -->',
+							'<div class="wp-block-group alignwide"><div class="wp-block-group__inner-container"><!-- wp:heading {"align":"center","textColor":"accent"} -->',
+							'<h2 class="has-accent-color has-text-align-center">' . __( '”Cyborgs, as the philosopher Donna Haraway established, are not reverent. They do not remember the cosmos.”', 'twentytwenty' ) . '</h2>',
+							'<!-- /wp:heading --></div></div>',
+							'<!-- /wp:group -->',
+							'<!-- wp:paragraph {"dropCap":true} -->',
+							'<p class="has-drop-cap">' . __( 'With seven floors of striking architecture, UMoMA shows exhibitions of international contemporary art, sometimes along with art historical retrospectives. Existential, political and philosophical issues are intrinsic to our programme. As visitor you are invited to guided tours artist talks, lectures, film screenings and other events with free admission', 'twentytwenty' ) . '</p>',
+							'<!-- /wp:paragraph -->',
+							'<!-- wp:paragraph -->',
+							'<p>' . __( 'The exhibitions are produced by UMoMA in collaboration with artists and museums around the world and they often attract international attention. UMoMA has received a Special Commendation from the European Museum of the Year, and was among the top candidates for the Swedish Museum of the Year Award as well as for the Council of Europe Museum Prize.', 'twentytwenty' ) . '</p>',
+							'<!-- /wp:paragraph -->',
+							'<!-- wp:paragraph -->',
+							'<p></p>',
+							'<!-- /wp:paragraph -->',
+							'<!-- wp:group {"customBackgroundColor":"#ffffff","align":"wide"} -->',
+							'<div class="wp-block-group alignwide has-background" style="background-color:#ffffff"><div class="wp-block-group__inner-container"><!-- wp:group -->',
+							'<div class="wp-block-group"><div class="wp-block-group__inner-container"><!-- wp:heading {"align":"center"} -->',
+							'<h2 class="has-text-align-center">' . __( 'Become a Member and Get Exclusive Offers!', 'twentytwenty' ) . '</h2>',
+							'<!-- /wp:heading -->',
+							'<!-- wp:paragraph {"align":"center"} -->',
+							'<p class="has-text-align-center">' . __( 'Members get access to exclusive exhibits and sales. Our memberships cost $99.99 and are billed annually.', 'twentytwenty' ) . '</p>',
+							'<!-- /wp:paragraph -->',
+							'<!-- wp:button {"align":"center"} -->',
+							'<div class="wp-block-button aligncenter"><a class="wp-block-button__link" href="https://make.wordpress.org/core/2019/09/27/block-editor-theme-related-updates-in-wordpress-5-3/">' . __( 'Join the Club', 'twentytwenty' ) . '</a></div>',
+							'<!-- /wp:button --></div></div>',
+							'<!-- /wp:group --></div></div>',
+							'<!-- /wp:group -->',
+							'<!-- wp:gallery {"ids":[39,38],"align":"wide"} -->',
+							'<figure class="wp-block-gallery alignwide columns-2 is-cropped"><ul class="blocks-gallery-grid"><li class="blocks-gallery-item"><figure><img src="' . get_theme_file_uri() . '/assets/images/2020-square-2.png" alt="" data-id="39" data-full-url="' . get_theme_file_uri() . '/assets/images/2020-square-2.png" data-link="assets/images/2020-square-2/" class="wp-image-39"/></figure></li><li class="blocks-gallery-item"><figure><img src="' . get_theme_file_uri() . '/assets/images/2020-square-1.png" alt="" data-id="38" data-full-url="' . get_theme_file_uri() . '/assets/images/2020-square-1.png" data-link="' . get_theme_file_uri() . '/assets/images/2020-square-1/" class="wp-image-38"/></figure></li></ul></figure>',
+							'<!-- /wp:gallery -->',
+						),
+					),
+				),
+				'about',
+				'contact',
+				'blog' => array(
+					'post_type'    => 'page',
+					'post_title'   => __( 'Blog', 'twentytwenty-blocks' ),
+					'post_content' => join(
+						'<!-- wp:latest-posts {"postsToShow":100,"displayPostContent":true,"displayPostDate":true} /-->',
+					),
+				),
+			),
 		]);
     }
 
