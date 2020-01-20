@@ -14,7 +14,7 @@ if ( ! function_exists( 'twentytwentyblocks_theme_support' ) ) :
 		add_theme_support( 'editor-styles' );
 
 		// Enqueue editor styles.
-		add_editor_style( 'twentytwenty-styles/style-editor.css' );
+		add_editor_style( 'twentytwenty-styles/editor-style-block.css' );
 
 		// Add custom editor font sizes.
 		add_theme_support(
