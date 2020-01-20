@@ -51,6 +51,14 @@ Tags: one-column, flexible-header, accessibility-ready, custom-colors, custom-me
 	margin-bottom: 1rem;
 }
 
+@media screen and (min-width: 600px) {
+
+	/* Prevent site title & menu from shifting over unintentionally between 600-768px viewports. */
+	.wp-site-blocks .site-header > * > *:last-child {
+		margin-left: 0;
+	}
+}
+
 @media only screen and (min-width: 768px) {
 	.site-header,
 	.site-footer {
