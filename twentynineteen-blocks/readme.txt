@@ -10,23 +10,23 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Our 2019 default theme is designed to show off the power of the block editor. This version uses block templates.
 
 == Description ==
-Twenty Nineteen, but built using block templates. This also includes starter content to begin replicating the Twenty Ninteen demo site. 
+Twenty Nineteen, but built using block templates.
 
 To install: 
 
 1. Create a fresh WordPress site
 2. Clone this repository or upload a zip into the site’s themes directory
 3. Install the Gutenberg plugin
-4. Enable the Full Site Editing and Full Site Editing Demo Templates experiments in the Gutenberg > Experiments panel.
+4. Enable the Full Site Editing experiment in the Gutenberg > Experiments panel.
 5. Activate the "Twenty Nineteen Blocks" theme from within Appearance > Themes.
 6. Visit the Customizer and hit "Publish".
 
-Compare the resulting site to the Twenty Nineteen Demo site. It should look pretty similar.
+Compare the resulting site to the original Twenty Nineteen Demo theme.
 
 == Changelog ==
 
 = 1.0 =
-* Released: January 13, 2020
+* Released: January 20, 2020
 
 Initial release
 
