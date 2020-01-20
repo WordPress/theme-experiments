@@ -51,10 +51,7 @@ if ( ! function_exists( 'gutenberg_starter_theme_blocks_support' ) ) :
 			],
 			// Starter pages to include
 			'posts' => [
-				'home' => [
-					'post_title' => _x( 'Welcome to the Gutenberg Editor', 'gutenberg-starter-theme-blocks' ),
-					'post_content' => '<!-- wp:template-part {"slug":"example-post","theme":"gutenberg-starter-theme-blocks"} -->'
-				],
+				'home',
 				'blog' => [
 					'post_title' => _x( 'Blog', 'gutenberg-starter-theme-blocks' ),
 					'post_content' => '<!-- wp:template-part {"slug":"blog","theme":"gutenberg-starter-theme-blocks"} -->'
