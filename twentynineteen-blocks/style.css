@@ -23,10 +23,11 @@ Tags: one-column, flexible-header, accessibility-ready, custom-colors, custom-me
 
 .site-header,
 .site-footer {
-  margin: calc(2 * 1rem) 0;
+  margin: 0;
+  padding: 1rem;
 }
 
-.site-branding {
+.wp-site-blocks .site-header > .site-branding {
 	margin: 0;
 }
 
@@ -47,15 +48,19 @@ Tags: one-column, flexible-header, accessibility-ready, custom-colors, custom-me
 .site-branding .wp-block-column:first-child {
 	flex-basis: 64px !important;
 	flex-shrink: 0;
+	margin-bottom: 1rem;
 }
 
 @media only screen and (min-width: 768px) {
 	.site-header,
 	.site-footer {
-		margin: 0 calc(10% + 60px);
+		margin: 2rem calc(10% + 60px);
+		padding-left: 0;
+		padding-right: 0;
 	}
 
 	.site-branding .wp-block-column:not(:first-child) {
+		margin-bottom: 0;
 		margin-left: 1rem;
 	}
 }
