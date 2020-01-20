@@ -1,0 +1,119 @@
+/*
+Theme Name: Twenty Nineteen Blocks
+Author: the WordPress team
+Author URI: https://wordpress.org/
+Description: Twenty Nineteen, but only using block templates.
+Requires at least: WordPress 4.9.6
+Version: 0.1
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: twentynineteen-blocks
+Tags: one-column, flexible-header, accessibility-ready, custom-colors, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, rtl-language-support, sticky-post, threaded-comments, translation-ready
+*/
+
+/* 
+ * Import the default Twenty Nineteen styles.
+ * File is almost identical to the original, except the scope of some rules 
+ * has been adjusted to include the new .wp-site-blocks, .wp-block-header, 
+ * and .wp-block-footer areas. Most of these changes occurred in _blocks.scss. 
+*/
+@import url('twentynineteen-styles/style.css');
+
+/* Site header and footer styles */
+
+.site-header,
+.site-footer {
+  margin: 0;
+  padding: 1rem;
+}
+
+.wp-site-blocks .site-header > .site-branding {
+	margin: 0;
+}
+
+.site-branding h1,
+.site-branding .site-title {
+	display: inline-block;
+	color: #000;
+	font-size: 1.125em;
+	margin-bottom: 0;
+	margin-right: 0.5em;
+}
+
+.site-branding h1:before,
+.site-branding .site-title:before {
+	display: none;
+}
+
+.site-branding .wp-block-column:first-child {
+	flex-basis: 64px !important;
+	flex-shrink: 0;
+	margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 600px) {
+
+	/* Prevent site title & menu from shifting over unintentionally between 600-768px viewports. */
+	.wp-site-blocks .site-header > * > *:last-child {
+		margin-left: 0;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.site-header,
+	.site-footer {
+		margin: 2rem calc(10% + 60px);
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.site-branding .wp-block-column:not(:first-child) {
+		margin-bottom: 0;
+		margin-left: 1rem;
+	}
+}
+
+/* Post title positioning */
+
+.wp-site-blocks .site-content > h1:first-child {
+  max-width: calc(100% - (2 * 1rem));
+  margin: 0 1rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .wp-site-blocks .site-content > h1:first-child {
+    max-width: 80%;
+    margin: 0 10%;
+    padding: 0 60px;
+  }
+}
+
+/* Site navigation styles */
+
+.wp-block-navigation {
+	font-size: 1.125em;
+	font-weight: 700;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+.wp-block-navigation > ul > li > a {
+	padding: 0 0.5rem 0 0;
+	line-height: 1.6;
+}
+
+/* Large featured image headers inside of cover blocks */
+
+.entry-content .wp-block-cover.site-featured-image {
+	display: flex;
+	align-items: flex-end;
+	min-height: calc( 100vh - 268px );
+	margin-top: 0;
+}
+
+.entry-content .wp-block-cover.site-featured-image .wp-block-cover__inner-container {
+	width: 100%;
+}
+
+.entry-content .wp-block-cover.site-featured-image h2:before{
+	background: white;
+}
