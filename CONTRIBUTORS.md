@@ -7,5 +7,6 @@ Please let us know and we'll add you.
 
 | GitHub Username | WordPress.org Username|
 | --------------- | --------------------- |
+| @mtias | @mtias |
 | @jffng | @jffng |
 | @kjellr | @kjellr |
