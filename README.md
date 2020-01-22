@@ -27,8 +27,6 @@ Here are some resources that may be useful context for learning more about block
 - [Block-based Theme Documentation (Experimental)](https://developer.wordpress.org/block-editor/developers/themes/block-based-themes/)
 - [Full site editing developing in the Gutenberg repo](https://github.com/WordPress/gutenberg/labels/%5BFeature%5D%20Full%20Site%20Editing)
 - [Defining Content-Block Areas](https://make.wordpress.org/core/2019/09/05/defining-content-block-areas/)
-- [WP Tavern: Themes of the Future](https://wptavern.com/themes-of-the-future-a-design-framework-and-a-master-theme)
-- [Themeshaper: ](https://themeshaper.com/2020/01/21/creating-a-block-based-theme-using-block-templates/)
 
 Questions or Improvements?
 
