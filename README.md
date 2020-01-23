@@ -3,9 +3,11 @@
 ⚠️ These themes are not intended for use on a production site.
 
 ## About
+
 This repository is dedicated to exploring how WordPress themes can best leverage Gutenberg blocks. Each sub-directory contains a WordPress theme that explores some aspect of creating themes using blocks or block templates.
 
 ## Submitting an experiment
+
 We encourage you to submit your experiment to be included! To get started, check out the [contributor's guide](https://github.com/WordPress/theme-experiments/blob/master/CONTRIBUTING.md).
 
 ## Instructions
@@ -22,12 +24,13 @@ If the theme includes starter content, you'll want to install on a fresh site, a
 Tip: WordPress will search for themes inside of subdirectories. If you'd like to test many of the themes experiments, you should be able to clone this entire repository into the `/wp-content/themes/` folder of your test site.  
 
 ## Resources and Background
+
 Here are some resources that may be useful context for learning more about block-based themes:
 
 - [Block-based Theme Documentation (Experimental)](https://developer.wordpress.org/block-editor/developers/themes/block-based-themes/)
 - [Full site editing developing in the Gutenberg repo](https://github.com/WordPress/gutenberg/labels/%5BFeature%5D%20Full%20Site%20Editing)
 - [Defining Content-Block Areas](https://make.wordpress.org/core/2019/09/05/defining-content-block-areas/)
 
-Questions or Improvements?
+## Questions or Improvements?
 
 If you'd like to propose improvements to this repository, feel free to open an [issue](https://github.com/WordPress/theme-experiments/issues) or [PR](https://github.com/WordPress/theme-experiments/pulls).
