@@ -30,4 +30,4 @@ Here are some resources that may be useful context for learning more about block
 
 Questions or Improvements?
 
-If you'd like to propose improvements to this reopsitory, feel free to open an [issue](https://github.com/WordPress/theme-experiments/issues) or [PR](https://github.com/WordPress/theme-experiments/pulls).
+If you'd like to propose improvements to this repository, feel free to open an [issue](https://github.com/WordPress/theme-experiments/issues) or [PR](https://github.com/WordPress/theme-experiments/pulls).
