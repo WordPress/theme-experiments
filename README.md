@@ -12,7 +12,7 @@ We encourage you to submit your experiment to be included! To get started, check
 
 ## Instructions
 
-Most of the themes here rely on experimental Gutenberg functionality that must be turned on manually. Here are general instructions for getting started:
+Most of the themes here rely on experimental Gutenberg functionality that must be turned on manually. We recommend testing with WordPress 5.3 or higher, PHP 7.3 or higher, and the latest version of the [Gutenberg plugin](https://wordpress.org/plugins/gutenberg/). Here are general instructions for getting started:
 
 1. Clone this repository or upload a zip of the theme into your site’s themes directory.
 2. Install the [Gutenberg plugin](https://wordpress.org/plugins/gutenberg/).
