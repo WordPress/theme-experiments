@@ -8,7 +8,7 @@ This theme an experiment using block-based templates and theme starter content t
 
 [Demo](https://parisiennetheme.mystagingwebsite.com/)
 
-It is based on [Johannes](https://github.com/melchoyce/johannes), a block-based theme by [Mel Choyce](https://melchoyce.design/). All images used in this theme were sourced from [this are.na board](https://www.are.na/stephanie-zabala/i-find-these-elegant).
+It is based on [Johannes](https://github.com/melchoyce/johannes), a block-based theme by [Mel Choyce](https://melchoyce.design/). The art direction was inspired by [this are.na board](https://www.are.na/stephanie-zabala/i-find-these-elegant).
 
 ## Getting Started
 
