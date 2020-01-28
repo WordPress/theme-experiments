@@ -101,7 +101,7 @@ if ( ! function_exists( 'twentynineteenblocks_theme_support' ) ) :
 						'',
 						array(
 							'<!-- wp:latest-posts {"postsToShow":100,"displayPostContent":true,"displayPostDate":true} /-->',
-						),
+						)
 					),
 				),
 			]
