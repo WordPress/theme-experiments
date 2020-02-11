@@ -4,6 +4,7 @@
 		"background": "#F3EBE8",
 		"button-text": "white",
 		"button": "#817359",
+		"primary": "#817359",
 		"border": "#DECABF",
 		"border-pre": "#EEE",
 		"link": "#59BACC",
