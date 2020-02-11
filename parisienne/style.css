@@ -96,9 +96,9 @@ html {
 }
 
 body {
-	background: #F3EBE8;
+	background: var(--wp--color--background);
 	box-sizing: border-box;
-	color: #141414;
+	color: var(--wp--color--foreground);
 	font-family: 'Baskerville', serif;
 	font-size: 1.8rem;
 	text-align: left;
@@ -268,13 +268,13 @@ address {
 hr {
 	border-style: solid;
 	border-width: 0.1rem 0 0 0;
-	border-color: #DECABF;
+	border-color: var(--wp--color--border);
 	margin: 4rem auto;
 	max-width: 480px;
 }
 
 a {
-	color: #59BACC;
+	color: var(--wp--color--link);
 	text-decoration: underline;
 }
 
@@ -326,12 +326,12 @@ samp {
 code,
 kbd,
 samp {
-	background: rgba(0, 0, 0, 0.075);
+	background: rgba(0, 0, 0, 0.075); /* TODO: how to make this a design token */
 	border-radius: 0.2rem;
 }
 
 pre {
-	border: 0.1rem solid #eee;
+	border: 0.1rem solid var(--wp--color--border-pre);
 	line-height: 1.5;
 	margin: 4rem 0;
 	overflow: auto;
@@ -372,7 +372,7 @@ object {
 
 figcaption,
 .wp-caption-text {
-	color: #666;
+	color: var(--wp--color--text);
 	display: block;
 	font-size: 1.5rem;
 	font-weight: 500;
@@ -419,7 +419,7 @@ figcaption a,
 
 .site-border {
 	bottom: 1vw;
-	border: 1px solid #DECABF;
+	border: 1px solid var(--wp--color--border);
 	left: 1vw;
 	position: fixed;
 	right: 1vw;
@@ -456,13 +456,13 @@ p.address-align {
 }
 
 .wp-block-navigation a {
-	color: black;
+	color: var(--wp--color--nav-text);
 	font-size: 2.4rem;
 	text-decoration: none;
 }
 
 .wp-block-navigation a:hover {
-	color: #aaa;
+	color: var(--wp--color--nav-text-hover);
 }
 
 
@@ -500,11 +500,11 @@ p.address-align {
 }
 
 .contact-submit button {
-	background-color: #817359;
+	background-color: var(--wp--color--button);
     border: none;
     border-radius: 0;
     box-shadow: none;
-    color: white;
+    color: var(--wp--color--button-text);
     cursor: pointer;
 	display: inline-block;
 	font-family: 'Baskervville', serif;

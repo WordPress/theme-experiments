@@ -1,0 +1,14 @@
+{
+	"color": {
+		"foreground": "#141414",
+		"background": "#F3EBE8",
+		"button-text": "white",
+		"button": "#817359",
+		"border": "#DECABF",
+		"border-pre": "#EEE",
+		"link": "#59BACC",
+		"nav-text-hover": "#AAA",
+		"nav-text": "black",
+		"text": "#666"
+	}
+}
