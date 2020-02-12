@@ -58,11 +58,8 @@ endif;
  * Register and Enqueue Styles.
  */
 function parisienne_register_styles() {
-
 	$theme_version = wp_get_theme()->get( 'Version' );
-
 	wp_enqueue_style( 'parisienne-style', get_stylesheet_uri(), array(), $theme_version );
-
 }
 
 add_action( 'wp_enqueue_scripts', 'parisienne_register_styles' );
@@ -100,6 +97,3 @@ function parisienne_block_editor_settings() {
 	) );
 }
 add_action( 'after_setup_theme', 'parisienne_block_editor_settings' );
-
-add_action('after_setup_theme', function () {
-});
