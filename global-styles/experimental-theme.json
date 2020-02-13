@@ -1,0 +1,20 @@
+{
+	"color": {
+		"foreground": {
+			"base": "red",
+			"headings": "blue"
+		},
+		"background": "green"
+	},
+	"type": {
+		"size": {
+			"base": "36px",
+			"headings": "42px"
+		},
+		"weight": 900,
+		"line-height": {
+			"base": 1.2,
+			"headings": 1.6
+		}
+	}
+}
