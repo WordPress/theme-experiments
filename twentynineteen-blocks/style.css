@@ -97,27 +97,19 @@ Tags: one-column, flexible-header, accessibility-ready, custom-colors, custom-me
 	}
 }
 
-/* Post title positioning */
+/* Site content positioning */
+
+.wp-site-blocks .site-content > .wp-block-group__inner-container > *:not(.align-full):not(.align-wide) {
+  max-width: calc(100% - (2 * 1rem));
+  margin: 0 1rem;
+}
 
 @media only screen and (min-width: 768px) {
 	.wp-site-blocks .site-content > .wp-block-group__inner-container > *:not(.align-full):not(.align-wide) {
 		max-width: 80%;
 		margin: 0 10%;
 		padding: 0 60px;
-	} 
-}
-
-.wp-site-blocks .site-content > .wp-block-group__inner-container > h1:first-child {
-  max-width: calc(100% - (2 * 1rem));
-  margin: 0 1rem;
-}
-
-@media only screen and (min-width: 768px) {
-  .wp-site-blocks .site-content > .wp-block-group__inner-container > h1:first-child {
-    max-width: 80%;
-    margin: 0 10%;
-    padding: 0 60px;
-  }
+	}
 }
 
 /* Latest posts block */
