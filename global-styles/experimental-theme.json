@@ -31,5 +31,12 @@
 				"base": "hotpink"
 			}
 		}
+	},
+	"custom/paragraph-in-quote": {
+		"color": {
+			"foreground": {
+				"base": "red"
+			}
+		}
 	}
 }
