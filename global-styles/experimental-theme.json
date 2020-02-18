@@ -1,26 +1,35 @@
 {
-	"color": {
-		"foreground": {
-			"base": "red",
-			"headings": "blue",
-			"300": "#6c7781",
-			"500": "#555d66",
-			"600": "#40464d"
+	"core": {
+		"color": {
+			"foreground": {
+				"base": "red",
+				"headings": "blue",
+				"300": "#6c7781",
+				"500": "#555d66",
+				"600": "#40464d"
+			},
+			"background": "green",
+			"border": "black"
 		},
-		"background": "green",
-		"border": "black"
+		"type": {
+			"size": {
+				"base": "36px",
+				"headings": "42px",
+				"smaller": "16px"
+			},
+			"weight": 900,
+			"line-height": {
+				"base": 1.2,
+				"headings": 1.6,
+				"smaller": 0.9
+			}
+		}
 	},
-	"type": {
-		"size": {
-			"base": "36px",
-			"headings": "42px",
-			"smaller": "16px"
-		},
-		"weight": 900,
-		"line-height": {
-			"base": 1.2,
-			"headings": 1.6,
-			"smaller": 0.9
+	"core/paragraph": {
+		"color": {
+			"foreground": {
+				"base": "hotpink"
+			}
 		}
 	}
 }
