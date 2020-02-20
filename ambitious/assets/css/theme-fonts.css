@@ -1,0 +1,52 @@
+/*
+ * Embed Theme Fonts
+ *
+ * Font Face code generated with Google Webfonts Helper by Mario Ranftl
+ * https://github.com/majodev/google-webfonts-helper/
+ *
+ * @package Harrison
+ */
+
+/* barlow-regular - latin-ext_latin */
+@font-face {
+	font-family: 'Barlow';
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: local('Barlow Regular'), local('Barlow-Regular'),
+		url('../fonts/barlow-v4-latin-ext_latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+		url('../fonts/barlow-v4-latin-ext_latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* barlow-italic - latin-ext_latin */
+@font-face {
+	font-family: 'Barlow';
+	font-style: italic;
+	font-weight: 400;
+	font-display: swap;
+	src: local('Barlow Italic'), local('Barlow-Italic'),
+		url('../fonts/barlow-v4-latin-ext_latin-italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+		url('../fonts/barlow-v4-latin-ext_latin-italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* barlow-700 - latin-ext_latin */
+@font-face {
+	font-family: 'Barlow';
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+	src: local('Barlow Bold'), local('Barlow-Bold'),
+		url('../fonts/barlow-v4-latin-ext_latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+		url('../fonts/barlow-v4-latin-ext_latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* barlow-700italic - latin-ext_latin */
+@font-face {
+	font-family: 'Barlow';
+	font-style: italic;
+	font-weight: 700;
+	font-display: swap;
+	src: local('Barlow Bold Italic'), local('Barlow-BoldItalic'),
+		url('../fonts/barlow-v4-latin-ext_latin-700italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+		url('../fonts/barlow-v4-latin-ext_latin-700italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
