@@ -1,42 +1,31 @@
 {
 	"core": {
 		"color": {
-			"foreground": {
-				"base": "red",
-				"headings": "blue",
-				"300": "#6c7781",
-				"500": "#555d66",
-				"600": "#40464d"
-			},
-			"background": "white",
-			"border": "black"
+			"text": "#000",
+			"background": "#fff",
+			"primary": "#00f"
 		},
-		"type": {
-			"size": {
-				"base": "36px",
-				"headings": "42px",
-				"smaller": "16px"
-			},
-			"weight": 900,
-			"line-height": {
-				"base": 1.2,
-				"headings": 1.6,
-				"smaller": 0.9
-			}
+		"font": {
+			"size": 16,
+			"scale": 1.2,
+			"weight": 400
+		},
+		"line-height": 1.5
+	},
+	"core/heading": {
+		"font": {
+			"weight": 600
 		}
 	},
 	"core/paragraph": {
 		"color": {
-			"foreground": {
-				"base": "hotpink"
-			}
-		}
+			"text": "#000"
+		},
+		"line-height": 1
 	},
-	"custom/paragraph-in-quote": {
-		"color": {
-			"foreground": {
-				"base": "red"
-			}
+	"core/quote": {
+		"font": {
+			"size": 24
 		}
 	}
 }
