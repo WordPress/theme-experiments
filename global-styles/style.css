@@ -1,9 +1,3 @@
-body {
-	background-color: var(--wp--color--background);
-	/*
-	 * Blocks that don't declare any can inherit from body.
-	*/
-	/* color: var(--wp--color--foreground--base);
-	font-size: var(--wp--type--base--size--base);
-	line-height: var(--wp--type--base--line-height--base); */
-}
+@import "style-block-heading.css";
+@import "style-block-paragraph.css";
+@import "style-block-quote.css";

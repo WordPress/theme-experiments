@@ -1,31 +1,21 @@
 {
 	"core": {
-		"color": {
-			"text": "#000",
-			"background": "#fff",
-			"primary": "#00f"
-		},
-		"font": {
-			"size": 16,
-			"scale": 1.2,
-			"weight": 400
-		},
+		"color-text": "#000",
+		"color-background": "#fff",
+		"color-primary": "#00f",
+		"font-size": 16,
+		"font-scale": 1.2,
+		"font-weight": 400,
 		"line-height": 1.5
 	},
 	"core/heading": {
-		"font": {
-			"weight": 600
-		}
+		"font-weight": 600
 	},
 	"core/paragraph": {
-		"color": {
-			"text": "#000"
-		},
+		"color-text": "#000",
 		"line-height": 1
 	},
 	"core/quote": {
-		"font": {
-			"size": 24
-		}
+		"font-size": 24
 	}
 }

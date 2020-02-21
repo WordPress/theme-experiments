@@ -1,0 +1,34 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: var(--wp-color--text);
+	font-weight: var(--wp-heading--fontWeight);
+	line-height: var(--wp-typography--titleLineHeight);
+}
+
+h1 {
+	font-size: var(--wp-typography--fontSizeH1);
+}
+
+h2 {
+	font-size: var(--wp-typography--fontSizeH2);
+}
+
+h3 {
+	font-size: var(--wp-typography--fontSizeH3);
+}
+
+h4 {
+	font-size: var(--wp-typography--fontSizeH4);
+}
+
+h5 {
+	font-size: var(--wp-typography--fontSizeH5);
+}
+
+h6 {
+	font-size: var(--wp-typography--fontSizeH6);
+}

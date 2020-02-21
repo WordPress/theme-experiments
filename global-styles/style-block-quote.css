@@ -1,0 +1,3 @@
+.wp-block-quote p {
+	font-size: var(--wp-quote--fontSize);
+}
