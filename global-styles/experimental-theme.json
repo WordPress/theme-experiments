@@ -1,8 +1,8 @@
 {
 	"color": {
-		"text": "#000",
 		"background": "#fff",
-		"primary": "#00f"
+		"primary": "#00f",
+		"text": "#000"
 	},
 	"typography": {
 		"font-scale": 1.2,
@@ -13,18 +13,10 @@
 		"font-size-h4": "23px",
 		"font-size-h5": "19px",
 		"font-size-h6": "17px",
+		"font-size-quote": "24px",
 		"font-weight": 400,
+		"font-weight-heading": 600,
 		"line-height": 1.5,
-		"title-line-height": 1.2
-	},
-	"heading": {
-		"font-weight": 600
-	},
-	"paragraph": {
-		"line-height": 1,
-		"color": "#000"
-	},
-	"quote": {
-		"font-size": "24px"
+		"line-height-heading": 1.2
 	}
 }

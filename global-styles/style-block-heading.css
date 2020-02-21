@@ -5,8 +5,8 @@ h4,
 h5,
 h6 {
 	color: var(--wp--color--text);
-	font-weight: var(--wp--heading--font-weight);
-	line-height: var(--wp--typography--title-line-height);
+	font-weight: var(--wp--typography--font-weight-heading);
+	line-height: var(--wp--typography--line-height-heading);
 }
 
 h1 {

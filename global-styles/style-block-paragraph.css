@@ -1,6 +1,6 @@
 p {
-	color: var(--wp--paragraph--color, var(--wp--color--text));
+	color: var(--wp--color--text);
 	font-size: var(--wp--typography--font-size);
 	font-weight: var(--wp--typography--font-weight);
-	line-height: var(--wp--paragraph--line-height, var(--wp--typography--line-height));
+	line-height: var(--wp--typography--line-height);
 }
