@@ -5,26 +5,26 @@
 		"primary": "#00f"
 	},
 	"typography": {
-		"fontSize": "16px",
-		"fontSizeH1": "39px",
-		"fontSizeH2": "33px",
-		"fontSizeH3": "27px",
-		"fontSizeH4": "23px",
-		"fontSizeH5": "19px",
-		"fontSizeH6": "17px",
-		"lineHeight": 1.5,
-		"titleLineHeight": 1.2,
-		"fontScale": 1.2,
-		"fontWeight": 400
+		"font-scale": 1.2,
+		"font-size": "16px",
+		"font-size-h1": "39px",
+		"font-size-h2": "33px",
+		"font-size-h3": "27px",
+		"font-size-h4": "23px",
+		"font-size-h5": "19px",
+		"font-size-h6": "17px",
+		"font-weight": 400,
+		"line-height": 1.5,
+		"title-line-height": 1.2
 	},
 	"heading": {
-		"fontWeight": 600
-	},
-	"quote": {
-		"fontSize": "24px"
+		"font-weight": 600
 	},
 	"paragraph": {
-		"color": "#000",
-		"lineHeight": 1
+		"line-height": 1,
+		"color": "#000"
+	},
+	"quote": {
+		"font-size": "24px"
 	}
 }
