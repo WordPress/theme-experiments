@@ -20,3 +20,8 @@ function global_styles_experimental_theme_register_styles() {
 	);
 }
 add_action( 'wp_enqueue_scripts', 'global_styles_experimental_theme_register_styles' );
+
+// Load styles in edit-site,
+// which doesn't use the add_editor_styles registration mechanism
+// so styles aren't wrapped by .editor-styles-wrapper.
+add_action( 'admin_enqueue_scripts', 'global_styles_experimental_theme_register_styles' );
