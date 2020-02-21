@@ -1,21 +1,30 @@
 {
-	"core": {
-		"color-text": "#000",
-		"color-background": "#fff",
-		"color-primary": "#00f",
-		"font-size": 16,
-		"font-scale": 1.2,
-		"font-weight": 400,
-		"line-height": 1.5
+	"color": {
+		"text": "#000",
+		"background": "#fff",
+		"primary": "#00f"
 	},
-	"core/heading": {
-		"font-weight": 600
+	"typography": {
+		"fontSize": "16px",
+		"fontSizeH1": "39px",
+		"fontSizeH2": "33px",
+		"fontSizeH3": "27px",
+		"fontSizeH4": "23px",
+		"fontSizeH5": "19px",
+		"fontSizeH6": "17px",
+		"lineHeight": 1.5,
+		"titleLineHeight": 1.2,
+		"fontScale": 1.2,
+		"fontWeight": 400
 	},
-	"core/paragraph": {
-		"color-text": "#000",
-		"line-height": 1
+	"heading": {
+		"fontWeight": 600
 	},
-	"core/quote": {
-		"font-size": 24
+	"quote": {
+		"fontSize": "24px"
+	},
+	"paragraph": {
+		"color": "#000",
+		"lineHeight": 1
 	}
 }
