@@ -10,25 +10,25 @@ h6 {
 }
 
 h1 {
-	font-size: var(--wp--typography--font-size-h1);
+	font-size: var(--wp--typography--font-size-heading-1);
 }
 
 h2 {
-	font-size: var(--wp--typography--font-size-h2);
+	font-size: var(--wp--typography--font-size-heading-2);
 }
 
 h3 {
-	font-size: var(--wp--typography--font-size-h3);
+	font-size: var(--wp--typography--font-size-heading-3);
 }
 
 h4 {
-	font-size: var(--wp--typography--font-size-h4);
+	font-size: var(--wp--typography--font-size-heading-4);
 }
 
 h5 {
-	font-size: var(--wp--typography--font-size-h5);
+	font-size: var(--wp--typography--font-size-heading-5);
 }
 
 h6 {
-	font-size: var(--wp--typography--font-size-h6);
+	font-size: var(--wp--typography--font-size-heading-6);
 }
