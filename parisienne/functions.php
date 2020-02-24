@@ -32,21 +32,25 @@ if ( ! function_exists( 'parisienne_theme_support' ) ) :
 			// Static front page set to Home, posts page set to Blog
 			'options' => [
 				'show_on_front' => 'page',
-				'page_on_front' => '{{home}}',
-				'page_for_posts' => '{{blog}}',
+				'page_on_front' => '{{home}}'
 			],
 			// Starter pages to include
 			'posts' => [
 				'home' => [
-					'post_content' => '<!-- wp:template-part {"slug":"cover","theme":"parisienne"} -->'
+					'post_type'    => 'page',
+					'post_title'   => __( 'Home', 'home'  ),
+					'post_content' => file_get_contents( get_template_directory_uri() . '/block-starter-content/home.html'  )
 				],
 				'about' => [
-					'post_content' => '<!-- wp:template-part {"slug":"about","theme":"parisienne"} -->'
+					'post_type'    => 'page',
+					'post_title'   => __( 'About', 'about'  ),
+					'post_content' => file_get_contents( get_template_directory_uri() . '/block-starter-content/about.html'  )
 				],
 				'contact' => [
-					'post_content' => '<!-- wp:template-part {"slug":"contact","theme":"parisienne"} -->'
-				],
-				'blog'
+					'post_type'    => 'page',
+					'post_title'   => __( 'Contact', 'contact'  ),
+					'post_content' => file_get_contents( get_template_directory_uri() . '/block-starter-content/contact.html'  )
+				]
 			]
 		]);
 
@@ -64,14 +68,12 @@ function parisienne_register_styles() {
 
 add_action( 'wp_enqueue_scripts', 'parisienne_register_styles' );
 
-
 /**
  * Block Editor Settings.
  * Add custom colors to the block editor.
  */
 
 function parisienne_block_editor_settings() {
-
 	// Editor Color Palette
 	add_theme_support( 'editor-color-palette', array(
 		array(
@@ -96,4 +98,5 @@ function parisienne_block_editor_settings() {
 		),
 	) );
 }
+
 add_action( 'after_setup_theme', 'parisienne_block_editor_settings' );
