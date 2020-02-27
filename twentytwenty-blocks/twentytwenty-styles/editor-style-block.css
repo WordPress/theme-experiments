@@ -4,8 +4,8 @@
 /* ------------------------------------------- */
 
 .editor-styles-wrapper {
-	background: #f5efe0;
-	color: #000;
+	background: var(--wp--color--background);
+	color: var(--wp--color--text);
 	letter-spacing: -0.015em;
 	-moz-font-smoothing: antialiased;
 	-webkit-font-smoothing: antialiased;
@@ -163,21 +163,21 @@ Inter variable font. Usage:
 /* CUSTOM COLORS */
 
 :root .has-accent-color {
-	color: #cd2653;
+	color: var(--wp--color--primary);
 }
 
 :root .has-accent-background-color {
-	background-color: #cd2653;
+	background-color: var(--wp--color--primary);
 	color: #fff;
 }
 
 :root .has-primary-color {
-	color: #000;
+	color: var(--wp--color--text);
 }
 
 :root .has-primary-background-color {
-	background-color: #000;
-	color: #f5efe0;
+	background-color: var(--wp--color--text);
+	color: var(--wp--color--background);
 }
 
 :root .has-secondary-color {
@@ -195,32 +195,32 @@ Inter variable font. Usage:
 
 :root .has-subtle-background-background-color {
 	background-color: #dcd7ca;
-	color: #000;
+	color: var(--wp--color--text);
 }
 
 :root .has-background-color {
-	color: #f5efe0;
+	color: var(--wp--color--background);
 }
 
 :root .has-background-background-color {
-	background-color: #f5efe0;
-	color: #000;
+	background-color: var(--wp--color--background);
+	color: var(--wp--color--text);
 }
 
 /* GENERAL COLORS */
 
 .has-black-background-color {
-	background-color: #000;
+	background-color: var(--wp--color--text);
 	color: #fff;
 }
 
 .has-white-background-color {
 	background-color: #fff;
-	color: #000;
+	color: var(--wp--color--text);
 }
 
 .has-black-color {
-	color: #000;
+	color: var(--wp--color--text);
 }
 
 .has-white-color {
@@ -231,7 +231,7 @@ Inter variable font. Usage:
 /* Typography -------------------------------- */
 
 .editor-styles-wrapper .editor-block-list__layout a {
-	color: #cd2653;
+	color: var(--wp--color--primary);
 	text-decoration: underline;
 }
 
@@ -304,7 +304,7 @@ Inter variable font. Usage:
 /* DROP CAP */
 
 .editor-styles-wrapper .has-drop-cap:not(:focus)::first-letter {
-	color: #cd2653;
+	color: var(--wp--color--primary);
 	font-size: 5.1em;
 	font-weight: 800;
 	margin: 0.05em 0.1em 0 0;
@@ -621,7 +621,7 @@ hr.wp-block-separator.is-style-dots::before {
 }
 
 .editor-styles-wrapper .wp-block-quote {
-	border-color: #cd2653;
+	border-color: var(--wp--color--primary);
 	border-style: solid;
 	border-width: 0 0 0 2px;
 	margin: 20px 0;
@@ -769,7 +769,7 @@ hr.wp-block-separator.is-style-dots::before {
 .editor-styles-wrapper .wp-block-pullquote::before {
 	background: #fff;
 	border-radius: 50%;
-	color: #cd2653;
+	color: var(--wp--color--primary);
 	content: "”";
 	display: block;
 	font-size: 62px;
@@ -891,7 +891,7 @@ hr.wp-block-separator.is-style-dots::before {
 
 .editor-styles-wrapper .wp-block-button__link,
 .editor-styles-wrapper .wp-block-file__button {
-	background: #cd2653;
+	background: var(--wp--color--primary);
 	border-radius: 0;
 	color: #fff;
 	font-size: 15px;
@@ -911,7 +911,7 @@ hr.wp-block-separator.is-style-dots::before {
 .editor-styles-wrapper .is-style-outline .wp-block-button__link {
 	background: none;
 	border-color: currentColor;
-	color: #cd2653;
+	color: var(--wp--color--primary);
 	padding: calc(1.1em - 2px) calc(1.44em - 2px);
 }
 
@@ -1038,7 +1038,7 @@ hr.wp-block-separator.is-style-dots::before {
 }
 
 .editor-styles-wrapper .wp-block-file .wp-block-file__textlink {
-	color: #cd2653;
+	color: var(--wp--color--primary);
 	font-weight: 700;
 	text-decoration: none;
 }
