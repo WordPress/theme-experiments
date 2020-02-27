@@ -1,3 +1,9 @@
+/*
+ * edit-site doesn't transform the styles
+ * so we have to target .editor-styles-wrapper manually.
+ */
+.editor-styles-wrapper,
 body {
 	box-sizing: border-box;
+	background-color: var(--wp--color--background);
 }
