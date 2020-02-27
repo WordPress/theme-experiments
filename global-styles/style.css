@@ -17,6 +17,11 @@ Use it to make something cool, have fun, and share what you've learned
 with others.
 */
 
+/*
+ * These block styles are meant to be added to the blocks themselves.
+ * We only have them here to have a safe playground
+ * while we figure out all the loose ends.
+ */
 @import "style-block-heading.css";
 @import "style-block-paragraph.css";
 @import "style-block-quote.css";
