@@ -13,7 +13,8 @@
 
 .editor-styles-wrapper > * {
 	font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
-	font-size: 18px;
+	font-size: var(--wp--typography--font-size);
+	font-weight: var(--wp--typography--font-weight);
 }
 
 @supports ( font-variation-settings: normal ) {
@@ -110,7 +111,7 @@ Inter variable font. Usage:
 
 .editor-styles-wrapper .editor-rich-text__tinymce,
 .editor-styles-wrapper .editor-rich-text__tinymce.mce-content-body {
-	line-height: 1.5;
+	line-height: var(--wp--typography--line-height);
 }
 
 
@@ -249,21 +250,21 @@ Inter variable font. Usage:
 .editor-styles-wrapper .wp-block h6 {
 	font-feature-settings: "lnum";
 	font-variant-numeric: lining-nums;
-	font-weight: 700;
+	font-weight: var(--wp--typography--font-weight-heading);
 	letter-spacing: -0.0415625em;
-	line-height: 1.25;
+	line-height: var(--wp--typography--line-height-heading);
 	margin: 40px 0 25px;
 }
 
 .editor-post-title__block .editor-post-title__input,
 .editor-styles-wrapper .wp-block h1 {
 	font-size: 36px;
-	font-weight: 800;
+	font-weight: bolder;
 	line-height: 1.138888889;
 }
 
 .editor-styles-wrapper .wp-block h2 {
-	font-size: 32px;
+	font-size: var(--wp--typography--font-size-heading-2);
 }
 
 .editor-styles-wrapper .wp-block h3 {
@@ -271,7 +272,8 @@ Inter variable font. Usage:
 }
 
 .editor-styles-wrapper .wp-block h4 {
-	font-size: 24px;
+	font-size: font-size: var(--wp--typography--font-size-heading-5);
+;
 }
 
 .editor-styles-wrapper .wp-block h5 {
@@ -306,7 +308,7 @@ Inter variable font. Usage:
 .editor-styles-wrapper .has-drop-cap:not(:focus)::first-letter {
 	color: var(--wp--color--primary);
 	font-size: 5.1em;
-	font-weight: 800;
+	font-weight: var(--wp--typography--font-size-heading-1);
 	margin: 0.05em 0.1em 0 0;
 }
 
@@ -331,7 +333,7 @@ Inter variable font. Usage:
 .editor-styles-wrapper pre {
 	border-color: #dcd7ca;
 	border-radius: 0;
-	line-height: 1.5;
+	line-height: var(--wp--typography--line-height);
 	padding: 1em;
 }
 
@@ -444,7 +446,7 @@ Inter variable font. Usage:
 .editor-styles-wrapper ul.wp-block-latest-posts li,
 .editor-styles-wrapper ul.wp-block-categories__list li {
 	color: #6d6d6d;
-	line-height: 1.476;
+	line-height: var(--wp--typography--line-height);;
 	margin: 5px 0 0 0;
 }
 
@@ -483,7 +485,7 @@ Inter variable font. Usage:
 	font-size: 0.7em;
 	font-weight: 600;
 	letter-spacing: normal;
-	line-height: 1.476;
+	line-height: var(--wp--typography--line-height);;
 	margin-top: 0.15em;
 }
 
@@ -494,7 +496,7 @@ Inter variable font. Usage:
 	border-collapse: collapse;
 	border-spacing: 0;
 	empty-cells: show;
-	font-size: 18px;
+	font-size: var(--wp--typography--font-size);
 	margin-bottom: 1.1em;
 	width: 100%;
 }
@@ -649,7 +651,7 @@ hr.wp-block-separator.is-style-dots::before {
 	color: #6d6d6d;
 	font-size: 14px;
 	font-weight: 600;
-	line-height: 1.25;
+	line-height: var(--wp--typography--line-height-heading);
 }
 
 .editor-styles-wrapper .wp-block-quote p {
@@ -665,7 +667,7 @@ hr.wp-block-separator.is-style-dots::before {
 
 .editor-styles-wrapper .wp-block-quote.is-style-large p {
 	font-family: inherit;
-	font-size: 24px;
+	font-size: font-size: var(--wp--typography--font-size-heading-5);
 	font-style: normal;
 	font-weight: 700;
 	letter-spacing: -0.035714286em;
@@ -897,7 +899,7 @@ hr.wp-block-separator.is-style-dots::before {
 	font-size: 15px;
 	font-weight: 600;
 	letter-spacing: 0.0333em;
-	line-height: 1.25;
+	line-height: var(--wp--typography--line-height-heading);
 	padding: 1.1em 1.44em;
 	text-transform: uppercase;
 }
@@ -995,7 +997,7 @@ hr.wp-block-separator.is-style-dots::before {
 .editor-styles-wrapper ul.wp-block-latest-posts.is-grid li {
 	border-style: solid;
 	border-width: 2px 0 0;
-	line-height: 1.25;
+	line-height: var(--wp--typography--line-height-heading);
 	margin: 20px 16px 16px 0;
 	padding-top: 12px;
 }
@@ -1211,29 +1213,33 @@ hr.wp-block-separator.is-style-dots::before {
 
 	.editor-post-title__block .editor-post-title__input,
 	.editor-styles-wrapper .wp-block h1 {
-		font-size: 64px;
+		font-size: var(--wp--typography--font-size-heading-1);
 	}
 
 	.editor-styles-wrapper .wp-block h2 {
-		font-size: 48px;
+		font-size: var(--wp--typography--font-size-heading-2);
 	}
 
 	.editor-styles-wrapper .wp-block h3 {
-		font-size: 40px;
+		font-size: var(--wp--typography--font-size-heading-3);
 	}
 
 	.editor-styles-wrapper .wp-block h4 {
-		font-size: 32px;
+		font-size: var(--wp--typography--font-size-heading-4);
 	}
 
 	.editor-styles-wrapper .wp-block h5 {
-		font-size: 24px;
+		font-size: var(--wp--typography--font-size-heading-5);
+	}
+
+	.editor-styles-wrapper .wp-block h6 {
+		font-size: var(--wp--typography--font-size-heading-6);
 	}
 
 	.editor-styles-wrapper li,
 	.editor-styles-wrapper p,
 	.editor-styles-wrapper p.wp-block-paragraph {
-		line-height: 1.476;
+		line-height: var(--wp--typography--line-height);;
 	}
 
 	/* FORMS  */
@@ -1297,7 +1303,7 @@ hr.wp-block-separator.is-style-dots::before {
 	.editor-styles-wrapper .wp-block-pullquote.is-style-solid-color blockquote > .block-editor-rich-text p,
 	.editor-styles-wrapper .wp-block[data-type="core/pullquote"][data-align="right"] .editor-rich-text p,
 	.editor-styles-wrapper .wp-block[data-type="core/pullquote"][data-align="left"] .editor-rich-text p {
-		font-size: 32px;
+		font-size: var(--wp--typography--font-size-heading-2);
 	}
 
 	.editor-styles-wrapper .wp-block-pullquote__citation,
@@ -1326,13 +1332,13 @@ hr.wp-block-separator.is-style-dots::before {
 
 	.editor-styles-wrapper .wp-block[data-type="core/pullquote"][data-align="wide"] blockquote p,
 	.editor-styles-wrapper .wp-block[data-type="core/pullquote"][data-align="full"] blockquote p {
-		font-size: 48px;
+		font-size: var(--wp--typography--font-size-heading-2);
 		line-height: 1.203125;
 	}
 
 	.editor-styles-wrapper .wp-block[data-type="core/pullquote"][data-align="left"] p,
 	.editor-styles-wrapper .wp-block[data-type="core/pullquote"][data-align="right"] p {
-		font-size: 32px;
+		font-size: var(--wp--typography--font-size-heading-2);
 		line-height: 1.1875;
 	}
 
@@ -1344,7 +1350,7 @@ hr.wp-block-separator.is-style-dots::before {
 	/* BLOCK: TABLE */
 
 	.editor-styles-wrapper  table.wp-block-table {
-		font-size: 18px;
+		font-size: var(--wp--typography--font-size);
 	}
 
 	/* BLOCK: SEPARATOR */
@@ -1363,7 +1369,7 @@ hr.wp-block-separator.is-style-dots::before {
 	/* BLOCK: COLUMNS */
 
 	.wp-block-column {
-		font-size: 18px;
+		font-size: var(--wp--typography--font-size);
 	}
 
 	/* BLOCK: SEPARATOR */
@@ -1393,7 +1399,7 @@ hr.wp-block-separator.is-style-dots::before {
 	}
 
 	.editor-styles-wrapper .wp-block h6 {
-		font-size: 18px;
+		font-size: var(--wp--typography--font-size);
 	}
 
 	/* BLOCK: PULLQUOTE */
@@ -1405,7 +1411,7 @@ hr.wp-block-separator.is-style-dots::before {
 
 	.editor-styles-wrapper .wp-block[data-type="core/pullquote"][data-align="wide"] blockquote p,
 	.editor-styles-wrapper .wp-block[data-type="core/pullquote"][data-align="full"] blockquote p {
-		font-size: 64px;
+		font-size: var(--wp--typography--font-size-heading-1);
 	}
 
 	/* BLOCK: SEPARATOR */

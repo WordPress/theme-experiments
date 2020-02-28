@@ -129,7 +129,8 @@ body {
 	box-sizing: border-box;
 	color: var(--wp--color--text);
 	font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
-	font-size: 1.8rem;
+	font-size: var(--wp--typography--font-size);
+	font-weight: var(--wp--typography--font-weight);
 	letter-spacing: -0.015em;
 	text-align: left;
 }
@@ -305,48 +306,47 @@ h6,
 .faux-heading {
 	font-feature-settings: "lnum";
 	font-variant-numeric: lining-nums;
-	font-weight: 700;
+	font-weight:  var(--wp--typography--font-weight-heading);
 	letter-spacing: -0.0415625em;
-	line-height: 1.25;
+	line-height:  var(--wp--typography--line-height-heading);
 	margin: 3.5rem 0 2rem;
 }
 
 h1,
 .heading-size-1 {
-	font-size: 3.6rem;
-	font-weight: 800;
-	line-height: 1.138888889;
+	font-size: var(--wp--typography--font-size-heading-1);
+	font-weight: bolder;
 }
 
 h2,
 .heading-size-2 {
-	font-size: 3.2rem;
+	font-size: var(--wp--typography--font-size-heading-2);
 }
 
 h3,
 .heading-size-3 {
-	font-size: 2.8rem;
+	font-size: var(--wp--typography--font-size-heading-3);
 }
 
 h4,
 .heading-size-4 {
-	font-size: 2.4rem;
+	font-size: var(--wp--typography--font-size-heading-4);
 }
 
 h5,
 .heading-size-5 {
-	font-size: 2.1rem;
+	font-size: var(--wp--typography--font-size-heading-5);
 }
 
 h6,
 .heading-size-6 {
-	font-size: 1.6rem;
+	font-size: var(--wp--typography--font-size-heading-6);
 	letter-spacing: 0.03125em;
 	text-transform: uppercase;
 }
 
 p {
-	line-height: 1.5;
+	line-height: var(--wp--typography--line-height);
 	margin: 0 0 1em 0;
 }
 
@@ -405,7 +405,7 @@ acronym {
 }
 
 address {
-	line-height: 1.5;
+	line-height: var(--wp--typography--line-height);
 	margin: 0 0 2rem 0;
 }
 
@@ -498,7 +498,7 @@ ol ol ol {
 }
 
 li {
-	line-height: 1.5;
+	line-height: var(--wp--typography--line-height);
 	margin: 0.5rem 0 0 2rem;
 }
 
@@ -520,7 +520,7 @@ li > ol {
 
 dt,
 dd {
-	line-height: 1.5;
+	line-height: var(--wp--typography--line-height);
 }
 
 dt {
@@ -557,7 +557,7 @@ cite {
 	font-size: 1.4rem;
 	font-style: normal;
 	font-weight: 600;
-	line-height: 1.25;
+	line-height: var(--wp--typography--line-height-heading);
 }
 
 blockquote cite {
@@ -590,7 +590,7 @@ samp {
 
 pre {
 	border: 0.1rem solid #dcd7ca;
-	line-height: 1.5;
+	line-height: var(--wp--typography--line-height);
 	margin: 4rem 0;
 	overflow: auto;
 	padding: 3rem 2rem;
@@ -803,7 +803,7 @@ select {
 
 textarea {
 	height: 12rem;
-	line-height: 1.5;
+	line-height: var(--wp--typography--line-height);
 	width: 100%;
 }
 
@@ -845,7 +845,7 @@ input[type="submit"] {
 	font-size: 1.5rem;
 	font-weight: 600;
 	letter-spacing: 0.0333em;
-	line-height: 1.25;
+	line-height: var(--wp--typography--line-height-heading);
 	margin: 0;
 	opacity: 1;
 	padding: 1.1em 1.44em;
@@ -1612,7 +1612,7 @@ ul.primary-menu {
 
 .primary-menu li {
 	font-size: inherit;
-	line-height: 1.25;
+	line-height: var(--wp--typography--line-height-heading);
 	position: relative;
 }
 
@@ -2406,7 +2406,7 @@ body:not(.singular) main > article:first-of-type {
 }
 
 .entry-categories {
-	line-height: 1.25;
+	line-height: var(--wp--typography--line-height-heading);
 	margin-bottom: 2rem;
 }
 
@@ -2801,7 +2801,7 @@ h2.entry-title {
 	color: var(--wp--color--primary);
 	font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
 	font-size: 5.1em;
-	font-weight: 800;
+	font-weight: var(--wp--typography--font-weight-heading);
 	margin: 0.05em 0.1em 0 0;
 }
 
@@ -2981,7 +2981,7 @@ h2.entry-title {
 .wp-block-latest-comments__comment-meta {
 	font-weight: 700;
 	letter-spacing: -0.025em;
-	line-height: 1.25;
+	line-height: var(--wp--typography--line-height-heading);
 }
 
 .wp-block-latest-comments__comment-date,
@@ -3467,7 +3467,7 @@ figure.wp-block-table.is-style-stripes {
 
 
 .entry-content {
-	line-height: 1.5;
+	line-height: var(--wp--typography--line-height);
 }
 
 .entry-content > * {
@@ -3927,7 +3927,7 @@ div.comment:first-of-type {
 
 .comment-respond input[type="checkbox"] + label {
 	font-size: 1.5rem;
-	line-height: 1.25;
+	line-height: var(--wp--typography--line-height-heading);
 }
 
 .comment-respond input[type="text"],
@@ -4379,7 +4379,7 @@ div.comment:first-of-type {
 }
 
 .footer-menu li {
-	line-height: 1.25;
+	line-height: var(--wp--typography--line-height-heading);
 	margin: 0.25em 0 0 0;
 }
 
@@ -5281,7 +5281,7 @@ a.to-the-top > * {
 
 	.entry-content p,
 	.entry-content li {
-		line-height: 1.476;
+		line-height: var(--wp--typography--line-height);;
 	}
 
 	.entry-content h1,
