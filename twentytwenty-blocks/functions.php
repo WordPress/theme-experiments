@@ -307,3 +307,13 @@ function twentytwentyblocks_register_styles() {
 	wp_enqueue_style( 'twentytwentyblocks-style', get_stylesheet_uri(), array(), $theme_version );
 }
 add_action( 'wp_enqueue_scripts', 'twentytwentyblocks_register_styles' );
+
+// Load styles in edit-site,
+// which doesn't use the add_editor_styles registration mechanism
+// so styles aren't wrapped by .editor-styles-wrapper.
+function twentytwentyblocks_register_FSE_styles() {
+	$theme_version = wp_get_theme()->get( 'Version' );
+	wp_register_style( 'custom_wp_admin_css', get_template_directory_uri() . '/twentytwenty-styles/editor-style-block.css', false, $theme_version );
+    wp_enqueue_style( 'custom_wp_admin_css' );
+}
+add_action( 'admin_enqueue_scripts', 'twentytwentyblocks_register_FSE_styles' );
