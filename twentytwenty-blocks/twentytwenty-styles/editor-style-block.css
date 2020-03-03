@@ -1395,7 +1395,7 @@ hr.wp-block-separator.is-style-dots::before {
 
 	.editor-post-title__block .editor-post-title__input,
 	.editor-styles-wrapper .wp-block h1 {
-		font-size: 84px;
+		font-size: var(--wp--typography--font-size-heading-1);
 	}
 
 	.editor-styles-wrapper .wp-block h6 {
