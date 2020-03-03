@@ -7,15 +7,7 @@
 	"typography": {
  		"font-scale": 1.3,
  		"font-size": "18px",
- 		"font-size-heading-1": "64px",
- 		"font-size-heading-2": "48px",
- 		"font-size-heading-3": "40px",
- 		"font-size-heading-4": "32px",
- 		"font-size-heading-5": "24px",
- 		"font-size-heading-6": "18px",
  		"font-weight": 400,
- 		"font-weight-heading": 700,
- 		"line-height": 1.5,
- 		"line-height-heading": 1.25
+ 		"line-height": 1.5
  	}
 }
