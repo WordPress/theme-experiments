@@ -1,13 +1,14 @@
 {
 	"color": {
 		"background": "#fff",
-		"primary": "#00f",
 		"text": "#000"
 	},
 	"typography": {
+		"font-base": 16,
 		"font-scale": 1.2,
-		"font-size": "16px",
-		"font-weight": 400,
-		"line-height": 1.5
+		"font-weight-base": 400,
+		"font-weight-heading": 400,
+		"line-height-base": 1.5,
+		"line-height-heading": 1.5
 	}
 }
