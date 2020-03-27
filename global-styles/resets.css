@@ -1,13 +1,4 @@
-/*
- * Instead of using body, we need to target
- * the editor-styles-wrapper and wp-site-blocks.
- *
- * The reason we need this is that edit-site
- * doesn't transform the styles to wrap the styles
- * using editor-styles-wrapper.
- */
-.editor-styles-wrapper,
-.wp-site-blocks {
+body {
 	box-sizing: border-box;
 	background-color: var(--wp--color--background);
 	max-width: 50rem;
