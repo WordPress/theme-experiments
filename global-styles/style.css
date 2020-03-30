@@ -22,7 +22,50 @@ with others.
  * We only have them here to have a safe playground
  * while we figure out all the loose ends.
  */
-@import "style-block-heading.css";
-@import "style-block-paragraph.css";
-@import "style-block-quote.css";
-@import "style-block-button.css";
+
+/* HEADING BLOCK ------------------------------------------- */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	background-color: var(--wp--color--background);
+	color: var(--wp--color--text);
+	line-height: var(--wp--typography--line-height-heading);
+	font-weight: var(--wp--typography--font-weight-heading);
+}
+
+h1 {
+	font-size: calc(1px * var(--wp--typography--font-base) * var(--wp--typography--font-scale) * var(--wp--typography--font-scale) * var(--wp--typography--font-scale) * var(--wp--typography--font-scale) * var(--wp--typography--font-scale));
+}
+
+h2 {
+	font-size: calc(1px * var(--wp--typography--font-base) * var(--wp--typography--font-scale) * var(--wp--typography--font-scale) * var(--wp--typography--font-scale) * var(--wp--typography--font-scale));
+}
+
+h3 {
+	font-size: calc(1px * var(--wp--typography--font-base) * var(--wp--typography--font-scale) * var(--wp--typography--font-scale) * var(--wp--typography--font-scale));
+}
+
+h4 {
+	font-size: calc(1px * var(--wp--typography--font-base) * var(--wp--typography--font-scale) * var(--wp--typography--font-scale));
+}
+
+h5 {
+	font-size: calc(1px * var(--wp--typography--font-base) * var(--wp--typography--font-scale));
+}
+
+h6 {
+	font-size: calc(0.5px * var(--wp--typography--font-base) * var(--wp--typography--font-scale));
+}
+
+
+/* PARAGRAPH BLOCK ------------------------------------------- */
+p {
+	background-color: var(--wp--color--background);
+	color: var(--wp--color--text);
+	line-height: var(--wp--typography--line-height-base);
+	font-size: calc(1px * var(--wp--typography--font-base));
+	font-weight: var(--wp--typography--font-weight-base);
+}
