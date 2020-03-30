@@ -2,8 +2,8 @@
 
 function global_styles_experimental_after_setup_theme() {
 	add_theme_support('editor-styles');
-	add_editor_style('resets.css');
-	add_editor_style('style.css');
+	add_editor_style('styles.css');
+	add_editor_style('editor-styles.css');
 }
 add_action( 'after_setup_theme', 'global_styles_experimental_after_setup_theme' );
 
