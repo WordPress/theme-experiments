@@ -24,17 +24,6 @@ with others.
  */
 
 /* HEADING BLOCK ------------------------------------------- */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	background-color: var(--wp--color--background);
-	color: var(--wp--color--text);
-	font-weight: var(--wp--typography--font-weight-heading);
-}
-
 h1 {
 	font-size: calc(1px * var(--wp--typography--font-base) * var(--wp--typography--font-scale) * var(--wp--typography--font-scale) * var(--wp--typography--font-scale) * var(--wp--typography--font-scale) * var(--wp--typography--font-scale));
 }
@@ -62,8 +51,5 @@ h6 {
 
 /* PARAGRAPH BLOCK ------------------------------------------- */
 p {
-	background-color: var(--wp--color--background);
-	color: var(--wp--color--text);
 	font-size: calc(1px * var(--wp--typography--font-base));
-	font-weight: var(--wp--typography--font-weight-base);
 }
