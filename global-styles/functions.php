@@ -10,9 +10,9 @@ add_action( 'after_setup_theme', 'global_styles_experimental_after_setup_theme' 
 function global_styles_experimental_wp_enqueue_scripts() {
 	wp_enqueue_style(
 		'global-styles-theme-style-resets',
-		get_stylesheet_directory_uri() . '/resets.css',
+		get_stylesheet_directory_uri() . '/styles.css',
 		array(),
-		filemtime( dirname( __FILE__ ) . '/resets.css' )
+		filemtime( dirname( __FILE__ ) . '/styles.css' )
 	);
 }
 add_action( 'wp_enqueue_scripts', 'global_styles_experimental_wp_enqueue_scripts' );
