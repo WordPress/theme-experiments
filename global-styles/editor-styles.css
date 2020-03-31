@@ -32,7 +32,7 @@ h5,
 h6 {
 	background-color: var(--wp--color--background);
 	color: var(--wp--color--text);
-	line-height: var(--wp--typography--line-height-heading);
+	line-height: var(--wp--typography--line-height, var(--wp--typography--line-height-heading));
 	font-weight: var(--wp--typography--font-weight-heading);
 }
 
@@ -65,7 +65,7 @@ h6 {
 p {
 	background-color: var(--wp--color--background);
 	color: var(--wp--color--text);
-	line-height: var(--wp--typography--line-height-base);
+	line-height: var(--wp--typography--line-height, var(--wp--typography--line-height-base));
 	font-size: calc(1px * var(--wp--typography--font-base));
 	font-weight: var(--wp--typography--font-weight-base);
 }
