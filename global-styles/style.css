@@ -1,3 +1,16 @@
+/*
+Theme Name: Global Styles
+Author: the WordPress team
+Author URI: https://wordpress.org/
+Description: Global Styles, a playground for testing FSE.
+Requires at least: WordPress 4.9.6
+Version: 0.1
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: global-styles
+Tags: one-column, flexible-header, accessibility-ready, custom-colors, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, rtl-language-support, sticky-post, threaded-comments, translation-ready
+*/
+
 body {
 	box-sizing: border-box;
 	background-color: var(--wp--color--background);
