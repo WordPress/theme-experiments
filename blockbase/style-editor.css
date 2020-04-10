@@ -1,0 +1,84 @@
+/*--------------------------------------------------------------
+# Base Styles (Editor)
+#
+# These provide a baseline for editor styles. 
+# Please override these styles in editor-custom.css.
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Base Styles
+--------------------------------------------------------------*/
+
+.editor-post-title__block .editor-post-title__input {
+	font-family: var(--wp--typography--font-family-heading);
+	color: var(--wp--color--text);
+}
+
+body,
+.editor-styles-wrapper {
+	background: var(--wp--color--background);
+	color: var(--wp--color--text);
+}
+
+body > *,
+.editor-styles-wrapper > * {
+	font-family: var(--wp--typography--font-family);
+	font-size: var(--wp--typography--font-size);
+	font-weight: var(--wp--typography--font-weight);
+	color: var(--wp--color--text);
+}
+
+/*--------------------------------------------------------------
+# Headings
+--------------------------------------------------------------*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.editor-styles-wrapper h1,
+.editor-styles-wrapper h2,
+.editor-styles-wrapper h3,
+.editor-styles-wrapper h4,
+.editor-styles-wrapper h5,
+.editor-styles-wrapper h6 {
+  font-family: var(--wp--typography--font-family-heading);
+}
+
+h1,
+.editor-styles-wrapper h1 {
+  font-size: var(--wp--typography--font-size-heading-1);
+  line-height: var(--wp--typography--line-height-heading);
+}
+
+h2,
+.editor-styles-wrapper h2 {
+  font-size: var(--wp--typography--font-size-heading-2);
+  line-height: var(--wp--typography--line-height-heading);
+}
+
+h3,
+.editor-styles-wrapper h3 {
+  font-size: var(--wp--typography--font-size-heading-3);
+  line-height: var(--wp--typography--line-height-heading);
+}
+
+h4,
+.editor-styles-wrapper h4 {
+  font-size: var(--wp--typography--font-size-heading-4);
+  line-height: var(--wp--typography--line-height-heading);
+}
+
+h5,
+.editor-styles-wrapper h5 {
+  font-size: var(--wp--typography--font-size-heading-5);
+  line-height: var(--wp--typography--line-height-heading);
+}
+
+h6,
+.editor-styles-wrapper h6 {
+  font-size: var(--wp--typography--font-size-heading-6);
+  line-height: var(--wp--typography--line-height-heading);
+}

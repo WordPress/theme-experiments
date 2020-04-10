@@ -1,0 +1,27 @@
+/*
+Theme Name: Blockbase
+Theme URI: https://github.com/WordPress/gutenberg-theme/
+Author: Automattic
+Author URI: https://automattic.com
+Description: A simple base for block-based themes.
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: blockbase
+Tags: translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+blockbase is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+*/
+
+/*--------------------------------------------------------------
+# Front-end Styles
+--------------------------------------------------------------*/
+
+@import url( "./css/front-end/normalize.css" );
+@import url( "./css/front-end/style-base.css" );
+@import url( "./css/front-end/style-blocks.css" );
+@import url( "./css/front-end/style-custom.css" );

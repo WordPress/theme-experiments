@@ -1,0 +1,430 @@
+/*--------------------------------------------------------------
+# Base Styles
+#
+# These provide a baseline for all front-end styles. 
+# Please override these in style-custom.css.
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Colors
+# Typography
+# Elements
+# Forms
+# Links
+# Accessibility
+# Alignments
+# Content
+	## Posts and pages
+# Media
+	## Captions
+	## Galleries
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Colors
+--------------------------------------------------------------*/
+body {
+	background-color: var(--wp--color--background, #FFF);
+	color: var(--wp--color--text, #000);
+}
+
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+body,
+button,
+input,
+select,
+optgroup,
+textarea {
+	font-family: var(--wp--typography--font-family);
+	font-size: var(--wp--typography--font-size);
+	line-height: var(--wp--typography--line-height);
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: var(--wp--typography--font-family-heading);
+	clear: both;
+}
+
+dfn, cite, em, i {
+	font-style: italic;
+}
+
+blockquote {
+	margin: 0 var(--wp--spacing--medium);
+}
+
+address {
+	margin: 0 0 var(--wp--spacing--medium);
+}
+
+pre {
+	font-family: var(--wp--typography--font-family-code);
+	line-height: 1.6;
+	margin-bottom: 1.6em;
+	max-width: 100%;
+	overflow: auto;
+	padding: 0.8em 1em;
+}
+
+code, kbd, tt, var {
+	font-family: var(--wp--typography--font-family-code);
+	font-size: 0.875rem;
+}
+
+@media screen and (min-width: 600px) {
+	code, kbd, tt, var {
+	font-size: 0.8125rem;
+	}
+}
+
+p > code {
+	padding: 2px;
+	border-radius: var(--wp--spacing---border-radius);
+	background: #f3f4f5;
+	font-size: inherit;
+}
+
+abbr, acronym {
+	border-bottom: 1px dotted #666;
+	cursor: help;
+}
+
+mark, ins {
+	background: #fff9c0;
+	text-decoration: none;
+}
+
+big {
+	font-size: 125%;
+}
+
+h1 {
+	font-size: var(--wp--typography--font-size-heading-1);
+	line-height: var(--wp--typography--line-height-heading);
+}
+
+h2 {
+	font-size: var(--wp--typography--font-size-heading-2);
+	line-height: var(--wp--typography--line-height-heading);
+}
+
+h3 {
+	font-size: var(--wp--typography--font-size-heading-3);
+	line-height: var(--wp--typography--line-height-heading);
+}
+
+h4 {
+	font-size: var(--wp--typography--font-size-heading-4);
+	line-height: var(--wp--typography--line-height-heading);
+}
+
+h5 {
+	font-size: var(--wp--typography--font-size-heading-5);
+	line-height: var(--wp--typography--line-height-heading);
+}
+
+h6 {
+	font-size: var(--wp--typography--font-size-heading-6);
+	line-height: var(--wp--typography--line-height-heading);
+}
+
+/*--------------------------------------------------------------
+# Elements
+--------------------------------------------------------------*/
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	/* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+	box-sizing: inherit;
+}
+
+blockquote, q {
+	quotes: "" ""; }
+	blockquote:before, blockquote:after, q:before, q:after {
+	content: ""; }
+
+hr {
+	border: 0;
+	height: 1px;
+	margin-bottom: var(--wp--spacing--medium);
+}
+
+ul, ol {
+	margin: 0 0 var(--wp--spacing--medium) var(--wp--spacing--large);
+}
+
+ul {
+	list-style: disc;
+}
+
+ol {
+	list-style: decimal;
+}
+
+li > ul,
+li > ol {
+	margin-bottom: 0;
+	margin-left: var(--wp--spacing--medium);
+}
+
+dt {
+	font-weight: bold;
+}
+
+dd {
+	margin: 0 var(--wp--spacing--medium) var(--wp--spacing--medium);
+}
+
+img {
+	height: auto;
+	/* Make sure images are scaled correctly. */
+	max-width: 100%;
+	/* Adhere to container width. */
+}
+
+figure {
+	margin: 1em 0;
+	/* Extra wide images within figure tags don't overflow the content area. */
+}
+
+table {
+	margin: 0 0 var(--wp--spacing--medium);
+	width: 100%;
+}
+
+/*--------------------------------------------------------------
+# Forms
+--------------------------------------------------------------*/
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	border: 1px solid;
+	border-color: var(--wp--color--primary);
+	border-radius: var(--wp--spacing---border-radius);
+	background: var(--wp--color--primary);
+	color: var(--wp--color--background);
+	font-size: var(--wp--typography--font-size);
+	line-height: 1;
+	padding: .6em 1em .4em;
+}
+
+button:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover {
+	border-color: #ccc #bbb #aaa;
+}
+
+button:active, button:focus,
+input[type="button"]:active,
+input[type="button"]:focus,
+input[type="reset"]:active,
+input[type="reset"]:focus,
+input[type="submit"]:active,
+input[type="submit"]:focus {
+	border-color: #aaa #bbb #bbb;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"],
+textarea {
+	color: var(--wp--color--text);
+	border: 1px solid var(--wp--color--text);
+	border-radius: var(--wp--spacing---border-radius);
+	padding: 3px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+input[type="range"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="week"]:focus,
+input[type="time"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="color"]:focus,
+textarea:focus {
+	color: var(--wp--color--text);
+}
+
+select {
+	border: 1px solid var(--wp--color--text);
+}
+
+textarea {
+	width: 100%;
+}
+
+/*--------------------------------------------------------------
+# Links
+--------------------------------------------------------------*/
+a {
+	color: var(--wp--color--primary);
+}
+
+a:hover, a:focus, a:active {
+	color: var(--wp--color--primary-hover);
+}
+
+a:focus {
+	outline: thin dotted;
+}
+
+a:hover, a:active {
+	outline: 0;
+}
+
+/*--------------------------------------------------------------
+# Accessibility
+--------------------------------------------------------------*/
+/* Text meant only for screen readers. */
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+	word-wrap: normal !important;
+	/* Many screen reader and browser combinations announce broken words as they would appear visually. */
+}
+
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	color: #21759b;
+	display: block;
+	font-size: var(--wp--typography--font-size);
+	font-size: 0.875rem;
+	font-weight: bold;
+	height: auto;
+	left: var(--wp--spacing--small);
+	line-height: normal;
+	padding: var(--wp--spacing--small);
+	text-decoration: none;
+	top: var(--wp--spacing--small);
+	width: auto;
+	z-index: 100000;
+	/* Above WP toolbar. */
+}
+
+/* Do not show the outline on the skip link target. */
+#primary[tabindex="-1"]:focus {
+	outline: 0;
+}
+
+/*--------------------------------------------------------------
+# Alignments
+--------------------------------------------------------------*/
+
+.alignleft,
+.alignright {
+	max-width: var(--wp--content-width--standard) !important;  /* Let's work to make this !important unnecessary */
+}
+
+.alignleft img,
+.alignright img,
+.alignleft figcaption,
+.alignright figcaption {
+	max-width: 50%;
+	width: 50%;
+}
+
+.alignleft figcaption {
+	clear: left;
+}
+
+.alignright figcaption {
+	clear: right;
+}
+
+.alignleft img,
+.alignleft figcaption {
+	float: left;
+	margin-right: var(--wp--spacing--medium);
+}
+
+.alignright img,
+.alignright figcaption {
+	float: right;
+	margin-left: var(--wp--spacing--medium);
+}
+
+.aligncenter {
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*--------------------------------------------------------------
+# Content
+--------------------------------------------------------------*/
+#page {
+	margin: 0 auto;
+	max-width: 100%;
+}
+
+/*--------------------------------------------------------------
+## Posts and pages
+--------------------------------------------------------------*/
+.page-content,
+.entry-content,
+.entry-summary {
+	margin: var(--wp--spacing--medium) 0 0;
+}
+
+.page-links {
+	clear: both;
+	margin: 0 0 var(--wp--spacing--medium);
+}
+
+.entry-header,
+.page-header,
+.entry-footer,
+.not-found .page-content,
+.search .entry-summary {
+	margin: var(--wp--spacing--medium) auto;
+	padding-left: var(--wp--spacing--small);
+	padding-right: var(--wp--spacing--small);
+	max-width: var(--wp--content-width--standard);
+}
+
+/*--------------------------------------------------------------
+# Media
+--------------------------------------------------------------*/
+
+/* Make sure embeds and iframes fit their containers. */
+embed,
+iframe,
+object {
+	max-width: 100%;
+}

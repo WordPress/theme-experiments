@@ -1,0 +1,46 @@
+/*--------------------------------------------------------------
+# Root Variables
+#
+# NOTE: This should match the files in experimental-theme.json.
+# This is required for editor styles to match up, and can be
+# removed once the JSON file is loaded in the editor.
+--------------------------------------------------------------*/
+
+:root {
+	/* Colors */
+	--wp--color--primary: #0073aa;
+	--wp--color--primary-hover: #00a0d2;
+	--wp--color--background: white;
+	--wp--color--text: black;
+
+	/* Typography Base */
+	--wp--typography--font-scale: 1.3;
+	--wp--typography--font-family: sans-serif;
+	--wp--typography--font-family-code: monospace;
+	--wp--typography--font-size: "16px";
+	--wp--typography--font-weight: 500;
+	--wp--typography--line-height: 1.7;
+
+	/* Typography Headings */
+	--wp--typography--font-family-heading: sans-serif;
+	--wp--typography--font-size-heading-1: "40px";
+	--wp--typography--font-size-heading-2: "32px";
+	--wp--typography--font-size-heading-3: "25px";
+	--wp--typography--font-size-heading-4: "20px";
+	--wp--typography--font-size-heading-5: "16px";
+	--wp--typography--font-size-heading-6: "13px";
+	--wp--typography--font-weight-heading: 700;
+	--wp--typography--line-height-heading: 1.4;
+
+	/* Spacing */
+	--global--spacing--small: 14px;
+	--global--spacing--medium: 24px;
+	--global--spacing--large: 28px;
+
+	/* Content Width */
+	--wp--content-width--standard: 580px;
+	--wp--content-width--wide: 1100px;
+
+	/* Styling */
+	--wp--styling--border-radius: 3px;
+}
