@@ -21,7 +21,8 @@ body,
 }
 
 body > *,
-.editor-styles-wrapper > * {
+.editor-styles-wrapper > *,
+.editor-styles-wrapper p {
 	font-family: var(--wp--typography--font-family);
 	font-size: var(--wp--typography--font-size);
 	font-weight: var(--wp--typography--font-weight);
