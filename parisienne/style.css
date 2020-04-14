@@ -414,7 +414,7 @@ figcaption a,
 
 .alignwide {
 	margin: auto;
-	max-width: 1280px;
+	max-width: 1040px;
 }
 
 .site-border {
@@ -525,4 +525,10 @@ footer {
 
 footer .wp-block-group {
 	margin-bottom: 3rem;
+}
+
+/* Blocks ------------------------------------- */
+
+.wp-block-cover {
+	text-align: center;
 }
