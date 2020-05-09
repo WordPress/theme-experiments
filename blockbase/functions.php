@@ -24,8 +24,7 @@ if ( ! function_exists( 'blockbase_blocks_support' ) ) :
 		// Enqueue editor styles.
 		add_editor_style( array(
 			'style-editor.css',
-			'./css/editor/variables.css',
-			'./css/editor/editor-custom.css'
+			'./css/editor/variables.css'
 		) );
 	}
 	add_action( 'after_setup_theme', 'blockbase_blocks_support' );

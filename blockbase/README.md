@@ -14,11 +14,7 @@ First, choose a new name for your theme and perform a find + replace for "blockb
 
 - `experimental-theme.json`: This file contains the basic Global Style variables used throughout the site. These variables are used in the front end and in the beta site editor. It's the best place to start.
 - `css/editor/variables.css`: This is the variables file used for the post/page editor. As soon as [wordpress/gutenberg/20530](https://github.com/WordPress/gutenberg/pull/20530) is merged in, this won't be necessary. For now, this needs to mirror all of the variables in `experimental-theme.json`.  
-- `css/front-end/style-custom.css`: The home for all of your front-end styles. This will override all other styles defined in the `front-end` folder.
-- `css/editor/editor-custom.css`: The home for all of your editor styles. This will override all other styles defined in the `editor` folder.
 - The files in `block-templates` and `block-template-parts` can be updated to include more post and page templates, [as described in the reference docs](https://developer.wordpress.org/block-editor/developers/themes/block-based-themes/). 
-
-(The files with the `-custom` suffix are included in case you want to keep the base theme files up to date later on by copying & pasting from this base version of blockbase.)
 
 ## Tips: 
 
@@ -39,6 +35,11 @@ First, choose a new name for your theme and perform a find + replace for "blockb
 
 ## Changelog
 
+**1.1 - April 10 2020**
+- Removed normalize CSS
+- Simplified the CSS file structure
+- Code cleanup & simplification
+
 **1.0 - April 10 2020**
 - Initial release
 
@@ -46,4 +47,3 @@ First, choose a new name for your theme and perform a find + replace for "blockb
 
 * Originally forked from the Gutenberg Starter Theme http://github.com/wordpress/gutenberg-starter-theme, [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
 * CSS originally built from Underscores http://underscores.me/, (C) 2012-2017 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
-* normalize.css http://necolas.github.io/normalize.css/, (C) 2012-2016 Nicolas Gallagher and Jonathan Neal, [MIT](http://opensource.org/licenses/MIT)

@@ -21,7 +21,5 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 # Front-end Styles
 --------------------------------------------------------------*/
 
-@import url( "./css/front-end/normalize.css" );
 @import url( "./css/front-end/style-base.css" );
 @import url( "./css/front-end/style-blocks.css" );
-@import url( "./css/front-end/style-custom.css" );
