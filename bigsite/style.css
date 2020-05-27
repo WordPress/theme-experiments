@@ -1,0 +1,76 @@
+/*
+Theme Name: Big Site	
+Text Domain: bigsite
+Version: 0.1 
+Requires at least: 5.3
+Description: A test theme using the experimental WordPress global styles system.
+Author: Jeff Ong 
+Author URI: https://jffng.com/
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+All files, unless otherwise stated, are released under the GNU General Public
+License version 2.0 (http://www.gnu.org/licenses/gpl-2.0.html)
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned
+with others.
+*/
+
+@import './assets/fonts/Butler/stylesheet.css';
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background-color: var(--wp--preset--color--background);
+    margin: 0;
+    overflow-x: hidden;
+    padding: 0;
+    font-family: var(--wp--preset--font-family--primary);
+    font-weight: normal;
+}
+
+p {
+    font-family: var(--wp--preset--font-family--primary);
+    font-weight: 400;
+    line-height: 1.8125rem;
+    max-width: 660px;
+}
+
+h1, h2, h3 {
+    font-weight: 200;
+}
+
+.wp-block-image {
+    margin: 0 auto;
+}
+
+.has-accent-background-color {
+    background-color: var(--wp--preset--color--accent);
+}
+
+.entry-content > *,
+.wp-block-cover__inner-container > h1,
+.site-content > h1 {
+  margin: 0 auto;
+  max-width: 645px;
+  padding-left: 14px;
+  padding-right: 14px;
+}
+
+.alignwide {
+  margin: 0 auto;
+  max-width: 1070px;
+}
+
+.alignfull {
+  margin: 0;
+  max-width: 100%;
+}
+
+.home .entry-content > .wp-block-cover {
+    height: 100vh;
+}

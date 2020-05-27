@@ -1,0 +1,82 @@
+{
+    "global": {
+        "presets": {
+            "color": [
+                {
+                    "slug": "primary",
+                    "value": "#000"
+                },
+                {
+                    "slug": "background",
+                    "value": "#fff"
+                },
+                {
+                    "slug": "accent",
+                    "value": "#f5f5f5"
+                }
+            ],
+            "font-size": [
+                {
+                    "slug": "small",
+                    "value": "0.8rem"
+                },
+                {
+                    "slug": "base",
+                    "value": "1rem"
+                },
+                {
+                    "slug": "medium",
+                    "value": "1.25rem"
+                },
+                {
+                    "slug": "large",
+                    "value": "3.75rem"
+                },
+                {
+                    "slug": "extra-large",
+                    "value": "6.25rem"
+                }
+            ],
+            "font-family": [
+                {
+                    "slug": "primary",
+                    "value": "Butler"
+                },
+                {
+                    "slug": "secondary",
+                    "value": "'EB Garamond'"
+                }
+            ],
+            "gradient": [
+            ]
+        },
+        "features": {
+            "typography": {
+                "dropCap": true
+            }
+        }
+    },
+    "core/paragraph": {
+        "styles": {
+            "color": "var(--wp--preset--color--primary)",
+            "font-size": "var(--wp--preset--font-size--medium)"
+        }
+    },
+    "core/group": {
+        "styles": {
+            "color": "var(--wp--preset--color--primary)"
+        }
+    },
+    "core/heading/h1": {
+        "styles": {
+            "color": "var(--wp--preset--color--primary)",
+            "font-size": "var(--wp--preset--font-size--extra-large)"
+        }
+    },
+    "core/heading/h2": {
+        "styles": {
+            "color": "var(--wp--preset--color--primary)",
+            "font-size": "var(--wp--preset--font-size--large)"
+        }
+    }
+}
