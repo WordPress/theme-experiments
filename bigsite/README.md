@@ -5,11 +5,14 @@ Big Site is an experimental WordPress theme that uses the [Block Style System](h
 ## What's here
 
 ```
-assets // just fonts for now.
-block-templates // just an index.html for now.
-experimental-theme.json // where various theme functionality is defined for Gutenberg to tranform into CSS, CSS variables, and block settings.
-functions.php
-style.css
+bigsite
+|__ assets
+    |__ fonts
+|__ block-templates 
+    |__ index.html
+|__ experimental-theme.json
+|__ functions.php
+|__ style.css
 ```
 
 ## Requirements
