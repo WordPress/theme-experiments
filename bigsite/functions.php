@@ -1,13 +1,10 @@
 <?php
 
-if ( ! function_exists( 'bigsite_theme_blocks_support' ) ) :
+if ( ! function_exists( 'bigsite_theme_setup' ) ) :
 	/**
 	 * Initialize the theme supports.
 	 */
-	function bigsite_theme_blocks_support() {
-		// Make theme available for translation.
-		load_theme_textdomain( 'bigsite-theme-blocks', get_template_directory() . '/languages' );
-
+	function bigsite_theme_setup() {
 		// Let WordPress manage the document title.
 		add_theme_support( 'title-tag' );
 
@@ -20,31 +17,62 @@ if ( ! function_exists( 'bigsite_theme_blocks_support' ) ) :
 		// Adding support for responsive embedded content.
 		add_theme_support( 'responsive-embeds' );
 
+		// Adding support for editor styles.
+		add_theme_support( 'editor-styles' );
+
+		// Enqueue stylesheet for the editor.
+		add_editor_style( get_stylesheet_uri() );
+
 		// Editor color palette.
 		// All of these values will be overridden by the theme.json's global => preset => colors array.
 		add_theme_support(
 			'editor-color-palette',
 			array(
 				array(
-					'name'  => __( 'Primary', 'bigsite' ),
-					'slug'  => 'primary',
-					'color' => '#000',
+					'name'  => __( 'Valencia', 'bigsite' ),
+					'slug'  => 'valencia',
+					'color' => '#DB403B',
 				),
 				array(
-					'name'  => __( 'Background', 'bigsite' ),
-					'slug'  => 'background',
-					'color' => '#fff',
+					'name'  => __( 'Mustard', 'bigsite' ),
+					'slug'  => 'mustard',
+					'color' => '#FFDE69',
 				),
 				array(
-					'name'  => __( 'Accent', 'bigsite' ),
-					'slug'  => 'accent',
-					'color' => '#f5f5f5',
+					'name'  => __( 'Navy', 'bigsite' ),
+					'slug'  => 'navy',
+					'color' => '#022384',
+				),
+			)
+		);
+
+		// Editor font sizes.
+		add_theme_support(
+			'editor-font-sizes',
+			array(
+				array(
+					'name'      => __( 'Small', 'bigsite' ),
+					'shortName' => __( 'S', 'bigsite' ),
+					'size'      => 12,
+					'slug'      => 'small',
+				),
+				array(
+					'name'      => __( 'Normal', 'bigsite' ),
+					'shortName' => __( 'M', 'bigsite' ),
+					'size'      => 16,
+					'slug'      => 'normal',
+				),
+				array(
+					'name'      => __( 'Large', 'bigsite' ),
+					'shortName' => __( 'L', 'bigsite' ),
+					'size'      => 50,
+					'slug'      => 'large',
 				),
 			)
 		);
 	}
-    add_action( 'after_setup_theme', 'bigsite_theme_blocks_support' );
 endif;
+add_action( 'after_setup_theme', 'bigsite_theme_setup' );
 
 /**
  * Enqueue scripts and styles.

@@ -17,48 +17,66 @@ Use it to make something cool, have fun, and share what you've learned
 with others.
 */
 
-@import './assets/fonts/Butler/stylesheet.css';
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap');
+@font-face {
+    font-family: 'Butler';
+    src: url('assets/fonts/Butler/Butler-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
 
 html {
     font-size: 16px;
 }
 
 body {
-    background-color: var(--wp--preset--color--background);
+    background-color: var(--wp--preset--color--mustard);
+    font-family: var(--wp--preset--font-family--primary);
     margin: 0;
     overflow-x: hidden;
     padding: 0;
-    font-family: var(--wp--preset--font-family--primary);
-    font-weight: normal;
 }
 
 p {
     font-family: var(--wp--preset--font-family--primary);
-    font-weight: 400;
-    line-height: 1.8125rem;
-    max-width: 660px;
+    line-height: var(--wp--preset--line-height--medium);
 }
 
-h1, h2, h3 {
-    font-weight: 200;
+p.has-small-font-size {
+    font-size: var(--wp--preset--font-size--small);
+    line-height: var(--wp--preset--line-height--small);
 }
 
-.wp-block-image {
-    margin: 0 auto;
+p.has-medium-font-size {
+    font-size: var(--wp--preset--font-size--medium);
+    line-height: var(--wp--preset--line-height--medium);
+}
+
+p.has-large-font-size {
+    font-size: var(--wp--preset--font-size--large);
+    line-height: var(--wp--preset--line-height--large);
+}
+
+.has-primary-background-color {
+    background-color: var(--wp--preset--color--mustard);
 }
 
 .has-accent-background-color {
-    background-color: var(--wp--preset--color--accent);
+    background-color: var(--wp--preset--color--navy);
 }
 
-.entry-content > *,
-.wp-block-cover__inner-container > h1,
-.site-content > h1 {
+.has-background-background-color {
+    background-color: var(--wp--preset--color--mustard);
+}
+
+h1 {
+    font-family: var(--wp--preset--font-family--secondary);
+    color: var(--wp--preset--color--navy);
+}
+
+.entry-content > * {
   margin: 0 auto;
-  max-width: 645px;
-  padding-left: 14px;
-  padding-right: 14px;
+  max-width: 580px; /* Match the block editor styles */
 }
 
 .alignwide {
@@ -71,6 +89,18 @@ h1, h2, h3 {
   max-width: 100%;
 }
 
-.home .entry-content > .wp-block-cover {
-    height: 100vh;
+.alignwide, .alignfull {
+    padding: 0 12px;
+}
+
+.wp-block-navigation.is-style-light:not(.has-background) .wp-block-navigation__container, .wp-block-navigation:not(.has-background) .wp-block-navigation__container {
+    background-color: var(--wp--preset--color--mustard);
+}
+
+.wp-block-navigation-link__label {
+    color: var(--wp--preset--color--valencia);
+    font-family: var(--wp--preset--font-family--primary);
+    font-size: var(--wp--preset--font-size--medium);
+    line-height: var(--wp--preset--line-height--medium);
+    text-transform: uppercase;
 }

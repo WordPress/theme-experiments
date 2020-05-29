@@ -3,48 +3,54 @@
         "presets": {
             "color": [
                 {
-                    "slug": "primary",
-                    "value": "#000"
+                    "slug": "valencia",
+                    "value": "#DB403B"
                 },
                 {
-                    "slug": "background",
-                    "value": "#fff"
+                    "slug": "mustard",
+                    "value": "#FFDE69"
                 },
                 {
-                    "slug": "accent",
-                    "value": "#f5f5f5"
+                    "slug": "navy",
+                    "value": "#022384"
                 }
             ],
             "font-size": [
                 {
                     "slug": "small",
-                    "value": "0.8rem"
-                },
-                {
-                    "slug": "base",
-                    "value": "1rem"
+                    "value": "12px"
                 },
                 {
                     "slug": "medium",
-                    "value": "1.25rem"
+                    "value": "16px"
                 },
                 {
                     "slug": "large",
-                    "value": "3.75rem"
+                    "value": "50px"
+                }
+            ],
+            "line-height": [
+                {
+                    "slug": "small",
+                    "value": "1.3"
                 },
                 {
-                    "slug": "extra-large",
-                    "value": "6.25rem"
+                    "slug": "medium",
+                    "value": "1.3"
+                },
+                {
+                    "slug": "large",
+                    "value": "1.4"
                 }
             ],
             "font-family": [
                 {
                     "slug": "primary",
-                    "value": "Butler"
+                    "value": "'Jost', sans-serif"
                 },
                 {
                     "slug": "secondary",
-                    "value": "'EB Garamond'"
+                    "value": "Butler"
                 }
             ],
             "gradient": [
@@ -58,24 +64,24 @@
     },
     "core/paragraph": {
         "styles": {
-            "color": "var(--wp--preset--color--primary)",
+            "color": "var(--wp--preset--color--valencia)",
             "font-size": "var(--wp--preset--font-size--medium)"
         }
     },
     "core/group": {
         "styles": {
-            "color": "var(--wp--preset--color--primary)"
+            "color": "var(--wp--preset--color--valencia)"
         }
     },
     "core/heading/h1": {
         "styles": {
-            "color": "var(--wp--preset--color--primary)",
-            "font-size": "var(--wp--preset--font-size--extra-large)"
+            "color": "var(--wp--preset--color--navy)",
+            "font-size": "28px"
         }
     },
     "core/heading/h2": {
         "styles": {
-            "color": "var(--wp--preset--color--primary)",
+            "color": "var(--wp--preset--color--valencia)",
             "font-size": "var(--wp--preset--font-size--large)"
         }
     }
