@@ -16,5 +16,5 @@ Everything runs on AJAX so there are no page refreshes.
 
 ## Usage
 
-Simply grab the contents of the `require-gutenberg.php` file and paste them in your `functions.php file. Alternatively you can include it as a separate file.  
+Simply grab the contents of the `require-gutenberg.php` file and paste them in your `functions.php` file. Alternatively you can include it as a separate file.  
 Once you copy the code to your theme, replace `textdomain` inside the file with your theme's text-domain.
