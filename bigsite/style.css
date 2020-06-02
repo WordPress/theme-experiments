@@ -18,12 +18,7 @@ with others.
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap');
-@font-face {
-    font-family: 'Butler';
-    src: url('assets/fonts/Butler/Butler-Medium.woff2') format('woff2');
-    font-weight: 500;
-    font-style: normal;
-}
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap');
 
 html {
     font-size: 16px;
@@ -75,18 +70,18 @@ h1 {
 }
 
 .entry-content > * {
-  margin: 0 auto;
-  max-width: 580px; /* Match the block editor styles */
+    margin: 0 auto;
+    max-width: 580px; /* Match the block editor styles */
 }
 
 .alignwide {
-  margin: 0 auto;
-  max-width: 1070px;
+    margin: 0 auto;
+    max-width: 1070px;
 }
 
 .alignfull {
-  margin: 0;
-  max-width: 100%;
+    margin: 0;
+    max-width: 100%;
 }
 
 .alignwide, .alignfull {
