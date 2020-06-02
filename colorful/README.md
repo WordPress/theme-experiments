@@ -6,8 +6,6 @@ Big Site is an experimental WordPress theme that uses the [Block Style System](h
 
 ```
 bigsite
-|__ assets
-    |__ fonts
 |__ block-templates 
     |__ index.html
 |__ experimental-theme.json
