@@ -1,11 +1,11 @@
-# Big Site
+# Colorful
 
-Big Site is an experimental WordPress theme that uses the [Block Style System](https://github.com/WordPress/gutenberg/blob/master/docs/designers-developers/developers/themes/theme-json.md) and [Block Templates](https://github.com/WordPress/gutenberg/blob/master/docs/designers-developers/developers/themes/block-based-themes.md) to create a minimal theme demo.
+Colorful is an experimental WordPress theme that uses the [Block Style System](https://github.com/WordPress/gutenberg/blob/master/docs/designers-developers/developers/themes/theme-json.md) and [Block Templates](https://github.com/WordPress/gutenberg/blob/master/docs/designers-developers/developers/themes/block-based-themes.md) to create a minimal theme demo.
 
 ## What's here
 
 ```
-bigsite
+colorful
 |__ block-templates 
     |__ index.html
 |__ experimental-theme.json
