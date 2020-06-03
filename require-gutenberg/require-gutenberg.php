@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name: Require Gutenberg
+ * Require Gutenberg
  *
  * @package WPThemes/Require-Gutenberg-FSE
  */
