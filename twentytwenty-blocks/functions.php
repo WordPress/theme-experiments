@@ -313,8 +313,8 @@ add_action( 'wp_enqueue_scripts', 'twentytwentyblocks_register_styles' );
  * Register Block Patterns.
  */
 
-if ( function_exists( 'register_pattern' ) ) {
-	register_pattern (
+if ( function_exists( 'register_block_pattern' ) ) {
+	register_block_pattern (
 	    'twentytwenty-blocks/exhibitions-pattern',
 	    array (
 	        'title'   => __( 'Two columns of mixed content', 'twentytwenty' ),
