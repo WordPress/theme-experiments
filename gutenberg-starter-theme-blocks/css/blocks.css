@@ -39,7 +39,7 @@
 }
 
 .entry-content > .alignwide,
-.site-header > .alignwide
+.site-header > .alignwide,
 .site-footer > .alignwide {
   max-width: 1070px;
 }
@@ -56,8 +56,8 @@
   .site-header > *,
   .site-footer > *,
   .site-content > h1 {
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -203,7 +203,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 
 .entry-content li,
 .site-header li,
-.site-footer li, {
+.site-footer li {
   margin-left: 2.5em;
 }
 
@@ -229,7 +229,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 .site-header ul ul li,
 .site-header ol ol li,
 .site-header ul ol li,
-.site-header ol ul li
+.site-header ol ul li,
 .site-footer ul ul li,
 .site-footer ol ol li,
 .site-footer ul ol li,
