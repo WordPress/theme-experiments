@@ -29,20 +29,25 @@ if ( ! function_exists( 'colorful_theme_setup' ) ) :
 			'editor-color-palette',
 			array(
 				array(
-					'name'  => __( 'Valencia', 'colorful' ),
-					'slug'  => 'valencia',
-					'color' => '#DB403B',
+					'name'  => __( 'Foreground', 'colorful' ),
+					'slug'  => 'foreground',
+					'color' => '#313131',
 				),
 				array(
-					'name'  => __( 'Mustard', 'colorful' ),
-					'slug'  => 'mustard',
+					'name'  => __( 'Background', 'colorful' ),
+					'slug'  => 'background',
 					'color' => '#FFDE69',
 				),
 				array(
-					'name'  => __( 'Navy', 'colorful' ),
-					'slug'  => 'navy',
+					'name'  => __( 'Primary', 'colorful' ),
+					'slug'  => 'primary',
 					'color' => '#022384',
 				),
+				array(
+					'name'  => __( 'Secondary', 'colorful' ),
+					'slug'  => 'secondary',
+					'color' => '#DB403B',
+				)
 			)
 		);
 

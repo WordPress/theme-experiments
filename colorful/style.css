@@ -25,7 +25,7 @@ html {
 }
 
 body {
-    background-color: var(--wp--preset--color--mustard);
+    background-color: var( --wp--preset--color--background );
     font-family: var(--wp--preset--font-family--primary);
     margin: 0;
     overflow-x: hidden;
@@ -52,21 +52,37 @@ p.has-large-font-size {
     line-height: var(--wp--preset--line-height--large);
 }
 
+/* Support editor custom colors */
 .has-primary-background-color {
-    background-color: var(--wp--preset--color--mustard);
+    background-color: var( --wp--preset--color--primary );
 }
 
-.has-accent-background-color {
-    background-color: var(--wp--preset--color--navy);
+.has-secondary-background-color {
+    background-color: var( --wp--preset--color--secondary );
+}
+
+.has-foreground-background-color {
+    background-color: var(--wp--preset--color--foreground);
 }
 
 .has-background-background-color {
-    background-color: var(--wp--preset--color--mustard);
+    background-color: var( --wp--preset--color--background );
 }
 
-h1 {
-    font-family: var(--wp--preset--font-family--secondary);
-    color: var(--wp--preset--color--navy);
+.has-background-color {
+    color: var( --wp--preset--color--primary );
+}
+
+.has-secondary-color {
+    color: var( --wp--preset--color--secondary );
+}
+
+.has-foreground-color {
+    color: var(--wp--preset--color--foreground);
+}
+
+.has-background-color {
+    color: var( --wp--preset--color--background );
 }
 
 .entry-content > * {
@@ -89,11 +105,11 @@ h1 {
 }
 
 .wp-block-navigation.is-style-light:not(.has-background) .wp-block-navigation__container, .wp-block-navigation:not(.has-background) .wp-block-navigation__container {
-    background-color: var(--wp--preset--color--mustard);
+    background-color: var( --wp--preset--color--background );
 }
 
 .wp-block-navigation-link__label {
-    color: var(--wp--preset--color--valencia);
+    color: var( --wp--preset--color--secondary );
     font-family: var(--wp--preset--font-family--primary);
     font-size: var(--wp--preset--font-size--medium);
     line-height: var(--wp--preset--line-height--medium);
