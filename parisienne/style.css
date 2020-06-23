@@ -414,7 +414,7 @@ figcaption a,
 
 .alignwide {
 	margin: auto;
-	max-width: 1280px;
+	max-width: 1040px;
 }
 
 .site-border {
@@ -430,7 +430,7 @@ figcaption a,
 /* Header ------------------------------------- */
 
 
-.site-header p {
+header p {
 	margin: 1em 0;
 }
 
@@ -438,20 +438,20 @@ p.address-align {
 	text-align: right;
 }
 
-.site-header .wp-block-columns {
+header .wp-block-columns {
 	margin: 0 2rem;
 	margin-bottom: 0;
 	align-items: center;
 }
 
-.site-header h1 {
+header h1 {
 	font-family: 'Pinyon Script';
 	font-size: 7.2rem;
 	text-align: center;
 	margin: 3rem 0 0;
 }
 
-.site-header .wp-block-social-links {
+header .wp-block-social-links {
 	justify-content: flex-end;
 }
 
@@ -469,7 +469,7 @@ p.address-align {
 /* Content ------------------------------------- */
 
 
-.site-content {
+main {
 	margin: 4rem auto 0;
 }
 
@@ -519,10 +519,16 @@ p.address-align {
 /* Footer ------------------------------------- */
 
 
-.site-footer {
+footer {
 	padding: 3rem;
 }
 
-.site-footer .wp-block-group {
+footer .wp-block-group {
 	margin-bottom: 3rem;
+}
+
+/* Blocks ------------------------------------- */
+
+.wp-block-cover {
+	text-align: center;
 }

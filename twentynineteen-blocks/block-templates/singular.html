@@ -3,7 +3,20 @@
 <!-- /wp:group -->
 
 <!-- wp:group {"align":"full","className":"site-content"} -->
-<div class="wp-block-group alignfull site-content"><div class="wp-block-group__inner-container"><!-- wp:post-title /--><!-- wp:post-content /--></div></div>
+<div class="wp-block-group alignfull site-content">
+    <div class="wp-block-group__inner-container">
+        <!-- wp:post-title /-->
+        <!-- wp:post-content /-->
+        <!-- wp:group {"className":"comments-area"} -->
+		<div class="wp-block-group comments-area">
+			<div class="wp-block-group__inner-container">
+	        <!-- wp:post-comments-form /-->
+	        <!-- wp:post-comments /-->
+			</div>
+		</div>
+		<!-- /wp:group -->
+    </div>
+</div>
 <!-- /wp:group -->
 
 <!-- wp:group {"align":"full","className":"site-footer"} -->
