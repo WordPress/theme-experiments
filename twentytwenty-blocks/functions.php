@@ -52,29 +52,19 @@ if ( ! function_exists( 'twentytwentyblocks_theme_support' ) ) :
 			'editor-color-palette',
 			array(
 				array(
+					'name'  => __( 'Background', 'twentytwenty-blocks' ),
+					'slug'  => 'background',
+					'color' => '#f5efe0',
+				),
+				array(
+					'name'  => __( 'Text', 'twentytwenty-blocks' ),
+					'slug'  => 'text',
+					'color' => '#000',
+				),
+				array(
 					'name'  => __( 'Primary', 'twentytwenty-blocks' ),
 					'slug'  => 'primary',
-					'color' => '#0073AA',
-				),
-				array(
-					'name'  => __( 'Secondary', 'twentytwenty-blocks' ),
-					'slug'  => 'secondary',
-					'color' => '#005177',
-				),
-				array(
-					'name'  => __( 'Dark Gray', 'twentytwenty-blocks' ),
-					'slug'  => 'dark-gray',
-					'color' => '#111',
-				),
-				array(
-					'name'  => __( 'Light Gray', 'twentytwenty-blocks' ),
-					'slug'  => 'light-gray',
-					'color' => '#767676',
-				),
-				array(
-					'name'  => __( 'White', 'twentytwenty-blocks' ),
-					'slug'  => 'white',
-					'color' => '#FFF',
+					'color' => '#cd2653',
 				),
 			)
 		);

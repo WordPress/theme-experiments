@@ -16,6 +16,13 @@ Tags: one-column, flexible-header, accessibility-ready, custom-colors, custom-me
 */
 @import url('twentytwenty-styles/style.css');
 
+/* 
+ * Set the default link color.
+*/
+:root {
+	--wp--style--color--link: var(--wp--preset--color--primary);
+}
+
 /*
 ** Header
 */

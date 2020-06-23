@@ -1,13 +1,38 @@
 {
-	"color": {
-		"primary": "#cd2653",
-		"background": "#f5efe0",
-		"text": "#000"
-	},
-	"typography": {
- 		"font-scale": 1.3,
- 		"font-size": "18px",
- 		"font-weight": 400,
- 		"line-height": 1.5
- 	}
+	"global": {
+		"presets": {
+			"color": [
+				{
+					"slug": "background",
+					"value": "#f5efe0"
+				},
+				{
+					"slug": "text",
+					"value": "#000"
+				},
+				{
+					"slug": "primary",
+					"value": "#cd2653"
+				}
+			],
+			"font-size": [
+				{
+					"slug": "small",
+					"value": "20px"
+				},
+				{
+					"slug": "normal",
+					"value": "22px"
+				},
+				{
+					"slug": "large",
+					"value": "37px"
+				},
+				{
+					"slug": "huge",
+					"value": "50px"
+				}
+			]
+		}
+	}
 }

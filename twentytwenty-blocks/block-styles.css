@@ -29,8 +29,8 @@
 }
 
 .is-style-header-nav .wp-block-navigation-link > ul {
-	background: var(--wp--color--text);
-	border-color: var(--wp--color--text);
+	background: var(--wp--preset--color--text);
+	border-color: var(--wp--preset--color--text);
 	border-radius: 0.4rem;
 	font-size: 1.7rem;
 	opacity: 0;
