@@ -133,11 +133,6 @@ h6 {
   font-size: 0.8em;
 }
 
-mark {
-  background: #ff0;
-  color: #000;
-}
-
 small {
   font-size: 80%;
 }
@@ -283,7 +278,7 @@ input,
 select,
 optgroup,
 textarea {
-  color: #191e23;
+  color: var(--wp--preset--color--foreground);
   font-family: "Noto Serif", serif;
   font-size: 16px;
   font-size: 1rem;
@@ -291,7 +286,7 @@ textarea {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #191e23;
+  color: var(--wp--preset--color--foreground);
   clear: both;
 }
 
@@ -341,12 +336,12 @@ p > code {
 }
 
 abbr, acronym {
-  border-bottom: 1px dotted #666;
+  border-bottom: 1px dotted var(--wp--preset--color--foreground-light);
   cursor: help;
 }
 
 mark, ins {
-  background: #fff9c0;
+  background: var(--wp--preset--color--background)9c0;
   text-decoration: none;
 }
 
@@ -398,7 +393,7 @@ html {
 }
 
 body {
-  background: #fff;
+  background: var(--wp--preset--color--background);
   /* Fallback for when there is no custom background color defined. */ }
 
 blockquote, q {
@@ -463,10 +458,10 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"] {
   border: 1px solid;
-  border-color: #ccc #ccc #bbb;
+  border-color: var(--wp--preset--color--border);
   border-radius: 3px;
-  background: #e6e6e6;
-  color: rgba(0, 0, 0, 0.8);
+  background: var(--wp--preset--color--background-dark);
+  color: var(--wp--preset--color--foreground);
   font-size: 12px;
   font-size: 0.75rem;
   line-height: 1;
@@ -477,7 +472,7 @@ button:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover {
-  border-color: #ccc #bbb #aaa;
+  border-color: var(--wp--preset--color--border);
 }
 
 button:active, button:focus,
@@ -487,7 +482,7 @@ input[type="reset"]:active,
 input[type="reset"]:focus,
 input[type="submit"]:active,
 input[type="submit"]:focus {
-  border-color: #aaa #bbb #bbb;
+  border-color: var(--wp--preset--color--border);
 }
 
 input[type="text"],
@@ -506,8 +501,8 @@ input[type="datetime"],
 input[type="datetime-local"],
 input[type="color"],
 textarea {
-  color: #666;
-  border: 1px solid #ccc;
+  color: var(--wp--preset--color--foreground-light);
+  border: 1px solid var(--wp--preset--color--border);
   border-radius: 3px;
   padding: 3px;
 }
@@ -532,7 +527,7 @@ textarea:focus {
 }
 
 select {
-  border: 1px solid #ccc;
+  border: 1px solid var(--wp--preset--color--border);
 }
 
 textarea {
@@ -546,11 +541,11 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-  color: #0073aa;
+  color: var(--wp--preset--color--primary);
 }
 
 a:hover, a:focus, a:active {
-  color: #00a0d2;
+  color: var(--wp--preset--color--primary-light);
 }
 
 a:focus {
@@ -576,11 +571,11 @@ a:hover, a:active {
 }
 
 .screen-reader-text:focus {
-  background-color: #f1f1f1;
+  background-color: var(--wp--preset--color--background-dark);
   border-radius: 3px;
   box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
   clip: auto !important;
-  color: #21759b;
+  color: var(--wp--preset--color--primary);
   display: block;
   font-size: 14px;
   font-size: 0.875rem;
