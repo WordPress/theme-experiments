@@ -27,9 +27,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
 # Elements
 # Forms
 # Accessibility
-# Alignments
-# Content
-  ## Posts and pages
+# Posts and pages
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
 # Normalize
@@ -497,113 +495,9 @@ textarea {
 }
 
 /*--------------------------------------------------------------
-# Alignments
+# Posts and pages
 --------------------------------------------------------------*/
 
-.alignleft,
-.alignright {
-  max-width: 580px !important;  /* Let's work to make this !important unnecessary */
-}
-
-.alignleft img,
-.alignright img,
-.alignleft figcaption,
-.alignright figcaption {
-  max-width: 50%;
-  width: 50%;
-}
-
-.alignleft figcaption {
-  clear: left;
-}
-
-.alignright figcaption {
-  clear: right;
-}
-
-.alignleft img,
-.alignleft figcaption {
-  float: left;
-  margin-right: 1.5em;
-}
-
-.alignright img,
-.alignright figcaption {
-  float: right;
-  margin-left: 1.5em;
-}
-
-.aligncenter {
-  clear: both;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/*--------------------------------------------------------------
-# Content
---------------------------------------------------------------*/
-#page {
-  margin: 0 auto;
-  max-width: 100%;
-}
-
-/*--------------------------------------------------------------
-## Posts and pages
---------------------------------------------------------------*/
-.sticky {
-  display: block;
-}
-
-.updated:not(.published) {
-  display: none;
-}
-
-.page-content,
-.entry-content,
-.entry-summary {
+.entry-content {
   margin: 1.5em 0 0;
-}
-
-.page-links {
-  clear: both;
-  margin: 0 0 1.5em;
-}
-
-.entry-header,
-.page-header,
-.entry-footer,
-.not-found .page-content,
-.search .entry-summary {
-  margin: 1.5em auto;
-  padding-left: 14px;
-  padding-right: 14px;
-  max-width: 580px;
-}
-
-.entry-header .wp-post-image {
-  margin-bottom: 1.5em;
-}
-
-.entry-footer span{
-  margin-right: 1em;
-}
-
-.entry-footer{
-  color: #6c7781;
-  font-size: 90%;
-  padding-bottom: 40px;
-  border-bottom: 1px solid #e2e4e7;
-}
-
-@media screen and (min-width: 608px) {
-  .entry-header,
-  .page-header,
-  .entry-footer,
-  .site-info,
-  .not-found .page-content,
-  .search .entry-summary {
-    padding-left: 0;
-    padding-right: 0;
-  }
 }
