@@ -1,0 +1,44 @@
+{
+	"global": {
+		"presets": {
+			"color": [
+				{
+					"slug": "background",
+					"value": "#fff"
+				},
+				{
+					"slug": "background-dark",
+					"value": "#e6e6e6"
+				},
+				{
+					"slug": "foreground",
+					"value": "#191e23"
+				},
+				{
+					"slug": "foreground-light",
+					"value": "#666"
+				},
+				{
+					"slug": "border",
+					"value": "#ccc"
+				},
+				{
+					"slug": "primary",
+					"value": "#0073aa"
+				},
+				{
+					"slug": "primary-light",
+					"value": "#229fd8"
+				},
+				{
+					"slug": "secondary",
+					"value": "#444"
+				},
+				{
+					"slug": "secondary-light",
+					"value": "#eee"
+				}
+			]
+		}
+	}
+}
