@@ -26,15 +26,10 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
 # Typography
 # Elements
 # Forms
-# Navigation
-  ## Links
 # Accessibility
 # Alignments
 # Content
   ## Posts and pages
-# Media
-  ## Captions
-  ## Galleries
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
 # Normalize
@@ -102,35 +97,6 @@ strong {
 
 dfn {
   font-style: italic;
-}
-
-h1 {
-  font-size: 2.44em;
-  margin: 0.67em 0;
-  line-height: 1.4;
-}
-
-h2 {
-  font-size: 1.95em;
-  line-height: 1.4;
-}
-
-h3 {
-  font-size: 1.56em;
-  line-height: 1.4;
-}
-
-h4 {
-  font-size: 1.25em;
-  line-height: 1.5;
-}
-
-h5 {
-  font-size: 1em;
-}
-
-h6 {
-  font-size: 0.8em;
 }
 
 small {
@@ -278,22 +244,11 @@ input,
 select,
 optgroup,
 textarea {
-  color: var(--wp--preset--color--foreground);
   font-family: "Noto Serif", serif;
-  font-size: 16px;
-  font-size: 1rem;
-  line-height: 1.8;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: var(--wp--preset--color--foreground);
   clear: both;
-}
-
-.entry-header .entry-title {
-  font-size: 2.44em;
-  line-height: 1.4;
-  margin: 1em 0 1rem;
 }
 
 dfn, cite, em, i {
@@ -349,35 +304,6 @@ big {
   font-size: 125%;
 }
 
-.archive .site-header {
-  margin-bottom: 3.5em;
-}
-
-.site-title {
-  margin: .4375em 0 0;
-  font-size: 38px;
-  font-weight: bold;
-  line-height: 1.2;
-  color: #333332;
-}
-
-.site-title a {
-  text-decoration: none;
-  color: inherit;
-}
-
-.site-branding {
-  margin-bottom: 1.75em;
-}
-
-.site-description {
-  margin: .4375em 0 0;
-  font-size: 17px;
-  font-weight: inherit;
-  line-height: 1.4;
-  word-wrap: break-word;
-  color: #6c7781;
-}
 /*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
@@ -391,10 +317,6 @@ html {
   /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
   box-sizing: inherit;
 }
-
-body {
-  background: var(--wp--preset--color--background);
-  /* Fallback for when there is no custom background color defined. */ }
 
 blockquote, q {
   quotes: "" ""; }
@@ -532,28 +454,6 @@ select {
 
 textarea {
   width: 100%;
-}
-
-/*--------------------------------------------------------------
-# Navigation
---------------------------------------------------------------*/
-/*--------------------------------------------------------------
-## Links
---------------------------------------------------------------*/
-a {
-  color: var(--wp--preset--color--primary);
-}
-
-a:hover, a:focus, a:active {
-  color: var(--wp--preset--color--primary-light);
-}
-
-a:focus {
-  outline: thin dotted;
-}
-
-a:hover, a:active {
-  outline: 0;
 }
 
 /*--------------------------------------------------------------
@@ -706,100 +606,4 @@ a:hover, a:active {
     padding-left: 0;
     padding-right: 0;
   }
-}
-
-/*--------------------------------------------------------------
-# Media
---------------------------------------------------------------*/
-.page-content .wp-smiley,
-.entry-content .wp-smiley,
-.comment-content .wp-smiley {
-  border: none;
-  margin-bottom: 0;
-  margin-top: 0;
-  padding: 0;
-}
-
-/* Make sure embeds and iframes fit their containers. */
-embed,
-iframe,
-object {
-  max-width: 100%;
-}
-
-/* Make sure logo link wraps around logo image. */
-.custom-logo-link {
-  display: inline-block;
-}
-
-/*--------------------------------------------------------------
-## Captions
---------------------------------------------------------------*/
-.wp-caption {
-  margin-bottom: 1.5em;
-  max-width: 100%;
-}
-
-.wp-caption img[class*="wp-image-"] {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.wp-caption .wp-caption-text {
-  margin: 0.8075em 0;
-}
-
-.wp-caption-text {
-  text-align: center;
-}
-
-/*--------------------------------------------------------------
-## Galleries
---------------------------------------------------------------*/
-.gallery {
-  margin-bottom: 1.5em;
-}
-
-.gallery-item {
-  display: inline-block;
-  text-align: center;
-  vertical-align: top;
-  width: 100%;
-}
-
-.gallery-columns-2 .gallery-item {
-  max-width: 50%;
-}
-
-.gallery-columns-3 .gallery-item {
-  max-width: 33.3333333333%;
-}
-
-.gallery-columns-4 .gallery-item {
-  max-width: 25%;
-}
-
-.gallery-columns-5 .gallery-item {
-  max-width: 20%;
-}
-
-.gallery-columns-6 .gallery-item {
-  max-width: 16.6666666667%;
-}
-
-.gallery-columns-7 .gallery-item {
-  max-width: 14.2857142857%;
-}
-
-.gallery-columns-8 .gallery-item {
-  max-width: 12.5%;
-}
-
-.gallery-columns-9 .gallery-item {
-  max-width: 11.1111111111%;
-}
-
-.gallery-caption {
-  display: block;
 }
