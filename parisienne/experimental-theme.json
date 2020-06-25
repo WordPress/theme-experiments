@@ -1,0 +1,190 @@
+{
+	"global": {
+		"presets": {
+			"color": [
+				{
+					"slug": "background",
+					"value": "#F3EBE8"
+				},
+				{
+					"slug": "foreground",
+					"value": "#141414"
+				},
+				{
+					"slug": "primary",
+					"value": "#fff"
+				}
+			],
+			"font-size": [
+				{
+					"slug": "small",
+					"value": "13px"
+				},
+				{
+					"slug": "normal",
+					"value": "16px"
+				},
+				{
+					"slug": "medium",
+					"value": "20px"
+				},
+				{
+					"slug": "large",
+					"value": "36px"
+				},
+				{
+					"slug": "huge",
+					"value": "72px"
+				}
+			],
+			"line-height": [
+				{
+					"slug": "small",
+					"value": "1.2"
+				},
+				{
+					"slug": "medium",
+					"value": "1.4"
+				},
+				{
+					"slug": "large",
+					"value": "1.8"
+                }
+            ],
+            "font-family": [
+                {
+                    "slug": "primary",
+                    "value": "'Pinyon Script', serif"
+                },
+                {
+                    "slug": "secondary",
+                    "value": "'Ibarra Real Nova', sans-serif"
+                }
+            ]
+		},
+		"styles": {
+			"color": {
+				"background": "var( --wp--preset--color--background )",
+				"text": "var( --wp--preset--color--foreground )"
+			}
+		}
+	},
+	"core/paragraph": {
+		"styles": {
+			"color": {
+				"background": "transparent",
+				"link": "var( --wp--preset--color--primary )",
+				"text": "var( --wp--preset--color--foreground )"
+			},
+			"typography": {
+				"fontSize": "var( --wp--preset--font-size--normal )",
+				"lineHeight": "var( --wp--preset--line-height--large )"
+			}
+		}
+	},
+	"core/heading/h1": {
+		"styles": {
+			"color": {
+				"background": "transparent",
+				"link": "var( --wp--preset--color--primary )",
+				"text": "var( --wp--preset--color--foreground )"
+			},
+			"typography": {
+				"fontSize": "var( --wp--preset--font-size--huge )",
+				"lineHeight": "var( --wp--preset--line-height--large )"
+			}
+		}
+	},
+	"core/heading/h2": {
+		"styles": {
+			"color": {
+				"background": "transparent",
+				"link": "var( --wp--preset--color--primary )",
+				"text": "var( --wp--preset--color--foreground )"
+			},
+			"typography": {
+				"fontSize": "var( --wp--preset--font-size--large )",
+				"lineHeight": "var( --wp--preset--line-height--small )"
+			}
+		}
+	},
+	"core/heading/h3": {
+		"styles": {
+			"color": {
+				"background": "transparent",
+				"link": "var( --wp--preset--color--primary )",
+				"text": "var( --wp--preset--color--foreground )"
+			},
+			"typography": {
+				"fontSize": "var( --wp--preset--font-size--medium )",
+				"lineHeight": "var( --wp--preset--line-height--medium )"
+			}
+		}
+	},
+	"core/heading/h4": {
+		"styles": {
+			"color": {
+				"background": "transparent",
+				"link": "var( --wp--preset--color--primary )",
+				"text": "var( --wp--preset--color--foreground )"
+			},
+			"typography": {
+				"fontSize": "var( --wp--preset--font-size--normal )",
+				"lineHeight": "var( --wp--preset--line-height--medium )"
+			}
+		}
+	},
+	"core/heading/h5": {
+		"styles": {
+			"color": {
+				"background": "transparent",
+				"link": "var( --wp--preset--color--primary )",
+				"text": "var( --wp--preset--color--foreground )"
+			},
+			"typography": {
+				"fontSize": "var( --wp--preset--font-size--small )",
+				"lineHeight": "var( --wp--preset--line-height--large )"
+			}
+		}
+	},
+	"core/heading/h6": {
+		"styles": {
+			"color": {
+				"background": "transparent",
+				"link": "var( --wp--preset--color--primary )",
+				"text": "var( --wp--preset--color--foreground )"
+			},
+			"typography": {
+				"fontSize": "var( --wp--preset--font-size--small )",
+				"lineHeight": "var( --wp--preset--line-height--large )"
+			}
+		}
+	},
+	"core/columns": {
+		"styles": {
+			"color": {
+				"background": "transparent",
+				"link": "var( --wp--preset--color--primary )",
+				"text": "var( --wp--preset--color--foreground )"
+			}
+		}
+	},
+	"core/group": {
+		"styles": {
+			"color": {
+				"background": "transparent",
+				"link": "var( --wp--preset--color--primary )",
+				"text": "var( --wp--preset--color--foreground )"
+			}
+		}
+	},
+	"core/media-text": {
+		"styles": {
+			"color": {
+				"background": "transparent",
+				"link": "var( --wp--preset--color--primary )",
+				"text": "var( --wp--preset--color--foreground )"
+			}
+		}
+	}
+}
