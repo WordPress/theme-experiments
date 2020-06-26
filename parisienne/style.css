@@ -52,6 +52,10 @@ p.has-large-font-size {
     background-color: var( --wp--preset--color--primary );
 }
 
+:root .has-secondary-background-color {
+    background-color: var( --wp--preset--color--secondary );
+}
+
 :root .has-foreground-background-color {
     background-color: var(--wp--preset--color--foreground );
 }
@@ -62,6 +66,10 @@ p.has-large-font-size {
 
 :root .has-primary-color {
     color: var( --wp--preset--color--primary );
+}
+
+:root .has-secondary-color {
+    color: var( --wp--preset--color--secondary );
 }
 
 :root .has-foreground-color {

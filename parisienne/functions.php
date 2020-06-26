@@ -19,23 +19,31 @@ if ( ! function_exists( 'parisienne_theme_support' ) ) :
 		add_theme_support( 'editor-styles' );
 
 		// Editor Color Palette
-		add_theme_support( 'editor-color-palette', array(
+		add_theme_support(
+			'editor-color-palette',
 			array(
-				'name'  => __( 'Background', 'parisienne' ),
-				'slug'  => 'background',
-				'color'	=> '#F3EBE8',
-			),
-			array(
-				'name'  => __( 'Foreground', 'parisienne' ),
-				'slug'  => 'foreground',
-				'color' => '#141414',
-			),
-			array(
-				'name'  => __( 'Primary', 'parisienne' ),
-				'slug'  => 'primary',
-				'color' => '#fff',
-			),
-		) );
+				array(
+					'name'  => __( 'Background', 'parisienne' ),
+					'slug'  => 'background',
+					'color'	=> '#F3EBE8',
+				),
+				array(
+					'name'  => __( 'Foreground', 'parisienne' ),
+					'slug'  => 'foreground',
+					'color' => '#141414',
+				),
+				array(
+					'name'  => __( 'Primary', 'parisienne' ),
+					'slug'  => 'primary',
+					'color' => '#fff',
+				),
+				array(
+					'name'  => __( 'Secondary', 'parisienne' ),
+					'slug'  => 'secondary',
+					'color' => '#817361',
+				),
+			)
+		);
 
 		// Enqueue stylesheet for the editor.
 		add_editor_style(
@@ -44,7 +52,7 @@ if ( ! function_exists( 'parisienne_theme_support' ) ) :
 				get_stylesheet_uri(),
 			)
 		);
-    }
+	}
 add_action( 'after_setup_theme', 'parisienne_theme_support' );
 endif;
 

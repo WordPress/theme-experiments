@@ -13,6 +13,10 @@
 				{
 					"slug": "primary",
 					"value": "#fff"
+				},
+				{
+					"slug": "secondary",
+					"value": "#817361"
 				}
 			],
 			"font-size": [
