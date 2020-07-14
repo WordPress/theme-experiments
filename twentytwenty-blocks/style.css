@@ -55,6 +55,15 @@ Tags: one-column, flexible-header, accessibility-ready, custom-colors, custom-me
 	background-color: #fff;
 }
 
+
+/*
+** Site Content
+** (Extra specificity here is necessary to override default theme styles for content within Group block inner containers.) 
+*/
+.site-content > .wp-block-group__inner-container > .entry-content:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide) {
+	max-width: inherit;
+}
+
 /*
 ** Footer
 */
