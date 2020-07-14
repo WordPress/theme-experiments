@@ -56,24 +56,6 @@ Tags: one-column, flexible-header, accessibility-ready, custom-colors, custom-me
 }
 
 /*
-** Entry Header
-*/
-
-.site-content > h1:first-child {
-	width: 100%;
-	padding: 4rem 2rem;
-	margin: 0 0 4rem;
-	text-align: center;
-	background: #FFF;
-}
-
-@media screen and (min-width: 700px) {
-	.site-content > h1:first-child {
-		padding: 8rem 2rem;
-	}
-}
-
-/*
 ** Footer
 */
 #site-footer, .site-footer{
