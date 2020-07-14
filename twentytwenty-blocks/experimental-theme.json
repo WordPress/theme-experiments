@@ -32,6 +32,26 @@
 					"slug": "huge",
 					"value": "50px"
 				}
+			],
+			"line-height": [
+				{
+					"slug": "normal",
+					"value": "1.8"
+				},
+				{
+					"slug": "heading",
+					"value": "1.4"
+				}
+			],
+			"font-weight": [
+				{
+					"slug": "normal",
+					"value": "normal"
+				},
+				{
+					"slug": "heading",
+					"value": "700"
+				}
 			]
 		}
 	}
