@@ -340,34 +340,34 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 ## Color Palette
 --------------------------------------------------------------*/
 
-.has-strong-blue-color {
-  color: #0073aa;
+.has-primary-color {
+  color: var(--wp--preset--color--primary);
 }
 
-.has-strong-blue-background-color {
-  background-color: #0073aa;
+.has-primary-background-color {
+  background-color: var(--wp--preset--color--primary);
 }
 
-.has-lighter-blue-color {
-  color: #229fd8;
+.has-primary-light-color {
+  color: var(--wp--preset--color--primary-light);
 }
 
-.has-lighter-blue-background-color {
-  background-color: #229fd8;
+.has-primary-light-background-color {
+  background-color: var(--wp--preset--color--primary-light);
 }
 
-.has-very-light-gray-color {
-  color: #eee;
+.has-secondary-light-color {
+  color: var(--wp--preset--color--secondary-light);
 }
 
-.has-very-light-gray-background-color {
-  background-color: #eee;
+.has-secondary-light-background-color {
+  background-color: var(--wp--preset--color--secondary-light);
 }
 
-.has-very-dark-gray-color {
-  color: #444;
+.has-secondary-color {
+  color: var(--wp--preset--color--secondary);
 }
 
-.has-very-dark-gray-background-color {
-  background-color: #444;
+.has-secondary-background-color {
+  background-color: var(--wp--preset--color--secondary);
 }
