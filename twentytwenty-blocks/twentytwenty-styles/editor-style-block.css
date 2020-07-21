@@ -9,7 +9,7 @@ body {
 
 .editor-styles-wrapper {
 	background: var(--wp--preset--color--background);
-	color: var(--wp--preset--color--text);
+	color: var(--wp--preset--color--foreground);
 	letter-spacing: -0.015em;
 	-moz-font-smoothing: antialiased;
 	-webkit-font-smoothing: antialiased;
@@ -181,8 +181,7 @@ Inter variable font. Usage:
 }
 
 :root .has-primary-background-color {
-	background-color: var(--wp--preset--color--text);
-	color: var(--wp--preset--color--primary);
+	background-color: var(--wp--preset--color--foreground);
 }
 
 :root .has-secondary-color {
@@ -200,7 +199,7 @@ Inter variable font. Usage:
 
 :root .has-subtle-background-background-color {
 	background-color: #dcd7ca;
-	color: var(--wp--preset--color--text);
+	color: var(--wp--preset--color--foreground);
 }
 
 :root .has-background-color {
@@ -209,23 +208,23 @@ Inter variable font. Usage:
 
 :root .has-background-background-color {
 	background-color: var(--wp--preset--color--background);
-	color: var(--wp--preset--color--text);
+	color: var(--wp--preset--color--foreground);
 }
 
 /* GENERAL COLORS */
 
 .has-black-background-color {
-	background-color: var(--wp--preset--color--text);
+	background-color: var(--wp--preset--color--foreground);
 	color: #fff;
 }
 
 .has-white-background-color {
 	background-color: #fff;
-	color: var(--wp--preset--color--text);
+	color: var(--wp--preset--color--foreground);
 }
 
 .has-black-color {
-	color: var(--wp--preset--color--text);
+	color: var(--wp--preset--color--foreground);
 }
 
 .has-white-color {

@@ -58,7 +58,7 @@ if ( ! function_exists( 'twentytwentyblocks_theme_support' ) ) :
 				),
 				array(
 					'name'  => __( 'Text', 'twentytwenty-blocks' ),
-					'slug'  => 'text',
+					'slug'  => 'foreground',
 					'color' => '#000',
 				),
 				array(

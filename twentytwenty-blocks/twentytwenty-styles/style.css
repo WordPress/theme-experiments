@@ -127,7 +127,7 @@ html {
 body {
 	background: var(--wp--preset--color--background);
 	box-sizing: border-box;
-	color: var(--wp--preset--color--text);
+	color: var(--wp--preset--color--foreground);
 	font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
 	font-size: var(--wp--preset--font-size--normal);
 	font-weight: var(--wp--preset--font-weight--normal);
@@ -754,7 +754,7 @@ button,
 input,
 textarea {
 	border-color: #dcd7ca;
-	color: var(--wp--preset--color--text);
+	color: var(--wp--preset--color--foreground);
 }
 
 code,
@@ -1657,7 +1657,7 @@ ul.primary-menu {
 /* SUB MENU */
 
 .primary-menu ul {
-	background: var(--wp--preset--color--text);
+	background: var(--wp--preset--color--foreground);
 	border-radius: 0.4rem;
 	color: #fff;
 	font-size: 1.7rem;
@@ -1697,7 +1697,7 @@ ul.primary-menu {
 
 .primary-menu ul::after {
 	border: 0.8rem solid transparent;
-	border-bottom-color: var(--wp--preset--color--text);
+	border-bottom-color: var(--wp--preset--color--foreground);
 	right: 1.8rem;
 }
 
@@ -1746,7 +1746,7 @@ ul.primary-menu {
 	border-bottom-color: transparent;
 
 	/*rtl:ignore*/
-	border-left-color: var(--wp--preset--color--text);
+	border-left-color: var(--wp--preset--color--foreground);
 	bottom: auto;
 	right: -1.6rem;
 	top: 2rem;
@@ -2768,7 +2768,7 @@ h2.entry-title {
 
 :root .has-subtle-background-background-color {
 	background-color: #dcd7ca;
-	color: var(--wp--preset--color--text);
+	color: var(--wp--preset--color--foreground);
 }
 
 :root .has-background-color {
@@ -2777,7 +2777,7 @@ h2.entry-title {
 
 :root .has-background-background-color {
 	background-color: var(--wp--preset--color--background);
-	color: var(--wp--preset--color--text);
+	color: var(--wp--preset--color--foreground);
 }
 
 
