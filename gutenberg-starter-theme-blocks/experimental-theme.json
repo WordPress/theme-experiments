@@ -86,7 +86,6 @@
 	"core/paragraph": {
 		"styles": {
 			"color": {
-				"background": "var( --wp--preset--color--background )",
 				"link": "var( --wp--preset--color--primary )",
 				"text": "var( --wp--preset--color--foreground )"
 			},
@@ -99,7 +98,6 @@
 	"core/heading/h1": {
 		"styles": {
 			"color": {
-				"background": "var( --wp--preset--color--background )",
 				"link": "var( --wp--preset--color--primary )",
 				"text": "var( --wp--preset--color--foreground )"
 			},
@@ -112,7 +110,6 @@
 	"core/heading/h2": {
 		"styles": {
 			"color": {
-				"background": "var( --wp--preset--color--background )",
 				"link": "var( --wp--preset--color--primary )",
 				"text": "var( --wp--preset--color--foreground )"
 			},
@@ -125,7 +122,6 @@
 	"core/heading/h3": {
 		"styles": {
 			"color": {
-				"background": "var( --wp--preset--color--background )",
 				"link": "var( --wp--preset--color--primary )",
 				"text": "var( --wp--preset--color--foreground )"
 			},
@@ -138,7 +134,6 @@
 	"core/heading/h4": {
 		"styles": {
 			"color": {
-				"background": "var( --wp--preset--color--background )",
 				"link": "var( --wp--preset--color--primary )",
 				"text": "var( --wp--preset--color--foreground )"
 			},
@@ -151,7 +146,6 @@
 	"core/heading/h5": {
 		"styles": {
 			"color": {
-				"background": "var( --wp--preset--color--background )",
 				"link": "var( --wp--preset--color--primary )",
 				"text": "var( --wp--preset--color--foreground )"
 			},
@@ -164,7 +158,6 @@
 	"core/heading/h6": {
 		"styles": {
 			"color": {
-				"background": "var( --wp--preset--color--background )",
 				"link": "var( --wp--preset--color--primary )",
 				"text": "var( --wp--preset--color--foreground )"
 			},
@@ -177,7 +170,6 @@
 	"core/columns": {
 		"styles": {
 			"color": {
-				"background": "var( --wp--preset--color--background )",
 				"link": "var( --wp--preset--color--primary )",
 				"text": "var( --wp--preset--color--foreground )"
 			}
@@ -186,7 +178,6 @@
 	"core/group": {
 		"styles": {
 			"color": {
-				"background": "var( --wp--preset--color--background )",
 				"link": "var( --wp--preset--color--primary )",
 				"text": "var( --wp--preset--color--foreground )"
 			}
@@ -195,7 +186,6 @@
 	"core/media-text": {
 		"styles": {
 			"color": {
-				"background": "var( --wp--preset--color--background )",
 				"link": "var( --wp--preset--color--primary )",
 				"text": "var( --wp--preset--color--foreground )"
 			}
