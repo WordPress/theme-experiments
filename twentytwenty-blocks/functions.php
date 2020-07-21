@@ -1,6 +1,6 @@
 <?php
 if ( ! function_exists( 'twentytwentyblocks_theme_support' ) ) :
-    function twentytwentyblocks_theme_support()  {
+	function twentytwentyblocks_theme_support() {
 		// Add default posts and comments RSS feed links to head.
 		add_theme_support( 'automatic-feed-links' );
 
@@ -15,6 +15,12 @@ if ( ! function_exists( 'twentytwentyblocks_theme_support' ) ) :
 
 		// Enqueue editor styles.
 		add_editor_style( 'twentytwenty-styles/editor-style-block.css' );
+
+		// Add support for custom line height controls.
+		add_theme_support( 'custom-line-height' );
+
+		// Add support for experimental link color control.
+		add_theme_support( 'experimental-link-color' );
 
 		// Add custom editor font sizes.
 		add_theme_support(

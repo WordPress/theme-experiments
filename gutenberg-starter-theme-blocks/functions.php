@@ -18,6 +18,12 @@ if ( ! function_exists( 'gutenberg_starter_theme_blocks_support' ) ) :
 		// Adding support for responsive embedded content.
 		add_theme_support( 'responsive-embeds' );
 
+		// Add support for custom line height controls.
+		add_theme_support( 'custom-line-height' );
+
+		// Add support for experimental link color control.
+		add_theme_support( 'experimental-link-color' );
+
 		// Support a custom color palette.
 		add_theme_support( 'editor-color-palette', array(
 			array(
