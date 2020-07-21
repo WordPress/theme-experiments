@@ -167,48 +167,34 @@ Inter variable font. Usage:
 
 /* CUSTOM COLORS */
 
-:root .has-accent-color {
+.editor-styles-wrapper .has-primary-color,
+.editor-styles-wrapper .wp-block-button__link.has-primary-color {
 	color: var(--wp--preset--color--primary);
 }
 
-:root .has-accent-background-color {
+.editor-styles-wrapper .has-primary-background-color,
+.editor-styles-wrapper .wp-block-button__link.has-primary-background-color {
 	background-color: var(--wp--preset--color--primary);
-	color: #fff;
 }
 
-:root .has-primary-color {
-	color: var(--wp--preset--color--primary);
+.editor-styles-wrapper .has-foreground-color,
+.editor-styles-wrapper .wp-block-button__link.has-foreground-color {
+	color: var(--wp--preset--color--foreground);
 }
 
-:root .has-primary-background-color {
+.editor-styles-wrapper .has-foreground-background-color,
+.editor-styles-wrapper .wp-block-button__link.has-foreground-background-color {
 	background-color: var(--wp--preset--color--foreground);
 }
 
-:root .has-secondary-color {
-	color: #6d6d6d;
-}
-
-:root .has-secondary-background-color {
-	background-color: #6d6d6d;
-	color: #fff;
-}
-
-:root .has-subtle-background-color {
-	color: #dcd7ca;
-}
-
-:root .has-subtle-background-background-color {
-	background-color: #dcd7ca;
-	color: var(--wp--preset--color--foreground);
-}
-
-:root .has-background-color {
+.editor-styles-wrapper .has-background-color,
+.editor-styles-wrapper .wp-block-button__link.has-background-color {
 	color: var(--wp--preset--color--background);
 }
 
-:root .has-background-background-color {
+.editor-styles-wrapper .has-background-background-color,
+.editor-styles-wrapper .wp-block-button__link.has-background-background-color {
 	background-color: var(--wp--preset--color--background);
-	color: var(--wp--preset--color--foreground);
 }
 
 /* GENERAL COLORS */
