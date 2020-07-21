@@ -52,29 +52,19 @@ if ( ! function_exists( 'twentytwentyblocks_theme_support' ) ) :
 			'editor-color-palette',
 			array(
 				array(
+					'name'  => __( 'Background', 'twentytwenty-blocks' ),
+					'slug'  => 'background',
+					'color' => '#f5efe0',
+				),
+				array(
+					'name'  => __( 'Text', 'twentytwenty-blocks' ),
+					'slug'  => 'foreground',
+					'color' => '#000',
+				),
+				array(
 					'name'  => __( 'Primary', 'twentytwenty-blocks' ),
 					'slug'  => 'primary',
-					'color' => '#0073AA',
-				),
-				array(
-					'name'  => __( 'Secondary', 'twentytwenty-blocks' ),
-					'slug'  => 'secondary',
-					'color' => '#005177',
-				),
-				array(
-					'name'  => __( 'Dark Gray', 'twentytwenty-blocks' ),
-					'slug'  => 'dark-gray',
-					'color' => '#111',
-				),
-				array(
-					'name'  => __( 'Light Gray', 'twentytwenty-blocks' ),
-					'slug'  => 'light-gray',
-					'color' => '#767676',
-				),
-				array(
-					'name'  => __( 'White', 'twentytwenty-blocks' ),
-					'slug'  => 'white',
-					'color' => '#FFF',
+					'color' => '#cd2653',
 				),
 			)
 		);
@@ -308,6 +298,16 @@ function twentytwentyblocks_register_styles() {
 }
 add_action( 'wp_enqueue_scripts', 'twentytwentyblocks_register_styles' );
 
+/**
+ * Load styles into Edit Site
+ * (This shouldn't be necessary but it seems to be for now.)
+ */
+function twentytwentyblocks_register_FSE_styles() {
+	$theme_version = wp_get_theme()->get( 'Version' );
+	wp_register_style( 'custom_wp_admin_css', get_template_directory_uri() . '/twentytwenty-styles/editor-style-block.css', false, $theme_version );
+    wp_enqueue_style( 'custom_wp_admin_css' );
+}
+add_action( 'admin_enqueue_scripts', 'twentytwentyblocks_register_FSE_styles' );
 
 /**
  * Register Block Patterns.

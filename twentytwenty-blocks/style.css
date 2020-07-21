@@ -16,6 +16,13 @@ Tags: one-column, flexible-header, accessibility-ready, custom-colors, custom-me
 */
 @import url('twentytwenty-styles/style.css');
 
+/* 
+ * Set the default link color.
+*/
+:root {
+	--wp--style--color--link: var(--wp--preset--color--primary);
+}
+
 /*
 ** Header
 */
@@ -48,22 +55,13 @@ Tags: one-column, flexible-header, accessibility-ready, custom-colors, custom-me
 	background-color: #fff;
 }
 
+
 /*
-** Entry Header
+** Site Content
+** (Extra specificity here is necessary to override default theme styles for content within Group block inner containers.) 
 */
-
-.site-content > h1:first-child {
-	width: 100%;
-	padding: 4rem 2rem;
-	margin: 0 0 4rem;
-	text-align: center;
-	background: #FFF;
-}
-
-@media screen and (min-width: 700px) {
-	.site-content > h1:first-child {
-		padding: 8rem 2rem;
-	}
+.site-content > .wp-block-group__inner-container > .entry-content:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide) {
+	max-width: inherit;
 }
 
 /*

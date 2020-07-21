@@ -1,0 +1,58 @@
+{
+	"global": {
+		"presets": {
+			"color": [
+				{
+					"slug": "background",
+					"value": "#f5efe0"
+				},
+				{
+					"slug": "foreground",
+					"value": "#000"
+				},
+				{
+					"slug": "primary",
+					"value": "#cd2653"
+				}
+			],
+			"font-size": [
+				{
+					"slug": "small",
+					"value": "20px"
+				},
+				{
+					"slug": "normal",
+					"value": "22px"
+				},
+				{
+					"slug": "large",
+					"value": "37px"
+				},
+				{
+					"slug": "huge",
+					"value": "50px"
+				}
+			],
+			"line-height": [
+				{
+					"slug": "normal",
+					"value": "1.8"
+				},
+				{
+					"slug": "heading",
+					"value": "1.4"
+				}
+			],
+			"font-weight": [
+				{
+					"slug": "normal",
+					"value": "normal"
+				},
+				{
+					"slug": "heading",
+					"value": "700"
+				}
+			]
+		}
+	}
+}
