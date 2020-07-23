@@ -299,17 +299,6 @@ function twentytwentyblocks_register_styles() {
 add_action( 'wp_enqueue_scripts', 'twentytwentyblocks_register_styles' );
 
 /**
- * Load styles into Edit Site
- * (This shouldn't be necessary but it seems to be for now.)
- */
-function twentytwentyblocks_register_FSE_styles() {
-	$theme_version = wp_get_theme()->get( 'Version' );
-	wp_register_style( 'custom_wp_admin_css', get_template_directory_uri() . '/twentytwenty-styles/editor-style-block.css', false, $theme_version );
-    wp_enqueue_style( 'custom_wp_admin_css' );
-}
-add_action( 'admin_enqueue_scripts', 'twentytwentyblocks_register_FSE_styles' );
-
-/**
  * Register Block Patterns.
  */
 
