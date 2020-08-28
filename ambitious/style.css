@@ -899,15 +899,22 @@ textarea {
 	flex-grow: 0;
 }
 
+.main-menu-toggle p {
+	margin: 0;
+	line-height: 1;
+}
+
 /* Override Core Column Block CSS */
 .main-menu-toggle.wp-block-column:nth-child(n) {
 	margin-left: auto;
 }
 
 .menu-toggle {
-	display: block;
+	display: flex;
+	align-items: center;
 	margin: 0;
 	padding: 1rem;
+	height: 65px;
 	border: none;
 	background: none;
 	color: rgba(255, 255, 255, 0.95);
@@ -922,6 +929,7 @@ textarea {
 	text-transform: none;
 	text-transform: var(--navi-text-transform);
 	text-align: left;
+	line-height: 1;
 }
 
 .menu-toggle .menu-toggle-text {
