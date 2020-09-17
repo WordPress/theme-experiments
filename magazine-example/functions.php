@@ -31,7 +31,7 @@ if ( ! function_exists( 'magazine_example_support' ) ) :
 		add_theme_support( 'editor-styles' );
 
 		// Enqueue editor styles.
-		add_editor_style( 'editor-editor.css' );
+		add_editor_style( 'style-editor.css' );
 
 		// Support a custom color palette.
 		add_theme_support( 'editor-color-palette', array(
