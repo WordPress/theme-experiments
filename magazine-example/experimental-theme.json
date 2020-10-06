@@ -6,19 +6,19 @@
 				"palette": [
 					{
 						"slug": "background",
-						"value": "#f5efe0"
+						"color": "#f5efe0"
 					},
 					{
 						"slug": "foreground",
-						"value": "#000"
+						"color": "#000"
 					},
 					{
 						"slug": "primary",
-						"value": "#cd2653"
+						"color": "#cd2653"
 					},
 					{
 						"slug": "secondary",
-						"value": "#6d6d6d"
+						"color": "#6d6d6d"
 					}
 				]
 			},
@@ -28,23 +28,23 @@
 				"fontSizes": [
 					{
 						"slug": "small",
-						"value": "13px"
+						"size": "13px"
 					},
 					{
 						"slug": "normal",
-						"value": "16px"
+						"size": "16px"
 					},
 					{
 						"slug": "medium",
-						"value": "20px"
+						"size": "20px"
 					},
 					{
 						"slug": "large",
-						"value": "36px"
+						"size": "36px"
 					},
 					{
 						"slug": "huge",
-						"value": "48px"
+						"size": "48px"
 					}
 				],
 				"spacing": {
