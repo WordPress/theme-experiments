@@ -112,6 +112,10 @@ body {
 	background-color: inherit;
 }
 
+.wp-block-site-title a {
+	text-decoration: none;
+}
+
 h1 {
 	margin-bottom: 0;
 }
