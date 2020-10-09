@@ -1,0 +1,57 @@
+{
+	"global": {
+		"settings": {
+			"color": {
+				"gradients": [ ],
+				"palette": [
+					{
+						"slug": "background",
+						"color": "#ffffff"
+					},
+					{
+						"slug": "foreground",
+						"color": "#000000"
+					},
+					{
+						"slug": "primary",
+						"color": "#10506b"
+					},
+					{
+						"slug": "secondary",
+						"color": "#ff4d4d"
+					}
+				]
+			},
+			"typography": {
+				"customFontSize": true,
+				"customLineHeight": true,
+				"fontSizes": [
+					{
+						"slug": "small",
+						"size": "13px"
+					},
+					{
+						"slug": "normal",
+						"size": "16px"
+					},
+					{
+						"slug": "medium",
+						"size": "20px"
+					},
+					{
+						"slug": "large",
+						"size": "36px"
+					},
+					{
+						"slug": "huge",
+						"size": "48px"
+					}
+				],
+				"spacing": {
+					"customPadding": true,
+					"units": [ "px", "em", "rem", "vh", "vw" ]
+				}
+			}
+		}
+	}
+}
