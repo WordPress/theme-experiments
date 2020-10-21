@@ -52,18 +52,6 @@ p,
 	line-height: 1.8;
 }
 
-h1 {
-	font-size: var(--wp--preset--font-size--huge);
-}
-
-h2 {
-	font-size: var(--wp--preset--font-size--large);
-}
-
-h3 {
-	font-size: var(--wp--preset--font-size--medium);
-}
-
 /*--------------------------------------------------------------
 # Shared Block Overrides
 --------------------------------------------------------------*/
@@ -86,7 +74,7 @@ h3 {
 /* Post Title */
 
 .wp-block-post-title {
-	font-size: var(--wp--preset--font-size--huge);
+	font-size: calc(1px * var(--wp--preset--font-size--huge));
 	margin-top: 0;
 }
 
@@ -99,7 +87,7 @@ h3 {
 
 .wp-block-latest-posts > li > a {
 	display: inline-block;
-	font-size: var(--wp--preset--font-size--medium);
+	font-size: calc(1px * var(--wp--preset--font-size--medium));
 	font-weight: 700;
 	margin-bottom: var(--magTheme--paddingVertical);
 }
