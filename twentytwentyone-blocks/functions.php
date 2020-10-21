@@ -17,9 +17,9 @@ if ( ! function_exists( 'twenty_twenty_one_blocks_setup' ) ) {
 		 * Make theme available for translation.
 		 * Translations can be filed in the /languages/ directory.
 		 * If you're building a theme based on Twenty Twenty-One, use a find and replace
-		 * to change 'twentytwentyone' to the name of your theme in all the template files.
+		 * to change 'twentytwentyone-blocks' to the name of your theme in all the template files.
 		 */
-		load_theme_textdomain( 'twentytwentyone', get_template_directory() . '/languages' );
+		load_theme_textdomain( 'twentytwentyone-blocks', get_template_directory() . '/languages' );
 
 		// Add default posts and comments RSS feed links to head.
 		add_theme_support( 'automatic-feed-links' );
@@ -60,44 +60,44 @@ if ( ! function_exists( 'twenty_twenty_one_blocks_setup' ) ) {
 			'editor-font-sizes',
 			array(
 				array(
-					'name'      => esc_html__( 'Extra small', 'twentytwentyone' ),
-					'shortName' => esc_html_x( 'XS', 'Font size', 'twentytwentyone' ),
+					'name'      => esc_html__( 'Extra small', 'twentytwentyone-blocks' ),
+					'shortName' => esc_html_x( 'XS', 'Font size', 'twentytwentyone-blocks' ),
 					'size'      => 16,
 					'slug'      => 'extra-small',
 				),
 				array(
-					'name'      => esc_html__( 'Small', 'twentytwentyone' ),
-					'shortName' => esc_html_x( 'S', 'Font size', 'twentytwentyone' ),
+					'name'      => esc_html__( 'Small', 'twentytwentyone-blocks' ),
+					'shortName' => esc_html_x( 'S', 'Font size', 'twentytwentyone-blocks' ),
 					'size'      => 18,
 					'slug'      => 'small',
 				),
 				array(
-					'name'      => esc_html__( 'Normal', 'twentytwentyone' ),
-					'shortName' => esc_html_x( 'M', 'Font size', 'twentytwentyone' ),
+					'name'      => esc_html__( 'Normal', 'twentytwentyone-blocks' ),
+					'shortName' => esc_html_x( 'M', 'Font size', 'twentytwentyone-blocks' ),
 					'size'      => 20,
 					'slug'      => 'normal',
 				),
 				array(
-					'name'      => esc_html__( 'Large', 'twentytwentyone' ),
-					'shortName' => esc_html_x( 'L', 'Font size', 'twentytwentyone' ),
+					'name'      => esc_html__( 'Large', 'twentytwentyone-blocks' ),
+					'shortName' => esc_html_x( 'L', 'Font size', 'twentytwentyone-blocks' ),
 					'size'      => 24,
 					'slug'      => 'large',
 				),
 				array(
-					'name'      => esc_html__( 'Extra Large', 'twentytwentyone' ),
-					'shortName' => esc_html_x( 'XL', 'Font size', 'twentytwentyone' ),
+					'name'      => esc_html__( 'Extra Large', 'twentytwentyone-blocks' ),
+					'shortName' => esc_html_x( 'XL', 'Font size', 'twentytwentyone-blocks' ),
 					'size'      => 40,
 					'slug'      => 'extra-large',
 				),
 				array(
-					'name'      => esc_html__( 'Huge', 'twentytwentyone' ),
-					'shortName' => esc_html_x( 'XXL', 'Font size', 'twentytwentyone' ),
+					'name'      => esc_html__( 'Huge', 'twentytwentyone-blocks' ),
+					'shortName' => esc_html_x( 'XXL', 'Font size', 'twentytwentyone-blocks' ),
 					'size'      => 96,
 					'slug'      => 'huge',
 				),
 				array(
-					'name'      => esc_html__( 'Gigantic', 'twentytwentyone' ),
-					'shortName' => esc_html_x( 'XXXL', 'Font size', 'twentytwentyone' ),
+					'name'      => esc_html__( 'Gigantic', 'twentytwentyone-blocks' ),
+					'shortName' => esc_html_x( 'XXXL', 'Font size', 'twentytwentyone-blocks' ),
 					'size'      => 144,
 					'slug'      => 'gigantic',
 				),
@@ -120,52 +120,52 @@ if ( ! function_exists( 'twenty_twenty_one_blocks_setup' ) ) {
 			'editor-color-palette',
 			array(
 				array(
-					'name'  => esc_html__( 'Black', 'twentytwentyone' ),
+					'name'  => esc_html__( 'Black', 'twentytwentyone-blocks' ),
 					'slug'  => 'black',
 					'color' => $black,
 				),
 				array(
-					'name'  => esc_html__( 'Dark Gray', 'twentytwentyone' ),
+					'name'  => esc_html__( 'Dark Gray', 'twentytwentyone-blocks' ),
 					'slug'  => 'dark-gray',
 					'color' => $dark_gray,
 				),
 				array(
-					'name'  => esc_html__( 'Gray', 'twentytwentyone' ),
+					'name'  => esc_html__( 'Gray', 'twentytwentyone-blocks' ),
 					'slug'  => 'gray',
 					'color' => $gray,
 				),
 				array(
-					'name'  => esc_html__( 'Green', 'twentytwentyone' ),
+					'name'  => esc_html__( 'Green', 'twentytwentyone-blocks' ),
 					'slug'  => 'green',
 					'color' => $green,
 				),
 				array(
-					'name'  => esc_html__( 'Blue', 'twentytwentyone' ),
+					'name'  => esc_html__( 'Blue', 'twentytwentyone-blocks' ),
 					'slug'  => 'blue',
 					'color' => $blue,
 				),
 				array(
-					'name'  => esc_html__( 'Purple', 'twentytwentyone' ),
+					'name'  => esc_html__( 'Purple', 'twentytwentyone-blocks' ),
 					'slug'  => 'purple',
 					'color' => $purple,
 				),
 				array(
-					'name'  => esc_html__( 'Red', 'twentytwentyone' ),
+					'name'  => esc_html__( 'Red', 'twentytwentyone-blocks' ),
 					'slug'  => 'red',
 					'color' => $red,
 				),
 				array(
-					'name'  => esc_html__( 'Orange', 'twentytwentyone' ),
+					'name'  => esc_html__( 'Orange', 'twentytwentyone-blocks' ),
 					'slug'  => 'orange',
 					'color' => $orange,
 				),
 				array(
-					'name'  => esc_html__( 'Yellow', 'twentytwentyone' ),
+					'name'  => esc_html__( 'Yellow', 'twentytwentyone-blocks' ),
 					'slug'  => 'yellow',
 					'color' => $yellow,
 				),
 				array(
-					'name'  => esc_html__( 'White', 'twentytwentyone' ),
+					'name'  => esc_html__( 'White', 'twentytwentyone-blocks' ),
 					'slug'  => 'white',
 					'color' => $white,
 				),
@@ -176,42 +176,42 @@ if ( ! function_exists( 'twenty_twenty_one_blocks_setup' ) ) {
 			'editor-gradient-presets',
 			array(
 				array(
-					'name'     => esc_html__( 'Purple to Yellow', 'twentytwentyone' ),
+					'name'     => esc_html__( 'Purple to Yellow', 'twentytwentyone-blocks' ),
 					'gradient' => 'linear-gradient(160deg, ' . $purple . ', ' . $yellow . ')',
 					'slug'     => 'purple-to-yellow',
 				),
 				array(
-					'name'     => esc_html__( 'Yellow to Purple', 'twentytwentyone' ),
+					'name'     => esc_html__( 'Yellow to Purple', 'twentytwentyone-blocks' ),
 					'gradient' => 'linear-gradient(160deg, ' . $yellow . ', ' . $purple . ')',
 					'slug'     => 'yellow-to-purple',
 				),
 				array(
-					'name'     => esc_html__( 'Green to Yellow', 'twentytwentyone' ),
+					'name'     => esc_html__( 'Green to Yellow', 'twentytwentyone-blocks' ),
 					'gradient' => 'linear-gradient(160deg, ' . $green . ', ' . $yellow . ')',
 					'slug'     => 'green-to-yellow',
 				),
 				array(
-					'name'     => esc_html__( 'Yellow to Green', 'twentytwentyone' ),
+					'name'     => esc_html__( 'Yellow to Green', 'twentytwentyone-blocks' ),
 					'gradient' => 'linear-gradient(160deg, ' . $yellow . ', ' . $green . ')',
 					'slug'     => 'yellow-to-green',
 				),
 				array(
-					'name'     => esc_html__( 'Red to Yellow', 'twentytwentyone' ),
+					'name'     => esc_html__( 'Red to Yellow', 'twentytwentyone-blocks' ),
 					'gradient' => 'linear-gradient(160deg, ' . $red . ', ' . $yellow . ')',
 					'slug'     => 'red-to-yellow',
 				),
 				array(
-					'name'     => esc_html__( 'Yellow to Red', 'twentytwentyone' ),
+					'name'     => esc_html__( 'Yellow to Red', 'twentytwentyone-blocks' ),
 					'gradient' => 'linear-gradient(160deg, ' . $yellow . ', ' . $red . ')',
 					'slug'     => 'yellow-to-red',
 				),
 				array(
-					'name'     => esc_html__( 'Purple to Red', 'twentytwentyone' ),
+					'name'     => esc_html__( 'Purple to Red', 'twentytwentyone-blocks' ),
 					'gradient' => 'linear-gradient(160deg, ' . $purple . ', ' . $red . ')',
 					'slug'     => 'purple-to-red',
 				),
 				array(
-					'name'     => esc_html__( 'Red to Purple', 'twentytwentyone' ),
+					'name'     => esc_html__( 'Red to Purple', 'twentytwentyone_blocks_block_editor_script' ),
 					'gradient' => 'linear-gradient(160deg, ' . $red . ', ' . $purple . ')',
 					'slug'     => 'red-to-purple',
 				),
