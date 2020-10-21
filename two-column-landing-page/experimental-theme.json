@@ -27,24 +27,24 @@
 				"customLineHeight": true,
 				"fontSizes": [
 					{
-						"slug": "small",
-						"size": "13px"
+						"name": "small",
+						"size": 13 
 					},
 					{
-						"slug": "normal",
-						"size": "16px"
+						"name": "normal",
+						"size": 16 
 					},
 					{
-						"slug": "medium",
-						"size": "20px"
+						"name": "medium",
+						"size": 20
 					},
 					{
-						"slug": "large",
-						"size": "36px"
+						"name": "large",
+						"size": 36
 					},
 					{
-						"slug": "huge",
-						"size": "48px"
+						"name": "huge",
+						"size": 48
 					}
 				],
 				"spacing": {
