@@ -52,7 +52,7 @@
 
 .wp-block-group.is-style-twentytwentyone-border {
 	border: 3px solid var(--wp--custom--color--border);
-	padding: var(--global--spacing-vertical);
+	padding: var(--wp--custom--spacing--vertical) var(--wp--custom--spacing--horizontal);
 }
 
 /*--------------------------------------------------------------
