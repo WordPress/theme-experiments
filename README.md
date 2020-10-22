@@ -10,7 +10,7 @@ This repository is dedicated to exploring how WordPress themes can best leverage
 
 | Theme | Updated For |
 | --- | --- |
-| [Ambitious](https://github.com/WordPress/theme-experiments/tree/master/ambitious) | Gutenberg 7.6 |
+| [Ambitious](https://github.com/WordPress/theme-experiments/tree/master/ambitious) | Gutenberg 9.2.1 |
 | [Gutenberg Starter Theme Blocks](https://github.com/WordPress/theme-experiments/tree/master/gutenberg-starter-theme-blocks) | Gutenberg 8.6 |
 | [Twenty Nineteen Blocks](https://github.com/WordPress/theme-experiments/tree/master/twentynineteen-blocks) | Gutenberg 8.6 |
 | [Twenty Twenty Blocks](https://github.com/WordPress/theme-experiments/tree/master/twentytwenty-blocks) | Gutenberg 8.6 |
