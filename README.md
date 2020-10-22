@@ -6,6 +6,17 @@
 
 This repository is dedicated to exploring how WordPress themes can best leverage Gutenberg blocks. Each sub-directory contains a WordPress theme that explores some aspect of creating themes using blocks or block templates.
 
+## What's Here
+
+| Theme | Gutenberg plugin version tested against |
+| --- | --- |
+| ambitious | 7.6 |
+| gutenberg-starter-theme-blocks | 8.6 |
+| twentynineteen-blocks | 8.6 |
+| twentytwenty-blocks | 8.6 |
+
+`require-gutenberg` _is a utility for themes to check whether the Gutenberg plugin is installed._
+
 ## Submitting an experiment
 
 We encourage you to submit your experiment to be included! To get started, check out the [contributor's guide](https://github.com/WordPress/theme-experiments/blob/master/CONTRIBUTING.md).
