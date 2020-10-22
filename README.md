@@ -6,6 +6,17 @@
 
 This repository is dedicated to exploring how WordPress themes can best leverage Gutenberg blocks. Each sub-directory contains a WordPress theme that explores some aspect of creating themes using blocks or block templates.
 
+## What's Here
+
+| Theme | Updated For |
+| --- | --- |
+| [Ambitious](https://github.com/WordPress/theme-experiments/tree/master/ambitious) | Gutenberg 7.6 |
+| [Gutenberg Starter Theme Blocks](https://github.com/WordPress/theme-experiments/tree/master/gutenberg-starter-theme-blocks) | Gutenberg 8.6 |
+| [Twenty Nineteen Blocks](https://github.com/WordPress/theme-experiments/tree/master/twentynineteen-blocks) | Gutenberg 8.6 |
+| [Twenty Twenty Blocks](https://github.com/WordPress/theme-experiments/tree/master/twentytwenty-blocks) | Gutenberg 8.6 |
+
+`require-gutenberg` _is a utility for themes to check whether the Gutenberg plugin is installed._
+
 ## Submitting an experiment
 
 We encourage you to submit your experiment to be included! To get started, check out the [contributor's guide](https://github.com/WordPress/theme-experiments/blob/master/CONTRIBUTING.md).
@@ -27,9 +38,11 @@ Tip: WordPress will search for themes inside of subdirectories. If you'd like to
 
 Here are some resources that may be useful context for learning more about block-based themes:
 
-- [Block-based Theme Documentation (Experimental)](https://developer.wordpress.org/block-editor/developers/themes/block-based-themes/)
+- [Block-based Theme Documentation](https://developer.wordpress.org/block-editor/developers/themes/block-based-themes/)
+- [theme.json Documentation](https://github.com/WordPress/gutenberg/blob/master/docs/designers-developers/developers/themes/theme-json.md)
+- [Creating a block-based theme (tutorial)](https://developer.wordpress.org/block-editor/tutorials/block-based-themes/)
 - [Full site editing development in the Gutenberg repo](https://github.com/WordPress/gutenberg/labels/%5BFeature%5D%20Full%20Site%20Editing)
-- [Defining Content-Block Areas](https://make.wordpress.org/core/2019/09/05/defining-content-block-areas/)
+- [Global styles development in the Gutenberg repo](https://github.com/WordPress/gutenberg/issues?q=is%3Aissue+is%3Aopen+label%3A%22Global+Styles%22)
 
 ## Questions or Improvements?
 
