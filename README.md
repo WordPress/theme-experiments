@@ -8,12 +8,12 @@ This repository is dedicated to exploring how WordPress themes can best leverage
 
 ## What's Here
 
-| Theme | Gutenberg plugin version tested against |
+| Theme | Updated For |
 | --- | --- |
-| [Ambitious](https://github.com/WordPress/theme-experiments/tree/master/ambitious) | 7.6 |
-| [Gutenberg Starter Theme Blocks](https://github.com/WordPress/theme-experiments/tree/master/gutenberg-starter-theme-blocks) | 8.6 |
-| [Twenty Nineteen](https://github.com/WordPress/theme-experiments/tree/master/twentynineteen-blocks) | 8.6 |
-| [Twenty Twenty](https://github.com/WordPress/theme-experiments/tree/master/twentytwenty-blocks) | 8.6 |
+| [Ambitious](https://github.com/WordPress/theme-experiments/tree/master/ambitious) | Gutenberg 7.6 |
+| [Gutenberg Starter Theme Blocks](https://github.com/WordPress/theme-experiments/tree/master/gutenberg-starter-theme-blocks) | Gutenberg 8.6 |
+| [Twenty Nineteen Blocks](https://github.com/WordPress/theme-experiments/tree/master/twentynineteen-blocks) | Gutenberg 8.6 |
+| [Twenty Twenty Blocks](https://github.com/WordPress/theme-experiments/tree/master/twentytwenty-blocks) | Gutenberg 8.6 |
 
 `require-gutenberg` _is a utility for themes to check whether the Gutenberg plugin is installed._
 
