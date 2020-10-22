@@ -38,9 +38,11 @@ Tip: WordPress will search for themes inside of subdirectories. If you'd like to
 
 Here are some resources that may be useful context for learning more about block-based themes:
 
-- [Block-based Theme Documentation (Experimental)](https://developer.wordpress.org/block-editor/developers/themes/block-based-themes/)
+- [Block-based Theme Documentation](https://developer.wordpress.org/block-editor/developers/themes/block-based-themes/)
+- [theme.json Documentation](https://github.com/WordPress/gutenberg/blob/master/docs/designers-developers/developers/themes/theme-json.md)
+- [Creating a block-based theme (tutorial)](https://developer.wordpress.org/block-editor/tutorials/block-based-themes/)
 - [Full site editing development in the Gutenberg repo](https://github.com/WordPress/gutenberg/labels/%5BFeature%5D%20Full%20Site%20Editing)
-- [Defining Content-Block Areas](https://make.wordpress.org/core/2019/09/05/defining-content-block-areas/)
+- [Global styles development in the Gutenberg repo](https://github.com/WordPress/gutenberg/issues?q=is%3Aissue+is%3Aopen+label%3A%22Global+Styles%22)
 
 ## Questions or Improvements?
 
