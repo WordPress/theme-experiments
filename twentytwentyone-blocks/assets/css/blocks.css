@@ -59,8 +59,8 @@
 # Image
 --------------------------------------------------------------*/
 
-.wp-block-image.alignfull img,
-.wp-block-image.alignwide img {
+.wp-block-image img,
+.wp-block-image img {
 	height: auto;
 }
 
