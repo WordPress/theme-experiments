@@ -7,7 +7,7 @@
 (function( $ ) {
 	var masthead, menuToggle, siteNavContain, siteNavigation;
 
-	masthead       = $( '.wp-site-blocks > .site-header' );
+	masthead       = $( '.wp-site-blocks .site-header' );
 	menuToggle     = masthead.find( '.menu-toggle' );
 	siteNavContain = masthead.find( '.main-navigation' );
 	siteNavigation = masthead.find( '.main-navigation > ul.wp-block-navigation__container' );

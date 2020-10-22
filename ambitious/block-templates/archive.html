@@ -1,4 +1,4 @@
-<!-- wp:template-part {"slug":"layout/header","theme":"ambitious"} /-->
+<!-- wp:template-part {"slug":"header","theme":"ambitious"} /-->
 
 <!-- wp:group {"className":"site-content"} -->
 <div class="wp-block-group site-content">
@@ -14,7 +14,11 @@
 				</p>
 				<!-- /wp:paragraph -->
 
-				<!-- wp:template-part {"slug":"content/content-home","theme":"ambitious"} /-->
+				<!-- wp:query-loop -->
+
+					<!-- wp:template-part {"slug":"content-home","theme":"ambitious"} /-->
+
+				<!-- /wp:query-loop -->
 
 			</div>
 		</div>
@@ -24,4 +28,4 @@
 </div>
 <!-- /wp:group -->
 
-<!-- wp:template-part {"slug":"layout/footer","theme":"ambitious"} /-->
+<!-- wp:template-part {"slug":"footer","theme":"ambitious"} /-->

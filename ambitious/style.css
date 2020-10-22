@@ -4,7 +4,7 @@ Theme URI: https://github.com/Netzberufler/ambitious
 Author: Thomas Weichselbaumer
 Author URI: https://netzberufler.de
 Description: Ambitious is an experimental block-based WordPress Theme. Open your Browser DevTools to see the header, navigation, content and footer made out of Gutenberg blocks entirely.
-Version: 0.1
+Version: 0.2
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: ambitious
@@ -899,15 +899,22 @@ textarea {
 	flex-grow: 0;
 }
 
+.main-menu-toggle p {
+	margin: 0;
+	line-height: 1;
+}
+
 /* Override Core Column Block CSS */
 .main-menu-toggle.wp-block-column:nth-child(n) {
 	margin-left: auto;
 }
 
 .menu-toggle {
-	display: block;
+	display: flex;
+	align-items: center;
 	margin: 0;
 	padding: 1rem;
+	height: 65px;
 	border: none;
 	background: none;
 	color: rgba(255, 255, 255, 0.95);
@@ -922,6 +929,7 @@ textarea {
 	text-transform: none;
 	text-transform: var(--navi-text-transform);
 	text-align: left;
+	line-height: 1;
 }
 
 .menu-toggle .menu-toggle-text {
@@ -1051,31 +1059,35 @@ textarea {
 	vertical-align: top;
 }
 
-.entry-meta {
-	margin: 0 0 2em;
+.entry-header .wp-block-post-date {
+	margin: 0;
 	color: rgba(0, 0, 0, 0.5);
 	font-size: 14px;
 	font-size: 0.875rem;
+	font-weight: normal;
 }
 
-.entry-meta address {
-	display: inline-block;
-	margin: 0;
-}
-
-.entry-meta time {
+.entry-header .wp-block-post-date time {
 	display: inline-block;
 }
 
-.entry-meta address::after {
-	display: inline-block;
-	margin: 0 1rem;
-	color: rgba(0, 0, 0, 0.5);
-	content: "\2013";
-}
-
-.entry-meta .updated:not(.published) {
+.entry-header .wp-block-post-date .updated:not(.published) {
 	display: none;
+}
+
+.entry-header .wp-block-post-author {
+	margin: 1em 0 0;
+}
+
+.entry-header .wp-block-post-author .wp-block-post-author__avatar img {
+	max-width: 32px;
+}
+
+.entry-header .wp-block-post-author .wp-block-post-author__name {
+	color: rgba(0, 0, 0, 0.5);
+	font-size: 14px;
+	font-size: 0.875rem;
+	font-weight: normal;
 }
 
 /* Read More Button */
@@ -1770,7 +1782,8 @@ object {
 		font-size: 1.0625rem;
 	}
 
-	.entry-meta,
+	.entry-header .wp-block-post-date,
+	.entry-header .wp-block-post-author .wp-block-post-author__name,
 	.more-link,
 	.pagination {
 		font-size: 15px;
@@ -1801,7 +1814,8 @@ object {
 		font-size: 1.125rem;
 	}
 
-	.entry-meta,
+	.entry-header .wp-block-post-date,
+	.entry-header .wp-block-post-author .wp-block-post-author__name,
 	.more-link,
 	.pagination {
 		font-size: 16px;
@@ -1831,7 +1845,8 @@ object {
 		font-size: 1.1875rem;
 	}
 
-	.entry-meta,
+	.entry-header .wp-block-post-date,
+	.entry-header .wp-block-post-author .wp-block-post-author__name,
 	.more-link,
 	.pagination {
 		font-size: 17px;
