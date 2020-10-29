@@ -266,3 +266,6 @@ require get_template_directory() . '/inc/block-patterns.php';
 
 // Block Styles.
 require get_template_directory() . '/inc/block-styles.php';
+
+// Require the Gutenberg plugin & experiment.
+require_once get_template_directory() . '/inc/require-gutenberg.php';
