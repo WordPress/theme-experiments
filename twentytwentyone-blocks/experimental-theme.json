@@ -121,18 +121,6 @@
 			}
 		}
 	},
-	"core/paragraph": {
-		"styles": {
-			"color": {
-				"text": "var(--wp--custom--color--primary)",
-				"link": "var(--wp--custom--color--primary)"
-			},
-			"typography": {
-				"fontSize": "var(--wp--preset--font-size--normal)",
-				"lineHeight": "var(--wp--custom--line-height--body)"
-			}
-		}
-	},
 	"core/heading/h1": {
 		"styles": {
 			"color": {
