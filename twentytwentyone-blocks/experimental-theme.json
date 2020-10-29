@@ -47,7 +47,6 @@
 				]
 			},
 			"typography": {
-				"customFontSize": true,
 				"customLineHeight": true,
 				"fontSizes": [
 					{
