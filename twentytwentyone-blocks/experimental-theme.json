@@ -198,5 +198,12 @@
 				"lineHeight": "var(--wp--custom--line-height--heading)"
 			}
 		}
+	},
+	"core/site-title": {
+		"styles": {
+			"typography": {
+				"fontSize": "var(--wp--preset--font-size--normal)"
+			}
+		}
 	}
 }
