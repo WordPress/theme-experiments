@@ -25,13 +25,6 @@ if ( ! function_exists( 'twenty_twenty_one_blocks_setup' ) ) {
 		add_theme_support( 'automatic-feed-links' );
 
 		/*
-		 * Let WordPress manage the document title.
-		 * This theme does not use a hard-coded <title> tag in the document head,
-		 * WordPress will provide it for us.
-		 */
-		add_theme_support( 'title-tag' );
-
-		/*
 		 * Enable support for Post Thumbnails on posts and pages.
 		 *
 		 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
