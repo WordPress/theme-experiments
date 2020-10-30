@@ -33,7 +33,7 @@ https://stocksnap.io/photo/girl-blonde-ZUZCKNLPDD
 @import "style-shared.css";
 
 /*--------------------------------------------------------------
-# Defaults
+# Alignments
 --------------------------------------------------------------*/
 
 body {
@@ -41,43 +41,41 @@ body {
 	margin: 0;
 }
 
-/*--------------------------------------------------------------
-# Alignments
---------------------------------------------------------------*/
-
-/*
- * Via @aristath: https://github.com/WordPress/gutenberg/issues/25160#issuecomment-691076081
- */
-
 * {
 	box-sizing: border-box;
 }
 
 .wp-site-blocks,
 .wp-block-template-part.alignfull {
-	--magTheme--paddingHorizontal: 1em;
-	padding: 0 var(--magTheme--paddingHorizontal);
+	padding: 0 var(--wp--custom--spacing-horizontal);
 }
 
 .wp-site-blocks > *:not(.wp-block-post-content),
 .wp-site-blocks .wp-block-post-content > * {
-	max-width: var(--magTheme--contentWidth);
+	max-width: var(--wp--custom--width-content);
 	margin-left: auto;
 	margin-right: auto;
 }
 
 .wp-site-blocks .alignwide {
-	width: var(--magTheme--wideWidth);
+	width: var(--wp--custom--width-wide);
 	max-width: 100%;
 	margin-left: auto;
 	margin-right: auto;
 }
 
 .wp-site-blocks .alignfull {
-	transform: translateX(calc(0px - var(--magTheme--paddingHorizontal)));
+	transform: translateX(calc(0px - var(--wp--custom--spacing-horizontal)));
+	width: calc(100% + (2 * var(--wp--custom--spacing-horizontal)));
+	max-width: calc(100% + (2 * var(--wp--custom--spacing-horizontal)));
+	margin-left: 0;
+	margin-right: 0;
+	box-sizing: content-box;
+}
+
+.wp-site-blocks .wp-block-template-part.alignfull {
 	width: 100%;
 	max-width: 100%;
-	box-sizing: content-box;
 }
 
 .aligncenter {
@@ -96,11 +94,17 @@ body {
 	max-width: 360px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 764px) {
 
-	.wp-site-blocks .wp-block-columns.alignfull {
-		width: calc( 100% + (2 * var(--magTheme--paddingHorizontal)));
-		max-width: calc( 100% + (2 * var(--magTheme--paddingHorizontal)));
+	.wp-site-blocks,
+	.wp-block-template-part.alignfull {
+		padding: 0;
+	}
+
+	.wp-site-blocks .alignfull {
+		transform: translateX(0px);
+		width: 100%;
+		max-width: 100%;
 	}
 }
 
@@ -108,16 +112,11 @@ body {
 # Block Overrides
 --------------------------------------------------------------*/
 
-.wp-block-cover.has-background-background-color.has-background-dim {
-	background-color: inherit;
-}
-
-.wp-block-site-title a {
-	text-decoration: none;
-}
-
-h1 {
-	margin-bottom: 0;
+/* Gutenberg provides this in the front end, but not in the full-site editor right now */
+@media (min-width: 782px) {
+	.wp-block-column:not(:first-child) {
+		margin-left: 0;
+	}
 }
 
 /*--------------------------------------------------------------

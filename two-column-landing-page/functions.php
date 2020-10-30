@@ -1,16 +1,7 @@
 <?php
 
 if ( ! function_exists( 'two_column_landing_page_support' ) ) :
-    function two_column_landing_page_support()  {
-
-    	// Add featured image support.
-    	add_theme_support( 'post-thumbnails' );
-
-		// Make theme available for translation.
-		load_theme_textdomain( 'two-column-landing-page', get_template_directory() . '/languages' );
-
-		// Let WordPress manage the document title.
-		add_theme_support( 'title-tag' );
+	function two_column_landing_page_support()  {
 
 		// Alignwide and alignfull classes in the block editor
 		add_theme_support( 'align-wide' );
@@ -38,30 +29,6 @@ if ( ! function_exists( 'two_column_landing_page_support' ) ) :
 			array(
 				'style-shared.css', 
 				'style-editor.css'
-		) );
-
-		// Support a custom color palette.
-		add_theme_support( 'editor-color-palette', array(
-			array(
-				'name'  => __( 'Background', 'two-column-landing-page' ),
-				'slug'  => 'background',
-				'color' => '#ffffff',
-			),
-			array(
-				'name'  => __( 'Foreground', 'two-column-landing-page' ),
-				'slug'  => 'foreground',
-				'color' => '#000000',
-			),
-			array(
-				'name'  => __( 'Primary', 'two-column-landing-page' ),
-				'slug'  => 'primary',
-				'color' => '#10506b',
-			),
-			array(
-				'name'  => __( 'Secondary', 'two-column-landing-page' ),
-				'slug'  => 'secondary',
-				'color' => '#ff4d4d',
-			)
 		) );
     }
     add_action( 'after_setup_theme', 'two_column_landing_page_support' );
