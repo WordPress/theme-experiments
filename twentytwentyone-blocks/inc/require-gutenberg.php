@@ -68,7 +68,7 @@ if ( ! class_exists( 'WPThemes_Require_Gutenberg' ) ) {
 				return;
 			}
 			?>
-			<div class="notice notice-warning require-gutenberg-notice-wrapper notice-alt<?php echo ( $active_step ) ? ' active-step-' . esc_attr( $active_step ) : ''; ?>">
+			<div class="notice notice-warning require-gutenberg-notice-wrapper notice-alt<?php echo ' active-step-' . esc_attr( $active_step ); ?>">
 				<p><?php esc_html_e( 'This is an experimental theme and requires the Gutenberg plugin to be installed with the "Full Site Editing" experiment enabled.', 'twentytwentyone-blocks' ); ?></p>
 				<div class="require-gutenberg require-gutenberg-install">
 					<p><?php esc_html_e( 'The Gutenberg plugin is not installed. Click the button below to install it.', 'twentytwentyone-blocks' ); ?></p>
@@ -223,6 +223,9 @@ if ( ! class_exists( 'WPThemes_Require_Gutenberg' ) ) {
 		 * @return bool
 		 */
 		public function is_experiment_enabled() {
+			if ( function_exists( 'gutenberg_is_fse_theme' ) ) {
+				return true;
+			}
 			$option = (array) get_option( 'gutenberg-experiments', [] );
 			return ( isset( $option['gutenberg-full-site-editing'] ) && '1' === $option['gutenberg-full-site-editing'] );
 		}
@@ -246,6 +249,10 @@ if ( ! class_exists( 'WPThemes_Require_Gutenberg' ) ) {
 
 			// Activate plugin.
 			$result = activate_plugin( 'gutenberg/gutenberg.php' );
+
+			if ( function_exists( 'gutenberg_is_fse_theme' ) ) {
+				wp_die( 'success' );
+			}
 
 			// Plugin was successfully activated, now activate the experiment.
 			if ( ! is_wp_error( $result ) ) {
@@ -279,9 +286,9 @@ if ( ! class_exists( 'WPThemes_Require_Gutenberg' ) ) {
 		 *
 		 * @access public
 		 *
-		 * @param string   $new_name  Name of the new theme.
-		 * @param WP_Theme $new_theme WP_Theme instance of the new theme.
-		 * @param WP_Theme $old_theme WP_Theme instance of the old theme.
+		 * @param string    $new_name  Name of the new theme.
+		 * @param \WP_Theme $new_theme WP_Theme instance of the new theme.
+		 * @param \WP_Theme $old_theme WP_Theme instance of the old theme.
 		 *
 		 * @return void
 		 */
@@ -291,6 +298,10 @@ if ( ! class_exists( 'WPThemes_Require_Gutenberg' ) ) {
 			// No need to do anything if the theme we switched to supports Full Site Editing.
 			// Check if the block-templates folder exists, and if it does then early exit.
 			if ( file_exists( $new_theme_path . '/block-templates' ) || is_dir( $new_theme_path . '/block-templates' ) ) {
+				return;
+			}
+
+			if ( function_exists( 'gutenberg_is_fse_theme' ) ) {
 				return;
 			}
 
