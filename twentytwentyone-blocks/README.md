@@ -10,14 +10,11 @@ To contribute to TT1 development, please read the [contributor's guide](/CONTRIB
 
 ## Installation
 
-1. In your admin panel, Install and Activate [the Gutenberg Plugin](https://wordpress.org/plugins/gutenberg/). 
-2. Visit the Gutenberg -> Experiments settings page and check the "Enable Full Site Editing" box. Save your changes. 
-3. Click the 'Code' button on [the main Theme Experiments Repository GitHub page](https://github.com/wordpress/theme-experiments).
-4. Unzip the resulting download. 
-4. Create a new zip file containing only the "twentytwentyone-blocks" folder. 
-4. In your admin panel, go to Appearance -> Themes and click the 'Add New' button.
-5. Click on 'Upload Theme', select the twentytwentyone-blocks zip file, and click on 'Install Now'.
-6. Click on the 'Activate' button to use your new theme.
+1. In your admin panel, install and activate [the Gutenberg Plugin](https://wordpress.org/plugins/gutenberg/). 
+2. Click the 'Code' button on [the main Theme Experiments Repository GitHub page](https://github.com/wordpress/theme-experiments).
+3. Unzip the resulting download. 
+4. Move or upload the "theme-experiments" folder into your site's `wp-content/themes` folder.
+6. Visit `Appearance > Themes` and activate the "Twenty Twenty-One Blocks" theme.
 
 ## Copyright
 
