@@ -6,43 +6,53 @@
 				"palette": [
 					{
 						"slug": "black",
-						"color": "#000000"
+						"color": "#000000",
+						"name": "Black"
 					},
 					{
 						"slug": "dark-gray",
-						"color": "#28303D"
+						"color": "#28303D",
+						"name": "Dark Gray"
 					},
 					{
 						"slug": "gray",
-						"color": "#39414D"
+						"color": "#39414D",
+						"name": "Gray"
 					},
 					{
 						"slug": "green",
-						"color": "#D1E4DD"
+						"color": "#D1E4DD",
+						"name": "Green"
 					},
 					{
 						"slug": "blue",
-						"color": "#D1DFE4"
+						"color": "#D1DFE4",
+						"name": "Blue"
 					},
 					{
 						"slug": "purple",
-						"color": "#D1D1E4"
+						"color": "#D1D1E4",
+						"name": "Purple"
 					},
 					{
 						"slug": "red",
-						"color": "#E4D1D1"
+						"color": "#E4D1D1",
+						"name": "Red"
 					},
 					{
 						"slug": "orange",
-						"color": "#E4DAD1"
+						"color": "#E4DAD1",
+						"name": "Orange"
 					},
 					{
 						"slug": "yellow",
-						"color": "#EEEADD"
+						"color": "#EEEADD",
+						"name": "Yellow"
 					},
 					{
 						"slug": "white",
-						"color": "#FFFFFF"
+						"color": "#FFFFFF",
+						"name": "White"
 					}
 				]
 			},
