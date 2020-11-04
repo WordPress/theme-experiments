@@ -51,31 +51,38 @@
 				"fontSizes": [
 					{
 						"slug": "extra-small",
-						"size": "16px"
+						"size": "16px",
+						"name": "Extra small"
 					},
 					{
 						"slug": "small",
-						"size": "18px"
+						"size": "18px",
+						"name": "Small"
 					},
 					{
 						"slug": "normal",
-						"size": "20px"
+						"size": "20px",
+						"name": "Normal"
 					},
 					{
 						"slug": "large",
-						"size": "24px"
+						"size": "24px",
+						"name": "Large"
 					},
 					{
 						"slug": "extra-large",
-						"size": "40px"
+						"size": "40px",
+						"name": "Extra large"
 					},
 					{
 						"slug": "huge",
-						"size": "96px"
+						"size": "96px",
+						"name": "Huge"
 					},
 					{
 						"slug": "gigantic",
-						"size": "144px"
+						"size": "144px",
+						"name": "Gigantic"
 					}
 				],
 				"spacing": {
