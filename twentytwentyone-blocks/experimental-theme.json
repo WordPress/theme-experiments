@@ -200,5 +200,37 @@
 				"fontSize": "var(--wp--preset--font-size--normal)"
 			}
 		}
+	},
+	"core/post-author": {
+		"styles": {
+			"typography": {
+				"fontSize": "var(--wp--preset--font-size--extra-small)",
+				"lineHeight": "var(--wp--custom--line-height--body)"
+			}
+		}
+	},
+	"core/post-date": {
+		"styles": {
+			"typography": {
+				"fontSize": "var(--wp--preset--font-size--extra-small)",
+				"lineHeight": "var(--wp--custom--line-height--body)"
+			}
+		}
+	},
+	"core/post-hierarchical-terms": {
+		"styles": {
+			"typography": {
+				"fontSize": "var(--wp--preset--font-size--extra-small)",
+				"lineHeight": "var(--wp--custom--line-height--body)"
+			}
+		}
+	},
+	"core/post-tags": {
+		"styles": {
+			"typography": {
+				"fontSize": "var(--wp--preset--font-size--extra-small)",
+				"lineHeight": "var(--wp--custom--line-height--body)"
+			}
+		}
 	}
 }
