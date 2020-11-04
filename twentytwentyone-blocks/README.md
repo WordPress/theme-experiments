@@ -2,7 +2,7 @@
 
 Ongoing development for the block-based version of Twenty Twenty-One, the default WordPress theme slated for 5.6. 
 
-This theme requires the Gutenberg Plugin to be installed, and the "Full Site Editing" experiment to be activated.
+This theme requires the Gutenberg Plugin to be installed (preferably version 9.3 or later).
 
 For the non-block-based version of this theme, please [visit the Twenty Twenty-One repository](https://github.com/WordPress/twentytwentyone). 
 
