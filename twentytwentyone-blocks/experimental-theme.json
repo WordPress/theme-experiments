@@ -2,7 +2,6 @@
 	"global": {
 		"settings": {
 			"color": {
-				"gradients": [ ],
 				"palette": [
 					{
 						"slug": "black",
@@ -43,6 +42,48 @@
 					{
 						"slug": "white",
 						"color": "#FFFFFF"
+					}
+				],
+				"gradients": [
+					{
+						"slug": "purple-to-yellow",
+						"gradient": "linear-gradient(160deg, var(--wp--preset--color--purple), var(--wp--preset--color--yellow))",
+						"name": "Purple to Yellow"
+					},
+					{
+						"slug": "yellow-to-purple",
+						"gradient": "linear-gradient(160deg, var(--wp--preset--color--yellow), var(--wp--preset--color--purple))",
+						"name": "Yellow to Purple"
+					},
+					{
+						"slug": "green-to-yellow",
+						"gradient": "linear-gradient(160deg, var(--wp--preset--color--green), var(--wp--preset--color--yellow))",
+						"name": "Green to Yellow"
+					},
+					{
+						"slug": "yellow-to-green",
+						"gradient": "linear-gradient(160deg, var(--wp--preset--color--yellow), var(--wp--preset--color--green))",
+						"name": "Yellow to Green"
+					},
+					{
+						"slug": "red-to-yellow",
+						"gradient": "linear-gradient(160deg, var(--wp--preset--color--red), var(--wp--preset--color--yellow))",
+						"name": "Red to Yellow"
+					},
+					{
+						"slug": "yellow-to-red",
+						"gradient": "linear-gradient(160deg, var(--wp--preset--color--yellow), var(--wp--preset--color--red))",
+						"name": "Yellow to Red"
+					},
+					{
+						"slug": "purple-to-red",
+						"gradient": "linear-gradient(160deg, var(--wp--preset--color--purple), var(--wp--preset--color--red))",
+						"name": "Purple to Red"
+					},
+					{
+						"slug": "red-to-purple",
+						"gradient": "linear-gradient(160deg, var(--wp--preset--color--red), var(--wp--preset--color--purple))",
+						"name": "Red to Purple"
 					}
 				]
 			},
