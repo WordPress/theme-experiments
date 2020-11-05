@@ -34,6 +34,42 @@ p {
 }
 
 /*--------------------------------------------------------------
+# Color Palette
+--------------------------------------------------------------*/
+
+.has-background-color {
+  color: var(--wp--preset--color--background);
+}
+
+.has-background-background-color {
+  background-color: var(--wp--preset--color--background);
+}
+
+.has-foreground-color {
+  color: var(--wp--preset--color--foreground);
+}
+
+.has-foreground-background-color {
+  background-color: var(--wp--preset--color--foreground);
+}
+
+.has-primary-color {
+  color: var(--wp--preset--color--primary);
+}
+
+.has-primary-background-color {
+  background-color: var(--wp--preset--color--primary);
+}
+
+.has-secondary-color {
+  color: var(--wp--preset--color--secondary);
+}
+
+.has-secondary-background-color {
+  background-color: var(--wp--preset--color--secondary);
+}
+
+/*--------------------------------------------------------------
 # Shared Block Overrides
 --------------------------------------------------------------*/
 

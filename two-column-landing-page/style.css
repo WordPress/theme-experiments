@@ -23,7 +23,6 @@ https://stocksnap.io/photo/girl-blonde-ZUZCKNLPDD
 # Defaults
 # Alignments
 # Block Overrides
-# Color Palette
 --------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
@@ -112,45 +111,9 @@ body {
 # Block Overrides
 --------------------------------------------------------------*/
 
-/* Gutenberg provides this in the front end, but not in the full-site editor right now */
+/* Gutenberg provides this in the full-site editor, but not in the front-end right now */
 @media (min-width: 782px) {
 	.wp-block-column:not(:first-child) {
 		margin-left: 0;
 	}
-}
-
-/*--------------------------------------------------------------
-# Color Palette
---------------------------------------------------------------*/
-
-.has-background-color {
-  color: var(--wp--preset--color--background);
-}
-
-.has-background-background-color {
-  background-color: var(--wp--preset--color--background);
-}
-
-.has-foreground-color {
-  color: var(--wp--preset--color--foreground);
-}
-
-.has-foreground-background-color {
-  background-color: var(--wp--preset--color--foreground);
-}
-
-.has-primary-color {
-  color: var(--wp--preset--color--primary);
-}
-
-.has-primary-background-color {
-  background-color: var(--wp--preset--color--primary);
-}
-
-.has-secondary-color {
-  color: var(--wp--preset--color--secondary);
-}
-
-.has-secondary-background-color {
-  background-color: var(--wp--preset--color--secondary);
 }
