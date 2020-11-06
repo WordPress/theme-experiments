@@ -268,10 +268,18 @@
 			}
 		}
 	},
+	"core/site-tagline": {
+		"styles": {
+			"typography": {
+				"fontSize": "var(--wp--preset--font-size--small)",
+				"lineHeight": 1.4
+			}
+		}
+	},
 	"core/site-title": {
 		"styles": {
 			"typography": {
-				"fontSize": "var(--wp--preset--font-size--normal)"
+				"fontSize": "var(--wp--preset--font-size--large)"
 			}
 		}
 	}
