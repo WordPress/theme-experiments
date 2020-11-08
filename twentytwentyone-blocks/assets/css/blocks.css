@@ -186,7 +186,7 @@ hr[style*="text-align: right"],
 
 hr:not(.is-style-wide):not(.is-style-dots),
 .wp-block-separator:not(.is-style-wide):not(.is-style-dots) {
-	max-width: var(--responsive--aligndefault-width);
+	max-width: var(--wp--custom--responsive--aligndefault-width);
 }
 
 hr.alignwide:not(.is-style-wide):not(.is-style-dots),
