@@ -33,3 +33,10 @@ a:hover {
 	text-decoration-style: dotted;
 	text-decoration-skip-ink: none;
 }
+
+/*
+ * Gutenberg remotes this underline, but Twenty Twenty-One uses it. 
+ */
+.site-header h1.wp-block-site-title a:not(:hover):not(:focus):not(:active) {
+	text-decoration: underline;
+}
