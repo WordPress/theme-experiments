@@ -16,7 +16,7 @@
 			},
 			"custom": {
 				"width": {
-					"default": "580px",
+					"default": "840px",
 					"wide": "1100px"
 				},
 				"margin": {
