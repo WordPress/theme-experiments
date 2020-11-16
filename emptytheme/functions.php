@@ -3,7 +3,10 @@
 if ( ! function_exists( 'emptytheme_support' ) ) :
 	function emptytheme_support()  {
 
-		// Alignwide and alignfull classes in the block editor
+		// Adding support for featured images.
+		add_theme_support( 'post-thumbnails' );
+
+		// Adding support for alignwide and alignfull classes in the block editor.
 		add_theme_support( 'align-wide' );
 
 		// Adding support for core block visual styles.
