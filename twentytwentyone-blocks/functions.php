@@ -221,7 +221,7 @@ if ( ! function_exists( 'twenty_twenty_one_blocks_setup' ) ) {
 		add_theme_support( 'experimental-link-color' );
 
 		// Add support for experimental cover block spacing.
-		add_theme_support( 'experimental-custom-spacing' );
+		add_theme_support( 'custom-spacing' );
 
 		// Add support for custom units.
 		add_theme_support( 'custom-units' );
