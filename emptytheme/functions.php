@@ -15,9 +15,6 @@ if ( ! function_exists( 'emptytheme_support' ) ) :
 		// Adding support for responsive embedded content.
 		add_theme_support( 'responsive-embeds' );
 
-		// Add support for experimental link color control.
-		add_theme_support( 'experimental-link-color' );
-
 		// Add support for editor styles.
 		add_theme_support( 'editor-styles' );
 

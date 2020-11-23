@@ -3,6 +3,7 @@
 		"settings": {
 			"color": {
 				"gradients": [ ],
+				"link": true,
 				"palette": [ ]
 			},
 			"typography": {
