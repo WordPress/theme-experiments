@@ -136,6 +136,18 @@
 						"name": "Gigantic"
 					}
 				],
+				"fontWeights": [
+					{
+						"slug": "light",
+						"value": 300,
+						"name": "Light"
+					},
+					{
+						"slug": "bold",
+						"value": 700,
+						"name": "Bold"
+					}
+				],
 				"fontFamilies": [
 					{
 						"fontFamily": "-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,Oxygen-Sans,Ubuntu,Cantarell,\"Helvetica Neue\",sans-serif",
@@ -166,7 +178,6 @@
 			},
 			"custom": {
 				"font-primary": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif",
-				"font-weight-light": 300,
 				"line-height": {
 					"body": 1.7,
 					"heading": 1.3,

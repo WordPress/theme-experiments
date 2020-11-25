@@ -11,7 +11,7 @@ body {
 h1,
 .has-huge-font-size,
 .has-gigantic-font-size {
-	font-weight: var(--wp--custom--font-weight-light);
+	font-weight: var(--wp--preset--font-weight-light);
 }
 
 h2, h3, h4, h5, h6 {
@@ -20,7 +20,7 @@ h2, h3, h4, h5, h6 {
 
 b,
 strong {
-	font-weight: 700;
+	font-weight: var(--wp--preset--font-weight--bold);
 }
 
 dfn,
