@@ -18,6 +18,24 @@ h2, h3, h4, h5, h6 {
 	font-weight: normal;
 }
 
+b,
+strong {
+	font-weight: 700;
+}
+
+dfn,
+cite,
+em,
+i {
+	font-style: italic;
+}
+
+pre {
+	white-space: pre;
+	overflow-x: auto;
+}
+
+
 /*
  * text-underline-offset doesn't work in Chrome at all 👎
  * But looks nice in Safari/Firefox, so let's keep it and
