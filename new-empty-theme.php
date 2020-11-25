@@ -63,7 +63,7 @@ class Generate_Theme {
 			return $contents;
 		
 		// Special treatment for style.css
-		if ( $filename === 'style.css' ) {
+		if ( 'style.css' === $filename ) {
 			$theme_headers = array(
 				'Theme Name'  => $this->theme['name'],
 				'Text Domain' => $this->theme['slug'],
@@ -74,7 +74,12 @@ class Generate_Theme {
 			}
 
 			$contents = preg_replace( '/\b_s\b/', $this->theme['name'], $contents );
+			return $contents;
+		}
 
+		// Special treatment for functions.php
+		if ( 'functions.php' === $filename ) {
+			$contents = str_replace( 'emptytheme', $this->theme['slug'], $contents );
 			return $contents;
 		}
 	}
