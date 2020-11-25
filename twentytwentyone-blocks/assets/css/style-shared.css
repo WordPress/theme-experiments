@@ -27,7 +27,7 @@ dfn,
 cite,
 em,
 i {
-	font-style: italic;
+	font-style: var(--wp--preset--font-style--italic);
 }
 
 pre {
