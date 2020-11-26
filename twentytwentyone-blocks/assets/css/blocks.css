@@ -244,3 +244,13 @@ h1.wp-block-site-title a:not(:hover):not(:focus):not(:active) {
 .wp-block-social-links.is-style-twentytwentyone-social-icons-color .wp-social-link {
 	background: none;
 }
+
+
+/*--------------------------------------------------------------
+# Preformatted Text
+--------------------------------------------------------------*/
+
+pre.wp-block-preformatted {
+	overflow-x: auto;
+	white-space: pre;
+}

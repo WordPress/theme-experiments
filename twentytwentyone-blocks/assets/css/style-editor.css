@@ -13,3 +13,13 @@
 .wp-block[data-align="full"] {
 	max-width: inherit;
 }
+
+/*--------------------------------------------------------------
+# Preformatted Text
+--------------------------------------------------------------*/
+
+pre.wp-block-preformatted {
+	overflow-x: auto;
+	white-space: pre !important;
+	font-size: var(--wp--preset--font-size--extra-small);
+}
