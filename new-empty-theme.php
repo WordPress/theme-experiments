@@ -25,35 +25,35 @@ class Generate_Theme {
 			exit;
 		}
 
-		$zip = new ZipArchive;
-		$zip_filename = sprintf( '%s.zip', md5( print_r( $this->theme['name'], true ) ) );
-		$res = $zip->open( $zip_filename, ZipArchive::CREATE && ZipArchive::OVERWRITE );
+		$dir = $this->theme['slug'];
 
-		$prototype_dir = 'emptytheme/';
+		if( is_dir($dir) === false ) {
+			
+			mkdir($dir);
+			$prototype_dir = 'emptytheme/';
+			$exclude_files = array( '.travis.yml', 'codesniffer.ruleset.xml', '.jscsrc', '.jshintignore', 'CONTRIBUTING.md', '.git', '.svn', '.DS_Store', '.gitignore', '.', '..' );
+			$exclude_directories = array( '.git', '.svn', '.github', '.', '..' );
 
-		$exclude_files = array( '.travis.yml', 'codesniffer.ruleset.xml', '.jscsrc', '.jshintignore', 'CONTRIBUTING.md', '.git', '.svn', '.DS_Store', '.gitignore', '.', '..' );
-		$exclude_directories = array( '.git', '.svn', '.github', '.', '..' );
+			foreach ( $iterator = new \RecursiveIteratorIterator( new \RecursiveDirectoryIterator($prototype_dir, \RecursiveDirectoryIterator::SKIP_DOTS), \RecursiveIteratorIterator::SELF_FIRST) as $item ) {
+				if ( in_array( $iterator->getSubPathName(), $exclude_files ) || in_array( $iterator->getSubPathName(), $exclude_directories ) ){
+					continue;
+				}
 
-		$iterator = new RecursiveDirectoryIterator( $prototype_dir );
-		foreach ( new RecursiveIteratorIterator( $iterator ) as $filename ) {
-
-			if ( in_array( basename( $filename ), $exclude_files ) )
-				continue;
-
-			foreach ( $exclude_directories as $directory )
-				if ( strstr( $filename, "/{$directory}/" ) )
-					continue 2; // continue the parent foreach loop
-
-			$local_filename = str_replace( $prototype_dir, '', $filename );
-
-			$contents = file_get_contents( $filename );
-
-			$zip->addFromString( $this->theme['slug'] . '/' . $local_filename, $this->replace_theme_name($contents, $local_filename) );
+				if ($item->isDir()) {
+				   	mkdir($dir . DIRECTORY_SEPARATOR . $iterator->getSubPathName());
+				} else {
+					$contents = file_get_contents( $prototype_dir . $iterator->getSubPathName() );
+					$file = fopen( $dir . '/' . $iterator->getSubPathName(),"w" );
+					fwrite( $file, $this->replace_theme_name($contents, $iterator->getSubPathName()) );
+					fclose( $file );
+				}
+			}
+			echo "\n";
+			echo "Your new theme is ready!\n";
+		} else {
+			echo "\n";
+			echo "This theme already exists\n";
 		}
-		$zip->close();
-
-		echo "\n";
-		echo "Your ZIP file is ready!\n";
 	}
 
 	function replace_theme_name($contents, $filename) {
