@@ -9,21 +9,46 @@ class Generate_Theme {
 	protected $theme;
 
 	function __construct() {
-		echo "What is the name of your theme?: ";
-		$handle = fopen ("php://stdin","r");
 
-		$this->theme['name'] = trim(fgets($handle));
-		$this->theme['slug'] = $this->sanitize_title_with_dashes($this->theme['name']);
-		$this->theme['functions_slug'] = str_replace( '-', '_', $this->theme['slug'] );
+		$this->theme = array(
+			'name'        => 'Empty Theme',
+			'slug'        => 'emptytheme',
+			'uri'         => 'https://github.com/wordpress/theme-experiments/',
+			'author'      => 'Kjell Reigstad',
+			'description' => 'The base for a block-based theme.',
+		);
+		$this->get_theme_info();
 		$this->create_zip();
 	}
 
-	function create_zip() {
+	function get_theme_info() {
 
+		echo "Please provide the following information: ";
+		echo "\n";
+		echo "Theme name: ";
+		$input = fopen ("php://stdin","r");
+		$this->theme['name'] = trim(fgets($input));
 		if($this->theme['name'] === ''){
 			echo "ABORTING!\n";
 			exit;
 		}
+		$this->theme['slug'] = $this->sanitize_title_with_dashes($this->theme['name']);
+		$this->theme['functions_slug'] = str_replace( '-', '_', $this->theme['slug'] );
+
+		echo "Description: ";
+		$input = fopen ("php://stdin","r");
+		$this->theme['description'] = trim(fgets($input));
+
+		echo "Author: ";
+		$input = fopen ("php://stdin","r");
+		$this->theme['author'] = trim(fgets($input));
+
+		echo "Theme URI: ";
+		$input = fopen ("php://stdin","r");
+		$this->theme['uri'] = trim(fgets($input));
+	}
+
+	function create_zip() {
 
 		$dir = $this->theme['slug'];
 
@@ -68,6 +93,9 @@ class Generate_Theme {
 			$theme_headers = array(
 				'Theme Name'  => $this->theme['name'],
 				'Text Domain' => $this->theme['slug'],
+				'Theme URI' => $this->theme['uri'],
+				'Description' => $this->theme['description'],
+				'Author' => $this->theme['author'],
 			);
 
 			foreach ( $theme_headers as $key => $value ) {
