@@ -8,16 +8,6 @@ body {
 	-webkit-font-smoothing: antialiased;
 }
 
-h1,
-.has-huge-font-size,
-.has-gigantic-font-size {
-	font-weight: var(--wp--preset--font-weight-light);
-}
-
-h2, h3, h4, h5, h6 {
-	font-weight: normal;
-}
-
 /*
  * text-underline-offset doesn't work in Chrome at all 👎
  * But looks nice in Safari/Firefox, so let's keep it and
