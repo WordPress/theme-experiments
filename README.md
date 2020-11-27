@@ -45,6 +45,12 @@ Here are some resources that may be useful context for learning more about block
 - [Full site editing development in the Gutenberg repo](https://github.com/WordPress/gutenberg/labels/%5BFeature%5D%20Full%20Site%20Editing)
 - [Global styles development in the Gutenberg repo](https://github.com/WordPress/gutenberg/issues?q=is%3Aissue+is%3Aopen+label%3A%22Global+Styles%22)
 
+## Generating your own starter theme  
+
+We have included a script so you can generate a theme based on a starter boilerplate with the minimum necessary to build your own block-based theme. You will need to have php installed to run it using:
+
+`php new-empty-theme.php`
+
 ## Questions or Improvements?
 
 If you'd like to propose improvements to this repository, feel free to open an [issue](https://github.com/WordPress/theme-experiments/issues) or [PR](https://github.com/WordPress/theme-experiments/pulls).
