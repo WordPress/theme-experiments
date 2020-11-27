@@ -18,7 +18,7 @@ class Generate_Theme {
 			'description' => 'The base for a block-based theme.',
 		);
 		$this->get_theme_info();
-		$this->create_zip();
+		$this->create_folder();
 	}
 
 	function get_theme_info() {
@@ -48,7 +48,7 @@ class Generate_Theme {
 		$this->theme['uri'] = trim(fgets($input));
 	}
 
-	function create_zip() {
+	function create_folder() {
 
 		$dir = $this->theme['slug'];
 
