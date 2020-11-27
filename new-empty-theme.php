@@ -7,12 +7,14 @@
 class Generate_Theme {
 
 	protected $theme;
+	protected $old_themename = 'Empty Theme';
+	protected $old_themeslug = 'emptytheme';
 
 	function __construct() {
 
 		$this->theme = array(
-			'name'        => 'Empty Theme',
-			'slug'        => 'emptytheme',
+			'name'        => $this->old_themename,
+			'slug'        => $this->old_themeslug,
 			'uri'         => 'https://github.com/wordpress/theme-experiments/',
 			'author'      => 'Kjell Reigstad',
 			'description' => 'The base for a block-based theme.',
@@ -55,7 +57,7 @@ class Generate_Theme {
 		if( is_dir($dir) === false ) {
 			
 			mkdir($dir);
-			$prototype_dir = 'emptytheme/';
+			$prototype_dir = $this->old_themeslug . '/';
 			$exclude_files = array( '.travis.yml', 'codesniffer.ruleset.xml', '.jscsrc', '.jshintignore', 'CONTRIBUTING.md', '.git', '.svn', '.DS_Store', '.gitignore', '.', '..' );
 			$exclude_directories = array( '.git', '.svn', '.github', '.', '..' );
 
@@ -82,6 +84,7 @@ class Generate_Theme {
 	}
 
 	function replace_theme_name($contents, $filename) {
+
 		// Replace only text files, skip png's and other stuff.
 		$valid_extensions = array( 'php', 'css', 'scss', 'js', 'txt' );
 		$valid_extensions_regex = implode( '|', $valid_extensions );
@@ -102,15 +105,17 @@ class Generate_Theme {
 				$contents = preg_replace( '/(' . preg_quote( $key ) . ':)\s?(.+)/', '\\1 ' . $value, $contents );
 			}
 
-			$contents = preg_replace( '/\b_s\b/', $this->theme['name'], $contents );
+			$contents = str_replace( $this->old_themename, $this->theme['name'], $contents );
 			return $contents;
 		}
 
 		// Special treatment for functions.php
 		if ( 'functions.php' === $filename ) {
-			$contents = str_replace( 'emptytheme', $this->theme['functions_slug'], $contents );
+			$contents = str_replace( $this->old_themeslug, $this->theme['functions_slug'], $contents );
 			return $contents;
 		}
+
+		return $contents;
 	}
 
 	function sanitize_title_with_dashes( $title, $raw_title = '', $context = 'display' ) {
