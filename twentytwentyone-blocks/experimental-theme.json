@@ -143,6 +143,11 @@
 						"name": "Light"
 					},
 					{
+						"slug": "normal",
+						"value": "normal",
+						"name": "Normal"
+					},
+					{
 						"slug": "bold",
 						"value": 700,
 						"name": "Bold"
