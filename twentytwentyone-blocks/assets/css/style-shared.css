@@ -18,24 +18,6 @@ h2, h3, h4, h5, h6 {
 	font-weight: normal;
 }
 
-b,
-strong {
-	font-weight: var(--wp--preset--font-weight--bold);
-}
-
-dfn,
-cite,
-em,
-i {
-	font-style: var(--wp--preset--font-style--italic);
-}
-
-pre {
-	white-space: pre;
-	overflow-x: auto;
-}
-
-
 /*
  * text-underline-offset doesn't work in Chrome at all 👎
  * But looks nice in Safari/Firefox, so let's keep it and
