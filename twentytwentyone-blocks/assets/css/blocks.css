@@ -59,9 +59,21 @@
 # Image
 --------------------------------------------------------------*/
 
-.wp-block-image img,
 .wp-block-image img {
 	height: auto;
+}
+
+.wp-block-image figcaption{
+	text-align: center;
+	color: var(--wp--preset--color--dark-gray);
+	font-size: var(--wp--preset--font-size--extra-small);
+	line-height: var(--wp--custom--line-height--body);
+	margin-top: calc(0.5 * var(--wp--custom--spacing--unit));
+	margin-bottom: var(--wp--custom--spacing--unit);
+}
+
+.wp-block-image a:focus img {
+	outline-offset: 2px;
 }
 
 .wp-block-image.is-style-twentytwentyone-border img,
