@@ -19,7 +19,7 @@ jobs:
         # Deployment destination server & path. Formatted as protocol://domain.com:port/full/destination/path/
         ftp-server: sftp://sftp.pressable.com:22/htdocs/wp-content/themes/twentytwentyone-blocks/
         # FTP account username
-        ftp-username: ${{ secrets.SFTP_USERNAME }}
+        ftp-username: ${{ secrets.TT1BLOCKS_STAGING_SFTP_USERNAME }}
         # FTP account password
-        ftp-password: ${{ secrets.SFTP_PASSWORD }}
+        ftp-password: ${{ secrets.TT1BLOCKS_STAGING_SFTP_PASSWORD }}
         git-ftp-args: --insecure
