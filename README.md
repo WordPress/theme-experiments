@@ -11,6 +11,7 @@ This repository is dedicated to exploring how WordPress themes can best leverage
 | Theme | Updated For |
 | --- | --- |
 | [Ambitious](https://github.com/WordPress/theme-experiments/tree/master/ambitious) | Gutenberg 7.6 |
+| [Empty Theme](https://github.com/WordPress/theme-experiments/tree/master/emptytheme) | Gutenberg 9.5 |
 | [Gutenberg Starter Theme Blocks](https://github.com/WordPress/theme-experiments/tree/master/gutenberg-starter-theme-blocks) | Gutenberg 8.6 |
 | [Twenty Nineteen Blocks](https://github.com/WordPress/theme-experiments/tree/master/twentynineteen-blocks) | Gutenberg 8.6 |
 | [Twenty Twenty Blocks](https://github.com/WordPress/theme-experiments/tree/master/twentytwenty-blocks) | Gutenberg 8.6 |
@@ -44,6 +45,12 @@ Here are some resources that may be useful context for learning more about block
 - [Creating a block-based theme (tutorial)](https://developer.wordpress.org/block-editor/tutorials/block-based-themes/)
 - [Full site editing development in the Gutenberg repo](https://github.com/WordPress/gutenberg/labels/%5BFeature%5D%20Full%20Site%20Editing)
 - [Global styles development in the Gutenberg repo](https://github.com/WordPress/gutenberg/issues?q=is%3Aissue+is%3Aopen+label%3A%22Global+Styles%22)
+
+## Generating your own starter theme  
+
+We have included a script so you can generate a theme based on a starter boilerplate with the minimum necessary to build your own block-based theme. You will need to have php installed to run it using:
+
+`php new-empty-theme.php`
 
 ## Questions or Improvements?
 
