@@ -5,6 +5,7 @@ Empty theme contains all of the boilerplate you need to get started building a b
 - An empty `theme.json` file. 
 - `functions.php` with some basic setup.
 - `style.css` to set up the theme.
+- A separate stylesheet with all the front-end alignments you'll need. 
 - An empty `index.php`
 
 It also includes a basic `index.html` template and `header.html` template part so that the theme works out of the box with no modifications. 
