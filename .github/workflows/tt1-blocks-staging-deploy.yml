@@ -1,0 +1,25 @@
+
+name: Deploy to staging
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: FTP Deploy
+      uses: SamKirkland/FTP-Deploy-Action@3.0.0
+      with:
+        local-dir: twentytwentyone-blocks/
+        # Deployment destination server & path. Formatted as protocol://domain.com:port/full/destination/path/
+        ftp-server: sftp://sftp.pressable.com:22/htdocs/wp-content/themes/twentytwentyone-blocks/
+        # FTP account username
+        ftp-username: ${{ secrets.SFTP_USERNAME }}
+        # FTP account password
+        ftp-password: ${{ secrets.SFTP_PASSWORD }}
+        git-ftp-args: --insecure
