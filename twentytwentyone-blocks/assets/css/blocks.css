@@ -244,3 +244,13 @@ h1.wp-block-site-title a:not(:hover):not(:focus):not(:active) {
 .wp-block-social-links.is-style-twentytwentyone-social-icons-color .wp-social-link {
 	background: none;
 }
+
+/*--------------------------------------------------------------
+# Spacer
+--------------------------------------------------------------*/
+
+@media only screen and (max-width: 482px) {
+	.wp-block-spacer[style] {
+		height: var(--wp--custom--spacing--unit) !important;
+	}
+}
