@@ -23,3 +23,5 @@ jobs:
         # FTP account password
         ftp-password: ${{ secrets.TT1BLOCKS_STAGING_SFTP_PASSWORD }}
         git-ftp-args: --insecure
+    
+    
