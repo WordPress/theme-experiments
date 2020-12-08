@@ -17,7 +17,7 @@ jobs:
       with:
         local-dir: twentytwentyone-blocks/
         # Deployment destination server & path. Formatted as protocol://domain.com:port/full/destination/path/
-        ftp-server: sftp://sftp.pressable.com:22/htdocs/wp-content/themes/twentytwentyone-blocks/
+        ftp-server: sftp://2021blocks.wordpress.net:22/public-html/wp-content/themes/twentytwentyone-blocks/
         # FTP account username
         ftp-username: ${{ secrets.TT1BLOCKS_STAGING_SFTP_USERNAME }}
         # FTP account password
