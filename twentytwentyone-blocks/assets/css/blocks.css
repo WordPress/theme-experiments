@@ -244,3 +244,15 @@ h1.wp-block-site-title a:not(:hover):not(:focus):not(:active) {
 .wp-block-social-links.is-style-twentytwentyone-social-icons-color .wp-social-link {
 	background: none;
 }
+
+/*--------------------------------------------------------------
+# Table Block
+--------------------------------------------------------------*/
+
+.wp-block-table {
+	min-width: 240px;
+}
+
+.wp-block-table th, .wp-block-table td {
+	border-width: 0;
+}
