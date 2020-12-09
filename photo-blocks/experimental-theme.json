@@ -4,7 +4,18 @@
 			"color": {
 				"gradients": [ ],
 				"link": true,
-				"palette": [ ]
+				"palette": [
+					{
+						"color": "#000",
+						"slug": "black",
+						"name": "Black"
+					},
+					{
+						"color": "#FFF",
+						"slug": "white",
+						"name": "White"
+					}
+				]
 			},
 			"typography": {
 				"customLineHeight": true,
@@ -54,7 +65,11 @@
 			}
 		},
 		"styles": {
-			"color": { },
+			"color": {
+				"background": "var(--wp--preset--color--white)",
+				"text": "var(--wp--preset--color--black)",
+				"link": "var(--wp--preset--color--black)"
+			},
 			"typography": {
 				"fontFamily": "var(--wp--preset--font-family--system-font)",
 				"fontSize": "var(--wp--preset--font-size--normal)",
