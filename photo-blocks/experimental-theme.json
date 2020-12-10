@@ -17,6 +17,9 @@
 					}
 				]
 			},
+			"spacing": {
+				"customPadding": true
+			},
 			"typography": {
 				"customLineHeight": true,
 				"fontFamilies": [
@@ -42,10 +45,7 @@
 						"size": "24px",
 						"name": "Extra Large"
 					}
-				],
-				"spacing": {
-					"customPadding": true
-				}
+				]
 			},
 			"custom": {
 				"font-weight": {
