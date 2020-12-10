@@ -249,10 +249,6 @@ h1.wp-block-site-title a:not(:hover):not(:focus):not(:active) {
 # Table Block
 --------------------------------------------------------------*/
 
-.wp-block-table {
-	min-width: 240px;
-}
-
-.wp-block-table th, .wp-block-table td {
+.wp-block-table.is-style-stripes td {
 	border-width: 0;
 }
