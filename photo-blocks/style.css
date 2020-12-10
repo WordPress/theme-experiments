@@ -29,10 +29,6 @@ Screenshot Images from stocksnap.io. CC0 License.
 	margin: 0;
 }
 
-.wp-block-column:not(:first-child) {
-	margin-left: 14px;
-}
-
 .wp-block-column .wp-block-columns {
 	margin-bottom: 0;
 }
