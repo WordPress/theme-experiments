@@ -148,6 +148,11 @@
 						"name": "Normal"
 					},
 					{
+ 						"slug": "medium",
+ 						"value": "500",
+ 						"name": "Medium"
+ 					},
+ 					{
 						"slug": "semibold",
 						"value": 600,
 						"name": "Semibold"
