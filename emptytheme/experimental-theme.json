@@ -6,13 +6,13 @@
 				"link": true,
 				"palette": [ ]
 			},
+			"spacing": {
+				"customPadding": true
+			},
 			"typography": {
 				"customLineHeight": true,
 				"fontFamilies": [ ],
-				"fontSizes": [ ],
-				"spacing": {
-					"customPadding": true
-				}
+				"fontSizes": [ ]
 			},
 			"custom": {
 				"width": {
