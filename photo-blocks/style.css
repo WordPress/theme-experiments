@@ -1,0 +1,79 @@
+/*
+Theme Name: Photo Blocks
+Theme URI: https://github.com/wordpress/theme-experiments
+Author: kjellr
+Description: A block-based photo-blogging theme.
+Requires at least: 5.3
+Tested up to: 5.5
+Requires PHP: 5.6
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: photo-blocks
+
+Photo Blocks is distributed under the terms of the GNU GPL.
+
+Screenshot Images from stocksnap.io. CC0 License.
+- https://stocksnap.io/photo/photographer-street-48WN8Q7JZS
+- https://stocksnap.io/photo/fog-mountain-RVVDOZMEKW
+- https://stocksnap.io/photo/winter-mountain-7NF9TVWNPY
+- https://stocksnap.io/photo/fog-mountain-OLGRLKRE4Z
+- https://stocksnap.io/photo/fog-mountain-ZKN6UKFKEO
+- https://stocksnap.io/photo/fog-trees-F0Q7LBX1VP
+- https://stocksnap.io/photo/iceland-beach-ABGWJNSGKR
+*/
+
+/* These should be handled by Gutenberg eventually. */
+
+.wp-block-post-featured-image {
+	margin: 0;
+}
+
+.wp-block-column .wp-block-columns {
+	margin-bottom: 0;
+}
+
+.single .wp-block-post-featured-image {
+	text-align: center;
+}
+
+.wp-block-post-featured-image img {
+	width: 100%;
+	height: auto;
+}
+
+.wp-block-image img {
+	height: auto;
+}
+
+/* These will move into Global Styles when it's possible to do so. */
+
+.wp-block-site-title a {
+	font-weight: 500;
+	text-decoration: none;
+	color: #000;
+}
+
+.wp-block-post-title {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+/* These styles may end up staying part of the theme in the longrun. */
+
+.wp-block-site-logo a,
+body:not(.single) .wp-block-post-featured-image {
+	transition: opacity 0.2s ease-in-out;
+}
+
+.wp-block-site-logo a:hover,
+body:not(.single) .wp-block-post-featured-image:hover {
+	opacity: 0.8;	
+}
+
+/* Hack for now, to only show the featured image. */
+
+.single .entry-content > img:only-child,
+.single .entry-content > .wp-block-image:only-child {
+	display: none;
+}

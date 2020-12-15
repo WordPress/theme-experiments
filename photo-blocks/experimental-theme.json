@@ -1,0 +1,118 @@
+{
+	"global": {
+		"settings": {
+			"color": {
+				"gradients": [ ],
+				"link": true,
+				"palette": [
+					{
+						"color": "#000",
+						"slug": "black",
+						"name": "Black"
+					},
+					{
+						"color": "#FFF",
+						"slug": "white",
+						"name": "White"
+					}
+				]
+			},
+			"spacing": {
+				"customPadding": true
+			},
+			"typography": {
+				"customLineHeight": true,
+				"fontFamilies": [
+					{
+						"fontFamily": "-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,Oxygen-Sans,Ubuntu,Cantarell,\"Helvetica Neue\",sans-serif",
+						"slug": "system-font",
+						"name": "System Font"
+					}
+				],
+				"fontSizes": [
+					{
+						"slug": "normal",
+						"size": "18px",
+						"name": "Normal"
+					},
+					{
+						"slug": "large",
+						"size": "20px",
+						"name": "Large"
+					},
+					{
+						"slug": "extra-large",
+						"size": "24px",
+						"name": "Extra Large"
+					}
+				]
+			},
+			"custom": {
+				"font-weight": {
+					"light": 300
+				},
+				"line-height": {
+					"normal": 1.7,
+					"heading": 1.4
+				},
+				"margin": {
+					"horizontal": "1.25em"
+				},
+				"width": {
+					"default": "720px",
+					"wide": "1296px"
+				}
+			}
+		},
+		"styles": {
+			"color": {
+				"background": "var(--wp--preset--color--white)",
+				"text": "var(--wp--preset--color--black)",
+				"link": "var(--wp--preset--color--black)"
+			},
+			"typography": {
+				"fontFamily": "var(--wp--preset--font-family--system-font)",
+				"fontSize": "var(--wp--preset--font-size--normal)",
+				"lineHeight": "var(--wp--custom--line-height--normal)",
+				"fontWeight": "var(--wp--custom--font-weight--light)"
+			}
+		}
+	},
+	"core/heading/h1": {
+		"styles": {
+			"typography": {
+				"fontSize": "var(--wp--preset--font-size--extra-large)",
+				"lineHeight": "var(--wp--custom--line-height--heading)"
+			}
+		}
+	},
+	"core/heading/h2": {
+		"styles": {
+			"typography": {
+				"fontSize": "var(--wp--preset--font-size--large)"
+			}
+		}
+	},
+	"core/post-title": {
+		"styles": {
+			"typography": {
+				"fontSize": "var(--wp--preset--font-size--large)",
+				"lineHeight": "var(--wp--custom--line-height--normal)"
+			}
+		}
+	},
+	"core/site-title": {
+		"styles": {
+			"typography": {
+				"fontSize": "var(--wp--preset--font-size--large)"
+			}
+		}
+	},
+	"core/navigation": {
+		"styles": {
+			"typography": {
+				"fontSize": "var(--wp--preset--font-size--large)"
+			}
+		}
+	}
+}
