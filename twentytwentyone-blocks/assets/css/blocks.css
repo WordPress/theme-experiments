@@ -10,6 +10,26 @@
 # Columns
 --------------------------------------------------------------*/
 
+.wp-block-columns .wp-block-column > * {
+	margin-top: calc(0.66 * var(--wp--custom--spacing--vertical));
+	margin-bottom: calc(0.66 * var(--wp--custom--spacing--vertical));
+}
+
+@media screen and (min-width: 482px) {
+	.wp-block-columns .wp-block-column > * {
+		margin-top: var(--wp--custom--spacing--vertical);
+		margin-bottom: var(--wp--custom--spacing--vertical);
+	}
+}
+
+.wp-block-columns .wp-block-column *:first-child {
+	margin-top: 0;
+}
+
+.wp-block-columns .wp-block-column *:last-child {
+	margin-bottom: 0;
+}
+
 @media screen and (min-width: 652px) {
 	.is-style-twentytwentyone-columns-overlap .wp-block-column {
 		flex-grow: 1;
