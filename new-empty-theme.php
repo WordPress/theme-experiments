@@ -86,7 +86,7 @@ class Generate_Theme {
 	function replace_theme_name($contents, $filename) {
 
 		// Replace only text files, skip png's and other stuff.
-		$valid_extensions = array( 'php', 'css', 'scss', 'js', 'txt' );
+		$valid_extensions = array( 'php', 'css', 'scss', 'js', 'txt', 'html' );
 		$valid_extensions_regex = implode( '|', $valid_extensions );
 		if ( ! preg_match( "/\.({$valid_extensions_regex})$/", $filename ) )
 			return $contents;
@@ -111,6 +111,12 @@ class Generate_Theme {
 
 		// Special treatment for functions.php
 		if ( 'functions.php' === $filename ) {
+			$contents = str_replace( $this->old_themeslug, $this->theme['functions_slug'], $contents );
+			return $contents;
+		}
+
+		// Special treatment for templates
+		if ( 'html' === substr($filename, strrpos($filename, '.') + 1) ) {
 			$contents = str_replace( $this->old_themeslug, $this->theme['functions_slug'], $contents );
 			return $contents;
 		}
