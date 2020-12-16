@@ -15,9 +15,9 @@ jobs:
     - name: FTP Deploy
       uses: SamKirkland/FTP-Deploy-Action@3.0.0
       with:
-        local-dir: twentytwentyone-blocks/
+        local-dir: tt1-blocks/
         # Deployment destination server & path. Formatted as protocol://domain.com:port/full/destination/path/
-        ftp-server: sftp://2021blocks.wordpress.net:22/home/blockswordpress/public_html/wp-content/themes/twentytwentyone-blocks
+        ftp-server: sftp://2021blocks.wordpress.net:22/home/blockswordpress/public_html/wp-content/themes/tt1-blocks
         # FTP account username
         ftp-username: ${{ secrets.TT1BLOCKS_STAGING_SFTP_USERNAME }}
         # FTP account password

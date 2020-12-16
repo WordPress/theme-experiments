@@ -1,6 +1,6 @@
 <?php
 
-if ( ! function_exists( 'twenty_twenty_one_blocks_setup' ) ) {
+if ( ! function_exists( 'tt1_blocks_setup' ) ) {
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.
 	 *
@@ -12,14 +12,14 @@ if ( ! function_exists( 'twenty_twenty_one_blocks_setup' ) ) {
 	 *
 	 * @return void
 	 */
-	function twenty_twenty_one_blocks_setup() {
+	function tt1_blocks_setup() {
 		/*
 		 * Make theme available for translation.
 		 * Translations can be filed in the /languages/ directory.
 		 * If you're building a theme based on Twenty Twenty-One, use a find and replace
-		 * to change 'twentytwentyone-blocks' to the name of your theme in all the template files.
+		 * to change 'tt1-blocks' to the name of your theme in all the template files.
 		 */
-		load_theme_textdomain( 'twentytwentyone-blocks', get_template_directory() . '/languages' );
+		load_theme_textdomain( 'tt1-blocks', get_template_directory() . '/languages' );
 
 		// Add default posts and comments RSS feed links to head.
 		add_theme_support( 'automatic-feed-links' );
@@ -53,44 +53,44 @@ if ( ! function_exists( 'twenty_twenty_one_blocks_setup' ) ) {
 			'editor-font-sizes',
 			array(
 				array(
-					'name'      => esc_html__( 'Extra small', 'twentytwentyone-blocks' ),
-					'shortName' => esc_html_x( 'XS', 'Font size', 'twentytwentyone-blocks' ),
+					'name'      => esc_html__( 'Extra small', 'tt1-blocks' ),
+					'shortName' => esc_html_x( 'XS', 'Font size', 'tt1-blocks' ),
 					'size'      => 16,
 					'slug'      => 'extra-small',
 				),
 				array(
-					'name'      => esc_html__( 'Small', 'twentytwentyone-blocks' ),
-					'shortName' => esc_html_x( 'S', 'Font size', 'twentytwentyone-blocks' ),
+					'name'      => esc_html__( 'Small', 'tt1-blocks' ),
+					'shortName' => esc_html_x( 'S', 'Font size', 'tt1-blocks' ),
 					'size'      => 18,
 					'slug'      => 'small',
 				),
 				array(
-					'name'      => esc_html__( 'Normal', 'twentytwentyone-blocks' ),
-					'shortName' => esc_html_x( 'M', 'Font size', 'twentytwentyone-blocks' ),
+					'name'      => esc_html__( 'Normal', 'tt1-blocks' ),
+					'shortName' => esc_html_x( 'M', 'Font size', 'tt1-blocks' ),
 					'size'      => 20,
 					'slug'      => 'normal',
 				),
 				array(
-					'name'      => esc_html__( 'Large', 'twentytwentyone-blocks' ),
-					'shortName' => esc_html_x( 'L', 'Font size', 'twentytwentyone-blocks' ),
+					'name'      => esc_html__( 'Large', 'tt1-blocks' ),
+					'shortName' => esc_html_x( 'L', 'Font size', 'tt1-blocks' ),
 					'size'      => 24,
 					'slug'      => 'large',
 				),
 				array(
-					'name'      => esc_html__( 'Extra Large', 'twentytwentyone-blocks' ),
-					'shortName' => esc_html_x( 'XL', 'Font size', 'twentytwentyone-blocks' ),
+					'name'      => esc_html__( 'Extra Large', 'tt1-blocks' ),
+					'shortName' => esc_html_x( 'XL', 'Font size', 'tt1-blocks' ),
 					'size'      => 40,
 					'slug'      => 'extra-large',
 				),
 				array(
-					'name'      => esc_html__( 'Huge', 'twentytwentyone-blocks' ),
-					'shortName' => esc_html_x( 'XXL', 'Font size', 'twentytwentyone-blocks' ),
+					'name'      => esc_html__( 'Huge', 'tt1-blocks' ),
+					'shortName' => esc_html_x( 'XXL', 'Font size', 'tt1-blocks' ),
 					'size'      => 96,
 					'slug'      => 'huge',
 				),
 				array(
-					'name'      => esc_html__( 'Gigantic', 'twentytwentyone-blocks' ),
-					'shortName' => esc_html_x( 'XXXL', 'Font size', 'twentytwentyone-blocks' ),
+					'name'      => esc_html__( 'Gigantic', 'tt1-blocks' ),
+					'shortName' => esc_html_x( 'XXXL', 'Font size', 'tt1-blocks' ),
 					'size'      => 144,
 					'slug'      => 'gigantic',
 				),
@@ -113,52 +113,52 @@ if ( ! function_exists( 'twenty_twenty_one_blocks_setup' ) ) {
 			'editor-color-palette',
 			array(
 				array(
-					'name'  => esc_html__( 'Black', 'twentytwentyone-blocks' ),
+					'name'  => esc_html__( 'Black', 'tt1-blocks' ),
 					'slug'  => 'black',
 					'color' => $black,
 				),
 				array(
-					'name'  => esc_html__( 'Dark Gray', 'twentytwentyone-blocks' ),
+					'name'  => esc_html__( 'Dark Gray', 'tt1-blocks' ),
 					'slug'  => 'dark-gray',
 					'color' => $dark_gray,
 				),
 				array(
-					'name'  => esc_html__( 'Gray', 'twentytwentyone-blocks' ),
+					'name'  => esc_html__( 'Gray', 'tt1-blocks' ),
 					'slug'  => 'gray',
 					'color' => $gray,
 				),
 				array(
-					'name'  => esc_html__( 'Green', 'twentytwentyone-blocks' ),
+					'name'  => esc_html__( 'Green', 'tt1-blocks' ),
 					'slug'  => 'green',
 					'color' => $green,
 				),
 				array(
-					'name'  => esc_html__( 'Blue', 'twentytwentyone-blocks' ),
+					'name'  => esc_html__( 'Blue', 'tt1-blocks' ),
 					'slug'  => 'blue',
 					'color' => $blue,
 				),
 				array(
-					'name'  => esc_html__( 'Purple', 'twentytwentyone-blocks' ),
+					'name'  => esc_html__( 'Purple', 'tt1-blocks' ),
 					'slug'  => 'purple',
 					'color' => $purple,
 				),
 				array(
-					'name'  => esc_html__( 'Red', 'twentytwentyone-blocks' ),
+					'name'  => esc_html__( 'Red', 'tt1-blocks' ),
 					'slug'  => 'red',
 					'color' => $red,
 				),
 				array(
-					'name'  => esc_html__( 'Orange', 'twentytwentyone-blocks' ),
+					'name'  => esc_html__( 'Orange', 'tt1-blocks' ),
 					'slug'  => 'orange',
 					'color' => $orange,
 				),
 				array(
-					'name'  => esc_html__( 'Yellow', 'twentytwentyone-blocks' ),
+					'name'  => esc_html__( 'Yellow', 'tt1-blocks' ),
 					'slug'  => 'yellow',
 					'color' => $yellow,
 				),
 				array(
-					'name'  => esc_html__( 'White', 'twentytwentyone-blocks' ),
+					'name'  => esc_html__( 'White', 'tt1-blocks' ),
 					'slug'  => 'white',
 					'color' => $white,
 				),
@@ -169,37 +169,37 @@ if ( ! function_exists( 'twenty_twenty_one_blocks_setup' ) ) {
 			'editor-gradient-presets',
 			array(
 				array(
-					'name'     => esc_html__( 'Purple to Yellow', 'twentytwentyone-blocks' ),
+					'name'     => esc_html__( 'Purple to Yellow', 'tt1-blocks' ),
 					'gradient' => 'linear-gradient(160deg, ' . $purple . ', ' . $yellow . ')',
 					'slug'     => 'purple-to-yellow',
 				),
 				array(
-					'name'     => esc_html__( 'Yellow to Purple', 'twentytwentyone-blocks' ),
+					'name'     => esc_html__( 'Yellow to Purple', 'tt1-blocks' ),
 					'gradient' => 'linear-gradient(160deg, ' . $yellow . ', ' . $purple . ')',
 					'slug'     => 'yellow-to-purple',
 				),
 				array(
-					'name'     => esc_html__( 'Green to Yellow', 'twentytwentyone-blocks' ),
+					'name'     => esc_html__( 'Green to Yellow', 'tt1-blocks' ),
 					'gradient' => 'linear-gradient(160deg, ' . $green . ', ' . $yellow . ')',
 					'slug'     => 'green-to-yellow',
 				),
 				array(
-					'name'     => esc_html__( 'Yellow to Green', 'twentytwentyone-blocks' ),
+					'name'     => esc_html__( 'Yellow to Green', 'tt1-blocks' ),
 					'gradient' => 'linear-gradient(160deg, ' . $yellow . ', ' . $green . ')',
 					'slug'     => 'yellow-to-green',
 				),
 				array(
-					'name'     => esc_html__( 'Red to Yellow', 'twentytwentyone-blocks' ),
+					'name'     => esc_html__( 'Red to Yellow', 'tt1-blocks' ),
 					'gradient' => 'linear-gradient(160deg, ' . $red . ', ' . $yellow . ')',
 					'slug'     => 'red-to-yellow',
 				),
 				array(
-					'name'     => esc_html__( 'Yellow to Red', 'twentytwentyone-blocks' ),
+					'name'     => esc_html__( 'Yellow to Red', 'tt1-blocks' ),
 					'gradient' => 'linear-gradient(160deg, ' . $yellow . ', ' . $red . ')',
 					'slug'     => 'yellow-to-red',
 				),
 				array(
-					'name'     => esc_html__( 'Purple to Red', 'twentytwentyone-blocks' ),
+					'name'     => esc_html__( 'Purple to Red', 'tt1-blocks' ),
 					'gradient' => 'linear-gradient(160deg, ' . $purple . ', ' . $red . ')',
 					'slug'     => 'purple-to-red',
 				),
@@ -227,7 +227,7 @@ if ( ! function_exists( 'twenty_twenty_one_blocks_setup' ) ) {
 		add_theme_support( 'custom-units' );
 	}
 }
-add_action( 'after_setup_theme', 'twenty_twenty_one_blocks_setup' );
+add_action( 'after_setup_theme', 'tt1_blocks_setup' );
 
 /**
  * Enqueue scripts and styles.
@@ -236,10 +236,10 @@ add_action( 'after_setup_theme', 'twenty_twenty_one_blocks_setup' );
  *
  * @return void
  */
-function twenty_twenty_one_blocks_scripts() {
-	wp_enqueue_style( 'twenty-twenty-one-blocks-style', get_template_directory_uri() . '/style.css', array(), wp_get_theme()->get( 'Version' ) );
+function tt1_blocks_scripts() {
+	wp_enqueue_style( 'tt1-blocks-style', get_template_directory_uri() . '/style.css', array(), wp_get_theme()->get( 'Version' ) );
 }
-add_action( 'wp_enqueue_scripts', 'twenty_twenty_one_blocks_scripts' );
+add_action( 'wp_enqueue_scripts', 'tt1_blocks_scripts' );
 
 /**
  * Enqueue block editor script.
@@ -250,7 +250,7 @@ add_action( 'wp_enqueue_scripts', 'twenty_twenty_one_blocks_scripts' );
  */
 function twentytwentyone_blocks_block_editor_script() {
 
-	wp_enqueue_script( 'twenty-twenty-one-blocks-unregister-block-style', get_theme_file_uri( '/assets/js/unregister-block-style.js' ), array( 'wp-blocks', 'wp-dom' ), wp_get_theme()->get( 'Version' ), true );
+	wp_enqueue_script( 'tt1-blocks-unregister-block-style', get_theme_file_uri( '/assets/js/unregister-block-style.js' ), array( 'wp-blocks', 'wp-dom' ), wp_get_theme()->get( 'Version' ), true );
 }
 add_action( 'enqueue_block_editor_assets', 'twentytwentyone_blocks_block_editor_script' );
 

@@ -1,4 +1,4 @@
-# Twenty Twenty-One Blocks
+# TT1 Blocks
 
 Ongoing development for the block-based version of Twenty Twenty-One, the default WordPress theme slated for 5.6. 
 
@@ -14,12 +14,12 @@ To contribute to TT1 development, please read the [contributor's guide](/CONTRIB
 2. Click the 'Code' button on [the main Theme Experiments Repository GitHub page](https://github.com/wordpress/theme-experiments).
 3. Unzip the resulting download. 
 4. Move or upload the "theme-experiments" folder into your site's `wp-content/themes` folder.
-6. Visit `Appearance > Themes` and activate the "Twenty Twenty-One Blocks" theme.
+6. Visit `Appearance > Themes` and activate the "TT1 Blocks" theme.
 
 ## Copyright
 
-Twenty Twenty-One Blocks WordPress Theme, 2020 WordPress.org
-Twenty Twenty-One Blocks is distributed under the terms of the GNU GPL.
+TT1 Blocks WordPress Theme, 2020 WordPress.org
+TT1 Blocks is distributed under the terms of the GNU GPL.
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
