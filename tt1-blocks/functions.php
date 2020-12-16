@@ -204,7 +204,7 @@ if ( ! function_exists( 'tt1_blocks_setup' ) ) {
 					'slug'     => 'purple-to-red',
 				),
 				array(
-					'name'     => esc_html__( 'Red to Purple', 'twentytwentyone_blocks_block_editor_script' ),
+					'name'     => esc_html__( 'Red to Purple', 'tt1_blocks_block_editor_script' ),
 					'gradient' => 'linear-gradient(160deg, ' . $red . ', ' . $purple . ')',
 					'slug'     => 'red-to-purple',
 				),
@@ -248,11 +248,11 @@ add_action( 'wp_enqueue_scripts', 'tt1_blocks_scripts' );
  *
  * @return void
  */
-function twentytwentyone_blocks_block_editor_script() {
+function tt1_blocks_block_editor_script() {
 
 	wp_enqueue_script( 'tt1-blocks-unregister-block-style', get_theme_file_uri( '/assets/js/unregister-block-style.js' ), array( 'wp-blocks', 'wp-dom' ), wp_get_theme()->get( 'Version' ), true );
 }
-add_action( 'enqueue_block_editor_assets', 'twentytwentyone_blocks_block_editor_script' );
+add_action( 'enqueue_block_editor_assets', 'tt1_blocks_block_editor_script' );
 
 // Block Patterns.
 require get_template_directory() . '/inc/block-patterns.php';
