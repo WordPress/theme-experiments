@@ -103,7 +103,7 @@ body {
 
 	.wp-site-blocks .alignfull {
 		transform: translateX(0px);
-		width: calc(100% + var(--wp--custom--spacing--horizontal));
-		max-width: calc(100% + var(--wp--custom--spacing--horizontal));
+		width: 100%;
+		max-width: 100%;
 	}
 }
