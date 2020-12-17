@@ -6,7 +6,7 @@
  *
  * @package WordPress
  * @subpackage TT1_Blocks
- * @since 1.0
+ * @since 0.1
  */
 
 if ( ! function_exists( 'tt1_blocks_setup' ) ) {
@@ -17,7 +17,7 @@ if ( ! function_exists( 'tt1_blocks_setup' ) ) {
 	 * runs before the init hook. The init hook is too late for some features, such
 	 * as indicating support for post thumbnails.
 	 *
-	 * @since 1.0
+	 * @since 0.1
 	 *
 	 * @return void
 	 */
@@ -241,7 +241,7 @@ add_action( 'after_setup_theme', 'tt1_blocks_setup' );
 /**
  * Enqueue scripts and styles.
  *
- * @since 1.0
+ * @since 0.1
  *
  * @return void
  */
@@ -253,7 +253,7 @@ add_action( 'wp_enqueue_scripts', 'tt1_blocks_scripts' );
 /**
  * Enqueue block editor script.
  *
- * @since 1.0
+ * @since 0.1
  *
  * @return void
  */
