@@ -1,4 +1,13 @@
 <?php
+/**
+ * Functions and definitions
+ *
+ * @link https://developer.wordpress.org/themes/basics/theme-functions/
+ *
+ * @package WordPress
+ * @subpackage TT1_Blocks
+ * @since 1.0.0
+ */
 
 if ( ! function_exists( 'tt1_blocks_setup' ) ) {
 	/**
