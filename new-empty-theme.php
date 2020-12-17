@@ -117,7 +117,7 @@ class Generate_Theme {
 
 		// Special treatment for templates
 		if ( 'html' === substr($filename, strrpos($filename, '.') + 1) ) {
-			$contents = str_replace( $this->old_themeslug, $this->theme['functions_slug'], $contents );
+			$contents = str_replace( $this->old_themeslug, $this->theme['slug'], $contents );
 			return $contents;
 		}
 
