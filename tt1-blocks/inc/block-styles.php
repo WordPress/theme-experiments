@@ -6,14 +6,14 @@
  *
  * @package WordPress
  * @subpackage TT1_Blocks
- * @since 1.0.0
+ * @since 1.0
  */
 
 if ( function_exists( 'register_block_style' ) ) {
 	/**
 	 * Register block styles.
 	 *
-	 * @since 1.0.0
+	 * @since 1.0
 	 *
 	 * @return void
 	 */
