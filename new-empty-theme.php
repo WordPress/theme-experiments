@@ -111,6 +111,16 @@ class Generate_Theme {
 
 		// Special treatment for functions.php
 		if ( 'functions.php' === $filename ) {
+
+			$function_names = array(
+				'wp_enqueue_style',
+				'wp_enqueue_script'
+			);
+
+			foreach ( $function_names as $function ) {
+				$contents = preg_replace('/('.preg_quote($function).'[ ]?\([ ]?(?:\'|"))('.preg_quote($this->old_themeslug).')/', '$1'.$this->theme['slug'], $contents);
+			}
+
 			$contents = str_replace( $this->old_themeslug, $this->theme['functions_slug'], $contents );
 			return $contents;
 		}
