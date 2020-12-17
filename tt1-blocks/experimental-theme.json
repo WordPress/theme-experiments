@@ -283,6 +283,25 @@
 				"fontWeight": "var(--wp--custom--font-weight--normal)",
 				"textTransform": "uppercase"
 			}
+		},
+		"core/code": {
+			"typography": {
+				"fontSize": "var(--wp--preset--font-size--extra-small)"
+			},
+			"spacing": {
+				"padding": {
+					"top": "var(--wp--custom--spacing--unit)",
+					"bottom": "var(--wp--custom--spacing--unit)",
+					"left": "var(--wp--custom--spacing--unit)",
+					"right": "var(--wp--custom--spacing--unit)"
+				}
+			},
+			"border": {
+				"radius": "0px",
+				"color": "var(--wp--preset--color--dark-gray)",
+				"style": "solid",
+				"width": "1.5px"
+			}
 		}
 	},
 	"customTemplates": [
