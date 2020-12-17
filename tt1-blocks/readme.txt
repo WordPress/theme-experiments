@@ -9,13 +9,13 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 == Description ==
 
-TT1 Blocks is a fully block-based version the Twenty Twenty-One theme. It is built to leverage the full-site editing functionality that is being built in the Gutenberg plugin.
+TT1 Blocks is a fully block-based version the <a href="https://wordpress.org/themes/twentytwentyone/">Twenty Twenty-One</a> theme. It is built to leverage the full-site editing functionality that is being built in the <a href="https://wordpress.org/plugins/gutenberg/">Gutenberg plugin</a>. This work is ongoing, and updates are available on the <a href="https://make.wordpress.org/core/?s=gutenberg">Make WordPress Core blog</a>.
 
 This theme is beta software, and is not meant for use on a production site. Bug reports, fixes, and other and contributions are welcome <a href="https://github.com/WordPress/theme-experiments/issues">in the theme's GitHub repository</a>. 
 
 == Installation ==
 
-1. If you do not already have the Gutenberg plugin installed and activated, go to Appearance -> Themes in your admin panel and search for 'Gutenberg'. Install and activate the plugin. 
+1. If you do not already have <a href="https://wordpress.org/plugins/gutenberg/">the Gutenberg plugin</a> installed and activated, go to Appearance -> Themes in your admin panel and search for 'Gutenberg'. Install and activate the plugin. 
 2. Then, in your admin panel, go to Appearance -> Themes and click the 'Add New' button.
 3. Type in 'TT1 Blocks' in the search form and press the 'Enter' key on your keyboard.
 4. Click on the 'Activate' button to use your new theme right away.
