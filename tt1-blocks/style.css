@@ -45,7 +45,7 @@ body {
 	padding: 0 var(--wp--custom--spacing--horizontal);
 }
 
-.wp-site-blocks > *:not(.wp-block-post-content),
+.wp-site-blocks > *:not(.wp-block-post-content):not(.alignfull),
 .wp-site-blocks .wp-block-post-content > *:not(.alignfull) {
 	max-width: var(--wp--custom--responsive--aligndefault-width);
 	margin-left: auto;
