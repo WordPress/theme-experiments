@@ -52,11 +52,9 @@ body {
 	margin-right: auto;
 }
 
-.wp-site-blocks .alignwide {
+.wp-site-blocks .wp-block-post-content .alignwide {
 	width: var(--wp--custom--responsive--alignwide-width);
 	max-width: 100%;
-	margin-left: auto;
-	margin-right: auto;
 }
 
 .aligncenter {
