@@ -45,13 +45,17 @@ body {
 	padding: 0 var(--wp--custom--spacing--horizontal);
 }
 
-.wp-site-blocks > *:not(.wp-block-post-content):not(.alignfull),
-.wp-site-blocks .wp-block-post-content > *:not(.alignfull) {
-	max-width: var(--wp--custom--responsive--aligndefault-width);
+.wp-site-blocks * {
 	margin-left: auto;
 	margin-right: auto;
 }
 
+.wp-site-blocks > *:not(.wp-block-post-content):not(.alignfull):not(.alignwide),
+.wp-site-blocks .wp-block-post-content > *:not(.alignfull):not(.alignwide) {
+	max-width: var(--wp--custom--responsive--aligndefault-width);
+}
+
+.wp-site-blocks > .alignwide,
 .wp-site-blocks .wp-block-post-content .alignwide {
 	width: var(--wp--custom--responsive--alignwide-width);
 	max-width: 100%;
