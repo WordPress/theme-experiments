@@ -58,7 +58,7 @@ class Generate_Theme {
 			
 			mkdir($dir);
 			$prototype_dir = $this->old_themeslug . '/';
-			$exclude_files = array( '.travis.yml', 'codesniffer.ruleset.xml', '.jscsrc', '.jshintignore', 'CONTRIBUTING.md', '.git', '.svn', '.DS_Store', '.gitignore', '.', '..' );
+			$exclude_files = array( '.travis.yml', 'codesniffer.ruleset.xml', '.jscsrc', '.jshintignore', 'README.md', 'CONTRIBUTING.md', '.git', '.svn', '.DS_Store', '.gitignore', '.', '..' );
 			$exclude_directories = array( '.git', '.svn', '.github', '.', '..' );
 
 			foreach ( $iterator = new \RecursiveIteratorIterator( new \RecursiveDirectoryIterator($prototype_dir, \RecursiveDirectoryIterator::SKIP_DOTS), \RecursiveIteratorIterator::SELF_FIRST) as $item ) {
