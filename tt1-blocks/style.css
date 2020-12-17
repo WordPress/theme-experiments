@@ -73,10 +73,6 @@ body {
 	max-width: 360px;
 }
 
-@media screen and (min-width: 1290px) {
-
-	.wp-site-blocks,
-	.wp-block-template-part.alignfull {
-		padding: 0;
-	}
+.wp-site-blocks .alignfull {
+	margin: 0 calc(0px - var(--wp--custom--spacing--horizontal));
 }
