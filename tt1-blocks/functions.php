@@ -16,7 +16,7 @@ if ( ! function_exists( 'tt1_blocks_setup' ) ) {
 		/*
 		 * Make theme available for translation.
 		 * Translations can be filed in the /languages/ directory.
-		 * If you're building a theme based on Twenty Twenty-One, use a find and replace
+		 * If you're building a theme based on TT1 Blocks, use a find and replace
 		 * to change 'tt1-blocks' to the name of your theme in all the template files.
 		 */
 		load_theme_textdomain( 'tt1-blocks', get_template_directory() . '/languages' );
