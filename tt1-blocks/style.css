@@ -51,7 +51,6 @@ body {
 }
 
 .wp-site-blocks *:not(.wp-block-post-content):not(.alignfull):not(.alignwide):not([class$="__inner-container"]) {
- {
 	max-width: var(--wp--custom--responsive--aligndefault-width);
 }
 
