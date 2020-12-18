@@ -55,7 +55,7 @@ body {
 	max-width: var(--wp--custom--responsive--aligndefault-width);
 }
 
-.wp-site-blocks > .alignwide,
+.wp-site-blocks .alignwide,
 .wp-site-blocks .wp-block-post-content .alignwide {
 	width: var(--wp--custom--responsive--alignwide-width);
 	max-width: 100%;
