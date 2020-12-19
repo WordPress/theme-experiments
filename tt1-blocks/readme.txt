@@ -44,7 +44,7 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 GNU General Public License for more details.
 
 
-TT1 Blocks is derived from Twenty Twenty-One, (C) 2020 WordPress.org
+TT1 Blocks is derived from Twenty Twenty-One, (C) 2020 WordPress.org. License: GPL v2 or later.
 
 Images
 Art by Berthe Morisot 1841-1895. Public domain.
