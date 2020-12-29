@@ -1,0 +1,37 @@
+/**
+ * Typography
+ * == Heading ==
+ */
+.h1, h1 {
+  font-size: 2.5rem;
+  margin: 1.5rem 0;
+}
+.h2, h2 {
+  font-size: 2rem;
+  margin: 1.2rem 0;
+}
+.h3, h3 {
+  font-size: 1.75rem;
+  margin: 1rem 0;
+}
+.h4, h4 {
+  font-size: 1.5rem;
+  margin: .8rem 0;
+}
+.h5, h5 {
+  font-size: 1.25rem;
+  margin: .5rem 0;
+}
+.h6, h6 {
+  font-size: 1rem;
+}
+
+/**
+ * Typography
+ * == paragraph ==
+ */
+.paragraph, p {
+  font-size: 1rem;
+  margin: .5rem 0;
+  color: #424242;
+}

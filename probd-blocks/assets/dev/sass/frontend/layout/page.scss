@@ -1,0 +1,21 @@
+/**
+ * Pages
+ *  = Widgets =
+ */
+.skito-page {
+  overflow-x: hidden;
+  margin-bottom: 8rem;
+
+  &__image {
+    img {
+      max-height: 70vh;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__title {
+    text-align: center;
+  }
+
+}

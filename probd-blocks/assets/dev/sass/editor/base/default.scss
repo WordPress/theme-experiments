@@ -1,0 +1,29 @@
+/**
+ * === Table of Content ===
+ *
+ * ** Base **
+ * == Default ==
+ *
+ * Blocks & Features
+ * == Drop Cap ==
+ *
+ */
+@import "variables";
+
+.html {
+  font-size: 100%;
+}
+.edit-post-visual-editor.editor-styles-wrapper {
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  color: #212529;
+  background-color: #f5f5f7;
+
+  a {
+    color: $primary-color;
+  }
+  a:hover {
+    color: $secondary-color;
+  }
+
+}

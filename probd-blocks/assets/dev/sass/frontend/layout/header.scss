@@ -1,0 +1,28 @@
+/**
+ * Header
+ * == Wrapper ==
+ */
+.wp-site-blocks header.probd-blocks-site-header {
+	padding: 0px 25px;
+	margin-top: 0;
+}
+.wp-site-blocks header.alignfull.probd-blocks-site-header,
+.wp-site-blocks header.alignfull.probd-blocks-site-header .alignfull {
+	margin-top: 0;
+}
+
+/**
+ * Header
+ * == Logo ==
+ */
+header {
+	h1.wp-block-site-title {
+		margin-top: 0;
+		margin-bottom: .2rem;
+	}
+	.wp-block-site-tagline {
+		font-size: .8rem;
+		color: #8f8f8f;
+		margin: 0;
+	}
+}
