@@ -223,14 +223,8 @@ if ( ! function_exists( 'tt1_blocks_setup' ) ) {
 		// Add support for responsive embedded content.
 		add_theme_support( 'responsive-embeds' );
 
-		// Add support for custom line height controls.
-		add_theme_support( 'custom-line-height' );
-
 		// Add support for experimental link color control.
 		add_theme_support( 'experimental-link-color' );
-
-		// Add support for experimental cover block spacing.
-		add_theme_support( 'custom-spacing' );
 
 		// Add support for custom units.
 		add_theme_support( 'custom-units' );
