@@ -213,7 +213,7 @@ if ( ! function_exists( 'tt1_blocks_setup' ) ) {
 					'slug'     => 'purple-to-red',
 				),
 				array(
-					'name'     => esc_html__( 'Red to Purple', 'tt1_blocks_block_editor_script' ),
+					'name'     => esc_html__( 'Red to Purple', 'tt1-blocks' ),
 					'gradient' => 'linear-gradient(160deg, ' . $red . ', ' . $purple . ')',
 					'slug'     => 'red-to-purple',
 				),
