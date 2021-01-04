@@ -58,7 +58,7 @@ class Generate_Theme {
 			
 			mkdir($dir);
 			$prototype_dir = $this->old_themeslug . '/';
-			$exclude_files = array( '.travis.yml', 'codesniffer.ruleset.xml', '.jscsrc', '.jshintignore', 'CONTRIBUTING.md', '.git', '.svn', '.DS_Store', '.gitignore', '.', '..' );
+			$exclude_files = array( '.travis.yml', 'codesniffer.ruleset.xml', '.jscsrc', '.jshintignore', 'README.md', 'CONTRIBUTING.md', '.git', '.svn', '.DS_Store', '.gitignore', '.', '..' );
 			$exclude_directories = array( '.git', '.svn', '.github', '.', '..' );
 
 			foreach ( $iterator = new \RecursiveIteratorIterator( new \RecursiveDirectoryIterator($prototype_dir, \RecursiveDirectoryIterator::SKIP_DOTS), \RecursiveIteratorIterator::SELF_FIRST) as $item ) {
@@ -111,13 +111,23 @@ class Generate_Theme {
 
 		// Special treatment for functions.php
 		if ( 'functions.php' === $filename ) {
+
+			$function_names = array(
+				'wp_enqueue_style',
+				'wp_enqueue_script'
+			);
+
+			foreach ( $function_names as $function ) {
+				$contents = preg_replace('/('.preg_quote($function).'[ ]?\([ ]?(?:\'|"))('.preg_quote($this->old_themeslug).')/', '$1'.$this->theme['slug'], $contents);
+			}
+
 			$contents = str_replace( $this->old_themeslug, $this->theme['functions_slug'], $contents );
 			return $contents;
 		}
 
 		// Special treatment for templates
 		if ( 'html' === substr($filename, strrpos($filename, '.') + 1) ) {
-			$contents = str_replace( $this->old_themeslug, $this->theme['functions_slug'], $contents );
+			$contents = str_replace( $this->old_themeslug, $this->theme['slug'], $contents );
 			return $contents;
 		}
 
