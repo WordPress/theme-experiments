@@ -5,15 +5,15 @@
  * @link https://developer.wordpress.org/reference/functions/register_block_style/
  *
  * @package WordPress
- * @subpackage Twenty_Twenty_One
- * @since 1.0.0
+ * @subpackage TT1_Blocks
+ * @since 0.1
  */
 
 if ( function_exists( 'register_block_style' ) ) {
 	/**
 	 * Register block styles.
 	 *
-	 * @since 1.0.0
+	 * @since 0.1
 	 *
 	 * @return void
 	 */

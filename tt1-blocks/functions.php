@@ -1,4 +1,13 @@
 <?php
+/**
+ * Functions and definitions
+ *
+ * @link https://developer.wordpress.org/themes/basics/theme-functions/
+ *
+ * @package WordPress
+ * @subpackage TT1_Blocks
+ * @since 0.1
+ */
 
 if ( ! function_exists( 'tt1_blocks_setup' ) ) {
 	/**
@@ -8,7 +17,7 @@ if ( ! function_exists( 'tt1_blocks_setup' ) ) {
 	 * runs before the init hook. The init hook is too late for some features, such
 	 * as indicating support for post thumbnails.
 	 *
-	 * @since 1.0.0
+	 * @since 0.1
 	 *
 	 * @return void
 	 */
@@ -204,7 +213,7 @@ if ( ! function_exists( 'tt1_blocks_setup' ) ) {
 					'slug'     => 'purple-to-red',
 				),
 				array(
-					'name'     => esc_html__( 'Red to Purple', 'tt1_blocks_block_editor_script' ),
+					'name'     => esc_html__( 'Red to Purple', 'tt1-blocks' ),
 					'gradient' => 'linear-gradient(160deg, ' . $red . ', ' . $purple . ')',
 					'slug'     => 'red-to-purple',
 				),
@@ -214,14 +223,8 @@ if ( ! function_exists( 'tt1_blocks_setup' ) ) {
 		// Add support for responsive embedded content.
 		add_theme_support( 'responsive-embeds' );
 
-		// Add support for custom line height controls.
-		add_theme_support( 'custom-line-height' );
-
 		// Add support for experimental link color control.
 		add_theme_support( 'experimental-link-color' );
-
-		// Add support for experimental cover block spacing.
-		add_theme_support( 'custom-spacing' );
 
 		// Add support for custom units.
 		add_theme_support( 'custom-units' );
@@ -232,7 +235,7 @@ add_action( 'after_setup_theme', 'tt1_blocks_setup' );
 /**
  * Enqueue scripts and styles.
  *
- * @since 1.0.0
+ * @since 0.1
  *
  * @return void
  */
@@ -244,7 +247,7 @@ add_action( 'wp_enqueue_scripts', 'tt1_blocks_scripts' );
 /**
  * Enqueue block editor script.
  *
- * @since 1.0.0
+ * @since 0.1
  *
  * @return void
  */
