@@ -17,6 +17,7 @@ This repository is dedicated to exploring how WordPress themes can best leverage
 | [Twenty Nineteen Blocks](https://github.com/WordPress/theme-experiments/tree/master/twentynineteen-blocks) | Gutenberg 8.6 |
 | [Twenty Twenty Blocks](https://github.com/WordPress/theme-experiments/tree/master/twentytwenty-blocks) | Gutenberg 8.6 |
 | [TT1 Blocks](https://github.com/WordPress/theme-experiments/tree/master/tt1-blocks) | Gutenberg 9.4 |
+| [Armando](https://github.com/WordPress/theme-experiments/tree/master/armando) | Gutenberg 9.7 |
 
 `require-gutenberg` _is a utility for themes to check whether the Gutenberg plugin is installed._
 

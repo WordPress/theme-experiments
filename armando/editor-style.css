@@ -1,0 +1,60 @@
+/* Match search block border and border radius with the front.
+This is temporary until the border radius has been added to the block.
+*/
+.wp-block-search .wp-block-search__input,
+.wp-block-search .wp-block-search__button {
+	border: 2px solid #fff;
+	border-radius: 4px;
+}
+
+/* Increase the spacing around the search block when inside the navigation menu.*/
+nav .wp-block-search {
+	padding: var(--wp--custom--spacing);
+}
+
+/* Date and categories are all block elements,
+we need to adjust them to align them better next to each other.
+-The downside to making this change in the editor is that the block is harder to select.
+The post meta tag for the wrapper is kept here for increased flexibility.
+*/
+.post-meta .wp-block-post-date,
+.post-meta .wp-block-post-hierarchical-terms {
+	display: inline;
+}
+
+/* Custom block styles */
+.is-style-armando-hide-caption figcaption,
+.is-style-armando-gallery-rounded figcaption {
+	display: none;
+}
+
+.is-style-armando-gallery-rounded img {
+	border-radius: 50%;
+}
+
+.is-style-armando-rounded-corners {
+	border-radius: 6px;
+}
+
+.is-style-armando-box-shadow {
+	box-shadow: 0 0 1em rgba(0, 0, 0, 0.06);
+	padding: 0.5rem;
+	border-radius: 2px;
+}
+
+.is-style-armando-border {
+	border: 2px solid currentColor;
+	padding: 0.5rem;
+}
+
+.wp-block-social-links.is-style-armando-social-icons-color a {
+	color: var(--wp--preset--color--dark-blue);
+}
+
+.wp-block-social-links.is-style-armando-social-icons-color .wp-social-link button {
+	color: var(--wp--preset--color--dark-blue);
+}
+
+.wp-block-social-links.is-style-armando-social-icons-color .wp-social-link {
+	background: none;
+}
