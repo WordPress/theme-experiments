@@ -20,7 +20,7 @@ if ( have_comments() ) :
 	?>
 	<?php the_comments_navigation(); ?>
 
-	<ol class="comment-list hej">
+	<ol class="comment-list">
 		<?php
 		wp_list_comments(
 			array(
