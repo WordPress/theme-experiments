@@ -20,8 +20,11 @@ if ( ! function_exists( 'emptytheme_support' ) ) :
 
 		// Enqueue editor styles.
 		add_editor_style( 'style.css' );
-    }
-    add_action( 'after_setup_theme', 'emptytheme_support' );
+
+		// Add support for custom units.
+		add_theme_support( 'custom-units' );
+	}
+	add_action( 'after_setup_theme', 'emptytheme_support' );
 endif;
 
 /**
