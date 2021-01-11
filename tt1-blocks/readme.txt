@@ -24,7 +24,7 @@ This theme is beta software, and is not meant for use on a production site. Bug 
 == Changelog ==
 
 = 0.3 =
-* Released: January 11, 2020
+* Released: January 11, 2021
 
 Initial release
 
