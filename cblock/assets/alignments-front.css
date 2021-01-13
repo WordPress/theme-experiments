@@ -1,0 +1,11 @@
+/*
+ * Alignments, loaded in the front-end only.
+ */
+
+body {
+	margin: 0;
+}
+
+* {
+	box-sizing: border-box;
+}

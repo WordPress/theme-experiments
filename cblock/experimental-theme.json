@@ -1,0 +1,41 @@
+{
+	"global": {
+		"settings": {
+			"color": {
+				"gradients": [ ],
+				"link": true,
+				"palette": [ 
+					{
+						"slug": "green",
+						"color": "#00FF00",
+						"name": "Green"
+					},
+					{
+						"slug": "red",
+						"color": "#FF0000",
+						"name": "Red"
+					}
+				]
+			},
+			"spacing": {
+				"customPadding": true
+			},
+			"typography": {
+				"customLineHeight": true,
+				"fontFamilies": [ ],
+				"fontSizes": [ ]
+			},
+			"custom": {
+				"cblock": {
+					"mycolor": "var(--wp--preset--color--red)"
+				}
+			}
+		},
+		"styles": {
+			"color": { 
+				"text": "var(--wp--custom--cblock--mycolor)"
+			},
+			"typography": { }
+		}
+	}
+}
