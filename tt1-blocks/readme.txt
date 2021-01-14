@@ -7,6 +7,8 @@ Stable tag: 0.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
+TT1 Blocks is an experimental block-based version of the Twenty Twenty-One theme. It is built to leverage the full-site editing functionality that is being built in the Gutenberg plugin. This theme is not meant for use on a production site.
+
 == Description ==
 
 TT1 Blocks is a fully block-based version the <a href="https://wordpress.org/themes/twentytwentyone/">Twenty Twenty-One</a> theme. It is built to leverage the full-site editing functionality that is being built in the <a href="https://wordpress.org/plugins/gutenberg/">Gutenberg plugin</a>. This work is ongoing, and updates are available on the <a href="https://make.wordpress.org/core/?s=gutenberg">Make WordPress Core blog</a>.
@@ -23,8 +25,8 @@ This theme is beta software, and is not meant for use on a production site. Bug 
 
 == Changelog ==
 
-= 0.4.1 =
-* Released: January 11, 2021
+= 0.4.2 =
+* Released: January 14, 2021
 
 Initial release
 
