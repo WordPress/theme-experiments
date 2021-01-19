@@ -13,3 +13,11 @@ Text Domain: cblock
 
 cblock is distributed under the terms of the GNU GPL.
 */
+
+body {
+	margin: 0;
+}
+
+* {
+	box-sizing: border-box;
+}

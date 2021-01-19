@@ -1,5 +1,6 @@
 {
 	"global": {
+		"foo": "bar",
 		"settings": {
 			"color": {
 				"gradients": [ ],
@@ -26,14 +27,22 @@
 				"fontSizes": [ ]
 			},
 			"custom": {
-				"cblock": {
-					"mycolor": "var(--wp--preset--color--red)"
+				"customizer": {
+					"myColor": "var(--wp--preset--color--red)"
 				}
-			}
+			},
+			"customizer": [
+				{
+					"name": "My Color",
+					"default": "var(--wp--preset--color--red)",
+					"type": "color",
+					"slug": "mycolor"
+				}
+			]
 		},
 		"styles": {
 			"color": { 
-				"text": "var(--wp--custom--cblock--mycolor)"
+				"text": "var(--wp--custom--customizer--mycolor)"
 			},
 			"typography": { }
 		}
