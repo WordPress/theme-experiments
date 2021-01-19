@@ -26,11 +26,6 @@
 				"fontFamilies": [ ],
 				"fontSizes": [ ]
 			},
-			"custom": {
-				"customizer": {
-					"mycolor": "var(--wp--preset--color--red)"
-				}
-			},
 			"customizer": [
 				{
 					"name": "My Color",
