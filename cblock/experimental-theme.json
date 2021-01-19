@@ -28,7 +28,7 @@
 			},
 			"custom": {
 				"customizer": {
-					"myColor": "var(--wp--preset--color--red)"
+					"mycolor": "var(--wp--preset--color--red)"
 				}
 			},
 			"customizer": [
