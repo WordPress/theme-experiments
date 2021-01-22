@@ -50,7 +50,7 @@ body {
 	margin-right: auto;
 }
 
-.wp-site-blocks *:not(.wp-block-post-content):not(.alignfull):not(.alignwide):not([class$="__inner-container"]) {
+.wp-site-blocks *:not(.wp-block-post-content):not(.alignfull):not(.alignwide):not([class$="__inner-container"]):not(img) {
 	max-width: var(--wp--custom--responsive--aligndefault-width);
 }
 
@@ -77,4 +77,5 @@ body {
 
 .wp-site-blocks .alignfull {
 	margin: 0 calc(0px - var(--wp--custom--spacing--horizontal));
+	width: calc(100% + (2 - var(--wp--custom--spacing--horizontal)));
 }
