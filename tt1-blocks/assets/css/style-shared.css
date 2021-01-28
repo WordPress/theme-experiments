@@ -25,8 +25,12 @@ a:hover {
 }
 
 /*
- * Gutenberg remotes this underline, but Twenty Twenty-One uses it. 
+ * Gutenberg remotes this underline, but Twenty Twenty-One uses it.
  */
 .site-header h1.wp-block-site-title a:not(:hover):not(:focus):not(:active) {
 	text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: var(--wp--custom--font-secondary), var(--wp--custom--font-primary);
 }

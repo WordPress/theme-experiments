@@ -203,7 +203,8 @@
 				"customPadding": true
 			},
 			"custom": {
-				"font-primary": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif",
+				"font-primary": "var(--font-base, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif)",
+				"font-secondary": "var(--font-headings, --wp--custom--font-primary)",
 				"line-height": {
 					"body": 1.7,
 					"heading": 1.3,
