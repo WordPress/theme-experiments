@@ -1,6 +1,6 @@
 {
 	"settings": {
-		"global": {
+		"defaults": {
 			"color": {
 				"palette": [
 					{
@@ -222,7 +222,7 @@
 		}
 	},
 	"styles": {
-		"global": {
+		"root": {
 			"color": {
 				"background": "var(--wp--preset--color--green)",
 				"text": "var(--wp--preset--color--dark-gray)",
