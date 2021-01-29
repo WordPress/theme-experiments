@@ -230,6 +230,11 @@
 				"fontSize": "var(--wp--preset--font-size--normal)",
 				"lineHeight": "var(--wp--custom--line-height--body)"
 			}
+		},
+		"pageTemplates": {
+			"page-home": {
+				"title": "Page without title"
+			}
 		}
 	},
 	"core/heading/h1": {
