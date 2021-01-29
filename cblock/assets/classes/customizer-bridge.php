@@ -12,7 +12,7 @@ class CustomizerBridge {
 	function get_theme_customizations() {
 		$string = file_get_contents( get_stylesheet_directory() . "/experimental-theme.json");
 		$decoded = json_decode ( $string );
-		return $decoded->global->settings->customizer;
+		return $decoded->settings->defaults->customizer;
 	}
 
 	/**

@@ -1,7 +1,6 @@
 {
-	"global": {
-		"foo": "bar",
-		"settings": {
+	"settings": {
+		"defaults": {
 			"color": {
 				"gradients": [ ],
 				"link": true,
@@ -34,8 +33,10 @@
 					"slug": "mycolor"
 				}
 			]
-		},
-		"styles": {
+		}
+	},
+	"styles": {
+		"root": {
 			"color": { 
 				"text": "var(--wp--custom--customizer--mycolor)"
 			},
