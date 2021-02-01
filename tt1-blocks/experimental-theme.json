@@ -148,11 +148,11 @@
 						"name": "Normal"
 					},
 					{
- 						"slug": "medium",
- 						"value": "500",
- 						"name": "Medium"
- 					},
- 					{
+						"slug": "medium",
+						"value": "500",
+						"name": "Medium"
+					},
+					{
 						"slug": "semibold",
 						"value": 600,
 						"name": "Semibold"
@@ -303,6 +303,11 @@
 				"fontSize": "var(--wp--preset--font-size--extra-small)",
 				"lineHeight": "var(--wp--custom--line-height--body)"
 			}
+		}
+	},
+	"pageTemplates": {
+		"page-home": {
+			"title": "Page without title"
 		}
 	}
 }
