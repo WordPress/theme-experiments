@@ -25,6 +25,9 @@ This theme is beta software, and is not meant for use on a production site. Bug 
 
 == Changelog ==
 
+= 0.4.3 =
+* Update for compatibility with Gutenberg v9.9
+
 = 0.4.2 =
 * Released: January 14, 2021
 
