@@ -236,7 +236,7 @@
 		"core/heading/h1": {
 			"typography": {
 				"fontSize": "var(--wp--preset--font-size--gigantic)",
-				"lineHeight": 1.1
+				"lineHeight": "var(--wp--custom--line-height--page-title)"
 			}
 		},
 		"core/heading/h2": {
