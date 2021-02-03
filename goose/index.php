@@ -6,13 +6,13 @@
 
 <p>There?  Did you see it?</p>
 
-<p>If this were a "FSE" theme then instead of using <code>the_title()</code> tag as the above is doing we could also do the following to show the title:</p>
+<p>If this were a "FSE" theme then instead of using <code>the_title()</code> tag as the above is doing we could instead do the following to show the title:</p>
 
 <pre>
 &lt;!-- wp:post-title /--&gt;
 </pre>
 
-<p>But you can tell by the emptyness below that it does not work:</p>
+<p>But you can tell by the emptyness below that the block does not work for a classic theme in a PHP file:</p>
 
 <!-- wp:post-title /-->
 
