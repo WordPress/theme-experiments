@@ -1,4 +1,15 @@
 {
+	"templateParts": {
+		"header": {
+			"section": "header"
+		},
+		"footer": {
+			"section": "footer"
+		},
+		"post-grid": {
+			"section": "uncategorized"
+		}
+	},
 	"global": {
 		"settings": {
 			"color": {
