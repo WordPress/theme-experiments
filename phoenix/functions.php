@@ -21,14 +21,6 @@ if ( ! defined( 'PHOENIX_CSS_DIR_PATH' ) ) {
 function phoenix_setup_theme() {
 
 	/**
-	 * Let WordPress manage the document title.
-	 * By adding theme support, we declare that this theme does not use a
-	 * hard-coded <title> tag in the document head, and expect WordPress to
-	 * provide it for us.
-	 */
-	add_theme_support( 'title-tag' );
-
-	/**
 	 * Enable support for Post Thumbnails on posts and pages.
 	 *
 	 * Adding this will allow you to select the featured image on posts and pages.
@@ -77,25 +69,16 @@ function phoenix_setup_theme() {
 	 *
 	 * Since we are not passing any parameter to the function,
 	 * it will by default, link the editor-style.css file located directly under the current theme directory.
-	 * In our case since we are passing 'assets/build/css/editor.css' path it will use that.
+	 * In our case since we are passing 'assets/css/editor.css' path it will use that.
 	 * You can change the name of the file or path and replace the path here.
 	 *
 	 * @see  add_editor_style(
 	 * @link https://developer.wordpress.org/reference/functions/add_editor_style/
 	 */
-	add_editor_style( 'assets/build/css/editor.css' );
-
-	/**
-	 * Set the maximum allowed width for any content in the theme,
-	 * like oEmbeds and images added to posts
-	 *
-	 * @see  Content Width
-	 * @link https://codex.wordpress.org/Content_Width
-	 */
-	global $content_width;
-	if ( ! isset( $content_width ) ) {
-		$content_width = 1240;
-	}
+	add_editor_style( [
+		'assets/css/editor.css',
+		'assets/css/main.css',
+	] );
 }
 
 add_action( 'after_setup_theme', 'phoenix_setup_theme' );
