@@ -37,9 +37,6 @@ class Theme_Support {
 
 		load_theme_textdomain( 'armando', get_template_directory() . '/languages' );
 
-		// Only for theme check
-		add_theme_support( "title-tag" );
-
 		// Add default posts and comments RSS feed links to head.
 		add_theme_support( 'automatic-feed-links' );
 
@@ -52,7 +49,7 @@ class Theme_Support {
 
 		/*
 		* Switch default core markup to output valid HTML5.
-		* The columns block uses the markup from the comments template.
+		* The comments block uses the markup from the comments template.
 		*/
 		add_theme_support(
 			'html5',
@@ -73,18 +70,6 @@ class Theme_Support {
 
 		// Add support for responsive embedded content.
 		add_theme_support( 'responsive-embeds' );
-
-		// Add support for custom line height controls.
-		add_theme_support( 'custom-line-height' );
-
-		// Add support for custom spacing controls.
-		add_theme_support( 'custom-spacing' );
-
-		// Add support for custom units.
-		add_theme_support( 'custom-units' );
-
-		// Add support for custom link colors.
-		add_theme_support( 'experimental-link-color' );
 	}
 
 	/**

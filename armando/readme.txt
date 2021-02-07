@@ -3,7 +3,7 @@ Contributors: poena
 Tested up to: 5.6
 Requires at least: 5.5
 Requires PHP: 7.2
-Version: 1.1
+Version: 1.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -13,6 +13,7 @@ A basic full side editing theme for blogs.
 
 A basic full side editing theme for blogs.
 This theme has a three different header templates to choose from.
+This is an experimental theme. This theme requires Gutenberg version 9.9 or later.
 
 Named after Diego Armando Maradona https://en.wikipedia.org/wiki/Diego_Maradona
 
@@ -21,6 +22,14 @@ This theme has no skip link, because this feature is not implemented in full sit
 The theme has many temporary solutions, such as the archive pagination and manual archive page headings.
 
 == Changelog ==
+
+* February 7 2021 Version: 1.2
+Updated the theme for Gutenberg 9.9:
+Updated experimental-theme.json
+Added the updated query pagination
+Removed the block style for social links colors.
+
+Removed add_theme_support( "title-tag" ), which was left over from passing the Theme Check checks.
 
 * January 6 2021 Version: 1.1
 

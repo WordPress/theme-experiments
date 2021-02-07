@@ -3,8 +3,8 @@ Theme Name: Armando
 Author: Carolina Nymark
 Author URI: https://fullsiteediting.com
 Theme URI:
-Version: 1.1
-Description: A basic full side editing theme for blogs. This theme has a three different header templates to choose from. This is an experimental theme.
+Version: 1.2
+Description: A basic full side editing theme for blogs. This theme has a three different header templates to choose from. This is an experimental theme. This theme requires Gutenberg version 9.9 or later.
 Tags: full-site-editing, blog, one-column, editor-style, block-styles
 Text Domain: armando
 Requires at least: 5.5
@@ -187,30 +187,6 @@ nav .wp-block-search {
 	padding: var(--wp--custom--spacing);
 }
 
-/* Query pagination block has no working CSS class, add a wrapper as a work around.*/
-.archive-pagination div {
-	display: inline;
-	line-height: 3;
-}
-
-.archive-pagination a {
-	color: #fff;
-	background-color: #32373c;
-	border: none;
-	border-radius: 3px;
-	box-shadow: none;
-	cursor: pointer;
-	font-size: 1.125em;
-	padding: .667em 1.333em;
-	text-align: center;
-	text-decoration: none;
-	overflow-wrap: break-word;
-}
-
-.archive-pagination div:nth-of-type(2) a{
-	margin-left: var(--wp--custom--spacing);
-}
-
 .site-footer .wp-block-latest-posts.wp-block-latest-posts__list {
 	padding-left: 0;
 }
@@ -266,14 +242,9 @@ nav .wp-block-search {
 	padding: 0.5rem;
 }
 
-.wp-block-social-links.is-style-armando-social-icons-color a {
-	color: var(--wp--preset--color--dark-blue);
-}
-
-.wp-block-social-links.is-style-armando-social-icons-color .wp-social-link button {
-	color: var(--wp--preset--color--dark-blue);
-}
-
-.wp-block-social-links.is-style-armando-social-icons-color .wp-social-link {
-	background: none;
+/* Disable https://github.com/WordPress/gutenberg/pull/27995 until 
+* https://github.com/WordPress/gutenberg/pull/26809.
+*/
+p:empty:before {
+	content: none !important;
 }

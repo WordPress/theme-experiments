@@ -46,15 +46,3 @@ The post meta tag for the wrapper is kept here for increased flexibility.
 	border: 2px solid currentColor;
 	padding: 0.5rem;
 }
-
-.wp-block-social-links.is-style-armando-social-icons-color a {
-	color: var(--wp--preset--color--dark-blue);
-}
-
-.wp-block-social-links.is-style-armando-social-icons-color .wp-social-link button {
-	color: var(--wp--preset--color--dark-blue);
-}
-
-.wp-block-social-links.is-style-armando-social-icons-color .wp-social-link {
-	background: none;
-}

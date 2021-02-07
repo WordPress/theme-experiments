@@ -71,7 +71,6 @@ function armando_register_block_styles() {
 		)
 	);
 
-
 	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
 		'core/paragraph',
 		array(
@@ -93,24 +92,6 @@ function armando_register_block_styles() {
 		array(
 			'name'         => 'armando-border',
 			'label'        => __( 'Border', 'armando' )
-		)
-	);
-
-	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
-		'core/social-links',
-		array(
-			'name'  => 'armando-social-icons-color',
-			'label' => esc_html__( 'Dark blue', 'armando' ),
-			'inline_style' => '
-			.wp-block-social-links.is-style-armando-social-icons-color a {
-				color: var(--wp--preset--color--dark-blue);
-			}
-			.wp-block-social-links.is-style-armando-social-icons-color .wp-social-link button {
-				color: var(--wp--preset--color--dark-blue);
-			}
-			.wp-block-social-links.is-style-armando-social-icons-color .wp-social-link {
-				background: none;
-			}',
 		)
 	);
 }
