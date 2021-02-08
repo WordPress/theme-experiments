@@ -1,7 +1,7 @@
 
 {
-	"global": {
-		"settings": {
+	"settings": {
+		"defaults": {
 			"color": {
 				"link": true,
 				"palette": [
@@ -83,18 +83,18 @@
 					"horizontal": "14px"
 				}
 			}
-		},
-		"styles": {
-			"root": {
-				"color": {
-					"background": "var(--wp--preset--color--white)",
-					"text": "var(--wp--preset--color--dark-gray)",
-					"link": "var(--wp--preset--color--blue)"
-				},
-				"typography": {
-					"fontSize": "var(--wp--preset--font-size--normal)"
-				}
+		}
+	},
+	"styles": {
+		"root": {
+			"color": {
+				"background": "var(--wp--preset--color--white)",
+				"text": "var(--wp--preset--color--dark-gray)",
+				"link": "var(--wp--preset--color--blue)"
+			},
+			"typography": {
+				"fontSize": "var(--wp--preset--font-size--normal)"
 			}
-	}
+		}
 	}
 }
