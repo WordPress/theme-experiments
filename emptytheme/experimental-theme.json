@@ -1,6 +1,6 @@
 {
-	"global": {
-		"settings": {
+  "settings": {
+    "defaults": {
 			"color": {
 				"gradients": [ ],
 				"link": true,
@@ -23,8 +23,10 @@
 					"horizontal": "14px"
 				}
 			}
-		},
-		"styles": {
+		}
+  },
+	"styles": {
+	  "root": {
 			"color": { },
 			"typography": { }
 		}
