@@ -1,6 +1,6 @@
 {
-  "settings": {
-    "defaults": {
+	"settings": {
+		"defaults": {
 			"color": {
 				"gradients": [ ],
 				"link": true,
@@ -24,9 +24,9 @@
 				}
 			}
 		}
-  },
+	},
 	"styles": {
-	  "root": {
+		"root": {
 			"color": { },
 			"typography": { }
 		}
