@@ -305,7 +305,7 @@
 			}
 		}
 	},
-	"pageTemplates": {
+	"customTemplates": {
 		"page-home": {
 			"title": "Page without title"
 		}
