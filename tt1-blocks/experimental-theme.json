@@ -6,12 +6,12 @@
 					{
 						"slug": "black",
 						"color": "#000000",
-						"name": "Black"
+						"name": "_x( Black, Color name )"
 					},
 					{
 						"slug": "dark-gray",
 						"color": "#28303D",
-						"name": "Dark Gray"
+						"name": "_x( Dark Gray, Color name )"
 					},
 					{
 						"slug": "gray",
