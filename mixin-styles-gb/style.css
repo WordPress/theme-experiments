@@ -1,0 +1,20 @@
+/*
+Theme Name: Mixin' Styles- GB
+Theme URI:
+Description: Mixin' Styles- GB is a full site editing theme. This theme makes use of rounded corners, text shadow and font embedding.
+Author: jgpws
+Author URI: http://www.jasong-designs.com
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: full-site-editing
+Version: 1.0.0
+Requires at least: 5.0
+Tested up to: 5.6
+Requires PHP: 7.0
+Text Domain: mixin-styles-gb
+*/
+
+@import "assets/css/base-styles.css";
+@import "assets/css/blocks.css";
+@import "assets/css/block-colors.css";
+@import "assets/css/color-schemes.css";
