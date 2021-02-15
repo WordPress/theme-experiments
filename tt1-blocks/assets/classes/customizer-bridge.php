@@ -29,7 +29,7 @@ class CustomizerBridge {
 
 		$css_variables = ':root {';
 		foreach ($this->theme_customizations as $custom_option) {
-			$css_variables = $css_variables . '--wp--custom--customizer--' . $custom_option->slug . ':' . get_theme_mod( 'customizer_' . $custom_option->slug ) . ';';
+			$css_variables = $css_variables . '--wp--custom--' . $custom_option->slug . ':' . get_theme_mod( 'customizer_' . $custom_option->slug ) . ';';
 		}
 		$css_variables = $css_variables . ';}';
 
