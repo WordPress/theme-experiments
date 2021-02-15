@@ -232,7 +232,7 @@
 				{
 					"name": "Background Color",
 					"type": "color",
-					"default": "var(--wp--preset--color--green)",
+					"default": "#D1E4DD",
 					"slug": "color--background"
 				}
 			]
