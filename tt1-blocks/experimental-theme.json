@@ -230,10 +230,24 @@
 			},
 			"custom_meta": [
 				{
-					"name": "Background Color",
-					"type": "color",
-					"default": "#D1E4DD",
-					"slug": "color--background"
+					"name": "Colors & Dark Mode",
+					"type": "section",
+					"slug": "colors",
+					"description": "This is a section of the customizer that allows for customization of things defined in theme.json.",
+					"controls": [
+						{
+							"name": "Background Color",
+							"type": "color",
+							"default": "#D1E4DD",
+							"slug": "color--background"
+						},
+						{
+							"name": "Dark Mode support",
+							"type": "boolean",
+							"default": false,
+							"slug": "dark--enabled"
+						}
+					]
 				}
 			]
 		}

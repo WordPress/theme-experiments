@@ -28,8 +28,10 @@ class CustomizerBridge {
 	function customizer_bridge_generate_custom_color_variables ( $context=null ) {
 
 		$css_variables = ':root {';
-		foreach ($this->theme_customizations as $custom_option) {
-			$css_variables = $css_variables . '--wp--custom--' . $custom_option->slug . ':' . get_theme_mod( 'customizer_' . $custom_option->slug ) . ';';
+		foreach ($this->theme_customizations as $custom_section) {
+			foreach ($custom_section->controls as $custom_option) {
+				$css_variables = $css_variables . '--wp--custom--' . $custom_option->slug . ':' . get_theme_mod( 'customizer-bridge-' . $custom_option->slug ) . ';';
+			}
 		}
 		$css_variables = $css_variables . ';}';
 
@@ -42,43 +44,60 @@ class CustomizerBridge {
 	 */
 	function customizer_bridge_register( $wp_customize ) {
 
-		//Add a Section to the Customizer for these bits
-		$wp_customize->add_section(
-			'customizer_bridge_options',
-			array(
-				'capability' => 'edit_theme_options',
-			    'title'      => esc_html__( 'JSON Options', 'customizer-bridge' ),
-			)
-		);
-		$wp_customize->get_section( 'customizer_bridge_options' ) ->description = __( 'This section of the customizer allows for customization of things defined in theme.json.' );
+		// Add Color Controls
+		foreach ($this->theme_customizations as $custom_section) {
+
+			if ( 'section' === $custom_section->type ) {
+
+			$section_key = 'customizer-bridge-'.$custom_section->slug;
+
+			//Add a Section to the Customizer for these bits
+			$wp_customize->add_section(
+				$section_key,
+				array(
+					'capability' => 'edit_theme_options',
+					'title'      => esc_html__( $custom_section->name, 'customizer-bridge' ),
+				)
+			);
+
+			$wp_customize->get_section( $section_key ) -> description = __( $custom_section->description );
 
 
 		// Add Color Controls
-		foreach ($this->theme_customizations as $custom_option) {
+		foreach ($custom_section->controls as $custom_option) {
 
-			if ( 'color' !== $custom_option->type ) {
-				break;
-			}
+			$setting_key = 'customizer-bridge-' . $custom_option->slug;
 
-			$wp_customize->add_setting(
-				'customizer_' . $custom_option->slug,
-				array(
-					'default'           => esc_html( $custom_option->default ),
-					'sanitize_callback' => 'sanitize_hex_color',
-				)
-			);
+			if ( 'color' === $custom_option->type ) {
 
-			$wp_customize->add_control(
-				new WP_Customize_Color_Control(
-					$wp_customize,
-					'customizer_' . $custom_option->slug,
+				$wp_customize->add_setting(
+					$setting_key,
 					array(
-						'section' => 'customizer_bridge_options',
-						'label'   => $custom_option->name,
+						'default'           => esc_html( $custom_option->default ),
+						'sanitize_callback' => 'sanitize_hex_color',
 					)
-				)
-			);
+				);
+
+				$wp_customize->add_control(
+					new WP_Customize_Color_Control(
+						$wp_customize,
+						$setting_key,
+						array(
+							'section' => $section_key,
+							'label'   => $custom_option->name,
+						)
+					)
+				);
+
+			}
 		}
+
+
+		}
+
+		}
+
+
 
 		// TODO: Add other types of controls
 
