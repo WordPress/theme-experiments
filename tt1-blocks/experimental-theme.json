@@ -244,36 +244,42 @@
 		"core/heading/h1": {
 			"typography": {
 				"fontSize": "var(--wp--preset--font-size--gigantic)",
+				"fontWeight": 300,
 				"lineHeight": "var(--wp--custom--line-height--page-title)"
 			}
 		},
 		"core/heading/h2": {
 			"typography": {
 				"fontSize": "var(--wp--preset--font-size--extra-large)",
+				"fontWeight": 300,
 				"lineHeight": "var(--wp--custom--line-height--heading)"
 			}
 		},
 		"core/heading/h3": {
 			"typography": {
 				"fontSize": "calc(1.25 * var(--wp--preset--font-size--large))",
+				"fontWeight": 300,
 				"lineHeight": "var(--wp--custom--line-height--heading)"
 			}
 		},
 		"core/heading/h4": {
 			"typography": {
 				"fontSize": "var(--wp--preset--font-size--large)",
+				"fontWeight": 300,
 				"lineHeight": "var(--wp--custom--line-height--heading)"
 			}
 		},
 		"core/heading/h5": {
 			"typography": {
 				"fontSize": "var(--wp--preset--font-size--small)",
+				"fontWeight": 300,
 				"lineHeight": "var(--wp--custom--line-height--heading)"
 			}
 		},
 		"core/heading/h6": {
 			"typography": {
 				"fontSize": "var(--wp--preset--font-size--extra-small)",
+				"fontWeight": 300,
 				"lineHeight": "var(--wp--custom--line-height--heading)"
 			}
 		},
