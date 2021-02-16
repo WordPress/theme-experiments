@@ -14,6 +14,11 @@
 						"name": "Dark Gray"
 					},
 					{
+						"slug": "light-gray",
+						"color": "#f0f0f0",
+						"name": "Light Gray"
+					},
+					{
 						"slug": "gray",
 						"color": "#39414D",
 						"name": "Gray"
@@ -245,7 +250,8 @@
 							"name": "Dark Mode support",
 							"type": "boolean",
 							"default": false,
-							"slug": "dark--enabled"
+							"slug": "dark--enabled",
+							"description": "Dark Mode is a device setting. If a visitor to your site requests it, your site will be shown with a dark background and light text. Learn more about Dark Mode. Dark Mode can also be turned on and off with a button that you can find in the bottom right corner of the page."
 						}
 					]
 				}
