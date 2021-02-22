@@ -78,6 +78,14 @@ add_action( 'after_setup_theme', 'tt1_blocks_setup' );
  */
 function tt1_blocks_scripts() {
 	wp_enqueue_style( 'tt1-blocks-style', get_template_directory_uri() . '/style.css', array(), wp_get_theme()->get( 'Version' ) );
+
+	// Enqueue customizer bridge styles 
+	wp_enqueue_style( 'customizer-style', get_template_directory_uri() . '/assets/css/noop.css', array(), wp_get_theme()->get( 'Version' ) );
+
+	if( true === get_theme_mod( 'customizer-bridge-dark--enabled', false ) ) {
+		wp_enqueue_style( 'tt1-variables-dark-style', get_stylesheet_directory_uri() . '/assets/css/variables-dark.css', array(), wp_get_theme()->get( 'Version' ) );
+	}
+
 }
 add_action( 'wp_enqueue_scripts', 'tt1_blocks_scripts' );
 
@@ -99,3 +107,6 @@ require get_template_directory() . '/inc/block-patterns.php';
 
 // Block Styles.
 require get_template_directory() . '/inc/block-styles.php';
+
+// Customizer Bridge
+require get_template_directory() . '/assets/classes/customizer-bridge.php';

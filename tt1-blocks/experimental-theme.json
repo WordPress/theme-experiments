@@ -22,6 +22,11 @@
 						"name": "Dark Gray"
 					},
 					{
+						"slug": "light-gray",
+						"color": "#f0f0f0",
+						"name": "Light Gray"
+					},
+					{
 						"slug": "gray",
 						"color": "#39414D",
 						"name": "Gray"
@@ -225,16 +230,48 @@
 					"unit": "20px",
 					"horizontal": "25px",
 					"vertical": "30px"
+				},
+				"color": {
+					"primary": "var(--wp--preset--color--dark-gray)",
+					"secondary": "var(--wp--preset--color--dark-gray)",
+					"foreground": "var(--wp--preset--color--dark-gray)",
+					"background": "var(--wp--preset--color--green)"
+				},
+				"dark": {
+					"enabled": "false"
 				}
-			}
+			},
+			"custom_meta": [
+				{
+					"name": "Colors & Dark Mode",
+					"type": "section",
+					"slug": "colors",
+					"description": "This is a section of the customizer that allows for customization of things defined in theme.json.",
+					"controls": [
+						{
+							"name": "Background Color",
+							"type": "color",
+							"default": "#D1E4DD",
+							"slug": "color--background"
+						},
+						{
+							"name": "Dark Mode support",
+							"type": "boolean",
+							"default": false,
+							"slug": "dark--enabled",
+							"description": "Dark Mode is a device setting. If a visitor to your site requests it, your site will be shown with a dark background and light text. Learn more about Dark Mode. Dark Mode can also be turned on and off with a button that you can find in the bottom right corner of the page."
+						}
+					]
+				}
+			]
 		}
 	},
 	"styles": {
 		"root": {
 			"color": {
-				"background": "var(--wp--preset--color--green)",
-				"text": "var(--wp--preset--color--dark-gray)",
-				"link": "var(--wp--preset--color--dark-gray)"
+				"background": "var(--wp--custom--color--background)",
+				"text": "var(--wp--custom--color--foreground)",
+				"link": "var(--wp--custom--color--primary)"
 			},
 			"typography": {
 				"fontSize": "var(--wp--preset--font-size--normal)",
@@ -242,36 +279,60 @@
 			}
 		},
 		"core/heading/h1": {
+			"color": {
+				"text": "var(--wp--custom--color--foreground)",
+				"link": "var(--wp--preset--color--primary)"
+			},
 			"typography": {
 				"fontSize": "var(--wp--preset--font-size--gigantic)",
 				"lineHeight": "var(--wp--custom--line-height--page-title)"
 			}
 		},
 		"core/heading/h2": {
+			"color": {
+				"text": "var(--wp--custom--color--foreground)",
+				"link": "var(--wp--preset--color--primary)"
+			},
 			"typography": {
 				"fontSize": "var(--wp--preset--font-size--extra-large)",
 				"lineHeight": "var(--wp--custom--line-height--heading)"
 			}
 		},
 		"core/heading/h3": {
+			"color": {
+				"text": "var(--wp--custom--color--foreground)",
+				"link": "var(--wp--preset--color--primary)"
+			},
 			"typography": {
 				"fontSize": "calc(1.25 * var(--wp--preset--font-size--large))",
 				"lineHeight": "var(--wp--custom--line-height--heading)"
 			}
 		},
 		"core/heading/h4": {
+			"color": {
+				"text": "var(--wp--custom--color--foreground)",
+				"link": "var(--wp--preset--color--primary)"
+			},
 			"typography": {
 				"fontSize": "var(--wp--preset--font-size--large)",
 				"lineHeight": "var(--wp--custom--line-height--heading)"
 			}
 		},
 		"core/heading/h5": {
+			"color": {
+				"text": "var(--wp--custom--color--foreground)",
+				"link": "var(--wp--preset--color--primary)"
+			},
 			"typography": {
 				"fontSize": "var(--wp--preset--font-size--small)",
 				"lineHeight": "var(--wp--custom--line-height--heading)"
 			}
 		},
 		"core/heading/h6": {
+			"color": {
+				"text": "var(--wp--custom--color--foreground)",
+				"link": "var(--wp--preset--color--primary)"
+			},
 			"typography": {
 				"fontSize": "var(--wp--preset--font-size--extra-small)",
 				"lineHeight": "var(--wp--custom--line-height--heading)"
