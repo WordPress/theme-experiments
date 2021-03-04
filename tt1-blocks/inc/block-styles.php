@@ -98,15 +98,6 @@ if ( function_exists( 'register_block_style' ) ) {
 				'label' => esc_html__( 'Thick', 'tt1-blocks' ),
 			)
 		);
-
-		// Social icons: Dark gray color.
-		register_block_style(
-			'core/social-links',
-			array(
-				'name'  => 'twentytwentyone-social-icons-color',
-				'label' => esc_html__( 'Dark Gray', 'tt1-blocks' ),
-			)
-		);
 	}
 	add_action( 'init', 'twenty_twenty_one_register_block_styles' );
 }
