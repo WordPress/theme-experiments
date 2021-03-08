@@ -233,7 +233,6 @@ hr.is-style-twentytwentyone-separator-thick,
 
 h1.wp-block-site-title {
 	font-weight: var(--wp--custom--font-weight-normal);
-	text-transform: uppercase;
 }
 
 h1.wp-block-site-title a:not(:hover):not(:focus):not(:active) {

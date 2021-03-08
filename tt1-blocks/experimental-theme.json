@@ -272,6 +272,12 @@
 				"fontSize": "var(--wp--preset--font-size--extra-small)",
 				"lineHeight": "var(--wp--custom--line-height--body)"
 			}
+		},
+		"core/site-title": {
+			"typography": {
+				"fontSize": "var(--wp--preset--font-size--large)",
+				"textTransform": "uppercase"
+			}
 		}
 	},
 	"customTemplates": {
