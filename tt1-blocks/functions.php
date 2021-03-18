@@ -53,8 +53,7 @@ if ( ! function_exists( 'tt1_blocks_setup' ) ) {
 		// Enqueue editor styles.
 		add_editor_style( array( 
 			'./assets/css/blocks.css',
-			'./assets/css/style-shared.css',
-			'./assets/css/style-editor.css', 
+			'./assets/css/style-shared.css'
 		) );
 
 		// Add support for responsive embedded content.

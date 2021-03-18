@@ -105,6 +105,10 @@
 					}
 				]
 			},
+			"layout": {
+				"contentSize": "610px",
+				"wideSize": "1240px"
+			},
 			"typography": {
 				"customLineHeight": true,
 				"fontSizes": [
@@ -177,10 +181,6 @@
 					"body": 1.7,
 					"heading": 1.3,
 					"page-title": 1.1
-				},
-				"responsive": {
-					"aligndefault-width": "610px",
-					"alignwide-width": "1240px"
 				},
 				"spacing": {
 					"unit": "20px",
