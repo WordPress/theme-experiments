@@ -1,9 +1,11 @@
 {
-	"templateParts": {
-		"header": {
+	"templateParts": [
+		{
+			"name": "header",
 			"area": "header"
 		},
-		"footer": {
+		{
+			"name": "footer",
 			"area": "footer"
 		}
 	},
@@ -280,9 +282,10 @@
 			}
 		}
 	},
-	"customTemplates": {
-		"page-home": {
+	"customTemplates": [
+		{
+			"name": "page-home",
 			"title": "Page without title"
 		}
-	}
+	]
 }
