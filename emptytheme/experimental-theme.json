@@ -14,15 +14,6 @@
 				"fontFamilies": [ ],
 				"fontSizes": [ ]
 			},
-			"custom": {
-				"width": {
-					"default": "840px",
-					"wide": "1100px"
-				},
-				"margin": {
-					"horizontal": "14px"
-				}
-			},
 			"layout": {
 				"contentSize": "800px",
 				"wideSize": "1000px"
