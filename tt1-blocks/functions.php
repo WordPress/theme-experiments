@@ -44,9 +44,6 @@ if ( ! function_exists( 'tt1_blocks_setup' ) ) {
 		// Add support for Block Styles.
 		add_theme_support( 'wp-block-styles' );
 
-		// Add support for full and wide align images.
-		add_theme_support( 'align-wide' );
-
 		// Add support for editor styles.
 		add_theme_support( 'editor-styles' );
 
