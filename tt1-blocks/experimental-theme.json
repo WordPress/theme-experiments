@@ -244,11 +244,6 @@
 				"lineHeight": 1.4
 			}
 		},
-		"core/site-title": {
-			"typography": {
-				"fontSize": "var(--wp--preset--font-size--large)"
-			}
-		},
 		"core/post-author": {
 			"typography": {
 				"fontSize": "var(--wp--preset--font-size--extra-small)",
