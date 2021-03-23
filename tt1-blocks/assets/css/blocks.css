@@ -238,15 +238,3 @@ h1.wp-block-site-title {
 h1.wp-block-site-title a:not(:hover):not(:focus):not(:active) {
 	text-decoration: none;
 }
-
-/*--------------------------------------------------------------
-# Social Links
---------------------------------------------------------------*/
-
-.wp-block-social-links.is-style-twentytwentyone-social-icons-color .wp-social-link {
-	color: var(--wp--preset--color--dark-gray);
-}
-
-.wp-block-social-links.is-style-twentytwentyone-social-icons-color .wp-social-link {
-	background: none;
-}
