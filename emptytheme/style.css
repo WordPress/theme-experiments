@@ -14,3 +14,35 @@ Text Domain: emptytheme
 Empty Theme WordPress Theme, (C) 2021 WordPress.org
 Empty Theme is distributed under the terms of the GNU GPL.
 */
+
+button {
+	background: red;
+	border: 10px solid pink;
+	padding: 100px;
+	margin: 100px;
+	border-radius: 100px;
+	box-sizing: border-box;
+	color: hotpink;
+	font-size: 100px;
+	font-family: 'Courier New', Courier, monospace;
+	font-weight: bold;
+	float: left;
+	height: 100px;
+	width: 100px;
+	letter-spacing: 10px;
+	line-height: 10;
+	max-height: 100px;
+	min-height: 100px;
+	min-height: 100px;
+	max-height: 100px;
+	opacity: .5;
+	stroke: black;
+	text-align: right;
+	text-decoration: underline;
+	text-transform: uppercase;
+	text-indent: 100px;
+	text-shadow: 2px 2px #ff0000;
+	box-shadow: 5px 10px #888888;
+	vertical-align: top;
+	word-break: break-all;
+}
