@@ -25,6 +25,9 @@ This theme is beta software, and is not meant for use on a production site. Bug 
 
 == Changelog ==
 
+= 0.4.5 =
+* Update for compatibility with Gutenberg v10.3
+
 = 0.4.4 =
 * Update for compatibility with Gutenberg v10.0
 
