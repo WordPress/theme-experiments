@@ -8,7 +8,7 @@
  * @since 1.0.0
  */
 
- /**
+/**
  * The theme version.
  *
  * @since 1.0.0
@@ -21,38 +21,47 @@ if ( version_compare( $GLOBALS['wp_version'], '5.5', '<' ) || version_compare( P
 	return;
 }
 
-// Theme support
+// Theme support.
 require_once 'classes/class-theme-support.php';
 
-// Block styles
+// Block styles.
 require_once 'inc/block-styles.php';
+
+// Block patterns.
+require_once 'inc/block-patterns.php';
+
+// Header block patterns.
+require_once 'inc/header-block-patterns.php';
+
+// Footer block patterns.
+require_once 'inc/footer-block-patterns.php';
+
+// Layout block patterns.
+require_once 'inc/page-layout-block-patterns.php';
 
 /**
  * Enqueue the style.css file.
- * 
+ *
  * @since 1.0.0
  */
 function armando_styles() {
 	wp_enqueue_style(
 		'armando-style',
 		get_stylesheet_uri(),
+		'',
 		ARMANDO_VERSION
 	);
-
-	if ( is_singular() ) {
-		wp_enqueue_script( "comment-reply" );
-	}
 }
 add_action( 'wp_enqueue_scripts', 'armando_styles' );
 
 /**
- * Show '(no title)' in frontend if post has no title to make it selectable.
+ * Show '(No title)' if post has no title.
  */
 add_filter(
 	'the_title',
 	function( $title ) {
 		if ( ! is_admin() && empty( $title ) ) {
-			$title = __( '(no title)', 'armando' );
+			$title = __( '(No title)', 'armando' );
 		}
 
 		return $title;

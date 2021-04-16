@@ -1,35 +1,41 @@
 === Armando ===
 Contributors: poena
-Tested up to: 5.6
+Tested up to: 5.7
 Requires at least: 5.5
 Requires PHP: 7.2
 Version: 1.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-A basic full side editing theme for blogs.
+An experimental full site editing theme for blogs or sports teams. 
 
 == Description ==
-
-A basic full side editing theme for blogs.
-This theme has a three different header templates to choose from.
-This is an experimental theme. This theme requires Gutenberg version 9.9 or later.
+An experimental full site editing theme for blogs or sports teams. 
+This theme requires Gutenberg version 10.4 or later. 
+Armando includes 13 block styles and 25 block patterns including six headers and four footers.
 
 Named after Diego Armando Maradona https://en.wikipedia.org/wiki/Diego_Maradona
 
 == Known issues ==
 This theme has no skip link, because this feature is not implemented in full site editing yet.
-The theme has many temporary solutions, such as the archive pagination and manual archive page headings.
+
+== To do ==
+Handle the duplicate CSS smarter.
+Add query variations.
 
 == Changelog ==
 
-* February 7 2021 Version: 1.2
-Updated the theme for Gutenberg 9.9:
+* April 14 2021 Version: 1.2
+Updated the theme for Gutenberg 10.4:
 Updated experimental-theme.json
 Added the updated query pagination
-Removed the block style for social links colors.
-
+Removed the block style for social links colors
+Updated alignments
+Replaced some template parts with block patterns
+Added new templates with sidebars
 Removed add_theme_support( "title-tag" ), which was left over from passing the Theme Check checks.
+Removed one palette color
+New nlock styles, patterns and screenshot
 
 * January 6 2021 Version: 1.1
 
@@ -81,3 +87,6 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
 * Underscores https://underscores.me/, (C) Automattic, Inc.
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
+
+Grass.jpg https://pxhere.com/en/photo/977645, public domain. Image used in screenshot.
+Placeholder.png created by Carolina Nymark, public domain.
