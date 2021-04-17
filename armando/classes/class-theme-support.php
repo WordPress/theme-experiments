@@ -34,25 +34,13 @@ class Theme_Support {
 	 * @return void
 	 */
 	public function action_setup() {
-
-		load_theme_textdomain( 'armando', get_template_directory() . '/languages' );
-
-		// Only for theme check
-		add_theme_support( "title-tag" );
-
 		// Add default posts and comments RSS feed links to head.
 		add_theme_support( 'automatic-feed-links' );
-
-		/*
-		 * Enable support for Post Thumbnails on posts and pages.
-		 *
-		 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
-		 */
 		add_theme_support( 'post-thumbnails' );
 
 		/*
 		* Switch default core markup to output valid HTML5.
-		* The columns block uses the markup from the comments template.
+		* The comments block uses the markup from the comments template.
 		*/
 		add_theme_support(
 			'html5',
@@ -68,23 +56,8 @@ class Theme_Support {
 		add_theme_support( 'editor-styles' );
 		add_editor_style( 'editor-style.css' );
 
-		// Add support for full and wide align images.
-		add_theme_support( 'align-wide' );
-
 		// Add support for responsive embedded content.
 		add_theme_support( 'responsive-embeds' );
-
-		// Add support for custom line height controls.
-		add_theme_support( 'custom-line-height' );
-
-		// Add support for custom spacing controls.
-		add_theme_support( 'custom-spacing' );
-
-		// Add support for custom units.
-		add_theme_support( 'custom-units' );
-
-		// Add support for custom link colors.
-		add_theme_support( 'experimental-link-color' );
 	}
 
 	/**

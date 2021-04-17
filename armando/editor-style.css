@@ -1,15 +1,23 @@
 /* Match search block border and border radius with the front.
 This is temporary until the border radius has been added to the block.
 */
-.wp-block-search .wp-block-search__input,
-.wp-block-search .wp-block-search__button {
+input[type=search] {
+	border-radius: 4px;
+}
+
+.site-header .wp-block-search .wp-block-search__input {
+	border: 2px solid #fff;
+}
+
+.site-header .wp-block-search .wp-block-search__button {
 	border: 2px solid #fff;
 	border-radius: 4px;
 }
 
-/* Increase the spacing around the search block when inside the navigation menu.*/
-nav .wp-block-search {
-	padding: var(--wp--custom--spacing);
+.wp-block-quote,
+.wp-block-quote.has-text-align-right {
+	border-left: none;
+	border-right: none;
 }
 
 /* Date and categories are all block elements,
@@ -18,8 +26,14 @@ we need to adjust them to align them better next to each other.
 The post meta tag for the wrapper is kept here for increased flexibility.
 */
 .post-meta .wp-block-post-date,
-.post-meta .wp-block-post-hierarchical-terms {
+.post-meta .wp-block-post-hierarchical-terms,
+.is-style-armando-inline {
 	display: inline;
+}
+
+.post-meta .wp-block-post-date,
+.post-meta .wp-block-post-hierarchical-terms {
+	margin-right: 0.5em;
 }
 
 /* Custom block styles */
@@ -38,8 +52,12 @@ The post meta tag for the wrapper is kept here for increased flexibility.
 
 .is-style-armando-box-shadow {
 	box-shadow: 0 0 1em rgba(0, 0, 0, 0.06);
-	padding: 0.5rem;
+	padding: 1.25em 2.375em;
 	border-radius: 2px;
+}
+
+.is-style-armando-box-shadow-no-padding {
+	box-shadow: 0 0 1em rgba(0, 0, 0, 0.06);
 }
 
 .is-style-armando-border {
@@ -47,14 +65,69 @@ The post meta tag for the wrapper is kept here for increased flexibility.
 	padding: 0.5rem;
 }
 
-.wp-block-social-links.is-style-armando-social-icons-color a {
-	color: var(--wp--preset--color--dark-blue);
+.is-style-armando-column-border {
+	border: 1px solid currentColor;
+	padding: 1.25em 2.375em;
 }
 
-.wp-block-social-links.is-style-armando-social-icons-color .wp-social-link button {
-	color: var(--wp--preset--color--dark-blue);
+.is-style-armando-columns-border {
+	border: 1px solid currentColor;
 }
 
-.wp-block-social-links.is-style-armando-social-icons-color .wp-social-link {
-	background: none;
+.is-style-armando-column-r-l-borders {
+	border-left: 1px solid currentColor;
+	border-right: 1px solid currentColor;
+	padding: 1.25em 2.375em;
+}
+
+.is-style-armando-top-bottom-border {
+	border-top: 2px solid currentColor;
+	border-bottom: 2px solid currentColor;
+}
+
+.is-style-armando-no-bottom-margin,
+.is-style-armando-no-bottom-margin .wp-block-columns {
+	margin-bottom: 0;
+}
+
+.is-style-armando-no-top-margin {
+	margin-top: 0;
+}
+
+@media ( min-width: 600px ) {
+	.is-style-armando-media-overlap {
+		width: 150%;
+	}
+}
+
+.is-style-armando-circular-cover.wp-block-cover,
+.is-style-armando-circular-cover .wp-block-cover__image-background,
+.is-style-armando-circular-cover.wp-block-cover-image,
+.is-style-armando-circular-cover.wp-block-cover-image:before,
+.is-style-armando-circular-cover.wp-block-cover.has-background-dim:not(.has-background-gradient):before {
+	border-radius: 50% !important;
+}
+
+.is-style-armando-vertical-text {
+	writing-mode: vertical-lr;
+}
+
+.is-style-armando-skewed {
+	transform: rotate(-0.8deg);
+}
+
+.armando-sidebar-right {
+	position: sticky;
+	border-left: 1px solid var(--wp--preset--color--silver);
+}
+
+.armando-sidebar-left {
+	position: sticky;
+	border-right: 1px solid var(--wp--preset--color--silver);
+}
+
+.is-style-armando-multi-color.has-background {
+	padding-bottom: 0;
+	padding-top: 0;
+	padding-right: 0;
 }

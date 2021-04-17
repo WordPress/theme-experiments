@@ -3,13 +3,13 @@ Theme Name: Armando
 Author: Carolina Nymark
 Author URI: https://fullsiteediting.com
 Theme URI:
-Version: 1.1
-Description: A basic full side editing theme for blogs. This theme has a three different header templates to choose from. This is an experimental theme.
-Tags: full-site-editing, blog, one-column, editor-style, block-styles
+Version: 1.2
+Description: An experimental full site editing theme for blogs or sports teams. This theme requires Gutenberg version 10.4 or later. Armando includes 13 block styles and 25 block patterns including six headers and four footers.
+Tags: full-site-editing, blog, one-column, two-columns, editor-style, block-styles
 Text Domain: armando
 Requires at least: 5.5
 Requires PHP: 7.2
-Tested up to: 5.6
+Tested up to: 5.7
 
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -50,8 +50,11 @@ input[type="reset"] {
 	word-break: normal;
 }
 
-.wp-site-blocks .wp-block-search .wp-block-search__input,
-.wp-site-blocks .wp-block-search .wp-block-search__button {
+.site-header .wp-block-search .wp-block-search__input {
+	border: 2px solid #fff;
+}
+
+.site-header .wp-block-search .wp-block-search__button {
 	border: 2px solid #fff;
 	border-radius: 4px;
 }
@@ -60,6 +63,10 @@ input,
 textarea {
 	font-size: var(--wp--preset--font-style--normal);
 	padding: 0.25em;
+}
+
+input[type=search] {
+	border-radius: 4px;
 }
 
 textarea {
@@ -75,28 +82,19 @@ pre {
 /* Date and categories are all block elements,
 we need to adjust them to align them better next to each other. */
 .post-meta .wp-block-post-date,
-.post-meta .wp-block-post-hierarchical-terms {
+.post-meta .wp-block-post-hierarchical-terms,
+.post-nav .wp-block-post-navigation-link,
+.is-style-armando-inline {
 	display: inline;
 }
 
-/* Block figcaptions has an incorrect width on the front. */
-.wp-block-image .aligncenter>figcaption {
-	display: block;
+.post-meta .wp-block-post-date,
+.post-meta .wp-block-post-hierarchical-terms {
+	margin-right: 0.5em;
 }
 
-.blocks-gallery-caption,
-.comment-body {
-	margin-bottom: 2em;
-}
-
-.comment-list,
-.children {
-	list-style: none;
-}
-
-.comment-meta .says,
-.home .comment-area {
-	display: none; /* Hide single page comment area on the home page */
+.post-nav .post-navigation-link-next {
+	float: right;
 }
 
 /* Adjust underlines to improve accessibility. This is a temporary solution.*/
@@ -108,14 +106,71 @@ we need to adjust them to align them better next to each other. */
 	text-decoration: none;
 }
 
-.wp-block-site-title.has-normal-font-size.has-white-color {
-	margin: 0;
-	line-height: 1;
+.wp-site-blocks .site-header .wp-block-site-title a {
+	text-decoration: none;
 }
 
-.wp-block-site-title.has-normal-font-size.has-white-color a {
-	font-size: var(--wp--preset--font-size--normal);
-	color: var(--wp--preset--color--white);
+.wp-site-blocks .site-header .wp-block-site-title a:hover {
+	text-decoration: underline;
+}
+
+/* Center site title and menu on small screens */
+@media ( max-width: 781px ) {
+	.wp-site-blocks .site-header .wp-block-site-title {
+		text-align: center;
+	}
+}
+
+@media ( max-width: 1300px ) {
+	.wp-site-blocks .site-header .items-justified-right>ul {
+		justify-content: initial;
+	}
+}
+
+/* Override column breakpoints for the site header. */
+@media (min-width: 600px) and (max-width: 1024px) {
+	.wp-site-blocks .site-header .wp-block-column:not(:only-child) {
+		flex-basis: 100%!important;
+		flex-grow: initial;
+	}
+
+	.wp-site-blocks .site-header .wp-block-column:nth-child(2n) {
+		margin-left: initial;
+	}
+}
+
+@media ( min-width: 782px ) {
+	.is-style-armando-multi-color.has-background {
+		padding-bottom: 0;
+		padding-top: 0;
+		padding-right: 0;
+	}
+}
+
+/* Block figcaptions has an incorrect width on the front. */
+.wp-block-image .aligncenter>figcaption {
+	display: block;
+}
+
+.wp-block-quote,
+.wp-block-quote.has-text-align-right {
+	border-left: none;
+	border-right: none;
+}
+
+.blocks-gallery-caption,
+.comment-body {
+	margin-bottom: 2em;
+}
+
+.commentlist,
+.children {
+	list-style: none;
+}
+
+.comment-meta .says,
+.home .comment-area {
+	display: none; /* Hide single page comment area on the home page */
 }
 
 /* Prevent long titles from overflowing */
@@ -124,124 +179,11 @@ we need to adjust them to align them better next to each other. */
 	word-wrap: break-word;
 }
 
-/* Alignments, widths, margins and padding*/
-.wp-site-blocks {
-	padding: 0 var(--wp--custom--spacing);
+/* Custom block styles and utilities */
+.wp-site-blocks .wp-block-post-author__avatar {
+	margin-right: 1em;
 }
 
-.wp-site-blocks .default-width,
-.wp-site-blocks .wp-block-post-content > *,
-.wp-site-blocks [class*="wp-block-post-excerpt"] > * {
-	max-width: var(--wp--custom--width--default);
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.entry-content > * {
-	margin-top: var(--wp--custom--spacing);
-	margin-bottom: var(--wp--custom--spacing);
-}
-
-/* Increase the spacing around the search block when inside the navigation menu.*/
-nav .wp-block-search {
-	padding: var(--wp--custom--spacing);
-}
-
-.wp-site-blocks .alignwide {
-	width: var(--wp--custom--width--wide);
-	max-width: 100%;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.wp-site-blocks .alignfull {
-	transform: translateX(calc(0px - var(--wp--custom--spacing)));
-	width: calc(100% + (2 * var(--wp--custom--spacing)));
-	max-width: calc(100% + (2 * var(--wp--custom--spacing)));
-	margin-left: 0;
-	margin-right: 0;
-	box-sizing: content-box;
-}
-
-.aligncenter {
-	text-align: center;
-}
-
-.wp-site-blocks .alignleft {
-	float: left;
-	margin-right: 2em;
-	margin-top: var(--wp--custom--spacing);
-	margin-bottom: var(--wp--custom--spacing);
-	max-width: 360px;
-}
-
-.wp-site-blocks .alignright {
-	float: right;
-	margin-left: 2em;
-	margin-top: var(--wp--custom--spacing);
-	margin-bottom: var(--wp--custom--spacing);
-	max-width: 360px;
-}
-
-.site-main .wp-block-query-loop.is-flex-container {
-	padding: var(--wp--custom--spacing);
-}
-
-/* Query pagination block has no working CSS class, add a wrapper as a work around.*/
-.archive-pagination div {
-	display: inline;
-	line-height: 3;
-}
-
-.archive-pagination a {
-	color: #fff;
-	background-color: #32373c;
-	border: none;
-	border-radius: 3px;
-	box-shadow: none;
-	cursor: pointer;
-	font-size: 1.125em;
-	padding: .667em 1.333em;
-	text-align: center;
-	text-decoration: none;
-	overflow-wrap: break-word;
-}
-
-.archive-pagination div:nth-of-type(2) a{
-	margin-left: var(--wp--custom--spacing);
-}
-
-.site-footer .wp-block-latest-posts.wp-block-latest-posts__list {
-	padding-left: 0;
-}
-
-@media screen and (min-width: 840px) {
-
-	.wp-site-blocks .alignleft {
-		margin-left: calc(0.5 * (100vw - var(--wp--custom--width--default)));
-	}
-	.wp-site-blocks .alignright {
-		margin-right: calc(0.5 * (100vw - var(--wp--custom--width--default)));
-	}
-}
-
-@media screen and (max-width: 840px) {
-
-	.wp-site-blocks .default-width,
-	.wp-site-blocks .wp-block-post-content > *,
-	.wp-site-blocks [class*="wp-block-post-excerpt"] > *,
-	.wp-site-blocks .site-footer > *  {
-		max-width: 90%;
-		margin-left: auto;
-		margin-right: auto;
-	}
-
-	.wp-site-blocks .site-footer > * {
-		margin-bottom: calc(2* var(--wp--custom--spacing));
-	}
-}
-
-/* Custom block styles */
 .is-style-armando-hide-caption figcaption,
 .is-style-armando-gallery-rounded figcaption {
 	display: none;
@@ -257,8 +199,12 @@ nav .wp-block-search {
 
 .is-style-armando-box-shadow {
 	box-shadow: 0 0 1em rgba(0, 0, 0, 0.06);
-	padding: 0.5rem;
+	padding: 1.25em 2.375em;
 	border-radius: 2px;
+}
+
+.is-style-armando-box-shadow-no-padding {
+	box-shadow: 0 0 1em rgba(0, 0, 0, 0.06);
 }
 
 .is-style-armando-border {
@@ -266,14 +212,110 @@ nav .wp-block-search {
 	padding: 0.5rem;
 }
 
-.wp-block-social-links.is-style-armando-social-icons-color a {
-	color: var(--wp--preset--color--dark-blue);
+.is-style-armando-column-border {
+	border: 1px solid currentColor;
+	padding: 1.25em 2.375em;
 }
 
-.wp-block-social-links.is-style-armando-social-icons-color .wp-social-link button {
-	color: var(--wp--preset--color--dark-blue);
+.is-style-armando-columns-border {
+	border: 1px solid currentColor;
 }
 
-.wp-block-social-links.is-style-armando-social-icons-color .wp-social-link {
-	background: none;
+.is-style-armando-column-r-l-borders {
+	border-left: 1px solid currentColor;
+	border-right: 1px solid currentColor;
+	padding: 1.25em 2.375em;
+}
+
+.is-style-armando-top-bottom-border {
+	border-top: 2px solid currentColor;
+	border-bottom: 2px solid currentColor;
+}
+
+/* Remove these when blocks have margin controls */
+.is-style-armando-no-bottom-margin,
+.is-style-armando-no-bottom-margin .wp-block-columns {
+	margin-bottom: 0;
+}
+
+.is-style-armando-no-top-margin {
+	margin-top: 0;
+}
+
+@media ( min-width: 600px ) {
+	.is-style-armando-media-overlap {
+		width: 150%;
+	}
+}
+
+.is-style-armando-circular-cover.wp-block-cover,
+.is-style-armando-circular-cover .wp-block-cover__image-background,
+.is-style-armando-circular-cover.wp-block-cover-image,
+.is-style-armando-circular-cover.wp-block-cover-image:before,
+.is-style-armando-circular-cover.wp-block-cover.has-background-dim:not(.has-background-gradient):before {
+	border-radius: 50% !important;
+}
+
+.is-style-armando-vertical-text {
+	writing-mode: vertical-lr;
+}
+
+.is-style-armando-skewed {
+	transform: rotate(-0.8deg);
+}
+
+.wp-block-post-featured-image {
+	margin-bottom: 50px;
+}
+
+/* Sticky header */
+.is-style-armando-sticky-header {
+	position: sticky;
+	top: 0;
+}
+
+.admin-bar .is-style-armando-sticky-header {
+	position: sticky;
+	top: 32px;
+}
+
+/* Revert the fixed position on smaller screens */
+@media screen and (max-width: 782px) {
+	.is-style-armando-sticky-header {
+		position: initial;
+	}
+}
+
+@media screen and (max-width: 782px) {
+	.is-style-armando-hide-on-mobile {
+		display: none;
+	}
+}
+
+/* Sidebars */
+@media (min-width: 782px) {
+	.armando-has-sidebar-right .wp-block-column:not(:first-child),
+	.armando-has-sidebar-left .wp-block-column:not(:first-child) {
+		margin-left: 0;
+		position: sticky;
+	}
+}
+
+@media ( min-width: 600px ) {
+	.armando-sidebar-right, .armando-sidebar-left  {
+		position: sticky;
+		border-left: 1px solid var(--wp--preset--color--silver);
+	}
+
+	.armando-sidebar-left {
+		position: sticky;
+		border-right: 1px solid var(--wp--preset--color--silver);
+	}
+}
+
+/* Disable https://github.com/WordPress/gutenberg/pull/27995 until 
+* https://github.com/WordPress/gutenberg/pull/26809.
+*/
+p:empty:before {
+	content: none !important;
 }

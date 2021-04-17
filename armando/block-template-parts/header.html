@@ -1,20 +1,24 @@
-<!-- wp:navigation {"orientation":"horizontal","textColor":"white","backgroundColor":"dark-blue","itemsJustification":"center","align":"full","fontSize":"small","style":{"typography":{"textTransform":"uppercase","fontStyle":"normal","fontWeight":"600"}}} -->
-<!-- wp:navigation-link {"label":"Sample menu"} /-->
-
-<!-- wp:navigation-link {"label":"menu item"} /-->
-<!-- wp:navigation-link {"label":"menu item"} -->
-<!-- wp:navigation-link {"label":"submenu item"} /-->
-<!-- /wp:navigation-link -->
-<!-- wp:search {"label":"Search","showLabel":false,"buttonText":"Search","buttonUseIcon":true} /-->
-<!-- /wp:navigation -->
-
-<!-- wp:spacer {"height":20} -->
-<div style="height:20px" aria-hidden="true" class="wp-block-spacer"></div>
-<!-- /wp:spacer -->
-
-<!-- wp:site-title {"textAlign":"center"} /-->
-<!-- wp:site-tagline {"textAlign":"center"} /-->
-
-<!-- wp:spacer {"height":30} -->
-<div style="height:30px" aria-hidden="true" class="wp-block-spacer"></div>
-<!-- /wp:spacer -->
+<!-- wp:columns {"align":"full","backgroundColor":"dark-blue","className":"is-style-armando-multi-color"} -->
+<div class="wp-block-columns alignfull is-style-armando-multi-color has-dark-blue-background-color has-background">
+	<!-- wp:column {"verticalAlignment":"center"} -->
+	<div class="wp-block-column is-vertically-aligned-center">
+		<!-- wp:site-title {"style":{"color":{"link":"var:preset|color|white"}},"fontSize":"normal"} /-->
+	</div>
+	<!-- /wp:column -->
+	<!-- wp:column {"verticalAlignment":"center"} -->
+	<div class="wp-block-column is-vertically-aligned-center">
+		<!-- wp:navigation {"orientation":"horizontal","textColor":"white","backgroundColor":"dark-blue","itemsJustification":"right","align":"full","style":{"typography":{"fontStyle":"normal","fontWeight":"600"}}} -->
+		<!-- wp:navigation-link /-->
+		<!-- wp:navigation-link /-->
+		<!-- wp:navigation-link /-->
+		<!-- /wp:navigation -->
+	</div>
+	<!-- /wp:column -->
+	<!-- wp:column {"verticalAlignment":"center","width":"270px"} -->
+	<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:270px">
+		<!-- wp:group {"backgroundColor":"silver"} -->
+		<div class="wp-block-group has-silver-background-color has-background"><!-- wp:search {"label":"Search","showLabel":false,"width":100,"widthUnit":"%","buttonText":"Search","buttonUseIcon":true,"align":"center"} /--></div><!-- /wp:group -->
+	</div>
+	<!-- /wp:column -->
+</div>
+<!-- /wp:columns -->
