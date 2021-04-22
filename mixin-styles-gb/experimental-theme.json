@@ -1,5 +1,15 @@
 
 {
+  "templateParts": [
+    {
+      "name": "header",
+      "area": "header"
+    },
+    {
+      "name": "footer",
+      "area": "footer"
+    }
+  ],
   "settings": {
     "defaults": {
       "color": {
@@ -160,6 +170,10 @@
           "full": "100%",
           "content": "720px"
         }
+      },
+      "layout": {
+        "contentSize": "100%",
+        "wide": "80%"
       }
     }
   },

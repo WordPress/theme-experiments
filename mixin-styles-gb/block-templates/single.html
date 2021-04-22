@@ -1,53 +1,40 @@
-<!-- wp:group {"className":"mxs-wrapper"} -->
-  <div class="wp-block-group mxs-wrapper">
-    <div class="wp-block-group__inner-container">
+<!-- wp:template-part {"slug":"header","tagName":"header","className":"mxs-header mxs-header--main"} /-->
 
-    <!-- wp:template-part {"slug":"header","theme":"mixin-styles-gb","tagName":"header","align":"full","className":"mxs-header mxs-header--main"} /-->
+  <!-- wp:group {"className":"main main--sidebar-right"} -->
+  <div class="wp-block-group main main--sidebar-right">
+    <!-- wp:group {"className":"content"} -->
+    <div class="wp-block-group content"><!-- wp:post-title {"level":1} /-->
 
-    <!-- wp:group {"align":"full","className":"main main--sidebar-right"} -->
-        <div class="wp-block-group alignfull main main--sidebar-right">
-          <div class="wp-block-group__inner-container">
-            <!-- wp:group {"className":"content"} -->
-            <div class="wp-block-group content">
-              <div class="wp-block-group__inner-container">
-                <!-- wp:post-title {"level":1} /-->
+      <!-- wp:group {"className":"entry-meta"} -->
+      <div class="wp-block-group entry-meta">
+        <!-- wp:post-author /-->
 
-                <!-- wp:group {"className":"entry-meta"} -->
-                <div class="wp-block-group entry-meta"><div class="wp-block-group__inner-container"><!-- wp:post-author /-->
+        <!-- wp:post-date /-->
 
-                <!-- wp:post-date /-->
+        <!-- wp:post-hierarchical-terms {"term":"category"} /-->
+      </div>
+      <!-- /wp:group -->
 
-                <!-- wp:post-hierarchical-terms {"term":"category"} /--></div></div>
-                <!-- /wp:group -->
+      <!-- wp:post-featured-image {"align":"left"} /-->
 
-                <!-- wp:post-featured-image {"align":"left"} /-->
+      <!-- wp:post-content /-->
 
-                <!-- wp:post-content /-->
-
-                <!-- wp:post-comments /-->
-              </div>
-            </div>
-            <!-- /wp:group -->
-
-            <!-- wp:group {"tagName":"aside","className":"sidebar card"} -->
-            <aside class="wp-block-group sidebar card">
-              <div class="wp-block-group__inner-container">
-                <!-- wp:calendar /-->
-
-                <!-- wp:heading {"level":3} -->
-                <h3>Latest Posts</h3>
-                <!-- /wp:heading -->
-
-                <!-- wp:latest-posts {"displayAuthor":true,"displayPostDate":true} /-->
-              </div>
-            </aside>
-            <!-- /wp:group -->
-          </div>
-        </div>
-        <!-- /wp:group -->
-
-        <!-- wp:template-part {"slug":"footer","theme":"mixin-styles-gb","tagName":"footer","align":"full","className":"footer"} /-->
-
+      <!-- wp:post-comments /-->
     </div>
+    <!-- /wp:group -->
+
+    <!-- wp:group {"tagName":"aside","className":"sidebar card"} -->
+    <aside class="wp-block-group sidebar card">
+      <!-- wp:calendar /-->
+
+      <!-- wp:heading {"level":3} -->
+      <h3>Latest Posts</h3>
+      <!-- /wp:heading -->
+
+      <!-- wp:latest-posts {"displayAuthor":true,"displayPostDate":true} /-->
+    </aside>
+    <!-- /wp:group -->
   </div>
-<!-- /wp:group -->
+  <!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","tagName":"footer","align":"full","className":"footer"} /-->

@@ -1,6 +1,6 @@
 <?php
 
-require_once ( get_theme_file_path( '/inc/editor-palette.php' ) );
+//require_once ( get_theme_file_path( '/inc/editor-palette.php' ) );
 
 if ( ! function_exists( 'mixin_styles_gb_setup' ) ) :
   /**
@@ -49,15 +49,8 @@ if ( ! function_exists( 'mixin_styles_gb_setup' ) ) :
       './assets/css/base-styles.css',
       './assets/css/blocks.css',
       './assets/css/block-colors.css',
-      './assets/css/color-schemes.css',
       './assets/css/editor-overrides.css',
     ) );
-
-    /**
-     * Call editor palette and editor gradients functions.
-     */
-    editor_palette();
-    editor_gradients();
   }
 endif;
 add_action( 'after_setup_theme', 'mixin_styles_gb_setup' );
@@ -65,14 +58,5 @@ add_action( 'after_setup_theme', 'mixin_styles_gb_setup' );
 function mixin_styles_gb_scripts() {
   // Stylesheets
   wp_enqueue_style( 'mixin-styles-gb-style', get_stylesheet_uri() );
-
-  if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
-    wp_enqueue_script( 'comment-reply' );
-  }
 }
 add_action( 'wp_enqueue_scripts', 'mixin_styles_gb_scripts' );
-
-function mixin_styles_gb_editor_assets() {
-  wp_enqueue_script( 'mixin-styles-gb-block-variations', get_theme_file_uri( '/js/block-variations.js' ), array( 'wp-blocks' ) );
-}
-add_action( 'enqueue_block_editor_assets', 'mixin_styles_gb_editor_assets' );
