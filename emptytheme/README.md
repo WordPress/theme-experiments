@@ -8,7 +8,7 @@ Empty theme contains all of the boilerplate you need to get started building a b
 - A separate stylesheet with all the front-end alignments you'll need. 
 - An empty `index.php`
 
-It also includes a basic `index.html` template, a `singular.html` template, and a `header.html` template part so that the theme works out of the box with no modifications. 
+It also includes basic `index.html` and `singular.html` templates, plus a `header.html` template part. These ensure that the theme works out of the box with no modifications. 
 
 For more background on the theme, [read the original PR](https://github.com/WordPress/theme-experiments/pull/81). 
 
