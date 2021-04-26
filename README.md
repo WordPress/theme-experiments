@@ -44,7 +44,7 @@ Here are some resources that may be useful context for learning more about block
 
 - [Block-based Theme Documentation](https://developer.wordpress.org/block-editor/how-to-guides/themes/block-theme-overview/)
 - [theme.json Documentation](https://developer.wordpress.org/block-editor/how-to-guides/themes/theme-json/)
-- [Creatd a block-based theme (tutorial)](https://developer.wordpress.org/block-editor/how-to-guides/themes/create-block-theme/)
+- [Create a block-based theme (tutorial)](https://developer.wordpress.org/block-editor/how-to-guides/themes/create-block-theme/)
 - [Full site editing development in the Gutenberg repo](https://github.com/WordPress/gutenberg/labels/%5BFeature%5D%20Full%20Site%20Editing)
 - [Global styles development in the Gutenberg repo](https://github.com/WordPress/gutenberg/issues?q=is%3Aissue+is%3Aopen+label%3A%22Global+Styles%22)
 
