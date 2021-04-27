@@ -1,29 +1,22 @@
 {
+	"version": 1,
 	"settings": {
-		"defaults": {
-			"color": {
-				"gradients": [ ],
-				"link": true,
-				"palette": [ ]
-			},
-			"spacing": {
-				"customPadding": true
-			},
-			"typography": {
-				"customLineHeight": true,
-				"fontFamilies": [ ],
-				"fontSizes": [ ]
-			},
-			"layout": {
-				"contentSize": "840px",
-				"wideSize": "1100px"
-			}
-		}
-	},
-	"styles": {
-		"root": {
-			"color": { },
-			"typography": { }
+		"color": {
+			"gradients": [],
+			"link": true,
+			"palette": []
+		},
+		"spacing": {
+			"customPadding": true
+		},
+		"typography": {
+			"customLineHeight": true,
+			"fontFamilies": [],
+			"fontSizes": []
+		},
+		"layout": {
+			"contentSize": "840px",
+			"wideSize": "1100px"
 		}
 	}
 }
