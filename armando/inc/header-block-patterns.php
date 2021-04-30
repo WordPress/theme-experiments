@@ -6,6 +6,16 @@
  * @since 1.2.0
  */
 
+/*
+ * Register Block Pattern Category.
+ */
+if ( function_exists( 'register_block_pattern_category' ) ) {
+	register_block_pattern_category(
+		'site-header',
+		array( 'label' => esc_html__( 'Site headers', 'armando' ) )
+	);
+}
+
 /**
  * Register Block Patterns.
  */
@@ -15,7 +25,7 @@ if ( function_exists( 'register_block_pattern' ) ) {
 		'armando/header-default',
 		array(
 			'title'      => esc_html__( 'Default Header with menu and two background colors.', 'armando' ),
-			'categories' => array( 'header' ),
+			'categories' => array( 'site-header' ),
 			'content'    => '
 				<!-- wp:columns {"align":"full","backgroundColor":"dark-blue","className":"is-style-armando-multi-color"} -->
 				<div class="wp-block-columns alignfull is-style-armando-multi-color has-dark-blue-background-color has-background"><!-- wp:column {"verticalAlignment":"center"} -->
@@ -42,7 +52,7 @@ if ( function_exists( 'register_block_pattern' ) ) {
 		'armando/header-one',
 		array(
 			'title'      => esc_html__( 'Header with title to the left of a menu', 'armando' ),
-			'categories' => array( 'header' ),
+			'categories' => array( 'site-header' ),
 			'content'    => '
 			<!-- wp:columns {"align":"full","backgroundColor":"dark-blue"} -->
 			<div class="wp-block-columns alignfull has-dark-blue-background-color has-background">
@@ -68,7 +78,7 @@ if ( function_exists( 'register_block_pattern' ) ) {
 		'armando/header-two',
 		array(
 			'title'      => esc_html__( 'Centered header with site title below a menu', 'armando' ),
-			'categories' => array( 'header' ),
+			'categories' => array( 'site-header' ),
 			'content'    => '
 				<!-- wp:navigation {"orientation":"horizontal","textColor":"white","backgroundColor":"dark-blue","itemsJustification":"center","align":"full","fontSize":"normal","style":{"typography":{"fontStyle":"normal","fontWeight":"600"}}} -->
 				<!-- wp:navigation-link /-->
@@ -92,7 +102,7 @@ if ( function_exists( 'register_block_pattern' ) ) {
 		'armando/header-three',
 		array(
 			'title'      => esc_html__( 'Centered header with title and tagline above a menu', 'armando' ),
-			'categories' => array( 'header' ),
+			'categories' => array( 'site-header' ),
 			'content'    => '
 			<!-- wp:group {"align":"wide"} -->
 			<div class="wp-block-group alignwide">
@@ -124,12 +134,12 @@ if ( function_exists( 'register_block_pattern' ) ) {
 		'armando/header-four',
 		array(
 			'title'       => esc_html__( 'Header with two menus, logo and search', 'armando' ),
-			'categories'  => array( 'header' ),
+			'categories'  => array( 'site-header' ),
 			'description' => esc_html__( 'A multiline header with two menus, logo and search.', 'armando' ),
 			'content'     => '
 			<!-- wp:group {"align":"full","backgroundColor":"dark-blue"} -->
 			<div class="wp-block-group alignfull has-dark-blue-background-color has-background">
-			<!-- wp:navigation {"orientation":"horizontal","textColor":"white","itemsJustification":"center","fontSize":"small"} -->
+			<!-- wp:navigation {"orientation":"horizontal","textColor":"white","itemsJustification":"center","fontSize":"small", "style":{"typography":{"fontStyle":"normal","fontWeight":"600"}}} -->
 				<!-- wp:navigation-link /-->
 				<!-- wp:navigation-link /-->
 				<!-- wp:navigation-link /-->
@@ -140,8 +150,11 @@ if ( function_exists( 'register_block_pattern' ) ) {
 				<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"bottom":"20px"}}},"backgroundColor":"silver"} -->
 				<div class="wp-block-group alignfull has-silver-background-color has-background" style="padding-bottom:20px">
 				<!-- wp:site-logo {"align":"center","className":"is-style-rounded"} /-->
-				<!-- wp:search {"label":"Search","showLabel":false,"width":50,"widthUnit":"%","buttonText":"Search","align":"center"} /-->
-				<!-- wp:navigation {"orientation":"horizontal","textColor":"black","itemsJustification":"center","style":{"typography":{"textTransform":"uppercase"}},"fontSize":"large"} -->
+				<!-- wp:search {"label":"Search","showLabel":false,"width":25,"widthUnit":"%","buttonText":"Search","buttonUseIcon":true,"align":"center"} /-->
+				<!-- wp:spacer {"height":30} -->
+				<div style="height:30px" aria-hidden="true" class="wp-block-spacer"></div>
+				<!-- /wp:spacer -->
+				<!-- wp:navigation {"orientation":"horizontal","textColor":"black","itemsJustification":"center","style":{"typography":{"textTransform":"uppercase"}},"fontSize":"small"} -->
 				<!-- wp:navigation-link /-->
 				<!-- wp:navigation-link /-->
 				<!-- wp:navigation-link /-->
@@ -155,7 +168,7 @@ if ( function_exists( 'register_block_pattern' ) ) {
 		'armando/header-five',
 		array(
 			'title'       => esc_html__( 'Header with media background and call to action', 'armando' ),
-			'categories'  => array( 'header' ),
+			'categories'  => array( 'site-header' ),
 			'description' => esc_html__( 'A header with a menu and a full width cover block with call to action.', 'armando' ),
 			'content'     => '
 				<!-- wp:columns {"align":"full","backgroundColor":"dark-blue","className":"is-style-armando-no-bottom-margin"} -->

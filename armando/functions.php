@@ -24,6 +24,9 @@ if ( version_compare( $GLOBALS['wp_version'], '5.5', '<' ) || version_compare( P
 // Theme support.
 require_once 'classes/class-theme-support.php';
 
+// About page.
+require_once 'classes/class-aboutpage.php';
+
 // Block styles.
 require_once 'inc/block-styles.php';
 
@@ -39,6 +42,9 @@ require_once 'inc/footer-block-patterns.php';
 // Layout block patterns.
 require_once 'inc/page-layout-block-patterns.php';
 
+// Block patterns.
+require_once 'inc/sport-block-patterns.php';
+
 /**
  * Enqueue the style.css file.
  *
@@ -51,8 +57,16 @@ function armando_styles() {
 		'',
 		ARMANDO_VERSION
 	);
+	wp_enqueue_style(
+		'armando-shared-stylez',
+		get_theme_file_uri( 'assets/css/style-shared.css' ),
+		'',
+		ARMANDO_VERSION
+	);
 }
 add_action( 'wp_enqueue_scripts', 'armando_styles' );
+
+
 
 /**
  * Show '(No title)' if post has no title.

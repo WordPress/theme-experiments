@@ -3,7 +3,7 @@ Contributors: poena
 Tested up to: 5.7
 Requires at least: 5.5
 Requires PHP: 7.2
-Version: 1.2
+Version: 1.2.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -24,6 +24,13 @@ Handle the duplicate CSS smarter.
 Add query variations.
 
 == Changelog ==
+
+* April 30 2021 Version: 1.2.1
+Updated colors and box shadows.
+Moved some CSS to a shared file.
+Added an about page
+Removed some of the custom padding to improve consistency.
+Moved the comments area to a template part.
 
 * April 14 2021 Version: 1.2
 Updated the theme for Gutenberg 10.4:

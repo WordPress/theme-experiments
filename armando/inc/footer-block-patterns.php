@@ -11,8 +11,8 @@
  */
 if ( function_exists( 'register_block_pattern_category' ) ) {
 	register_block_pattern_category(
-		'footer',
-		array( 'label' => esc_html__( 'Footers', 'armando' ) )
+		'site-footer',
+		array( 'label' => esc_html__( 'Site footers', 'armando' ) )
 	);
 }
 
@@ -25,7 +25,7 @@ if ( function_exists( 'register_block_pattern' ) ) {
 		'armando/footer-one',
 		array(
 			'title'       => esc_html__( 'Default footer', 'armando' ),
-			'categories'  => array( 'footer' ),
+			'categories'  => array( 'site-footer' ),
 			'description' => esc_html__( 'The default footer. 3 Columns with social links, contact information and latest posts. Copyright below the columns.', 'armando' ),
 			'content'     => '
 				<!-- wp:columns {"align":"wide"} -->
@@ -79,7 +79,7 @@ if ( function_exists( 'register_block_pattern' ) ) {
 		'armando/footer-two',
 		array(
 			'title'      => esc_html__( 'Footer with call to action, social links, contact information and latest posts.', 'armando' ),
-			'categories' => array( 'footer' ),
+			'categories' => array( 'site-footer' ),
 			'content'    => '
 				<!-- wp:columns {"align":"full","backgroundColor":"light-blue"} -->
 				<div class="wp-block-columns alignfull has-light-blue-background-color has-background"><!-- wp:column -->
@@ -124,7 +124,7 @@ if ( function_exists( 'register_block_pattern' ) ) {
 		'armando/footer-three',
 		array(
 			'title'       => esc_html__( 'Minimalistic footer', 'armando' ),
-			'categories'  => array( 'footer' ),
+			'categories'  => array( 'site-footer' ),
 			'description' => esc_html__( 'A minimalistic footer with Copyright information.', 'armando' ),
 			'content'     => '<!-- wp:columns -->
 			<div class="wp-block-columns"><!-- wp:column -->
@@ -154,7 +154,7 @@ if ( function_exists( 'register_block_pattern' ) ) {
 		'armando/footer-four',
 		array(
 			'title'      => esc_html__( 'Footer with logo, contact information, social links and copyright.', 'armando' ),
-			'categories' => array( 'footer' ),
+			'categories' => array( 'site-footer' ),
 			'content'    => '
 			<!-- wp:columns {"align":"wide"} -->
 			<div class="wp-block-columns alignwide"><!-- wp:column -->

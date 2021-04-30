@@ -1,0 +1,47 @@
+.post-meta {
+	border: 1px solid rgb(255 255 255 / 90%);
+}
+
+/* Date and categories are all block elements,
+we need to adjust them to align them better next to each other.
+-The downside to making this change in the editor is that the block is harder to select.
+The post meta tag for the wrapper is kept here for increased flexibility.
+*/
+.post-meta .wp-block-post-date,
+.post-meta .wp-block-post-hierarchical-terms,
+.is-style-armando-inline {
+	display: inline;
+}
+
+.post-nav .post-navigation-link-previous {
+	float: left;
+}
+
+.post-nav .post-navigation-link-next {
+	float: right;
+}
+
+/* Remove these styles when blocks have margin controls */
+.is-style-armando-no-bottom-margin,
+.is-style-armando-no-bottom-margin .wp-block-columns {
+	margin-bottom: 0;
+}
+
+.is-style-armando-no-top-margin {
+	margin-top: 0;
+}
+
+.wp-block-post-featured-image {
+	margin-bottom: 50px;
+}
+
+.blocks-gallery-caption,
+.comment-body {
+	margin-bottom: 2em;
+}
+
+@media ( min-width: 600px ) {
+	.is-style-armando-media-overlap {
+		width: 150%;
+	}
+}
