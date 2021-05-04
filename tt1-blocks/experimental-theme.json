@@ -207,7 +207,7 @@
 		"elements": {
 			"link": {
 				"color": {
-					"text": "var(--wp--style--color--link, --wp--preset--color--dark-gray)"
+					"text": "var(--wp--preset--color--dark-gray)"
 				}
 			}
 		},
