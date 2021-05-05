@@ -266,7 +266,7 @@
 					"text": "var(--wp--preset--color--green)"
 				},
 				"typography": {
-					"fontSize": "22.5px",
+					"fontSize": "var(--wp--preset--font-size--normal)",
 					"fontWeight": 500
 				}
 			},
