@@ -257,6 +257,19 @@
 					"lineHeight": 1.4
 				}
 			},
+			"core/button": {
+				"border": {
+					"radius": "0px"
+				},
+				"color": {
+					"background": "var(--wp--preset--color--gray)",
+					"text": "var(--wp--preset--color--green)"
+				},
+				"typography": {
+					"fontSize": "var(--wp--preset--font-size--normal)",
+					"fontWeight": 500
+				}
+			},
 			"core/post-author": {
 				"typography": {
 					"fontSize": "var(--wp--preset--font-size--extra-small)",
