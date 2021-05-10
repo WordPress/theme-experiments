@@ -5,8 +5,7 @@
  * @link https://developer.wordpress.org/reference/functions/register_block_pattern/
  * @link https://developer.wordpress.org/reference/functions/register_block_pattern_category/
  *
- * @package WordPress
- * @subpackage TT1_Blocks
+ * @package TT1_Blocks
  * @since 0.1
  */
 

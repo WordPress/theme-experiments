@@ -1,29 +1,32 @@
 === TT1 Blocks ===
 Contributors: wordpressdotorg
 Requires at least: 5.6
-Tested up to: 5.6
+Tested up to: 5.7
 Requires PHP: 5.6
-Stable tag: 0.2
+Stable tag: 0.4.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-TT1 Blocks is an experimental block-based version of the Twenty Twenty-One theme. It is built to leverage the full-site editing functionality that is being built in the Gutenberg plugin. This theme is not meant for use on a production site.
+TT1 Blocks is an experimental block theme version of the Twenty Twenty-One theme. It is built to leverage the full site editing functionality that is being built in the Gutenberg plugin. This theme is not meant for use on a production site.
 
 == Description ==
 
-TT1 Blocks is a fully block-based version the <a href="https://wordpress.org/themes/twentytwentyone/">Twenty Twenty-One</a> theme. It is built to leverage the full-site editing functionality that is being built in the <a href="https://wordpress.org/plugins/gutenberg/">Gutenberg plugin</a>. This work is ongoing, and updates are available on the <a href="https://make.wordpress.org/core/?s=gutenberg">Make WordPress Core blog</a>.
+TT1 Blocks is a block theme version the <a href="https://wordpress.org/themes/twentytwentyone/">Twenty Twenty-One</a> theme. It is built to leverage the full site editing functionality that is being built in the <a href="https://wordpress.org/plugins/gutenberg/">Gutenberg plugin</a>.
 
-This theme is beta software, and is not meant for use on a production site. Bug reports, fixes, and other and contributions are welcome <a href="https://github.com/WordPress/theme-experiments/issues">in the theme's GitHub repository</a>. 
+This theme is beta software, and is not meant for use on a production site. Bug reports, fixes, and other and contributions are welcome <a href="https://github.com/WordPress/theme-experiments/issues">in the theme's GitHub repository</a>.
 
 == Installation ==
 
-1. If you do not already have <a href="https://wordpress.org/plugins/gutenberg/">the Gutenberg plugin</a> installed and activated, go to Appearance -> Themes in your admin panel and search for 'Gutenberg'. Install and activate the plugin. 
+1. If you do not already have <a href="https://wordpress.org/plugins/gutenberg/">the Gutenberg plugin</a> installed and activated, go to Appearance -> Themes in your admin panel and search for 'Gutenberg'. Install and activate the plugin.
 2. Then, in your admin panel, go to Appearance -> Themes and click the 'Add New' button.
 3. Type in 'TT1 Blocks' in the search form and press the 'Enter' key on your keyboard.
 4. Click on the 'Activate' button to use your new theme right away.
 5. From your admin panel, visit the Site Editor to customize your site.
 
 == Changelog ==
+
+= 0.4.6 =
+* Update for compatibility with Gutenberg v10.6
 
 = 0.4.5 =
 * Update for compatibility with Gutenberg v10.3
