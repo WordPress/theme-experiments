@@ -4,8 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package WordPress
- * @subpackage TT1_Blocks
+ * @package TT1_Blocks
  * @since 0.1
  */
 
@@ -48,19 +47,15 @@ if ( ! function_exists( 'tt1_blocks_setup' ) ) {
 		add_theme_support( 'editor-styles' );
 
 		// Enqueue editor styles.
-		add_editor_style( array( 
-			'./assets/css/blocks.css',
-			'./assets/css/style-shared.css'
-		) );
+		add_editor_style(
+			array(
+				'./assets/css/blocks.css',
+				'./assets/css/style-shared.css',
+			)
+		);
 
 		// Add support for responsive embedded content.
 		add_theme_support( 'responsive-embeds' );
-
-		// Add support for experimental link color control.
-		add_theme_support( 'experimental-link-color' );
-
-		// Add support for custom units.
-		add_theme_support( 'custom-units' );
 	}
 }
 add_action( 'after_setup_theme', 'tt1_blocks_setup' );

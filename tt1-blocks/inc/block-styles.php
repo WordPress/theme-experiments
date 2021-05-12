@@ -4,8 +4,7 @@
  *
  * @link https://developer.wordpress.org/reference/functions/register_block_style/
  *
- * @package WordPress
- * @subpackage TT1_Blocks
+ * @package TT1_Blocks
  * @since 0.1
  */
 
@@ -30,15 +29,6 @@ if ( function_exists( 'register_block_style' ) ) {
 		// Cover: Borders.
 		register_block_style(
 			'core/cover',
-			array(
-				'name'  => 'twentytwentyone-border',
-				'label' => esc_html__( 'Borders', 'tt1-blocks' ),
-			)
-		);
-
-		// Group: Borders.
-		register_block_style(
-			'core/group',
 			array(
 				'name'  => 'twentytwentyone-border',
 				'label' => esc_html__( 'Borders', 'tt1-blocks' ),

@@ -47,19 +47,9 @@
 }
 
 /*--------------------------------------------------------------
-# Group
---------------------------------------------------------------*/
-
-.wp-block-group.is-style-twentytwentyone-border {
-	border: 3px solid var(--wp--preset--color--dark-gray);
-	padding: var(--wp--custom--spacing--vertical) var(--wp--custom--spacing--horizontal);
-}
-
-/*--------------------------------------------------------------
 # Image
 --------------------------------------------------------------*/
 
-.wp-block-image img,
 .wp-block-image img {
 	height: auto;
 }
