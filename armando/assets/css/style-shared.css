@@ -1,5 +1,22 @@
-.post-meta {
-	border: 1px solid rgb(255 255 255 / 90%);
+.site-header .wp-block-search .wp-block-search__input {
+	border: 2px solid #fff;
+}
+
+.site-header .wp-block-search .wp-block-search__button {
+	border: 2px solid #fff;
+	border-radius: 4px;
+}
+
+input[type=search],
+select {
+	border-radius: 4px;
+}
+
+input,
+textarea,
+select {
+	font-size: var(--wp--preset--font-size--small);
+	padding: 0.25em;
 }
 
 /* Date and categories are all block elements,
@@ -8,9 +25,13 @@ we need to adjust them to align them better next to each other.
 The post meta tag for the wrapper is kept here for increased flexibility.
 */
 .post-meta .wp-block-post-date,
-.post-meta .wp-block-post-hierarchical-terms,
+.post-meta .wp-block-post-terms,
 .is-style-armando-inline {
 	display: inline;
+}
+
+.post-meta .wp-block-post-date {
+	margin-right: .5em;
 }
 
 .post-nav .post-navigation-link-previous {
@@ -19,6 +40,10 @@ The post meta tag for the wrapper is kept here for increased flexibility.
 
 .post-nav .post-navigation-link-next {
 	float: right;
+}
+
+.wp-block-query-pagination {
+	justify-content: space-between;
 }
 
 /* Remove these styles when blocks have margin controls */

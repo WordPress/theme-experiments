@@ -59,7 +59,7 @@ class AboutPage {
 			<div class="welcome-panel">
 				<div class="welcome-panel-content">
 					<h2><?php esc_html_e( 'Required Plugin', 'armando' ); ?></h2>
-					<br><?php esc_html_e( 'Please install and activate Gutenberg version 10.4 or newer.', 'armando' ); ?>
+					<br><?php esc_html_e( 'Please install and activate Gutenberg version 10.6 or newer.', 'armando' ); ?>
 					<br><a class="button button-primary button-hero load-customize" href="<?php echo esc_url( 'https://wordpress.org/plugins/gutenberg/' ); ?>"><?php esc_html_e( 'Gutenberg', 'armando' ); ?></a>
 					<br><br>
 				</div>
@@ -68,7 +68,7 @@ class AboutPage {
 			<div class="welcome-panel">
 				<div class="welcome-panel-content">
 					<h2><?php esc_html_e( 'How to change header and footers', 'armando' ); ?></h2>
-					<br><?php esc_html_e( 'These instructions were written for Gutenberg 10.4. if you are using a different version, the UI might look different.', 'armando' ); ?>
+					<br><?php esc_html_e( 'These instructions were written for Gutenberg 10.6. if you are using a different version, the UI might look different.', 'armando' ); ?>
 					<br>
 					<?php esc_html_e( 'The header and footer can be edited in either the site editor or the block editor.', 'armando' ); ?>
 					<br><b><?php esc_html_e( '-If you are not already familiar with the site editor, then the second option may be easier.', 'armando' ); ?></b>
@@ -105,14 +105,14 @@ class AboutPage {
 			<div class="welcome-panel">
 				<div class="welcome-panel-content">
 					<h2><?php esc_html_e( 'How to change content of the sidebars', 'armando' ); ?></h2>
-					<br><?php esc_html_e( 'These instructions were written for Gutenberg 10.4. if you are using a different version, the UI might look different.', 'armando' ); ?>
+					<br><?php esc_html_e( 'These instructions were written for Gutenberg 10.6. if you are using a different version, the UI might look different.', 'armando' ); ?>
 					<br>
 					<ol>
 						<li>
 							<b><?php esc_html_e( 'First, open the editor that you prefer.', 'armando' ); ?></b><br>
 						</li>
 						<li>
-							<b><?php esc_html_e( 'Next, from the add block menu, select Template Part.', 'armando' ); ?></b><br>
+							<b><?php esc_html_e( 'Next, from the Add block menu, select Template Part.', 'armando' ); ?></b><br>
 							<?php esc_html_e( 'Choose existing, and select Left-sidebar or Right-sidebar from the list.', 'armando' ); ?><br>
 							<?php esc_html_e( 'Edit, remove and add any blocks that you want.', 'armando' ); ?><br>
 							<?php esc_html_e( 'When you save, make sure that the template part is selected. Once the sidebar has been saved, the changes will be reflected across the website and you can delete the template part from the page you were working on.', 'armando' ); ?><br><br>
@@ -126,7 +126,7 @@ class AboutPage {
 			<div class="welcome-panel">
 				<div class="welcome-panel-content">
 					<h2><?php esc_html_e( 'How to use a block pattern as a page layout', 'armando' ); ?></h2>
-					<br><?php esc_html_e( 'These instructions were written for Gutenberg 10.4. if you are using a different version, the UI might look different.', 'armando' ); ?>
+					<br><?php esc_html_e( 'These instructions were written for Gutenberg 10.6. if you are using a different version, the UI might look different.', 'armando' ); ?>
 					<ol>
 						<li>
 							<b><?php esc_html_e( 'First, open the block editor.', 'armando' ); ?></b><br>

@@ -197,8 +197,8 @@ if ( function_exists( 'register_block_pattern' ) ) {
 				<div style="height:20px" aria-hidden="true" class="wp-block-spacer"></div>
 				<!-- /wp:spacer -->
 				<!-- wp:buttons {"contentJustification":"center"} -->
-				<div class="wp-block-buttons is-content-justification-center"><!-- wp:button {"borderRadius":3,"backgroundColor":"dark-blue","textColor":"white","width":50,"className":"is-style-fill"} -->
-				<div class="wp-block-button has-custom-width wp-block-button__width-50 is-style-fill"><a class="wp-block-button__link has-white-color has-dark-blue-background-color has-text-color has-background" style="border-radius:3px"><strong>' . esc_html_x( 'CUSTOMIZE YOUR CALL TO ACTION', 'sample content', 'armando' ) . '</strong></a></div>
+				<div class="wp-block-buttons is-content-justification-center"><!-- wp:button {"backgroundColor":"dark-blue","textColor":"white","width":50,"className":"is-style-fill"} -->
+				<div class="wp-block-button has-custom-width wp-block-button__width-50 is-style-fill"><a class="wp-block-button__link has-white-color has-dark-blue-background-color has-text-color has-background"><strong>' . esc_html_x( 'CUSTOMIZE YOUR CALL TO ACTION', 'sample content', 'armando' ) . '</strong></a></div>
 				<!-- /wp:button --></div>
 				<!-- /wp:buttons --></div></div>
 				<!-- /wp:cover -->

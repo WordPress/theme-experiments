@@ -39,11 +39,14 @@ require_once 'inc/header-block-patterns.php';
 // Footer block patterns.
 require_once 'inc/footer-block-patterns.php';
 
-// Layout block patterns.
+// Page layout block patterns.
 require_once 'inc/page-layout-block-patterns.php';
 
-// Block patterns.
+// Sport block patterns.
 require_once 'inc/sport-block-patterns.php';
+
+// Query block patterns.
+require_once 'inc/query-block-patterns.php';
 
 /**
  * Enqueue the style.css file.
@@ -65,8 +68,6 @@ function armando_styles() {
 	);
 }
 add_action( 'wp_enqueue_scripts', 'armando_styles' );
-
-
 
 /**
  * Show '(No title)' if post has no title.

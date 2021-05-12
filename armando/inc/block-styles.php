@@ -23,14 +23,6 @@ function armando_register_block_styles() {
 	);
 
 	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
-		'core/group',
-		array(
-			'name'  => 'armando-rounded-corners',
-			'label' => __( 'Rounded corners (Requires background color)', 'armando' ),
-		)
-	);
-
-	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
 		'core/template-part',
 		array(
 			'name'  => 'armando-rounded-corners',
@@ -115,14 +107,6 @@ function armando_register_block_styles() {
 				border: 2px solid currentColor;
 				padding: 0.5rem;
 			}',
-		)
-	);
-
-	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
-		'core/group',
-		array(
-			'name'  => 'armando-border',
-			'label' => __( 'Border', 'armando' ),
 		)
 	);
 
@@ -219,7 +203,7 @@ function armando_register_block_styles() {
 			'name'         => 'armando-columns-border',
 			'label'        => __( 'Border', 'armando' ),
 			'inline_style' => '
-			is-style-armando-columns-border {
+			.is-style-armando-columns-border {
 				border: 1px solid currentColor;
 			}',
 		)

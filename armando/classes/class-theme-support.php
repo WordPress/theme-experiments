@@ -57,7 +57,6 @@ class Theme_Support {
 		add_theme_support( 'editor-styles' );
 		add_editor_style(
 			array(
-				'editor-style.css',
 				'./assets/css/style-shared.css',
 			)
 		);

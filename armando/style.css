@@ -3,8 +3,8 @@ Theme Name: Armando
 Author: Carolina Nymark
 Author URI: https://fullsiteediting.com
 Theme URI:
-Version: 1.2.1
-Description: An experimental full site editing theme for blogs or sports teams. This theme requires Gutenberg version 10.4 or later. Armando includes 13 block styles and 25 block patterns including six headers and four footers.
+Version: 1.2.2
+Description: An experimental full site editing theme for blogs or sports teams. This theme requires Gutenberg version 10.6 or newer. Armando includes multiple block styles and block patterns including site headers, site footers and page layouts.
 Tags: full-site-editing, blog, one-column, two-columns, editor-style, block-styles
 Text Domain: armando
 Requires at least: 5.5
@@ -38,39 +38,6 @@ img {
 	height: auto;
 }
 
-/* Match HTML buttons with the search block button.*/
-button,
-input[type="submit"],
-input[type="reset"] {
-	background: #f7f7f7;
-	border:2px solid #fff;
-	border-radius: 4px;
-	padding: 6px 10px;
-	color: #32373c;
-	word-break: normal;
-}
-
-.site-header .wp-block-search .wp-block-search__input {
-	border: 2px solid #fff;
-}
-
-.site-header .wp-block-search .wp-block-search__button {
-	border: 2px solid #fff;
-	border-radius: 4px;
-}
-
-input,
-textarea,
-select {
-	font-size: var(--wp--preset--font-style--normal);
-	padding: 0.25em;
-}
-
-input[type=search],
-select {
-	border-radius: 4px;
-}
-
 textarea {
 	clear: both;
 	display: block;
@@ -88,14 +55,6 @@ pre {
 
 .wp-site-blocks a:hover {
 	text-decoration: none;
-}
-
-.wp-site-blocks .site-header .wp-block-site-title a {
-	text-decoration: none;
-}
-
-.wp-site-blocks .site-header .wp-block-site-title a:hover {
-	text-decoration: underline;
 }
 
 /* Center site title and menu on small screens */
@@ -146,6 +105,7 @@ pre {
 	display: table;
 }
 
+/* Comments */
 .commentlist,
 .children {
 	list-style: none;
@@ -168,21 +128,16 @@ pre {
 	top: 0;
 }
 
+/* Move the position down to adjust for the WordPress admin bar */
 .admin-bar .is-style-armando-sticky-header {
 	position: sticky;
 	top: 32px;
 }
 
-/* Revert the fixed position on smaller screens */
+/* Revert the sticky position on smaller screens */
 @media screen and (max-width: 782px) {
 	.is-style-armando-sticky-header {
 		position: initial;
-	}
-}
-
-@media screen and (max-width: 782px) {
-	.is-style-armando-hide-on-mobile {
-		display: none;
 	}
 }
 
@@ -202,7 +157,7 @@ pre {
 
 @media ( min-width: 600px ) {
 	.armando-sidebar-right,
-	.armando-sidebar-left  {
+	.armando-sidebar-left {
 		position: sticky;
 		border-left: 1px solid var(--wp--preset--color--white);
 	}
@@ -218,4 +173,24 @@ pre {
 */
 p:empty:before {
 	content: none !important;
+}
+
+/*
+ * Increase padding on smaller screens. 
+ * Temporary solution to avoid text content running up to the edge of the browser window,
+ * making the text difficult to read.
+*/
+@media ( max-width: 600px ) {
+	main {
+		padding: 8px;
+	}
+}
+
+@media ( max-width: 1200px ) {
+	.post-template-post-sidebar-right main,
+	.post-template-post-sidebar-left main,
+	.page-template-post-sidebar-right main,
+	.page-template-post-sidebar-left main {
+		padding: 8px;
+	}
 }
