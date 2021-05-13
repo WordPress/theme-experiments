@@ -50,7 +50,7 @@ Replaced some template parts with block patterns
 Added new templates with sidebars
 Removed add_theme_support( "title-tag" ), which was left over from passing the Theme Check checks.
 Removed one palette color
-New nlock styles, patterns and screenshot
+New block styles, patterns and screenshot
 
 * January 6 2021 Version: 1.1
 Removed the temporary Theme Check files.

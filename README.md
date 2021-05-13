@@ -17,7 +17,7 @@ This repository is dedicated to exploring how WordPress themes can best leverage
 | [Twenty Nineteen Blocks](https://github.com/WordPress/theme-experiments/tree/master/twentynineteen-blocks) | Gutenberg 8.6 |
 | [Twenty Twenty Blocks](https://github.com/WordPress/theme-experiments/tree/master/twentytwenty-blocks) | Gutenberg 8.6 |
 | [TT1 Blocks](https://github.com/WordPress/theme-experiments/tree/master/tt1-blocks) | The version of the theme in this repository may rely on Gutenberg features that have not yet made it into an official release |
-| [Armando](https://github.com/WordPress/theme-experiments/tree/master/armando) | Gutenberg 9.7 |
+| [Armando](https://github.com/WordPress/theme-experiments/tree/master/armando) | Gutenberg 10.6 |
 
 `require-gutenberg` _is a utility for themes to check whether the Gutenberg plugin is installed._
 
@@ -42,15 +42,15 @@ Tip: WordPress will search for themes inside of subdirectories. If you'd like to
 
 Here are some resources that may be useful context for learning more about block-based themes:
 
-- [Block-based Theme Documentation](https://developer.wordpress.org/block-editor/developers/themes/block-based-themes/)
-- [theme.json Documentation](https://github.com/WordPress/gutenberg/blob/master/docs/designers-developers/developers/themes/theme-json.md)
-- [Creating a block-based theme (tutorial)](https://developer.wordpress.org/block-editor/tutorials/block-based-themes/)
+- [Block-based Theme Documentation](https://developer.wordpress.org/block-editor/how-to-guides/themes/block-theme-overview/)
+- [theme.json Documentation](https://developer.wordpress.org/block-editor/how-to-guides/themes/theme-json/)
+- [Create a block theme (tutorial)](https://developer.wordpress.org/block-editor/how-to-guides/themes/create-block-theme/)
 - [Full site editing development in the Gutenberg repo](https://github.com/WordPress/gutenberg/labels/%5BFeature%5D%20Full%20Site%20Editing)
 - [Global styles development in the Gutenberg repo](https://github.com/WordPress/gutenberg/issues?q=is%3Aissue+is%3Aopen+label%3A%22Global+Styles%22)
 
 ## Generating your own starter theme  
 
-We have included a script so you can generate a theme based on a starter boilerplate with the minimum necessary to build your own block-based theme. You will need to have php installed to run it using:
+We have included a script so you can generate a theme based on a starter boilerplate with the minimum necessary to build your own block theme. You will need to have php installed to run it using:
 
 `php new-empty-theme.php`
 

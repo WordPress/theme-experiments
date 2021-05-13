@@ -19,7 +19,7 @@ Ambitious is an experimental [Block-based WordPress Theme](https://developer.wor
 2. Enable the `Full Site Editing` mode on `Gutenberg > Experiments`
 3. Install and activate the Ambitious theme from this repo
 
-## Ressources
+## Resources
 
 Ambitious bundles and uses the following third-party resources:
 

@@ -1,20 +1,20 @@
 # TT1 Blocks
 
-Ongoing development for the block-based version of Twenty Twenty-One, the default WordPress theme slated for 5.6. 
+Ongoing development for the block theme version of Twenty Twenty-One.
 
-This theme requires the Gutenberg Plugin to be installed (preferably version 9.3 or later).
+This theme requires the Gutenberg Plugin to be installed (Version 10.6 or later).
 
-For the non-block-based version of this theme, please [visit the Twenty Twenty-One repository](https://github.com/WordPress/twentytwentyone). 
+For the classic version of this theme, please [visit Twenty Twenty-One in the theme directory](https://wordpress.org/themes/twentytwentyone/).
 
-To contribute to TT1 development, please read the [contributor's guide](/CONTRIBUTING.md).
+To contribute to the development of TT1 Blocks, please read the [contributor's guide](/CONTRIBUTING.md).
 
 ## Installation
 
 1. In your admin panel, install and activate [the Gutenberg Plugin](https://wordpress.org/plugins/gutenberg/). 
 2. Click the 'Code' button on [the main Theme Experiments Repository GitHub page](https://github.com/wordpress/theme-experiments).
-3. Unzip the resulting download. 
+3. Unzip the resulting download.
 4. Move or upload the "theme-experiments" folder into your site's `wp-content/themes` folder.
-6. Visit `Appearance > Themes` and activate the "TT1 Blocks" theme.
+5. Visit `Appearance > Themes` and activate the "TT1 Blocks" theme.
 
 ## Copyright
 
