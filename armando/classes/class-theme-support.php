@@ -53,8 +53,13 @@ class Theme_Support {
 		// Add support for Block Styles.
 		add_theme_support( 'wp-block-styles' );
 
+			// Enqueue editor styles.
 		add_theme_support( 'editor-styles' );
-		add_editor_style( 'editor-style.css' );
+		add_editor_style(
+			array(
+				'./assets/css/style-shared.css',
+			)
+		);
 
 		// Add support for responsive embedded content.
 		add_theme_support( 'responsive-embeds' );

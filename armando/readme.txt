@@ -3,27 +3,42 @@ Contributors: poena
 Tested up to: 5.7
 Requires at least: 5.5
 Requires PHP: 7.2
-Version: 1.2
+Version: 1.2.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-An experimental full site editing theme for blogs or sports teams. 
+An experimental full site editing theme for blogs or sports teams.
 
 == Description ==
-An experimental full site editing theme for blogs or sports teams. 
-This theme requires Gutenberg version 10.4 or later. 
-Armando includes 13 block styles and 25 block patterns including six headers and four footers.
+An experimental full site editing theme for blogs or sports teams.
+This theme requires Gutenberg version 10.6 or newer.
+Armando includes multiple block styles and block patterns including site headers, site footers and page layouts.
 
 Named after Diego Armando Maradona https://en.wikipedia.org/wiki/Diego_Maradona
 
-== Known issues ==
-This theme has no skip link, because this feature is not implemented in full site editing yet.
-
 == To do ==
 Handle the duplicate CSS smarter.
-Add query variations.
 
 == Changelog ==
+
+* May 12 2021 Version: 1.2.2
+Updated the theme.json format.
+Updated default button and post navigation styles.
+Updated the about page.
+Updated footer patterns.
+Fixed a missing width of the header template part.
+Fixed a problem with the quote block styling.
+Replaced the tag- and category blocks with the post term block.
+Renamed the pattern template, this was not editable in template editing mode since it did not have
+a post or page prefix.
+Added one block pattern for the blog (query).
+
+* April 30 2021 Version: 1.2.1
+Updated colors and box shadows.
+Moved some CSS to a shared file.
+Added an about page
+Removed some of the custom padding to improve consistency.
+Moved the comments area to a template part.
 
 * April 14 2021 Version: 1.2
 Updated the theme for Gutenberg 10.4:
@@ -38,7 +53,6 @@ Removed one palette color
 New block styles, patterns and screenshot
 
 * January 6 2021 Version: 1.1
-
 Removed the temporary Theme Check files.
 Copied the content of the meta template part to the main query because of a bug / missing featured in Gutenberg.
 Added editor styles.
@@ -90,3 +104,4 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
 Grass.jpg https://pxhere.com/en/photo/977645, public domain. Image used in screenshot.
 Placeholder.png created by Carolina Nymark, public domain.
+Images of the UI, created by Carolina Nymark, public domain.

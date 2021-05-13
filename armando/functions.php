@@ -24,6 +24,9 @@ if ( version_compare( $GLOBALS['wp_version'], '5.5', '<' ) || version_compare( P
 // Theme support.
 require_once 'classes/class-theme-support.php';
 
+// About page.
+require_once 'classes/class-aboutpage.php';
+
 // Block styles.
 require_once 'inc/block-styles.php';
 
@@ -36,8 +39,14 @@ require_once 'inc/header-block-patterns.php';
 // Footer block patterns.
 require_once 'inc/footer-block-patterns.php';
 
-// Layout block patterns.
+// Page layout block patterns.
 require_once 'inc/page-layout-block-patterns.php';
+
+// Sport block patterns.
+require_once 'inc/sport-block-patterns.php';
+
+// Query block patterns.
+require_once 'inc/query-block-patterns.php';
 
 /**
  * Enqueue the style.css file.
@@ -48,6 +57,12 @@ function armando_styles() {
 	wp_enqueue_style(
 		'armando-style',
 		get_stylesheet_uri(),
+		'',
+		ARMANDO_VERSION
+	);
+	wp_enqueue_style(
+		'armando-shared-stylez',
+		get_theme_file_uri( 'assets/css/style-shared.css' ),
 		'',
 		ARMANDO_VERSION
 	);

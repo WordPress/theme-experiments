@@ -11,34 +11,14 @@
  */
 function armando_register_block_styles() {
 	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
-		'core/gallery',
-		array(
-			'name'  => 'armando-hide-caption',
-			'label' => __( 'Hide caption', 'armando' ),
-		)
-	);
-
-	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
-		'core/gallery',
-		array(
-			'name'  => 'armando-gallery-rounded',
-			'label' => __( 'Rounded corners', 'armando' ),
-		)
-	);
-
-	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
 		'core/paragraph',
 		array(
-			'name'  => 'armando-rounded-corners',
-			'label' => __( 'Rounded corners (Requires background color)', 'armando' ),
-		)
-	);
-
-	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
-		'core/group',
-		array(
-			'name'  => 'armando-rounded-corners',
-			'label' => __( 'Rounded corners (Requires background color)', 'armando' ),
+			'name'         => 'armando-rounded-corners',
+			'label'        => __( 'Rounded corners (Requires background color)', 'armando' ),
+			'inline_style' => '
+			.is-style-armando-rounded-corners {
+				border-radius: 6px;
+			}',
 		)
 	);
 
@@ -53,24 +33,43 @@ function armando_register_block_styles() {
 	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
 		'core/cover',
 		array(
-			'name'  => 'armando-circular-cover',
-			'label' => __( 'Circular image', 'armando' ),
+			'name'         => 'armando-circular-cover',
+			'label'        => __( 'Circular image', 'armando' ),
+			'inline_style' => '
+			.is-style-armando-circular-cover.wp-block-cover,
+			.is-style-armando-circular-cover .wp-block-cover__image-background,
+			.is-style-armando-circular-cover.wp-block-cover-image,
+			.is-style-armando-circular-cover.wp-block-cover-image:before,
+			.is-style-armando-circular-cover.wp-block-cover.has-background-dim:not(.has-background-gradient):before {
+				border-radius: 50% !important;
+			}',
 		)
 	);
 
 	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
 		'core/paragraph',
 		array(
-			'name'  => 'armando-box-shadow',
-			'label' => __( 'Box shadow', 'armando' ),
+			'name'         => 'armando-box-shadow',
+			'label'        => __( 'Box shadow', 'armando' ),
+			'inline_style' => '
+			.is-style-armando-box-shadow {
+				padding: 1.25em 2.375em;
+				border-radius: 2px;
+				box-shadow: 0 2px 5px rgb(0 0 0 / 2%), 0 4px 10px rgb(0 0 0 / 4%);
+			}',
 		)
 	);
 
 	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
 		'core/template-part',
 		array(
-			'name'  => 'armando-box-shadow-no-padding',
-			'label' => __( 'Box shadow', 'armando' ),
+			'name'         => 'armando-box-shadow-no-padding',
+			'label'        => __( 'Box shadow', 'armando' ),
+			'inline_style' => '
+			.is-style-armando-box-shadow-no-padding {
+				border-radius: 2px;
+				box-shadow: 0 2px 5px rgb(0 0 0 / 2%), 0 4px 10px rgb(0 0 0 / 4%);
+			}',
 		)
 	);
 
@@ -78,14 +77,6 @@ function armando_register_block_styles() {
 		'core/group',
 		array(
 			'name'  => 'armando-box-shadow',
-			'label' => __( 'Box shadow', 'armando' ),
-		)
-	);
-
-	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
-		'core/button',
-		array(
-			'name'  => 'armando-box-shadow-no-padding',
 			'label' => __( 'Box shadow', 'armando' ),
 		)
 	);
@@ -109,16 +100,13 @@ function armando_register_block_styles() {
 	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
 		'core/paragraph',
 		array(
-			'name'  => 'armando-border',
-			'label' => __( 'Border', 'armando' ),
-		)
-	);
-
-	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
-		'core/group',
-		array(
-			'name'  => 'armando-border',
-			'label' => __( 'Border', 'armando' ),
+			'name'         => 'armando-border',
+			'label'        => __( 'Border', 'armando' ),
+			'inline_style' => '
+			.is-style-armando-border {
+				border: 2px solid currentColor;
+				padding: 0.5rem;
+			}',
 		)
 	);
 
@@ -133,8 +121,13 @@ function armando_register_block_styles() {
 	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
 		'core/heading',
 		array(
-			'name'  => 'armando-top-bottom-border',
-			'label' => __( 'Top and bottom border', 'armando' ),
+			'name'         => 'armando-top-bottom-border',
+			'label'        => __( 'Top and bottom border', 'armando' ),
+			'inline_style' => '
+			.is-style-armando-top-bottom-border {
+				border-top: 2px solid currentColor;
+				border-bottom: 2px solid currentColor;
+			}',
 		)
 	);
 
@@ -157,8 +150,12 @@ function armando_register_block_styles() {
 	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
 		'core/post-title',
 		array(
-			'name'  => 'armando-vertical-text',
-			'label' => __( 'Vertical', 'armando' ),
+			'name'         => 'armando-vertical-text',
+			'label'        => __( 'Vertical', 'armando' ),
+			'inline_style' => '
+			.is-style-armando-vertical-text {
+				writing-mode: vertical-lr;
+			}',
 		)
 	);
 
@@ -175,6 +172,7 @@ function armando_register_block_styles() {
 		array(
 			'name'  => 'armando-vertical-text',
 			'label' => __( 'Vertical', 'armando' ),
+
 		)
 	);
 
@@ -189,32 +187,51 @@ function armando_register_block_styles() {
 	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
 		'core/column',
 		array(
-			'name'  => 'armando-column-border',
-			'label' => __( 'Inner borders', 'armando' ),
+			'name'         => 'armando-column-border',
+			'label'        => __( 'Inner borders', 'armando' ),
+			'inline_style' => '
+			.is-style-armando-column-border {
+				border: 1px solid currentColor;
+				padding: 1.25em 2.375em;
+			}',
 		)
 	);
 
 	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
 		'core/columns',
 		array(
-			'name'  => 'armando-columns-border',
-			'label' => __( 'Border', 'armando' ),
+			'name'         => 'armando-columns-border',
+			'label'        => __( 'Border', 'armando' ),
+			'inline_style' => '
+			.is-style-armando-columns-border {
+				border: 1px solid currentColor;
+			}',
 		)
 	);
 
 	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
 		'core/column',
 		array(
-			'name'  => 'armando-column-r-l-borders',
-			'label' => __( 'Right and left borders', 'armando' ),
+			'name'         => 'armando-column-r-l-borders',
+			'label'        => __( 'Right and left borders', 'armando' ),
+			'inline_style' => '
+			.is-style-armando-column-r-l-borders {
+				border-left: 1px solid currentColor;
+				border-right: 1px solid currentColor;
+				padding: 1.25em 2.375em;
+			}',
 		)
 	);
 
 	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
 		'core/media-text',
 		array(
-			'name'  => 'armando-skewed',
-			'label' => __( 'Skewed', 'armando' ),
+			'name'         => 'armando-skewed',
+			'label'        => __( 'Skewed', 'armando' ),
+			'inline_style' => '
+			.is-style-armando-skewed {
+				transform: rotate(-0.8deg);
+			}',
 		)
 	);
 
