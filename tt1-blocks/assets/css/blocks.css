@@ -187,6 +187,11 @@ hr.is-style-twentytwentyone-separator-thick,
 	display: none;
 }
 
+/* In Twenty Twenty-One, separators are 100% wide. This replicates that approach */
+.wp-block-separator:not(.is-style-wide):not(.is-style-dots) {
+	width: 100%;
+}
+
 /*--------------------------------------------------------------
 # Site Tagline
 --------------------------------------------------------------*/
