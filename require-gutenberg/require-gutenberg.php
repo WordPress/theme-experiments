@@ -41,9 +41,6 @@ if ( ! class_exists( 'WPThemes_Require_Gutenberg' ) ) {
 
 			// Handle activating Gutenberg via AJAX.
 			add_action( 'wp_ajax_wpthemes_require_gutenberg_activate_plugin', [ $this, 'activate_plugin' ] );
-
-			// Handle activating a non-FSE theme.
-			add_action( 'switch_theme', [ $this, 'switch_theme' ], 10, 3 );
 		}
 
 		/**
@@ -59,7 +56,7 @@ if ( ! class_exists( 'WPThemes_Require_Gutenberg' ) ) {
 			$active_step = false;
 			if ( ! $this->is_plugin_installed() ) {
 				$active_step = 'install';
-			} elseif ( ! $this->is_plugin_active() || ! $this->is_experiment_enabled() ) {
+			} elseif ( ! $this->is_plugin_active() ) {
 				$active_step = 'activate';
 			}
 
@@ -68,15 +65,15 @@ if ( ! class_exists( 'WPThemes_Require_Gutenberg' ) ) {
 				return;
 			}
 			?>
-			<div class="notice notice-warning require-gutenberg-notice-wrapper notice-alt<?php echo ( $active_step ) ? ' active-step-' . esc_attr( $active_step ) : ''; ?>">
-				<p><?php esc_html_e( 'This is an experimental theme and requires the Gutenberg plugin to be installed with the "Full Site Editing" experiment enabled.', 'textdomain' ); ?></p>
+			<div class="notice notice-warning require-gutenberg-notice-wrapper notice-alt active-step-<?php echo esc_attr( $active_step ); ?>">
+				<p><?php esc_html_e( 'This is an experimental theme and requires the Gutenberg plugin to be installed.', 'textdomain' ); ?></p>
 				<div class="require-gutenberg require-gutenberg-install">
 					<p><?php esc_html_e( 'The Gutenberg plugin is not installed. Click the button below to install it.', 'textdomain' ); ?></p>
 					<p><button class="button" onclick="wpThemesRequireGutenberg.installPlugin();" aria-label="<?php esc_attr_e( 'Install Gutenberg', 'textdomain' ); ?>"><?php esc_html_e( 'Install Gutenberg', 'textdomain' ); ?></button></p>
 				</div>
 				<div class="require-gutenberg require-gutenberg-activate">
-					<p><?php esc_html_e( 'The Gutenberg plugin is installed but not activated, or the "Full Site Editing" experiment is not enabled. Click the button below to enable the plugin and experiment.', 'textdomain' ); ?></p>
-					<p><button class="button" onclick="wpThemesRequireGutenberg.activatePlugin();"><?php esc_html_e( 'Activate Plugin & Experiment.', 'textdomain' ); ?></button></p>
+					<p><?php esc_html_e( 'The Gutenberg plugin is installed but not activated. Click the button below to enable the plugin.', 'textdomain' ); ?></p>
+					<p><button class="button" onclick="wpThemesRequireGutenberg.activatePlugin();"><?php esc_html_e( 'Activate Plugin.', 'textdomain' ); ?></button></p>
 				</div>
 				<div class="require-gutenberg require-gutenberg-success">
 					<p><?php esc_html_e( 'Congratulations! All steps required were completed. Enjoy your Full Site Editing experience.', 'textdomain' ); ?></p>
@@ -214,20 +211,6 @@ if ( ! class_exists( 'WPThemes_Require_Gutenberg' ) ) {
 		}
 
 		/**
-		 * Check if the FSE experiment is enabled.
-		 *
-		 * @access public
-		 *
-		 * @since 1.0.0
-		 *
-		 * @return bool
-		 */
-		public function is_experiment_enabled() {
-			$option = (array) get_option( 'gutenberg-experiments', [] );
-			return ( isset( $option['gutenberg-full-site-editing'] ) && '1' === $option['gutenberg-full-site-editing'] );
-		}
-
-		/**
 		 * Activates the Gutenberg plugin.
 		 *
 		 * @access public
@@ -247,66 +230,13 @@ if ( ! class_exists( 'WPThemes_Require_Gutenberg' ) ) {
 			// Activate plugin.
 			$result = activate_plugin( 'gutenberg/gutenberg.php' );
 
-			// Plugin was successfully activated, now activate the experiment.
+			// Plugin was successfully activated. Exit with success message.
 			if ( ! is_wp_error( $result ) ) {
-
-				// Get option.
-				$option = get_option( 'gutenberg-experiments', [] );
-
-				// Sanity check for option.
-				if ( ! is_array( $option ) ) {
-					$option = [];
-				}
-
-				// Enable experiment.
-				$option['gutenberg-full-site-editing'] = '1';
-
-				// Update the option.
-				update_option( 'gutenberg-experiments', $option );
-
-				// Exit with success message.
 				wp_die( 'success' );
 			}
 
 			// Something went wrong, exit with error message.
 			wp_die( 'error' );
-		}
-
-		/**
-		 * Handle switching themes.
-		 *
-		 * Deactivates the FSE experiment if the theme we're switching to does not support it.
-		 *
-		 * @access public
-		 *
-		 * @param string   $new_name  Name of the new theme.
-		 * @param WP_Theme $new_theme WP_Theme instance of the new theme.
-		 * @param WP_Theme $old_theme WP_Theme instance of the old theme.
-		 *
-		 * @return void
-		 */
-		public function switch_theme( $new_name, $new_theme, $old_theme ) {
-			$new_theme_path = $new_theme->get_template_directory();
-
-			// No need to do anything if the theme we switched to supports Full Site Editing.
-			// Check if the block-templates folder exists, and if it does then early exit.
-			if ( file_exists( $new_theme_path . '/block-templates' ) || is_dir( $new_theme_path . '/block-templates' ) ) {
-				return;
-			}
-
-			// Get option.
-			$option = get_option( 'gutenberg-experiments', [] );
-
-			// Sanity check for option.
-			if ( ! is_array( $option ) ) {
-				$option = [];
-			}
-
-			// Disable experiment.
-			unset( $option['gutenberg-full-site-editing'] );
-
-			// Update the option.
-			update_option( 'gutenberg-experiments', $option );
 		}
 	}
 }
