@@ -1,0 +1,45 @@
+{
+	"version": 1,
+	"settings": {
+		"color": {
+			"custom": true,
+			"palette": [
+				{
+					"slug": "cornsilk",
+					"name": "Cornsilk",
+					"color": "cornsilk"
+				}
+			]
+		},
+		"typography": {
+			"dropCap": false
+		},
+		"blocks": {
+			"core/paragraph": {
+				"color": {
+					"custom": false
+				}
+			}
+		}
+	},
+	"styles": {
+		"color": {
+			"background": "var(--wp--preset--color--cornsilk)",
+			"text": "orangered"
+		},
+		"blocks": {
+			"core/group": {
+				"typography": {
+					"fontFamily": "sans-serif"
+				}
+			}
+		},
+		"elements": {
+			"h2": {
+				"color": {
+					"text": "cornflowerblue"
+				}
+			}
+		}
+	}
+}
