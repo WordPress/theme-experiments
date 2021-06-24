@@ -18,3 +18,7 @@ Everything runs on AJAX so there are no page refreshes.
 
 Simply grab the contents of the `require-gutenberg.php` file and paste them in your `functions.php` file. Alternatively you can include it as a separate file.  
 Once you copy the code to your theme, replace `textdomain` inside the file with your theme's text-domain.
+
+## License
+
+This script is released by [Ari Stathopoulos](https://aristath.github.io) and the [WordPress Themes Team](https://make.wordpress.org/themes/) under the MIT license.
