@@ -177,8 +177,8 @@ if ( function_exists( 'register_block_pattern' ) ) {
 			<!-- wp:post-author {"showAvatar":false} /--></div>
 			<!-- /wp:column -->
 			<!-- wp:column {"verticalAlignment":"top"} -->
-			<div class="wp-block-column is-vertically-aligned-top"><!-- wp:paragraph {"align":"right","fontSize":"extra-small"} -->
-			<p class="has-text-align-right has-extra-small-font-size"><em>' . esc_html_x( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', 'sample content', 'armando' ) . '</em></p>
+			<div class="wp-block-column is-vertically-aligned-top"><!-- wp:paragraph {"align":"right","fontSize":"small"} -->
+			<p class="has-text-align-right has-small-font-size"><em>' . esc_html_x( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', 'sample content', 'armando' ) . '</em></p>
 			<!-- /wp:paragraph --></div>
 			<!-- /wp:column --></div>
 			<!-- /wp:columns -->
@@ -282,14 +282,14 @@ if ( function_exists( 'register_block_pattern' ) ) {
 			<!-- /wp:column -->
 			<!-- wp:column -->
 			<div class="wp-block-column"><!-- wp:post-title /-->
-			<!-- wp:paragraph {"fontSize":"extra-small"} -->
-			<p class="has-extra-small-font-size">' . esc_html_x( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque et quam vel mi sodales euismod nec quis odio.', 'sample content', 'armando' ) . '</p>
+			<!-- wp:paragraph {"fontSize":"small"} -->
+			<p class="has-small-font-size">' . esc_html_x( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque et quam vel mi sodales euismod nec quis odio.', 'sample content', 'armando' ) . '</p>
 			<!-- /wp:paragraph -->
-			<!-- wp:paragraph {"fontSize":"extra-small"} -->
-			<p class="has-extra-small-font-size">' . esc_html_x( 'Mauris gravida purus in sapien consequat, eget mollis dui finibus. Integer neque neque, luctus eu dignissim et, pharetra ac lorem.', 'sample content', 'armando' ) . '</p>
+			<!-- wp:paragraph {"fontSize":"small"} -->
+			<p class="has-small-font-size">' . esc_html_x( 'Mauris gravida purus in sapien consequat, eget mollis dui finibus. Integer neque neque, luctus eu dignissim et, pharetra ac lorem.', 'sample content', 'armando' ) . '</p>
 			<!-- /wp:paragraph -->
-			<!-- wp:paragraph {"fontSize":"extra-small"} -->
-			<p class="has-extra-small-font-size">' . esc_html_x( 'Sed consequat, quam vel vulputate bibendum, sem ipsum feugiat purus, at porta elit lectus non eros. Aenean at lobortis sem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.', 'sample content', 'armando' ) . '</p>
+			<!-- wp:paragraph {"fontSize":"small"} -->
+			<p class="has-small-font-size">' . esc_html_x( 'Sed consequat, quam vel vulputate bibendum, sem ipsum feugiat purus, at porta elit lectus non eros. Aenean at lobortis sem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.', 'sample content', 'armando' ) . '</p>
 			<!-- /wp:paragraph --></div>
 			<!-- /wp:column --></div>
 			<!-- /wp:columns -->
@@ -311,17 +311,17 @@ if ( function_exists( 'register_block_pattern' ) ) {
 			<!-- /wp:cover --></div>
 			<!-- /wp:column -->
 			<!-- wp:column -->
-			<div class="wp-block-column"><!-- wp:paragraph {"fontSize":"extra-small"} -->
-			<p class="has-extra-small-font-size">' . esc_html_x( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque et quam vel mi sodales euismod nec quis odio.', 'sample content', 'armando' ) . '</p>
+			<div class="wp-block-column"><!-- wp:paragraph {"fontSize":"small"} -->
+			<p class="has-small-font-size">' . esc_html_x( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque et quam vel mi sodales euismod nec quis odio.', 'sample content', 'armando' ) . '</p>
 			<!-- /wp:paragraph -->
-			<!-- wp:paragraph {"fontSize":"extra-small"} -->
-			<p class="has-extra-small-font-size">' . esc_html_x( 'Mauris gravida purus in sapien consequat, eget mollis dui finibus. Integer neque neque, luctus eu dignissim et, pharetra ac lorem.', 'sample content', 'armando' ) . '</p>
+			<!-- wp:paragraph {"fontSize":"small"} -->
+			<p class="has-small-font-size">' . esc_html_x( 'Mauris gravida purus in sapien consequat, eget mollis dui finibus. Integer neque neque, luctus eu dignissim et, pharetra ac lorem.', 'sample content', 'armando' ) . '</p>
 			<!-- /wp:paragraph -->
-			<!-- wp:paragraph {"fontSize":"extra-small"} -->
-			<p class="has-extra-small-font-size">' . esc_html_x( 'Sed consequat, quam vel vulputate bibendum, sem ipsum feugiat purus, at porta elit lectus non eros. Aenean at lobortis sem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.', 'sample content', 'armando' ) . '</p>
+			<!-- wp:paragraph {"fontSize":"small"} -->
+			<p class="has-small-font-size">' . esc_html_x( 'Sed consequat, quam vel vulputate bibendum, sem ipsum feugiat purus, at porta elit lectus non eros. Aenean at lobortis sem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.', 'sample content', 'armando' ) . '</p>
 			<!-- /wp:paragraph -->
-			<!-- wp:paragraph {"fontSize":"extra-small"} -->
-			<p class="has-extra-small-font-size">' . esc_html_x( 'Aenean at lobortis sem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.', 'sample content', 'armando' ) . '</p>
+			<!-- wp:paragraph {"fontSize":"small"} -->
+			<p class="has-small-font-size">' . esc_html_x( 'Aenean at lobortis sem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.', 'sample content', 'armando' ) . '</p>
 			<!-- /wp:paragraph --></div>
 			<!-- /wp:column --></div>
 			<!-- /wp:columns -->
@@ -347,15 +347,15 @@ if ( function_exists( 'register_block_pattern' ) ) {
 			<!-- wp:spacer {"height":40} -->
 			<div style="height:40px" aria-hidden="true" class="wp-block-spacer"></div>
 			<!-- /wp:spacer -->
-			<!-- wp:post-date {"fontSize":"extra-small"} /-->
-			<!-- wp:post-terms {"term":"category","fontSize":"extra-small"} /-->
-			<!-- wp:post-terms {"term":"post_tag","fontSize":"extra-small"} /-->
+			<!-- wp:post-date {"fontSize":"small"} /-->
+			<!-- wp:post-terms {"term":"category","fontSize":"small"} /-->
+			<!-- wp:post-terms {"term":"post_tag","fontSize":"small"} /-->
 			<!-- wp:spacer {"height":40} -->
 			<div style="height:40px" aria-hidden="true" class="wp-block-spacer"></div>
 			<!-- /wp:spacer -->
 			<!-- wp:buttons -->
-			<div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"dark-blue","className":"has-custom-font-size has-extra-small-font-size"} -->
-			<div class="wp-block-button has-custom-font-size has-extra-small-font-size"><a class="wp-block-button__link has-dark-blue-background-color has-background">' . esc_html_x( 'Contact', 'sample content', 'armando' ) . '</a></div>
+			<div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"dark-blue","className":"has-custom-font-size has-small-font-size"} -->
+			<div class="wp-block-button has-custom-font-size has-small-font-size"><a class="wp-block-button__link has-dark-blue-background-color has-background">' . esc_html_x( 'Contact', 'sample content', 'armando' ) . '</a></div>
 			<!-- /wp:button --></div>
 			<!-- /wp:buttons -->
 			<!-- wp:social-links {"iconColor":"black","iconColorValue":"#000","className":"is-style-logos-only"} -->
@@ -417,7 +417,7 @@ if ( function_exists( 'register_block_pattern' ) ) {
 			<!-- wp:spacer {"height":30} -->
 			<div style="height:30px" aria-hidden="true" class="wp-block-spacer"></div>
 			<!-- /wp:spacer -->
-			<!-- wp:post-terms {"term":"category","fontSize":"extra-small"} /--></div>
+			<!-- wp:post-terms {"term":"category","fontSize":"small"} /--></div>
 			<!-- /wp:group --></div>
 			<!-- /wp:group --></div></div>
 			<!-- /wp:cover -->

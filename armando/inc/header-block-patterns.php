@@ -29,8 +29,8 @@ if ( function_exists( 'register_block_pattern' ) ) {
 			'content'    => '
 				<!-- wp:columns {"align":"full","backgroundColor":"dark-blue","className":"is-style-armando-multi-color"} -->
 				<div class="wp-block-columns alignfull is-style-armando-multi-color has-dark-blue-background-color has-background"><!-- wp:column {"verticalAlignment":"center"} -->
-				<div class="wp-block-column is-vertically-aligned-center"><!-- wp:site-title {"style":{"color":{"link":"var:preset|color|white"}},"fontSize":"normal"} /--></div><!-- /wp:column -->
-				<!-- wp:column {"verticalAlignment":"center"} -->
+				<div class="wp-block-column is-vertically-aligned-center">
+				<!-- wp:site-title {"style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"fontSize":"normal"} /--></div><!-- /wp:column -->				<!-- wp:column {"verticalAlignment":"center"} -->
 				<div class="wp-block-column is-vertically-aligned-center"><!-- wp:navigation {"orientation":"horizontal","textColor":"white","backgroundColor":"dark-blue","itemsJustification":"right","align":"full","style":{"typography":{"fontStyle":"normal","fontWeight":"600"}}} -->
 				<!-- wp:navigation-link /-->
 				<!-- wp:navigation-link /-->
@@ -58,7 +58,7 @@ if ( function_exists( 'register_block_pattern' ) ) {
 			<div class="wp-block-columns alignfull has-dark-blue-background-color has-background">
 				<!-- wp:column {"verticalAlignment":"center","width":"33.33%"} -->
 				<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:33.33%">
-				<!-- wp:site-title {"style":{"color":{"link":"var:preset|color|white"}},"fontSize":"normal"} /--></div><!-- /wp:column --><!-- wp:column {"verticalAlignment":"center","width":"66.66%"} -->
+				<!-- wp:site-title {"style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"fontSize":"normal"} /--></div><!-- /wp:column --><!-- wp:column {"verticalAlignment":"center","width":"66.66%"} -->
 				<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:66.66%">
 					<!-- wp:navigation {"orientation":"horizontal","textColor":"white","backgroundColor":"dark-blue","itemsJustification":"right","align":"full","fontSize":"normal","style":{"typography":{"fontStyle":"normal","fontWeight":"600"}}} -->
 					<!-- wp:navigation-link /-->
@@ -175,7 +175,7 @@ if ( function_exists( 'register_block_pattern' ) ) {
 				<div class="wp-block-columns alignfull has-dark-blue-background-color has-background is-style-armando-no-bottom-margin">
 					<!-- wp:column {"verticalAlignment":"center","width":"33.33%"} -->
 					<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:33.33%">
-						<!-- wp:site-title {"style":{"color":{"link":"var:preset|color|white"}},"fontSize":"normal"} /--></div><!-- /wp:column --><!-- wp:column {"verticalAlignment":"center","width":"66.66%"} -->
+						<!-- wp:site-title {"style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"fontSize":"normal"} /--></div><!-- /wp:column --><!-- wp:column {"verticalAlignment":"center","width":"66.66%"} -->
 					<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:66.66%">
 						<!-- wp:navigation {"orientation":"horizontal","textColor":"white","backgroundColor":"dark-blue","itemsJustification":"right","align":"full","fontSize":"normal","style":{"typography":{"fontStyle":"normal","fontWeight":"600"}}} -->
 						<!-- wp:navigation-link /-->
@@ -190,8 +190,8 @@ if ( function_exists( 'register_block_pattern' ) ) {
 				<!-- wp:cover {"url":"","id":63,"contentPosition":"center center","align":"full","className":"is-style-armando-no-top-margin"} -->
 				<div class="wp-block-cover alignfull has-background-dim is-style-armando-no-top-margin">
 				<div class="wp-block-cover__inner-container">
-				<!-- wp:heading {"textAlign":"center","align":"full","fontSize":"huge"} -->
-				<h2 class="alignfull has-text-align-center has-huge-font-size">' . esc_html_x( 'HEADLINE', 'sample content', 'armando' ) . '</h2>
+				<!-- wp:heading {"textAlign":"center","align":"full","fontSize":"extra-large"} -->
+				<h2 class="alignfull has-text-align-center has-extra-large-font-size">' . esc_html_x( 'HEADLINE', 'sample content', 'armando' ) . '</h2>
 				<!-- /wp:heading -->
 				<!-- wp:spacer {"height":20} -->
 				<div style="height:20px" aria-hidden="true" class="wp-block-spacer"></div>

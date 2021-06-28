@@ -3,7 +3,7 @@
  * Block patterns
  *
  * @package Armando
- * @since 1.0.0
+ * @since 1.2.2
  */
 
 /**

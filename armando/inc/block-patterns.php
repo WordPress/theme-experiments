@@ -68,8 +68,8 @@ if ( function_exists( 'register_block_pattern' ) ) {
 			<!-- /wp:media-text --></div>
 			<!-- /wp:column -->
 			<!-- wp:column {"width":"33.33%"} -->
-			<div class="wp-block-column" style="flex-basis:33.33%"><!-- wp:heading {"className":"is-style-armando-vertical-text","fontSize":"huge"} -->
-			<h2 class="is-style-armando-vertical-text has-huge-font-size">' . esc_html_x( 'Heading', 'sample content', 'armando' ) . '</h2>
+			<div class="wp-block-column" style="flex-basis:33.33%"><!-- wp:heading {"className":"is-style-armando-vertical-text","fontSize":"extra-large"} -->
+			<h2 class="is-style-armando-vertical-text has-extra-large-font-size">' . esc_html_x( 'Heading', 'sample content', 'armando' ) . '</h2>
 			<!-- /wp:heading --></div>
 			<!-- /wp:column --></div>
 			<!-- /wp:columns -->
@@ -146,8 +146,8 @@ if ( function_exists( 'register_block_pattern' ) ) {
 			<p class="has-text-align-center">' . esc_html_x( 'Sample content. Replace the text with your own content.', 'sample content', 'armando' ) . '</p>
 			<!-- /wp:paragraph -->
 			<!-- wp:buttons {"contentJustification":"center"} -->
-			<div class="wp-block-buttons is-content-justification-center"><!-- wp:button {"backgroundColor":"dark-blue","className":"has-custom-font-size has-extra-small-font-size"} -->
-			<div class="wp-block-button has-custom-font-size has-extra-small-font-size"><a class="wp-block-button__link has-dark-blue-background-color has-background">' . esc_html_x( 'Button', 'sample content', 'armando' ) . '</a></div>
+			<div class="wp-block-buttons is-content-justification-center"><!-- wp:button {"backgroundColor":"dark-blue","className":"has-custom-font-size has-small-font-size"} -->
+			<div class="wp-block-button has-custom-font-size has-small-font-size"><a class="wp-block-button__link has-dark-blue-background-color has-background">' . esc_html_x( 'Button', 'sample content', 'armando' ) . '</a></div>
 			<!-- /wp:button --></div>
 			<!-- /wp:buttons --></div>
 			<!-- /wp:column -->
@@ -162,8 +162,8 @@ if ( function_exists( 'register_block_pattern' ) ) {
 			<p class="has-text-align-center">' . esc_html_x( 'Sample content. Replace the text with your own content.', 'sample content', 'armando' ) . '</p>
 			<!-- /wp:paragraph -->
 			<!-- wp:buttons {"contentJustification":"center"} -->
-			<div class="wp-block-buttons is-content-justification-center"><!-- wp:button {"backgroundColor":"dark-blue","className":"has-custom-font-size has-extra-small-font-size"} -->
-			<div class="wp-block-button has-custom-font-size has-extra-small-font-size"><a class="wp-block-button__link has-dark-blue-background-color has-background">' . esc_html_x( 'Button', 'sample content', 'armando' ) . '</a></div>
+			<div class="wp-block-buttons is-content-justification-center"><!-- wp:button {"backgroundColor":"dark-blue","className":"has-custom-font-size has-small-font-size"} -->
+			<div class="wp-block-button has-custom-font-size has-small-font-size"><a class="wp-block-button__link has-dark-blue-background-color has-background">' . esc_html_x( 'Button', 'sample content', 'armando' ) . '</a></div>
 			<!-- /wp:button --></div>
 			<!-- /wp:buttons --></div>
 			<!-- /wp:column -->
@@ -178,8 +178,8 @@ if ( function_exists( 'register_block_pattern' ) ) {
 			<p class="has-text-align-center">' . esc_html_x( 'Sample content. Replace the text with your own content.', 'sample content', 'armando' ) . '</p>
 			<!-- /wp:paragraph -->
 			<!-- wp:buttons {"contentJustification":"center"} -->
-			<div class="wp-block-buttons is-content-justification-center"><!-- wp:button {"backgroundColor":"dark-blue","className":"has-custom-font-size has-extra-small-font-size"} -->
-			<div class="wp-block-button has-custom-font-size has-extra-small-font-size"><a class="wp-block-button__link has-dark-blue-background-color has-background">' . esc_html_x( 'Button', 'sample content', 'armando' ) . '</a></div>
+			<div class="wp-block-buttons is-content-justification-center"><!-- wp:button {"backgroundColor":"dark-blue","className":"has-custom-font-size has-small-font-size"} -->
+			<div class="wp-block-button has-custom-font-size has-small-font-size"><a class="wp-block-button__link has-dark-blue-background-color has-background">' . esc_html_x( 'Button', 'sample content', 'armando' ) . '</a></div>
 			<!-- /wp:button --></div>
 			<!-- /wp:buttons --></div>
 			<!-- /wp:column --></div>

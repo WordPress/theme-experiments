@@ -3,7 +3,7 @@ Theme Name: Armando
 Author: Carolina Nymark
 Author URI: https://fullsiteediting.com
 Theme URI:
-Version: 1.2.2
+Version: 1.2.3
 Description: An experimental full site editing theme for blogs or sports teams. This theme requires Gutenberg version 10.6 or newer. Armando includes multiple block styles and block patterns including site headers, site footers and page layouts.
 Tags: full-site-editing, blog, one-column, two-columns, editor-style, block-styles
 Text Domain: armando
@@ -24,7 +24,6 @@ with others.
 
 /* Make sure that full width blocks are full width, reset the browser margins. */
 body {
-	margin: 0;
 	overflow-x: hidden;
 }
 
@@ -48,30 +47,51 @@ pre {
 	white-space: pre-wrap;
 }
 
-/* Adjust underlines to improve accessibility. This is a temporary solution.*/
-.wp-site-blocks a:not(.wp-block-button__link) {
-	text-decoration: underline;
+.wp-site-blocks a {
+	text-underline-offset: 2px;
 }
 
+/* Adjust underlines to improve accessibility. This is a temporary solution.*/
 .wp-site-blocks a:hover {
 	text-decoration: none;
 }
 
-/* Center site title and menu on small screens */
-@media ( max-width: 781px ) {
-	.wp-site-blocks .site-header .wp-block-site-title {
-		text-align: center;
-	}
-}
+/* Center menu on small screens NOT COMPLETE */
 
 @media ( max-width: 1300px ) {
-	.wp-site-blocks .site-header .items-justified-right>ul {
+	.wp-site-blocks .site-header .items-justified-right .wp-block-navigation__container {
 		justify-content: initial;
 	}
 }
 
-/* Override column breakpoints for the site header. */
-@media (min-width: 600px) and (max-width: 1024px) {
+/* Adjust when the menu button is shown NOT COMPLETE */
+@media (max-width: 1000px) {
+
+	.wp-site-blocks .site-header  .wp-block-navigation__responsive-container {
+		display: none;
+	}
+
+	.wp-site-blocks .site-header .wp-block-navigation__responsive-container.is-menu-open,
+	.wp-site-blocks .site-header .wp-block-navigation__responsive-container-open {
+		display: flex;
+	}
+
+}
+
+@media (min-width: 400px) and (max-width: 781px) {
+	.wp-block-column:not(:only-child) {
+		flex-basis: calc(50% - 1em)!important;
+		flex-grow: 1;
+	}
+}
+
+.wp-block-navigation__responsive-container-open {
+	padding: 1rem;
+}
+
+
+/* Override column breakpoints for the site header. NOT COMPLETE
+@media (min-width: 782px) and (max-width: 1024px) {
 	.wp-site-blocks .site-header .wp-block-column:not(:only-child) {
 		flex-basis: 100%!important;
 		flex-grow: initial;
@@ -81,16 +101,10 @@ pre {
 		margin-left: initial;
 	}
 }
+ */
 
-@media ( min-width: 782px ) {
-	.is-style-armando-multi-color.has-background {
-		padding-bottom: 0;
-		padding-top: 0;
-		padding-right: 0;
-	}
-}
 
-/* Block figcaptions has an incorrect width on the front. */
+/* Block figcaptions has an incorrect width on the front. CHECK IF THIS IS STILL TRUE */
 .wp-block-image .aligncenter>figcaption {
 	display: block;
 }
@@ -98,6 +112,7 @@ pre {
 /* 
  * Site logo can not be centered on the front without this.
  * Temporary solution. Needs testing.
+ * CHECK IF THIS IS STILL TRUE
 */
 .wp-block-site-logo.aligncenter {
 	margin-left: auto;

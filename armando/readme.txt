@@ -3,7 +3,7 @@ Contributors: poena
 Tested up to: 5.7
 Requires at least: 5.5
 Requires PHP: 7.2
-Version: 1.2.2
+Version: 1.2.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -20,6 +20,34 @@ Named after Diego Armando Maradona https://en.wikipedia.org/wiki/Diego_Maradona
 Handle the duplicate CSS smarter.
 
 == Changelog ==
+
+* June 12 2021 Version: 1.2.3. THIS IS UNDER DEVELOPMENT
+Update the theme for Gutenberg 10.7 - 10.9.
+
+Style.css:
+Replaced the body margin in style.css with a margin setting in theme.json.
+The extra style for adding underline to links is no longer needed and has been removed.
+Added an offset to link underlines.
+
+The link color block markup in Gutenberg has changed from "style":{"color":{"link":"var:preset|color|white"}
+to "style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}}} and the markup was updated for:
+The site title in the site-header
+Links in site footer
+Block patterns
+
+comments.html
+The link color set for the comment area was reduntant and has been removed.
+The custom CSS class that was used to change the margin for the comment area title
+was replaced with a margin setting.
+The spacer block below the group was replaced with a margin setting.
+
+Text size adjustments from px to rem.
+Added medium text size. Extra small and huge font size names were adjusted one step.
+Extra small is now small and huge is extra large.
+
+Corrected default color for headings.
+
+Removed the notice from index.php since this is handled by WordPress core in 5.8.
 
 * May 12 2021 Version: 1.2.2
 Updated the theme.json format.
@@ -50,7 +78,7 @@ Replaced some template parts with block patterns
 Added new templates with sidebars
 Removed add_theme_support( "title-tag" ), which was left over from passing the Theme Check checks.
 Removed one palette color
-New block styles, patterns and screenshot
+New nlock styles, patterns and screenshot
 
 * January 6 2021 Version: 1.1
 Removed the temporary Theme Check files.
@@ -75,7 +103,7 @@ Temporarily add items needed for WordPress.org
 
 == Copyright ==
 
-Armando WordPress Theme, Copyright 2020 Carolina Nymark
+Armando WordPress Theme, Copyright Carolina Nymark
 Armando is distributed under the terms of the GNU GPL.
 
 This program is free software: you can redistribute it and/or modify
@@ -102,6 +130,6 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Grass.jpg https://pxhere.com/en/photo/977645, public domain. Image used in screenshot.
+Image used in screenshot: https://pxhere.com/en/photo/1376968 public domain.
 Placeholder.png created by Carolina Nymark, public domain.
 Images of the UI, created by Carolina Nymark, public domain.
