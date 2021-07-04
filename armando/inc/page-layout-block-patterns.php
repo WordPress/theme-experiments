@@ -225,12 +225,12 @@ if ( function_exists( 'register_block_pattern' ) ) {
 			<!-- wp:columns {"align":"wide"} -->
 			<div class="wp-block-columns alignwide"><!-- wp:column -->
 			<div class="wp-block-column"><!-- wp:group {"backgroundColor":"silver"} -->
-			<div class="wp-block-group has-silver-background-color has-background"><!-- wp:query {"queryId":6,"query":{"perPage":1,"pages":0,"offset":0,"postType":"post","categoryIds":[],"tagIds":[],"order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"only"},"layout":{"type":"list","columns":3}} -->
-			<!-- wp:query-loop -->
+			<div class="wp-block-group has-silver-background-color has-background"><!-- wp:query {"queryId":6,"query":{"perPage":1,"pages":0,"offset":0,"postType":"post","categoryIds":[],"tagIds":[],"order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"only"},"layout":{"type":"list","columns":3}} --><div class="wp-block-query">
+			<!-- wp:post-template -->
 			<!-- wp:post-title {"fontSize":"large"} /-->
 			<!-- wp:post-date /-->
 			<!-- wp:post-excerpt {"wordCount":19,"moreText":"Continue reading"} /-->
-			<!-- /wp:query-loop -->
+			<!-- /wp:post-template --></div>
 			<!-- /wp:query --></div>
 			<!-- /wp:group --></div>
 			<!-- /wp:column -->

@@ -169,7 +169,7 @@ if ( function_exists( 'register_block_pattern' ) ) {
 		array(
 			'title'       => esc_html__( 'Header with media background and call to action', 'armando' ),
 			'categories'  => array( 'site-header' ),
-			'description' => esc_html__( 'A header with a menu and a full width cover block with call to action.', 'armando' ),
+			'description' => esc_html__( 'A header with a menu and a full width cover block with call to action. Upload your own cover image.', 'armando' ),
 			'content'     => '
 				<!-- wp:columns {"align":"full","backgroundColor":"dark-blue","className":"is-style-armando-no-bottom-margin"} -->
 				<div class="wp-block-columns alignfull has-dark-blue-background-color has-background is-style-armando-no-bottom-margin">
@@ -187,18 +187,15 @@ if ( function_exists( 'register_block_pattern' ) ) {
 					<!-- /wp:column -->
 				</div>
 				<!-- /wp:columns -->
-				<!-- wp:cover {"url":"","id":63,"contentPosition":"center center","align":"full","className":"is-style-armando-no-top-margin"} -->
-				<div class="wp-block-cover alignfull has-background-dim is-style-armando-no-top-margin">
-				<div class="wp-block-cover__inner-container">
-				<!-- wp:heading {"textAlign":"center","align":"full","fontSize":"extra-large"} -->
-				<h2 class="alignfull has-text-align-center has-extra-large-font-size">' . esc_html_x( 'HEADLINE', 'sample content', 'armando' ) . '</h2>
-				<!-- /wp:heading -->
+				<!-- wp:cover {"url":"","id":63,"contentPosition":"top center","align":"full"} -->
+				<div class="wp-block-cover alignfull has-background-dim has-custom-content-position is-position-top-center"><div class="wp-block-cover__inner-container">
+				<!-- wp:heading {"textAlign":"center","align":"full","fontSize":"extra-large"} --><h2 class="alignfull has-text-align-center has-extra-large-font-size">' . esc_html_x( 'HEADLINE', 'sample content', 'armando' ) . '</h2><!-- /wp:heading -->
 				<!-- wp:spacer {"height":20} -->
 				<div style="height:20px" aria-hidden="true" class="wp-block-spacer"></div>
 				<!-- /wp:spacer -->
 				<!-- wp:buttons {"contentJustification":"center"} -->
-				<div class="wp-block-buttons is-content-justification-center"><!-- wp:button {"backgroundColor":"dark-blue","textColor":"white","width":50,"className":"is-style-fill"} -->
-				<div class="wp-block-button has-custom-width wp-block-button__width-50 is-style-fill"><a class="wp-block-button__link has-white-color has-dark-blue-background-color has-text-color has-background"><strong>' . esc_html_x( 'CUSTOMIZE YOUR CALL TO ACTION', 'sample content', 'armando' ) . '</strong></a></div>
+				<div class="wp-block-buttons is-content-justification-center"><!-- wp:button {"backgroundColor":"dark-blue","textColor":"white","width":100,"className":"is-style-fill"} -->
+				<div class="wp-block-button has-custom-width wp-block-button__width-100 is-style-fill"><a class="wp-block-button__link has-white-color has-dark-blue-background-color has-text-color has-background"><strong>' . esc_html_x( 'CUSTOMIZE YOUR CALL TO ACTION', 'sample content', 'armando' ) . '</strong></a></div>
 				<!-- /wp:button --></div>
 				<!-- /wp:buttons --></div></div>
 				<!-- /wp:cover -->

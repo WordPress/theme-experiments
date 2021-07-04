@@ -9,7 +9,7 @@ Tags: full-site-editing, blog, one-column, two-columns, editor-style, block-styl
 Text Domain: armando
 Requires at least: 5.5
 Requires PHP: 7.2
-Tested up to: 5.7
+Tested up to: 5.8
 
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -56,15 +56,7 @@ pre {
 	text-decoration: none;
 }
 
-/* Center menu on small screens NOT COMPLETE */
-
-@media ( max-width: 1300px ) {
-	.wp-site-blocks .site-header .items-justified-right .wp-block-navigation__container {
-		justify-content: initial;
-	}
-}
-
-/* Adjust when the menu button is shown NOT COMPLETE */
+/* Adjust when the menu button is shown */
 @media (max-width: 1000px) {
 
 	.wp-site-blocks .site-header  .wp-block-navigation__responsive-container {
@@ -78,41 +70,37 @@ pre {
 
 }
 
+/* Expand the last column in the header to full width on small screens */
 @media (min-width: 400px) and (max-width: 781px) {
-	.wp-block-column:not(:only-child) {
-		flex-basis: calc(50% - 1em)!important;
+	.wp-site-blocks .site-header .wp-block-column:not(:only-child) {
 		flex-grow: 1;
 	}
 }
 
-.wp-block-navigation__responsive-container-open {
-	padding: 1rem;
+/* Add padding to the menu button */
+.wp-site-blocks .site-header .wp-block-navigation__responsive-container-open {
+	font-size: var(--wp--preset--font-size--normal);
+	padding: 1rem 2.375em;
 }
 
-
-/* Override column breakpoints for the site header. NOT COMPLETE
-@media (min-width: 782px) and (max-width: 1024px) {
-	.wp-site-blocks .site-header .wp-block-column:not(:only-child) {
-		flex-basis: 100%!important;
-		flex-grow: initial;
+/* Center the menu button and site title on small screens*/
+@media (max-width: 599px) {
+	.wp-site-blocks .site-header .items-justified-right .wp-block-navigation__responsive-container-open {
+		margin-left: auto;
+		margin-right: auto;
 	}
 
-	.wp-site-blocks .site-header .wp-block-column:nth-child(2n) {
-		margin-left: initial;
+	.wp-site-blocks .site-header .wp-block-site-title {
+		padding-right: 2.375em; /* The left side already has inline styling */
+		text-align: center;
+		font-size: var(--wp--preset--font-size--medium) !important;
 	}
-}
- */
-
-
-/* Block figcaptions has an incorrect width on the front. CHECK IF THIS IS STILL TRUE */
-.wp-block-image .aligncenter>figcaption {
-	display: block;
 }
 
 /* 
  * Site logo can not be centered on the front without this.
- * Temporary solution. Needs testing.
- * CHECK IF THIS IS STILL TRUE
+ * Confirmed that this is still a problem July 2 2021. 
+ * Related issue: https://github.com/WordPress/gutenberg/issues/30406
 */
 .wp-block-site-logo.aligncenter {
 	margin-left: auto;
@@ -135,6 +123,12 @@ pre {
 .wp-site-blocks h2.wp-block-post-title {
 	-ms-word-wrap: break-word;
 	word-wrap: break-word;
+}
+
+/* Override the display: inline-block that is set by the the block editor, as it is 
+causing long titles with links to overflow. */
+.wp-site-blocks h2.wp-block-post-title a {
+	display: initial;
 }
 
 /* Sticky header */
@@ -190,14 +184,25 @@ p:empty:before {
 	content: none !important;
 }
 
+
+/* Reduce the size of extra large text on small screens. */
+@media ( max-width: 600px ) {
+	body {
+		--wp--preset--font-size--extra-large: 2rem;
+	}
+}
+
 /*
  * Increase padding on smaller screens. 
  * Temporary solution to avoid text content running up to the edge of the browser window,
  * making the text difficult to read.
 */
-@media ( max-width: 600px ) {
-	main {
-		padding: 8px;
+@media ( max-width: 840px ) {
+	main > :not(.alignfull),
+	main .entry-content > :not(.alignfull),
+	main .entry-content .wp-block-columns.alignfull p {
+		padding-left: 16px;
+		padding-right: 16px;
 	}
 }
 
@@ -209,3 +214,4 @@ p:empty:before {
 		padding: 8px;
 	}
 }
+

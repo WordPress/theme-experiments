@@ -1,6 +1,6 @@
 === Armando ===
 Contributors: poena
-Tested up to: 5.7
+Tested up to: 5.8
 Requires at least: 5.5
 Requires PHP: 7.2
 Version: 1.2.3
@@ -21,19 +21,29 @@ Handle the duplicate CSS smarter.
 
 == Changelog ==
 
-* June 12 2021 Version: 1.2.3. THIS IS UNDER DEVELOPMENT
-Update the theme for Gutenberg 10.7 - 10.9.
+* July 3 2021 Version: 1.2.3.
+Update the theme for Gutenberg 10.7 - 11.
 
-Style.css:
+Updated the right sidebar because the images caused a block validation error.
+The image now use a source with a relative URL. The image is intended to be replaced on live sites.
+
+Style.css & styles-shared.css:
 Replaced the body margin in style.css with a margin setting in theme.json.
 The extra style for adding underline to links is no longer needed and has been removed.
 Added an offset to link underlines.
+Updated CSS for the header area and menu.
+The class is-style-armando-no-top-margin has been removed because it was no longer needed.
+Bottom margin for featured images was moved to theme.json.
+Minor improvements to the comment area.
 
 The link color block markup in Gutenberg has changed from "style":{"color":{"link":"var:preset|color|white"}
 to "style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}}} and the markup was updated for:
 The site title in the site-header
 Links in site footer
 Block patterns
+
+Site-headers: Removed custom margin and removed the spacer block below the header.
+Moved the bottom margin for template parts to theme.json.
 
 comments.html
 The link color set for the comment area was reduntant and has been removed.
@@ -42,7 +52,8 @@ was replaced with a margin setting.
 The spacer block below the group was replaced with a margin setting.
 
 Text size adjustments from px to rem.
-Added medium text size. Extra small and huge font size names were adjusted one step.
+Added medium text size.
+Extra small and huge font size names were adjusted one step.
 Extra small is now small and huge is extra large.
 
 Corrected default color for headings.
