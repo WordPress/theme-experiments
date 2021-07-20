@@ -1,0 +1,29 @@
+@import "../base/variables";
+/**
+ * 404 Page
+ */
+.probd-blocks-404-search {
+  label {
+	  margin-bottom: 1rem;
+  }
+  input {
+	  border-radius: .2rem;
+	  padding: .6rem;
+
+	  &:focus {
+		  border-color: $primary-color;
+	  }
+  }
+  .wp-block-search__button.has-icon {
+	  padding: .3rem 1rem;
+	  border-radius: .2rem;
+	  border: none;
+	  cursor: pointer;
+	  background-color: $primary-color;
+
+	  &:hover {
+		background-color: $secondary-color;
+	  }
+  }
+
+}

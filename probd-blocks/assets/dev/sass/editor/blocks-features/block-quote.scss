@@ -1,0 +1,11 @@
+/**
+ * Blocks & Features
+ * == Block Quote ==
+ */
+.wp-block-pullquote.is-style-solid-color blockquote {
+  max-width: 80%;
+
+  p {
+    font-size: 1.6rem;
+  }
+}
