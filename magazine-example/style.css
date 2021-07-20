@@ -1,0 +1,139 @@
+/*
+Theme Name: Magazine Example
+Theme URI: https://github.com/WordPress/gutenberg-theme/
+Author: wordpressdotorg
+Author URI: https://wordpress.org
+Description: A simple theme for testing Gutenberg.
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: magazine-example
+Tags: translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Imports
+# Defaults
+# Alignments
+# Block Overrides
+# Color Palette
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Imports
+--------------------------------------------------------------*/
+
+@import "style-shared.css";
+
+/*--------------------------------------------------------------
+# Defaults
+--------------------------------------------------------------*/
+
+body {
+	padding: 0;
+	margin: 0;
+}
+
+/*--------------------------------------------------------------
+# Alignments
+--------------------------------------------------------------*/
+
+/*
+ * Via @aristath: https://github.com/WordPress/gutenberg/issues/25160#issuecomment-691076081
+ */
+
+* {
+	box-sizing: border-box;
+}
+
+.wp-site-blocks,
+.wp-block-template-part.alignfull {
+	--magTheme--paddingHorizontal: 1em;
+	padding: 0 var(--magTheme--paddingHorizontal);
+}
+
+.wp-site-blocks > *:not(.wp-block-post-content),
+.wp-site-blocks .wp-block-post-content > * {
+	max-width: var(--magTheme--contentWidth);
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.wp-site-blocks .alignwide {
+	width: var(--magTheme--wideWidth);
+	max-width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.wp-site-blocks .alignfull {
+	transform: translateX(calc(0px - var(--magTheme--paddingHorizontal)));
+	width: 100%;
+	max-width: 100%;
+	box-sizing: content-box;
+}
+
+.aligncenter {
+	text-align: center;
+}
+
+.wp-site-blocks .alignleft {
+	float: left;
+	margin-right: 2em;
+	max-width: 360px;
+}
+
+.wp-site-blocks .alignright {
+	float: right;
+	margin-left: 2em;
+	max-width: 360px;
+}
+
+/*--------------------------------------------------------------
+# Block Overrides
+--------------------------------------------------------------*/
+
+.wp-post-image {
+	max-width: 100%;
+	height: auto;
+}
+
+/*--------------------------------------------------------------
+# Color Palette
+--------------------------------------------------------------*/
+
+.has-background-color {
+  color: var(--wp--preset--color--background);
+}
+
+.has-background-background-color {
+  background-color: var(--wp--preset--color--background);
+}
+
+.has-foreground-color {
+  color: var(--wp--preset--color--foreground);
+}
+
+.has-foreground-background-color {
+  background-color: var(--wp--preset--color--foreground);
+}
+
+.has-primary-color {
+  color: var(--wp--preset--color--primary);
+}
+
+.has-primary-background-color {
+  background-color: var(--wp--preset--color--primary);
+}
+
+.has-secondary-color {
+  color: var(--wp--preset--color--secondary);
+}
+
+.has-secondary-background-color {
+  background-color: var(--wp--preset--color--secondary);
+}
