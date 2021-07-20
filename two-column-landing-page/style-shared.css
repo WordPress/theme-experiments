@@ -1,0 +1,95 @@
+/*
+ * Shared Styles
+ */
+
+/*--------------------------------------------------------------
+# Fonts
+--------------------------------------------------------------*/
+
+@font-face {
+	font-family: "Inter var";
+	font-weight: 100 900; /* stylelint-disable-line font-weight-notation */
+	font-style: normal;
+	src: url(assets/Inter-upright-var.woff2) format("woff2");
+}
+
+@font-face {
+	font-family: "Inter var";
+	font-weight: 100 900; /* stylelint-disable-line font-weight-notation */
+	font-style: italic;
+	src: url(assets/Inter-italic-var.woff2) format("woff2");
+}
+
+/*--------------------------------------------------------------
+# Defaults
+--------------------------------------------------------------*/
+
+body {
+	font-family: var(--wp--custom--font-family);
+	background-color: var(--wp--preset--color--background);
+}
+
+p {
+	line-height: var(--wp--custom--line-height);
+}
+
+/*--------------------------------------------------------------
+# Color Palette
+--------------------------------------------------------------*/
+
+.has-background-color {
+  color: var(--wp--preset--color--background);
+}
+
+.has-background-background-color {
+  background-color: var(--wp--preset--color--background);
+}
+
+.has-foreground-color {
+  color: var(--wp--preset--color--foreground);
+}
+
+.has-foreground-background-color {
+  background-color: var(--wp--preset--color--foreground);
+}
+
+.has-primary-color {
+  color: var(--wp--preset--color--primary);
+}
+
+.has-primary-background-color {
+  background-color: var(--wp--preset--color--primary);
+}
+
+.has-secondary-color {
+  color: var(--wp--preset--color--secondary);
+}
+
+.has-secondary-background-color {
+  background-color: var(--wp--preset--color--secondary);
+}
+
+/*--------------------------------------------------------------
+# Shared Block Overrides
+--------------------------------------------------------------*/
+
+/* Site Header */
+
+.wp-block-site-title {
+	margin-bottom: 0;
+}
+
+.wp-block-site-title a {
+	text-decoration: none;
+}
+
+.wp-block-site-tagline {
+	margin-top: 0;
+}
+
+/* Columns */
+
+.wp-block-columns {
+	margin-top: 0;
+	margin-bottom: 0;
+}

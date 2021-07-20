@@ -1,0 +1,119 @@
+/*
+Theme Name: Two Column Landing Page
+Theme URI: https://github.com/WordPress/gutenberg-theme/
+Author: wordpressdotorg
+Author URI: https://wordpress.org
+Description: A simple theme for testing Gutenberg.
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: two-column-landing-page
+Tags: translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+Front page image from stocksnap.io. CC0
+https://stocksnap.io/photo/girl-blonde-ZUZCKNLPDD
+*/
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Imports
+# Defaults
+# Alignments
+# Block Overrides
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Imports
+--------------------------------------------------------------*/
+
+@import "style-shared.css";
+
+/*--------------------------------------------------------------
+# Alignments
+--------------------------------------------------------------*/
+
+body {
+	padding: 0;
+	margin: 0;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.wp-site-blocks,
+.wp-block-template-part.alignfull {
+	padding: 0 var(--wp--custom--spacing-horizontal);
+}
+
+.wp-site-blocks > *:not(.wp-block-post-content),
+.wp-site-blocks .wp-block-post-content > * {
+	max-width: var(--wp--custom--width-content);
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.wp-site-blocks .alignwide {
+	width: var(--wp--custom--width-wide);
+	max-width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.wp-site-blocks .alignfull {
+	transform: translateX(calc(0px - var(--wp--custom--spacing-horizontal)));
+	width: calc(100% + (2 * var(--wp--custom--spacing-horizontal)));
+	max-width: calc(100% + (2 * var(--wp--custom--spacing-horizontal)));
+	margin-left: 0;
+	margin-right: 0;
+	box-sizing: content-box;
+}
+
+.wp-site-blocks .wp-block-template-part.alignfull {
+	width: 100%;
+	max-width: 100%;
+}
+
+.aligncenter {
+	text-align: center;
+}
+
+.wp-site-blocks .alignleft {
+	float: left;
+	margin-right: 2em;
+	max-width: 360px;
+}
+
+.wp-site-blocks .alignright {
+	float: right;
+	margin-left: 2em;
+	max-width: 360px;
+}
+
+@media screen and (min-width: 764px) {
+
+	.wp-site-blocks,
+	.wp-block-template-part.alignfull {
+		padding: 0;
+	}
+
+	.wp-site-blocks .alignfull {
+		transform: translateX(0px);
+		width: 100%;
+		max-width: 100%;
+	}
+}
+
+/*--------------------------------------------------------------
+# Block Overrides
+--------------------------------------------------------------*/
+
+/* Gutenberg provides this in the full-site editor, but not in the front-end right now */
+@media (min-width: 782px) {
+	.wp-block-column:not(:first-child) {
+		margin-left: 0;
+	}
+}
