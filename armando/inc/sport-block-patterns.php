@@ -80,8 +80,8 @@ if ( function_exists( 'register_block_pattern' ) ) {
 			<!-- /wp:image --></div>
 			<!-- /wp:column -->
 			<!-- wp:column {"verticalAlignment":"bottom"} -->
-			<div class="wp-block-column is-vertically-aligned-bottom"><!-- wp:paragraph {"align":"center","style":{"typography":{"lineHeight":"1"}},"fontSize":"huge"} -->
-			<p class="has-text-align-center has-huge-font-size" style="line-height:1"><strong>' . esc_html_x( '3-1', 'sample content, match result', 'armando' ) . '</strong></p>
+			<div class="wp-block-column is-vertically-aligned-bottom"><!-- wp:paragraph {"align":"center","style":{"typography":{"lineHeight":"1"}},"fontSize":"extra-large"} -->
+			<p class="has-text-align-center has-extra-large-font-size" style="line-height:1"><strong>' . esc_html_x( '3-1', 'sample content, match result', 'armando' ) . '</strong></p>
 			<!-- /wp:paragraph --></div>
 			<!-- /wp:column -->
 			<!-- wp:column -->
@@ -130,8 +130,8 @@ if ( function_exists( 'register_block_pattern' ) ) {
 			<!-- /wp:spacer --></div>
 			<!-- /wp:column -->
 			<!-- wp:column {"verticalAlignment":"center"} -->
-			<div class="wp-block-column is-vertically-aligned-center"><!-- wp:paragraph {"align":"center","style":{"typography":{"lineHeight":"1"}},"fontSize":"huge"} -->
-			<p class="has-text-align-center has-huge-font-size" style="line-height:1"><strong>' . esc_html_x( '3-1', 'sample content, game result', 'armando' ) . '</strong></p>
+			<div class="wp-block-column is-vertically-aligned-center"><!-- wp:paragraph {"align":"center","style":{"typography":{"lineHeight":"1"}},"fontSize":"extra-large"} -->
+			<p class="has-text-align-center has-extra-large-font-size" style="line-height:1"><strong>' . esc_html_x( '3-1', 'sample content, game result', 'armando' ) . '</strong></p>
 			<!-- /wp:paragraph --></div>
 			<!-- /wp:column -->
 			<!-- wp:column -->
@@ -147,8 +147,8 @@ if ( function_exists( 'register_block_pattern' ) ) {
 			<!-- /wp:column -->
 			<!-- wp:column {"verticalAlignment":"center"} -->
 			<div class="wp-block-column is-vertically-aligned-center"><!-- wp:buttons {"contentJustification":"center"} -->
-			<div class="wp-block-buttons is-content-justification-center"><!-- wp:button {"backgroundColor":"dark-blue","className":"has-custom-font-size has-extra-small-font-size"} -->
-			<div class="wp-block-button has-custom-font-size has-extra-small-font-size"><a class="wp-block-button__link has-dark-blue-background-color has-background"><strong>' . esc_html_x( 'Read more', 'sample content', 'armando' ) . '</strong></a></div>
+			<div class="wp-block-buttons is-content-justification-center"><!-- wp:button {"backgroundColor":"dark-blue","className":"has-custom-font-size has-small-font-size"} -->
+			<div class="wp-block-button has-custom-font-size has-small-font-size"><a class="wp-block-button__link has-dark-blue-background-color has-background"><strong>' . esc_html_x( 'Read more', 'sample content', 'armando' ) . '</strong></a></div>
 			<!-- /wp:button --></div>
 			<!-- /wp:buttons --></div>
 			<!-- /wp:column --></div>
@@ -174,8 +174,8 @@ if ( function_exists( 'register_block_pattern' ) ) {
 			<!-- /wp:spacer --></div>
 			<!-- /wp:column -->
 			<!-- wp:column {"verticalAlignment":"center"} -->
-			<div class="wp-block-column is-vertically-aligned-center"><!-- wp:paragraph {"align":"center","style":{"typography":{"lineHeight":"1"}},"fontSize":"huge"} -->
-			<p class="has-text-align-center has-huge-font-size" style="line-height:1"><strong>' . esc_html_x( '0-1', 'sample content, game result', 'armando' ) . '</strong></p>
+			<div class="wp-block-column is-vertically-aligned-center"><!-- wp:paragraph {"align":"center","style":{"typography":{"lineHeight":"1"}},"fontSize":"extra-large"} -->
+			<p class="has-text-align-center has-extra-large-font-size" style="line-height:1"><strong>' . esc_html_x( '0-1', 'sample content, game result', 'armando' ) . '</strong></p>
 			<!-- /wp:paragraph --></div>
 			<!-- /wp:column -->
 			<!-- wp:column -->
@@ -191,8 +191,8 @@ if ( function_exists( 'register_block_pattern' ) ) {
 			<!-- /wp:column -->
 			<!-- wp:column {"verticalAlignment":"center"} -->
 			<div class="wp-block-column is-vertically-aligned-center"><!-- wp:buttons {"contentJustification":"center"} -->
-			<div class="wp-block-buttons is-content-justification-center"><!-- wp:button {"backgroundColor":"dark-blue","className":"has-custom-font-size has-extra-small-font-size"} -->
-			<div class="wp-block-button has-custom-font-size has-extra-small-font-size"><a class="wp-block-button__link has-dark-blue-background-color has-background"><strong>' . esc_html_x( 'Read more', 'sample content', 'armando' ) . '</strong></a></div>
+			<div class="wp-block-buttons is-content-justification-center"><!-- wp:button {"backgroundColor":"dark-blue","className":"has-custom-font-size has-small-font-size"} -->
+			<div class="wp-block-button has-custom-font-size has-small-font-size"><a class="wp-block-button__link has-dark-blue-background-color has-background"><strong>' . esc_html_x( 'Read more', 'sample content', 'armando' ) . '</strong></a></div>
 			<!-- /wp:button --></div>
 			<!-- /wp:buttons --></div>
 			<!-- /wp:column --></div>
@@ -215,8 +215,8 @@ if ( function_exists( 'register_block_pattern' ) ) {
 			<!-- /wp:spacer --></div>
 			<!-- /wp:column -->
 			<!-- wp:column {"verticalAlignment":"center"} -->
-			<div class="wp-block-column is-vertically-aligned-center"><!-- wp:paragraph {"align":"center","style":{"typography":{"lineHeight":"1"}},"fontSize":"huge"} -->
-			<p class="has-text-align-center has-huge-font-size" style="line-height:1"><strong>' . esc_html_x( '1-1', 'sample content, game result', 'armando' ) . '</strong></p>
+			<div class="wp-block-column is-vertically-aligned-center"><!-- wp:paragraph {"align":"center","style":{"typography":{"lineHeight":"1"}},"fontSize":"extra-large"} -->
+			<p class="has-text-align-center has-extra-large-font-size" style="line-height:1"><strong>' . esc_html_x( '1-1', 'sample content, game result', 'armando' ) . '</strong></p>
 			<!-- /wp:paragraph --></div>
 			<!-- /wp:column -->
 			<!-- wp:column -->
@@ -232,8 +232,8 @@ if ( function_exists( 'register_block_pattern' ) ) {
 			<!-- /wp:column -->
 			<!-- wp:column {"verticalAlignment":"center"} -->
 			<div class="wp-block-column is-vertically-aligned-center"><!-- wp:buttons {"contentJustification":"center"} -->
-			<div class="wp-block-buttons is-content-justification-center"><!-- wp:button {"backgroundColor":"dark-blue", "className":"has-custom-font-size has-extra-small-font-size"} -->
-			<div class="wp-block-button has-custom-font-size has-extra-small-font-size"><a class="wp-block-button__link has-dark-blue-background-color has-background"><strong>' . esc_html_x( 'Read more', 'sample content', 'armando' ) . '</strong></a></div>
+			<div class="wp-block-buttons is-content-justification-center"><!-- wp:button {"backgroundColor":"dark-blue", "className":"has-custom-font-size has-small-font-size"} -->
+			<div class="wp-block-button has-custom-font-size has-small-font-size"><a class="wp-block-button__link has-dark-blue-background-color has-background"><strong>' . esc_html_x( 'Read more', 'sample content', 'armando' ) . '</strong></a></div>
 			<!-- /wp:button --></div>
 			<!-- /wp:buttons --></div>
 			<!-- /wp:column --></div>
@@ -253,8 +253,8 @@ if ( function_exists( 'register_block_pattern' ) ) {
 			<div class="wp-block-column"><!-- wp:paragraph {"fontSize":"large"} -->
 			<p class="has-large-font-size"><strong>' . esc_html_x( 'First name', 'sample content', 'armando' ) . '</strong></p>
 			<!-- /wp:paragraph -->
-			<!-- wp:heading {"className":"is-style-armando-top-bottom-border","fontSize":"huge"} -->
-			<h2 class="is-style-armando-top-bottom-border has-huge-font-size"><strong>' . esc_html_x( 'Last name', 'sample content', 'armando' ) . '</strong></h2>
+			<!-- wp:heading {"className":"is-style-armando-top-bottom-border","fontSize":"extra-large"} -->
+			<h2 class="is-style-armando-top-bottom-border has-extra-large-font-size"><strong>' . esc_html_x( 'Last name', 'sample content', 'armando' ) . '</strong></h2>
 			<!-- /wp:heading -->
 			<!-- wp:spacer {"height":40} -->
 			<div style="height:40px" aria-hidden="true" class="wp-block-spacer"></div>
