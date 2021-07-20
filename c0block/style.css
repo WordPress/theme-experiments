@@ -1,0 +1,27 @@
+/*
+Theme Name: c0block
+Theme URI: nah
+Author: pbking
+Description: CustomizableNonBased (but theme.json'ed)
+Requires at least: 5.3
+Tested up to: 5.5
+Requires PHP: 5.6
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: c0block
+
+c0block is distributed under the terms of the GNU GPL.
+*/
+
+body {
+	margin: 0;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+p {
+  color: var(--wp--custom--customizer--mycolor);
+}
