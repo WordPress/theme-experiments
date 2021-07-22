@@ -52,9 +52,6 @@
 	},
 	"styles": {
 		"blocks": {
-			"core/image": {
-				"duotone": "black-and-green"
-			},
 			"core/cover": {
 				"spacing": {
 					"padding": "65px"
