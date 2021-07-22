@@ -77,7 +77,7 @@
 			}
 		},
 		"typography": {
-			"fontFamily": "var(--wp--preset--body--typography--font-family)"
+			"fontFamily": "var(--wp--preset--font-family--sans)"
 		},
 		"color": {
 			"background": "var(--wp--preset--color--green)",
