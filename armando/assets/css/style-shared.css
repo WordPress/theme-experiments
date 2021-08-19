@@ -1,0 +1,84 @@
+.site-header .wp-block-search .wp-block-search__input {
+	border: 2px solid #fff;
+}
+
+.wp-block-search .wp-block-search__button {
+	border: 2px solid #fff;
+	border-radius: 4px;
+}
+
+input[type=search],
+.wp-block-search .wp-block-search__input,
+select {
+	border-radius: 4px;
+}
+
+input,
+textarea,
+select {
+	font-size: var(--wp--preset--font-size--small);
+	padding: 0.25em;
+}
+
+/* Date and categories are all block elements,
+we need to adjust them to align them better next to each other.
+-The downside to making this change in the editor is that the block is harder to select.
+The post meta tag for the wrapper is kept here for increased flexibility.
+*/
+.post-meta .wp-block-post-date,
+.post-meta .wp-block-post-terms.taxonomy-category,
+.is-style-armando-inline {
+	display: inline;
+}
+
+.post-meta .wp-block-post-date {
+	margin-right: .5em;
+}
+
+.post-nav {
+	clear: both;
+}
+
+.post-nav .post-navigation-link-previous {
+	float: left;
+}
+
+.post-nav .post-navigation-link-next {
+	float: right;
+}
+
+.wp-block-query-pagination {
+	justify-content: space-between;
+}
+
+/* Remove these styles when blocks have margin controls */
+.is-style-armando-no-bottom-margin,
+.is-style-armando-no-bottom-margin .wp-block-columns,
+.site-header .wp-block-columns {
+	margin-bottom: 0;
+}
+
+.blocks-gallery-caption,
+.comment-body {
+	margin-bottom: 2em;
+}
+
+@media ( min-width: 600px ) {
+	.is-style-armando-media-overlap {
+		width: 150%;
+	}
+}
+
+/* Reset the negative margin that the block editor adds.*/
+.wp-block-post-comments .comment-author {
+	margin-left: 0;
+}
+
+.wp-block-post-comments .comment-author .avatar {
+	height: initial;
+	width: initial;
+}
+
+.wp-block-post-comments .comment-content {
+	margin-top: 1rem;
+}

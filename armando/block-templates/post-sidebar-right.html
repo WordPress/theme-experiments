@@ -1,0 +1,40 @@
+<!-- wp:template-part {"slug":"header","tagName":"header","align":"full","className":"site-header"} /-->
+<!-- wp:columns {"align":"full","className":"armando-has-sidebar-right is-style-armando-no-bottom-margin"} -->
+<div class="wp-block-columns alignfull armando-has-sidebar-right is-style-armando-no-bottom-margin"><!-- wp:column -->
+<div class="wp-block-column">
+	<!-- wp:group {"tagName":"main","className":"site-main","align":"full","layout":{"inherit":true}} -->
+	<main class="wp-block-group site-main alignfull">
+		<!-- wp:post-title /-->
+		<!-- wp:group {"className":"is-style-armando-box-shadow post-meta","backgroundColor":"light-grey"} -->
+		<div class="wp-block-group is-style-armando-box-shadow post-meta has-light-grey-background-color has-background">
+			<!-- wp:post-date /-->
+			<!-- wp:post-terms {"term":"category"} /-->
+			<!-- wp:spacer {"height":20} -->
+			<div style="height:20px" aria-hidden="true" class="wp-block-spacer"></div>
+			<!-- /wp:spacer -->
+			<!-- wp:post-author /-->
+			<!-- wp:post-terms {"term":"post_tag"} /-->
+		</div><!-- /wp:group -->
+		<!-- wp:spacer {"height":50} -->
+		<div style="height:50px" aria-hidden="true" class="wp-block-spacer"></div>
+		<!-- /wp:spacer -->
+		<!-- wp:post-content {"align":"full","layout":{"inherit":true}} /-->
+		<!-- wp:group {"className":"post-nav","style":{"spacing":{"margin":{"top":"2.375em"}}}} -->
+		<div class="wp-block-group post-nav" style="margin-top:2.375em">
+			<!-- wp:post-navigation-link {"type":"previous"} /-->
+			<!-- wp:post-navigation-link /-->
+		</div><!-- /wp:group -->
+		<!-- wp:spacer {"height":70} -->
+		<div style="height:70px" aria-hidden="true" class="wp-block-spacer"></div>
+		<!-- /wp:spacer -->
+		<!-- wp:template-part {"slug":"comments"} /-->
+	</main><!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+<!-- wp:column {"width":"340px"} -->
+<div class="wp-block-column" style="flex-basis:340px">
+	<!-- wp:template-part {"slug":"sidebar-right","tagName":"aside","className":"armando-sidebar-right","backgroundColor":"silver"} /-->
+</div>
+<!-- /wp:column --></div>
+<!-- /wp:columns -->
+<!-- wp:template-part {"slug":"footer","tagName":"footer","align":"full","className":"site-footer"} /-->

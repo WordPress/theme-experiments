@@ -5,8 +5,7 @@
  * @link https://developer.wordpress.org/reference/functions/register_block_pattern/
  * @link https://developer.wordpress.org/reference/functions/register_block_pattern_category/
  *
- * @package WordPress
- * @subpackage TT1_Blocks
+ * @package TT1_Blocks
  * @since 0.1
  */
 
@@ -114,7 +113,7 @@ if ( function_exists( 'register_block_pattern' ) ) {
 			'title'       => esc_html__( 'Contact Information', 'tt1-blocks' ),
 			'categories'  => array( 'tt1-blocks' ),
 			'description' => esc_html_x( 'A block with 3 columns that display contact information and social media links.', 'Block pattern description', 'tt1-blocks' ),
-			'content'     => '<!-- wp:columns {"align":"wide"} --><div class="wp-block-columns alignwide"><!-- wp:column --><div class="wp-block-column"><!-- wp:paragraph --><p><a href="mailto:#">' . esc_html__( 'example@example.com', 'tt1-blocks' ) . '<br></a>' . esc_html__( '123-456-7890', 'tt1-blocks' ) . '</p><!-- /wp:paragraph --></div><!-- /wp:column --><!-- wp:column --><div class="wp-block-column"><!-- wp:paragraph {"align":"center"} --><p class="has-text-align-center">' . esc_html__( '123 Main Street', 'tt1-blocks' ) . '<br>' . esc_html__( 'Cambridge, MA, 02139', 'tt1-blocks' ) . '</p><!-- /wp:paragraph --></div><!-- /wp:column --><!-- wp:column {"verticalAlignment":"center"} --><div class="wp-block-column is-vertically-aligned-center"><!-- wp:social-links {"align":"right","className":"is-style-twentytwentyone-social-icons-color"} --><ul class="wp-block-social-links alignright is-style-twentytwentyone-social-icons-color"><!-- wp:social-link {"url":"https://wordpress.org","service":"wordpress"} /--><!-- wp:social-link {"url":"https://www.facebook.com/WordPress/","service":"facebook"} /--><!-- wp:social-link {"url":"https://twitter.com/WordPress","service":"twitter"} /--><!-- wp:social-link {"service":"instagram"} /--><!-- wp:social-link {"service":"linkedin"} /--><!-- wp:social-link {"service":"youtube"} /--><!-- wp:social-link {"url":"https://www.youtube.com/wordpress","service":"youtube"} /--></ul><!-- /wp:social-links --></div><!-- /wp:column --></div><!-- /wp:columns --><!-- wp:paragraph --><p></p><!-- /wp:paragraph -->',
+			'content'     => '<!-- wp:columns {"align":"wide"} --><div class="wp-block-columns alignwide"><!-- wp:column --><div class="wp-block-column"><!-- wp:paragraph --><p><a href="mailto:#">' . esc_html__( 'example@example.com', 'tt1-blocks' ) . '<br></a>' . esc_html__( '123-456-7890', 'tt1-blocks' ) . '</p><!-- /wp:paragraph --></div><!-- /wp:column --><!-- wp:column --><div class="wp-block-column"><!-- wp:paragraph {"align":"center"} --><p class="has-text-align-center">' . esc_html__( '123 Main Street', 'tt1-blocks' ) . '<br>' . esc_html__( 'Cambridge, MA, 02139', 'tt1-blocks' ) . '</p><!-- /wp:paragraph --></div><!-- /wp:column --><!-- wp:column {"verticalAlignment":"center"} --><div class="wp-block-column is-vertically-aligned-center"><!-- wp:social-links {"align":"right"} --><ul class="wp-block-social-links alignright"><!-- wp:social-link {"url":"https://wordpress.org","service":"wordpress"} /--><!-- wp:social-link {"url":"https://www.facebook.com/WordPress/","service":"facebook"} /--><!-- wp:social-link {"url":"https://twitter.com/WordPress","service":"twitter"} /--><!-- wp:social-link {"service":"instagram"} /--><!-- wp:social-link {"service":"linkedin"} /--><!-- wp:social-link {"service":"youtube"} /--><!-- wp:social-link {"url":"https://www.youtube.com/wordpress","service":"youtube"} /--></ul><!-- /wp:social-links --></div><!-- /wp:column --></div><!-- /wp:columns --><!-- wp:paragraph --><p></p><!-- /wp:paragraph -->',
 		)
 	);
 }

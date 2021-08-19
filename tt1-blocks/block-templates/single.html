@@ -1,8 +1,9 @@
-<!-- wp:template-part {"slug":"header","align":"full","tagName":"header","className":"site-header"} /-->
+<!-- wp:template-part {"slug":"header","tagName":"header","className":"site-header","layout":{"inherit":true}} /-->
 
-<!-- wp:group {"tagName":"main", "align":"full"} -->
-<main class="wp-block-group alignfull">
-	<div class="wp-block-group__inner-container">
+<!-- wp:group {"tagName":"main"} -->
+<div class="wp-block-group">
+	<!-- wp:group {"layout":{"inherit":true}} -->
+	<div class="wp-block-group">
 		<!-- wp:post-title {"level":1,"align":"wide"} /-->
 
 		<!-- wp:separator {"align":"wide","className":"is-style-twentytwentyone-separator-thick"} -->
@@ -12,9 +13,13 @@
 		<!-- wp:spacer {"height":70} -->
 		<div style="height:70px" aria-hidden="true" class="wp-block-spacer"></div>
 		<!-- /wp:spacer -->
+	</div>
+	<!-- /wp:group -->
 
-		<!-- wp:post-content {"align":"full"} /-->
+	<!-- wp:post-content {"layout":{"inherit":true}} /-->
 
+	<!-- wp:group {"layout":{"inherit":true}} -->
+	<div class="wp-block-group">
 		<!-- wp:spacer {"height":70} -->
 		<div style="height:70px" aria-hidden="true" class="wp-block-spacer"></div>
 		<!-- /wp:spacer -->
@@ -31,18 +36,20 @@
 		<!-- /wp:column -->
 
 		<!-- wp:column -->
-		<div class="wp-block-column"><!-- wp:post-hierarchical-terms {"term":"category","textAlign":"right"} /-->
+		<div class="wp-block-column"><!-- wp:post-terms {"term":"category","textAlign":"right"} /-->
 
-		<!-- wp:post-tags {"textAlign":"right"} /--></div>
+		<!-- wp:post-terms {"term":"post_tag","textAlign":"right"} /--></div>
 		<!-- /wp:column --></div>
 		<!-- /wp:columns -->
 
 		<!-- wp:spacer {"height":70} -->
 		<div style="height:70px" aria-hidden="true" class="wp-block-spacer"></div>
 		<!-- /wp:spacer -->
+
 		<!-- wp:post-comments /-->
 	</div>
-</main>
+	<!-- /wp:group -->
+</div>
 <!-- /wp:group -->
 
-<!-- wp:template-part {"slug":"footer","align":"full","tagName":"footer","className":"site-footer"} /-->
+<!-- wp:template-part {"slug":"footer","tagName":"footer","className":"site-footer","layout":{"inherit":true}} /-->

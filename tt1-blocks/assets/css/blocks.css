@@ -47,19 +47,9 @@
 }
 
 /*--------------------------------------------------------------
-# Group
---------------------------------------------------------------*/
-
-.wp-block-group.is-style-twentytwentyone-border {
-	border: 3px solid var(--wp--preset--color--dark-gray);
-	padding: var(--wp--custom--spacing--vertical) var(--wp--custom--spacing--horizontal);
-}
-
-/*--------------------------------------------------------------
 # Image
 --------------------------------------------------------------*/
 
-.wp-block-image img,
 .wp-block-image img {
 	height: auto;
 }
@@ -184,23 +174,6 @@ hr[style*="text-align: right"],
 	border-right-color: var(--wp--preset--color--dark-gray);
 }
 
-hr:not(.is-style-wide):not(.is-style-dots),
-.wp-block-separator:not(.is-style-wide):not(.is-style-dots) {
-	max-width: var(--wp--custom--responsive--aligndefault-width);
-}
-
-.wp-block[data-align="wide"] .wp-block-separator:not(.is-style-wide):not(.is-style-dots),
-hr.alignwide:not(.is-style-wide):not(.is-style-dots),
-.wp-block-separator.alignwide:not(.is-style-wide):not(.is-style-dots) {
-	max-width: 100%;
-}
-
-.wp-block[data-align="full"] .wp-block-separator:not(.is-style-wide):not(.is-style-dots),
-hr.alignfull:not(.is-style-wide):not(.is-style-dots),
-.wp-block-separator.alignfull:not(.is-style-wide):not(.is-style-dots) {
-	max-width: inherit;
-}
-
 hr.is-style-twentytwentyone-separator-thick,
 .wp-block-separator.is-style-twentytwentyone-separator-thick {
 	border-bottom-width: 3px;
@@ -210,12 +183,13 @@ hr.is-style-twentytwentyone-separator-thick,
 	border-bottom: none;
 }
 
-.wp-block-separator.is-style-dots.alignwide {
-	width: 100%;
-}
-
 .wp-block-separator.is-style-dots > hr {
 	display: none;
+}
+
+/* In Twenty Twenty-One, separators are 100% wide. This replicates that approach */
+.wp-block-separator:not(.is-style-wide):not(.is-style-dots) {
+	width: 100%;
 }
 
 /*--------------------------------------------------------------
@@ -231,23 +205,14 @@ hr.is-style-twentytwentyone-separator-thick,
 # Site Title
 --------------------------------------------------------------*/
 
-h1.wp-block-site-title {
-	font-weight: var(--wp--custom--font-weight-normal);
-	text-transform: uppercase;
-}
-
 h1.wp-block-site-title a:not(:hover):not(:focus):not(:active) {
 	text-decoration: none;
 }
 
 /*--------------------------------------------------------------
-# Social Links
+# Single view Post Title
 --------------------------------------------------------------*/
 
-.wp-block-social-links.is-style-twentytwentyone-social-icons-color .wp-social-link {
-	color: var(--wp--preset--color--dark-gray);
-}
-
-.wp-block-social-links.is-style-twentytwentyone-social-icons-color .wp-social-link {
-	background: none;
+h1.wp-block-post-title {
+	font-weight: var(--wp--custom--font-weight--light);
 }

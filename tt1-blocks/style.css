@@ -5,9 +5,9 @@ Author: the WordPress team
 Author URI: https://wordpress.org/
 Description: TT1 Blocks is an experimental block-based version of the Twenty Twenty-One theme. It is built to leverage the full-site editing functionality that is being built in the Gutenberg plugin. This theme is not meant for use on a production site.
 Requires at least: 5.6
-Tested up to: 5.6
+Tested up to: 5.7
 Requires PHP: 5.6
-Version: 0.4.4
+Version: 0.4.7
 License: GNU General Public License v2 or later
 License URI: LICENSE
 Text Domain: tt1-blocks
@@ -30,52 +30,4 @@ TT1 Blocks is distributed under the terms of the GNU GPL.
 
 body {
 	margin: 0;
-}
-
-/*--------------------------------------------------------------
-# Alignments
---------------------------------------------------------------*/
-
-* {
-	box-sizing: border-box;
-}
-
-.wp-site-blocks,
-.wp-block-template-part.alignfull {
-	padding: 0 var(--wp--custom--spacing--horizontal);
-}
-
-.wp-site-blocks * {
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.wp-site-blocks *:not(.wp-block-post-content):not(.alignfull):not(.alignwide):not([class$="__inner-container"]):not(img) {
-	max-width: var(--wp--custom--responsive--aligndefault-width);
-}
-
-.wp-site-blocks .alignwide {
-	width: var(--wp--custom--responsive--alignwide-width);
-	max-width: 100%;
-}
-
-.aligncenter {
-	text-align: center;
-}
-
-.wp-site-blocks .alignleft {
-	float: left;
-	margin-right: 2em;
-	max-width: 360px;
-}
-
-.wp-site-blocks .alignright {
-	float: right;
-	margin-left: 2em;
-	max-width: 360px;
-}
-
-.wp-site-blocks .alignfull {
-	margin: 0 calc(0px - var(--wp--custom--spacing--horizontal));
-	width: calc(100% + (2 - var(--wp--custom--spacing--horizontal)));
 }
