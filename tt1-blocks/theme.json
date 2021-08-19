@@ -303,6 +303,10 @@
 				}
 			},
 			"core/pullquote": {
+				"typography": {
+					"fontSize": "var(--wp--preset--font-size--small)",
+					"fontWeight": "700"
+				},
 				"spacing": {
 					"padding": {
 						"top": "calc(2 * var(--wp--custom--spacing--unit))",
