@@ -11,12 +11,6 @@
 		}
 	],
 	"settings": {
-		"border": {
-			"customColor": true,
-			"customRadius": true,
-			"customStyle": true,
-			"customWidth": true
-		},
 		"color": {
 			"link": true,
 			"palette": [
