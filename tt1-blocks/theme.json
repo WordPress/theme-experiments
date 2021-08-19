@@ -313,7 +313,7 @@
 				},
 				"border": {
 					"radius": "0px",
-					"style": "solid",
+					"style": "solid none",
 					"width": "var(--wp--custom--border--width)"
 				}
 			},
