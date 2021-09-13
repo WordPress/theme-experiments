@@ -67,12 +67,12 @@ add_action( 'after_setup_theme', 'tt1_blocks_setup' );
  *
  * @return void
  */
-function tt1_blocks_scripts_and_styles() {
+function tt1_blocks_enqueue_styles() {
 	wp_enqueue_style( 'tt1-blocks-style', get_template_directory_uri() . '/style.css', array(), wp_get_theme()->get( 'Version' ) );
 	wp_enqueue_style( 'tt1-blocks-style-shared', get_template_directory_uri() . '/assets/css/style-shared.css', array(), wp_get_theme()->get( 'Version' ) );
 	wp_enqueue_style( 'tt1-blocks-blocks', get_template_directory_uri() . '/assets/css/blocks.css', array(), wp_get_theme()->get( 'Version' ) );
 }
-add_action( 'wp_enqueue_scripts', 'tt1_blocks_scripts_and_styles' );
+add_action( 'wp_enqueue_scripts', 'tt1_blocks_enqueue_styles' );
 
 /**
  * Enqueue block editor script.
