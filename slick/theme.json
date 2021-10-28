@@ -1,7 +1,5 @@
 {
-    "customTemplates": {},
 	"settings": {
-        "blocks": {},
         "border": {
             "customColor": false,
             "customRadius": false,
@@ -9,7 +7,6 @@
             "customWidth": false
         },
 		"color": {
-			"gradients": [],
 			"link": true,
 			"palette": [
                 {
@@ -168,62 +165,6 @@
 		}
 	},
     "styles": {
-        "blocks": {
-            "core/archive": {
-
-			},
-            "core/button": {
-
-			},
-            "core/category": {
-
-			},
-            "core/code": {
-
-			},
-            "core/heading": {
-
-			},
-            "core/navigation": {
-
-			},
-            "core/navigation-link": {
-
-			},
-            "core/post-author": {
-
-			},
-            "core/post-date": {
-
-			},
-            "core/post-content": {
-
-			},
-            "core/post-title": {
-
-			},
-            "core/pullquote": {
-
-			},
-            "core/quote": {
-
-			},
-            "core/search": {
-
-			},
-            "core/site-tagline": {
-
-			},
-            "core/site-title": {
-
-			},
-            "core/social-link": {
-
-			},
-            "core/social-links": {
-
-			}
-        },
 		"elements": {
 			"h1": {
 				"typography": {

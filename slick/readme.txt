@@ -4,7 +4,7 @@ Tags: full-site-editing, blog
 Requires at least: 5.7.2
 Tested up to: 5.7.2
 Requires PHP: 7.2
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -50,6 +50,16 @@ Absolutely! Please, [submit your idea](https://github.com/GuglielmoPepe/slick/is
 
 
 == Changelog ==
+
+= 1.0.1 =
+* Change nav tag with div tag in aside.html
+* Change h3 with h2 in aside.html
+* Remove empty settings blocks item in theme.json
+* Remove empty "customTemplates" item in theme.json
+* Remove empty blocks styles from theme.json
+* Remove gradient color in theme.json
+* Remove div with wp-block-query-pagination
+* Change wp-query-loop with post-template
 
 = 1.0.0 =
 * First release
