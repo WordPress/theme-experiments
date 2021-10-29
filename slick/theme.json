@@ -1,170 +1,170 @@
 {
 	"settings": {
-        "border": {
-            "customColor": false,
-            "customRadius": false,
-            "customStyle": false,
-            "customWidth": false
-        },
+		"border": {
+			"customColor": false,
+			"customRadius": false,
+			"customStyle": false,
+			"customWidth": false
+		},
 		"color": {
 			"link": true,
 			"palette": [
-                {
+				{
 					"slug": "turquoise",
 					"color": "#1abc9c",
 					"name": "Turquoise"
 				},
-                {
+				{
 					"slug": "green-sea",
 					"color": "#16a085",
 					"name": "Green Sea"
 				},
-                {
+				{
 					"slug": "sun-flower",
 					"color": "#f1c40f",
 					"name": "Sun Flower"
 				},
-                {
+				{
 					"slug": "orange",
 					"color": "#f39c12",
 					"name": "Orange"
 				},
-                {
+				{
 					"slug": "emerald",
 					"color": "#2ecc71",
 					"name": "Emerald"
 				},
-                {
+				{
 					"slug": "nephritis",
 					"color": "#27ae60",
 					"name": "Nephritis"
 				},
-                {
+				{
 					"slug": "carrot",
 					"color": "#e67e22",
 					"name": "Carrot"
 				},
-                {
+				{
 					"slug": "pumpkin",
 					"color": "#d35400",
 					"name": "Pumpkin"
 				},
-                {
+				{
 					"slug": "peter-river",
 					"color": "#3498db",
 					"name": "Peter River"
 				},
-                {
+				{
 					"slug": "belize-hole",
 					"color": "#2980b9",
 					"name": "Belize Hole"
 				},
-                {
+				{
 					"slug": "alizarin",
 					"color": "#e74c3c",
 					"name": "Alizarin"
 				},
-                {
+				{
 					"slug": "pomegranate",
 					"color": "#c0392b",
 					"name": "Pomegranate"
 				},
-                {
+				{
 					"slug": "amethyst",
 					"color": "#9b59b6",
 					"name": "Amethyst"
 				},
-                {
+				{
 					"slug": "wisteria",
 					"color": "#8e44ad",
 					"name": "Wisteria"
 				},
-                {
+				{
 					"slug": "clouds",
 					"color": "#ecf0f1",
 					"name": "Clouds"
 				},
-                {
+				{
 					"slug": "silver",
 					"color": "#bdc3c7",
 					"name": "Silver"
 				},
-                {
+				{
 					"slug": "wet-asphalt",
 					"color": "#34495e",
 					"name": "Wet Asphalt"
 				},
-                {
+				{
 					"slug": "midnight-blue",
 					"color": "#2c3e50",
 					"name": "Midnight Blue"
 				},
-                {
+				{
 					"slug": "concrete",
 					"color": "#95a5a6",
 					"name": "Concrete"
 				},
-                {
+				{
 					"slug": "asbestos",
 					"color": "#7f8c8d",
 					"name": "Asbestos"
 				}
-            ]
+			]
 		},
-        "custom": {},
+		"custom": {},
 		"layout": {
 			"contentSize": "840px",
 			"wideSize": "1100px"
 		},
-        "spacing": {
-            "customMargin": false,
-            "customPadding": false,
-            "units": [ "px", "em", "rem", "vh", "vw" ]
-        },
+		"spacing": {
+			"customMargin": false,
+			"customPadding": false,
+			"units": [ "px", "em", "rem", "vh", "vw" ]
+		},
 		"typography": {
-            "customFontSize": true,
-            "customFontStyle": true,
-            "customFontWeight": true,
-            "customLineHeight": true,
-            "customTextDecorations": true,
-            "customTextTransforms": true,
-            "dropCap": true,
+			"customFontSize": true,
+			"customFontStyle": true,
+			"customFontWeight": true,
+			"customLineHeight": true,
+			"customTextDecorations": true,
+			"customTextTransforms": true,
+			"dropCap": true,
 			"fontFamilies": [],
 			"fontSizes": [
-                {
+				{
 					"slug": "tiny",
 					"size": "12px",
 					"name": "Tiny"
 				},
-                {
+				{
 					"slug": "small",
 					"size": "16px",
 					"name": "Small"
 				},
-                {
+				{
 					"slug": "regular",
 					"size": "20px",
 					"name": "Regular"
 				},
-                {
+				{
 					"slug": "medium",
 					"size": "24px",
 					"name": "Medium"
 				},
-                {
+				{
 					"slug": "large",
 					"size": "28px",
 					"name": "Large"
 				},
-                {
+				{
 					"slug": "huge",
 					"size": "32px",
 					"name": "Huge"
 				}
-            ]
+			]
 		}
 	},
-    "styles": {
+	"styles": {
 		"elements": {
 			"h1": {
 				"typography": {
@@ -202,7 +202,7 @@
 			"fontFamily": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif",
 			"fontSize": "var(--wp--preset--font-size--small)"
 		}
-    },
-    "templateParts": {},
-    "version": 1
+	},
+	"templateParts": {},
+	"version": 1
 }
