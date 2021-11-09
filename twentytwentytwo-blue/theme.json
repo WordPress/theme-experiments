@@ -65,6 +65,11 @@
 					"duotone": "var(--wp--preset--duotone--default-filter)"
 				}
 			},
+			"core/post-title": {
+				"typography": {
+					"fontWeight": "700"
+				}
+			},
 			"core/site-logo": {
 				"filter": {
 					"duotone": "var(--wp--preset--duotone--default-filter)"
