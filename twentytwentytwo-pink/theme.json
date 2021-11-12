@@ -46,14 +46,9 @@
 		"typography": {
 			"fontFamilies": [
 				{
-					"fontFamily": "-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,Oxygen-Sans,Ubuntu,Cantarell,\"Helvetica Neue\",sans-serif",
-					"name": "System Font",
-					"slug": "system-font"
-				},
-				{
-					"fontFamily": "\"Bodoni Moda\", serif",
-					"name": "Bodoni Moda",
-					"slug": "bodoni-moda"
+					"fontFamily": "\"IBM Plex Sans\", sans-serif",
+					"name": "IBM Plex Sans",
+					"slug": "ibm-plex-sans"
 				}
 			]
 		}
@@ -67,12 +62,12 @@
 			},
 			"core/post-title": {
 				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--bodoni-moda)"
+					"fontWeight": "300"
 				}
 			},
 			"core/query-title": {
 				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--bodoni-moda)"
+					"fontWeight": "300"
 				}
 			},
 			"core/post-featured-image": {
@@ -89,34 +84,27 @@
 		"elements": {
 			"h1": {
 				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--bodoni-moda)"
+					"fontWeight": "300"
 				}
 			},
 			"h2": {
 				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--bodoni-moda)"
+					"fontWeight": "300"
 				}
 			},
 			"h3": {
 				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--bodoni-moda)"
+					"fontWeight": "300"
 				}
 			},
 			"h4": {
 				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--bodoni-moda)"
-				}
-			},
-			"h5": {
-				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--bodoni-moda)"
-				}
-			},
-			"h6": {
-				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--bodoni-moda)"
+					"fontWeight": "300"
 				}
 			}
+		},
+		"typography": {
+			"fontFamily": "var(--wp--preset--font-family--ibm-plex-sans)"
 		}
 	}
 }
