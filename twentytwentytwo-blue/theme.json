@@ -2,20 +2,10 @@
 	"version": 2,
 	"settings": {
 		"color": {
-			"duotone": [
-				{
-					"colors": [
-						"#2F61D7",
-						"#FCF5ED"
-					],
-					"slug": "default-filter",
-					"name": "Default filter"
-				}
-			],
 			"palette": [
 				{
 					"slug": "foreground",
-					"color": "#2F61D7",
+					"color": "3F67C6",
 					"name": "Foreground"
 				},
 				{
@@ -55,24 +45,9 @@
 	},
 	"styles": {
 		"blocks": {
-			"core/image": {
-				"filter": {
-					"duotone": "var(--wp--preset--duotone--default-filter)"
-				}
-			},
-			"core/post-featured-image": {
-				"filter": {
-					"duotone": "var(--wp--preset--duotone--default-filter)"
-				}
-			},
 			"core/post-title": {
 				"typography": {
 					"fontWeight": "700"
-				}
-			},
-			"core/site-logo": {
-				"filter": {
-					"duotone": "var(--wp--preset--duotone--default-filter)"
 				}
 			}
 		},

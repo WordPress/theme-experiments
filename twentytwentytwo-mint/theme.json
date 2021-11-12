@@ -25,23 +25,18 @@
 				},
 				{
 					"slug": "primary",
-					"color": "#D42731",
+					"color": "#000000",
 					"name": "Primary"
 				},
 				{
 					"slug": "secondary",
-					"color": "#232521",
+					"color": "#93FFDE",
 					"name": "Secondary"
 				},
 				{
 					"slug": "tertiary",
-					"color": "#F4F4F2",
+					"color": "#93FFDE",
 					"name": "Tertiary"
-				},
-				{
-					"slug": "quaternary",
-					"color": "#FF7179",
-					"name": "Quaternary"
 				}
 			]
 		},
@@ -51,9 +46,14 @@
 		"typography": {
 			"fontFamilies": [
 				{
-					"fontFamily": "\"Inter\", sans-serif",
-					"name": "Inter",
-					"slug": "inter"
+					"fontFamily": "-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,Oxygen-Sans,Ubuntu,Cantarell,\"Helvetica Neue\",sans-serif",
+					"name": "System Font",
+					"slug": "system-font"
+				},
+				{
+					"fontFamily": "\"Bodoni Moda\", serif",
+					"name": "Bodoni Moda",
+					"slug": "bodoni-moda"
 				}
 			]
 		}
@@ -65,14 +65,19 @@
 					"duotone": "var(--wp--preset--duotone--default-filter)"
 				}
 			},
+			"core/post-title": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--bodoni-moda)"
+				}
+			},
+			"core/query-title": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--bodoni-moda)"
+				}
+			},
 			"core/post-featured-image": {
 				"filter": {
 					"duotone": "var(--wp--preset--duotone--default-filter)"
-				}
-			},
-			"core/post-title": {
-				"typography": {
-					"fontWeight": "700"
 				}
 			},
 			"core/site-logo": {
@@ -84,37 +89,34 @@
 		"elements": {
 			"h1": {
 				"typography": {
-					"fontWeight": "700"
+					"fontFamily": "var(--wp--preset--font-family--bodoni-moda)"
 				}
 			},
 			"h2": {
 				"typography": {
-					"fontWeight": "700"
+					"fontFamily": "var(--wp--preset--font-family--bodoni-moda)"
 				}
 			},
 			"h3": {
 				"typography": {
-					"fontWeight": "700"
+					"fontFamily": "var(--wp--preset--font-family--bodoni-moda)"
 				}
 			},
 			"h4": {
 				"typography": {
-					"fontWeight": "700"
+					"fontFamily": "var(--wp--preset--font-family--bodoni-moda)"
 				}
 			},
 			"h5": {
 				"typography": {
-					"fontWeight": "700"
+					"fontFamily": "var(--wp--preset--font-family--bodoni-moda)"
 				}
 			},
 			"h6": {
 				"typography": {
-					"fontWeight": "700"
+					"fontFamily": "var(--wp--preset--font-family--bodoni-moda)"
 				}
 			}
-		},
-		"typography": {
-			"fontFamily": "var(--wp--preset--font-family--inter)"
 		}
 	}
 }
