@@ -5,27 +5,27 @@
 			"palette": [
 				{
 					"slug": "foreground",
-					"color": "#282E32",
+					"color": "#3C3331",
 					"name": "Foreground"
 				},
 				{
 					"slug": "background",
-					"color": "#FFFFFF",
+					"color": "#ffffff",
 					"name": "Background"
 				},
 				{
 					"slug": "primary",
-					"color": "#282E32",
+					"color": "#8E2909",
 					"name": "Primary"
 				},
 				{
 					"slug": "secondary",
-					"color": "#FFFDD1",
+					"color": "#FCF5ED",
 					"name": "Secondary"
 				},
 				{
 					"slug": "tertiary",
-					"color": "#FFFDD1",
+					"color": "#FCF5ED",
 					"name": "Tertiary"
 				}
 			]

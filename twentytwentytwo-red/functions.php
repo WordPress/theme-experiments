@@ -1,6 +1,6 @@
 <?php
 /**
- * Twenty Twenty-Two (Yellow) functions and definitions
+ * Twenty Twenty-Two (Red) functions and definitions
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
