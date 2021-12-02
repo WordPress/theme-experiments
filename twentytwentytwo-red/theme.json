@@ -5,7 +5,7 @@
 			"palette": [
 				{
 					"slug": "foreground",
-					"color": "#3C3331",
+					"color": "#2E2927",
 					"name": "Foreground"
 				},
 				{
@@ -15,7 +15,7 @@
 				},
 				{
 					"slug": "primary",
-					"color": "#8E2909",
+					"color": "#7C290F",
 					"name": "Primary"
 				},
 				{
