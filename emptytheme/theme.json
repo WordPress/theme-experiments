@@ -1,16 +1,12 @@
 {
-	"version": 1,
+	"version": 2,
 	"settings": {
+		"appearanceTools": true,
 		"color": {
 			"gradients": [],
-			"link": true,
 			"palette": []
 		},
-		"spacing": {
-			"customPadding": true
-		},
 		"typography": {
-			"customLineHeight": true,
 			"fontFamilies": [],
 			"fontSizes": []
 		},
