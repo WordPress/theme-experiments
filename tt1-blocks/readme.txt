@@ -1,9 +1,9 @@
 === TT1 Blocks ===
 Contributors: wordpressdotorg
 Requires at least: 5.6
-Tested up to: 5.7
+Tested up to: 5.8
 Requires PHP: 5.6
-Stable tag: 0.4.7
+Stable tag: 0.4.8
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -24,9 +24,12 @@ This theme is beta software, and is not meant for use on a production site. Bug 
 5. From your admin panel, visit the Site Editor to customize your site.
 
 == Changelog ==
+= 0.4.8 =
+* Change query-loop to post-template
 
 = 0.4.7 =
 * Updates to theme.json
+* Tested with WordPress 5.8
 
 = 0.4.6 =
 * Update for compatibility with Gutenberg v10.6
