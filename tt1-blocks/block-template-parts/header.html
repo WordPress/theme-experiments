@@ -1,4 +1,5 @@
-<!-- wp:spacer {"height":70} -->
+<!-- wp:group {"layout":{"inherit":true}} -->
+<div class="wp-block-group"><!-- wp:spacer {"height":70} -->
 <div style="height:70px" aria-hidden="true" class="wp-block-spacer"></div>
 <!-- /wp:spacer -->
 
@@ -11,11 +12,14 @@
 
 <!-- wp:column -->
 <div class="wp-block-column">
-<!-- wp:navigation {"orientation":"horizontal","itemsJustification":"right"} /-->
+<!-- wp:navigation {"layout":{"type":"flex","setCascadingProperties":true,"justifyContent":"right"}} -->
+<!-- wp:page-list {"isNavigationChild":true,"showSubmenuIcon":true,"openSubmenusOnClick":false} /-->
+<!-- /wp:navigation -->
 </div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->
 
 <!-- wp:spacer {"height":70} -->
 <div style="height:70px" aria-hidden="true" class="wp-block-spacer"></div>
-<!-- /wp:spacer -->
+<!-- /wp:spacer --></div>
+<!-- /wp:group -->

@@ -25,7 +25,7 @@ This theme is beta software, and is not meant for use on a production site. Bug 
 
 == Changelog ==
 = 0.4.8 =
-* Change query-loop to post-template
+* Update for compatibility with Gutenberg v12.1
 
 = 0.4.7 =
 * Updates to theme.json
