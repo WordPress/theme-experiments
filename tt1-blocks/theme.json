@@ -202,7 +202,7 @@
 				"unit": "20px",
 				"horizontal": "25px",
 				"vertical": "30px",
-				"outer": "20px"
+				"outer": "calc(0.6 * var(--wp--custom--spacing--horizontal))"
 			},
 			"font-weight":{
 				"light": "300",
