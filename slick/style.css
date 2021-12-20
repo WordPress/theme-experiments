@@ -1,0 +1,65 @@
+/*
+Theme Name: Slick
+Theme URI: https://www.slicktheme.it
+Author: Guglielmo Pepe
+Author URI: https://www.guglielmopepe.com
+Description: An experimental simple, lovable and complete starter theme
+Tags: full-site-editing, blog, one-column
+Requires at least: 5.7.2
+Tested up to: 5.7.2
+Requires PHP: 7.2
+Version: 1.0.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: slick
+*/
+
+body {
+    margin: 0;
+}
+
+a {
+    color: var(--wp--preset--color--peter-river);
+}
+
+a:hover {
+    color: var(--wp--preset--color--belize-hole);
+}
+
+
+.wp-block-site-title {
+    margin: 0;
+}
+
+.wp-block-site-title a {
+    text-decoration: none;
+}
+
+.wp-block-archives-list, 
+.wp-block-categories-list {
+    list-style: none;
+    padding: 0;
+}
+
+.wp-site-blocks > aside {
+    background-color: #7f8c8d;
+    color: #fff;
+    margin: 0 auto;
+    padding: 1.5em;
+}
+
+.wp-site-blocks > footer, 
+.wp-site-blocks > header {
+    background-color: #34495e;
+    color: #fff;
+    margin: 0 auto;
+    padding: 1.5em;
+    text-align: center;
+}
+
+.wp-site-blocks > aside a, 
+.wp-site-blocks > footer a, 
+.wp-site-blocks > header a {
+    color: #fff;
+}
+
