@@ -12,7 +12,7 @@
 							"fontFamily": "DM Sans",
 							"fontWeight": "400",
 							"fontStyle": "normal",
-							"src": [ "file:./assets/fonts/dm-sans/DMSans-Regular.ttf" ]
+							"src": [ "file:./assets/DMSans-Regular.ttf" ]
 						}
 					]
 				}
@@ -21,7 +21,7 @@
 	},
 	"styles": {
 		"typography": {
-					"fontFamily": "var(--wp--preset--font-family--dm-sans)"
+			"fontFamily": "var(--wp--preset--font-family--dm-sans)"
 		}
 	}
 }
