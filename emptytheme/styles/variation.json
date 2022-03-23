@@ -1,0 +1,27 @@
+{
+	"version": 2,
+	"settings": {
+		"typography": {
+			"fontFamilies": [
+				{
+					"fontFamily": "\"DM Sans\", sans-serif",
+					"name": "DM Sans",
+					"slug": "dm-sans",
+					"fontFace": [
+						{
+							"fontFamily": "DM Sans",
+							"fontWeight": "400",
+							"fontStyle": "normal",
+							"src": [ "file:./assets/fonts/dm-sans/DMSans-Regular.ttf" ]
+						}
+					]
+				}
+			]
+		}
+	},
+	"styles": {
+		"typography": {
+					"fontFamily": "var(--wp--preset--font-family--dm-sans)"
+		}
+	}
+}
