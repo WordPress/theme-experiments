@@ -1,0 +1,97 @@
+/* --- Button block gradient overrides --- */
+
+/* Blue */
+.is-style-outline a.wp-block-button__link.has-blue-gradient-background:hover,
+.is-style-outline a.wp-block-button__link.has-blue-gradient-background:focus {
+  background-image: var(--wp--preset--gradient--blue) !important;
+  border-color: var(--wp--preset--color--foreground);
+}
+
+.is-style-card .is-style-outline a.wp-block-button__link.has-blue-gradient-background:hover,
+.is-style-card .is-style-outline a.wp-block-button__link.has-blue-gradient-background:focus {
+  border-color: var(--wp--preset--color--almost-black);
+}
+
+/* Purple */
+.is-style-outline a.wp-block-button__link.has-purple-gradient-background:hover,
+.is-style-outline a.wp-block-button__link.has-purple-gradient-background:focus {
+  background-image: var(--wp--preset--gradient--purple) !important;
+  border-color: var(--wp--preset--color--foreground);
+}
+
+.is-style-card .is-style-outline a.wp-block-button__link.has-purple-gradient-background:hover,
+.is-style-card .is-style-outline a.wp-block-button__link.has-purple-gradient-background:focus {
+  border-color: var(--wp--preset--color--almost-black);
+}
+
+/* Magenta */
+.is-style-outline a.wp-block-button__link.has-magenta-gradient-background:hover,
+.is-style-outline a.wp-block-button__link.has-magenta-gradient-background:focus {
+  background-image: var(--wp--preset--gradient--magenta) !important;
+  border-color: var(--wp--preset--color--foreground);
+}
+
+.is-style-card .is-style-outline a.wp-block-button__link.has-magenta-gradient-background:hover,
+.is-style-card .is-style-outline a.wp-block-button__link.has-magenta-gradient-background:focus {
+  border-color: var(--wp--preset--color--almost-black);
+}
+
+/* Deep Orange */
+.is-style-outline a.wp-block-button__link.has-deep-orange-gradient-background:hover,
+.is-style-outline a.wp-block-button__link.has-deep-orange-gradient-background:focus {
+  background-image: var(--wp--preset--gradient--deep-orange) !important;
+  border-color: var(--wp--preset--color--foreground);
+}
+
+.is-style-card .is-style-outline a.wp-block-button__link.has-deep-orange-gradient-background:hover,
+.is-style-card .is-style-outline a.wp-block-button__link.has-deep-orange-gradient-background:focus {
+  border-color: var(--wp--preset--color--almost-black);
+}
+
+/* Yellow */
+.is-style-outline a.wp-block-button__link.has-yellow-gradient-background:hover,
+.is-style-outline a.wp-block-button__link.has-yellow-gradient-background:focus {
+  background-image: var(--wp--preset--gradient--yellow) !important;
+  border-color: var(--wp--preset--color--foreground);
+}
+
+.is-style-card .is-style-outline a.wp-block-button__link.has-yellow-gradient-background:hover,
+.is-style-card .is-style-outline a.wp-block-button__link.has-yellow-gradient-background:focus {
+  border-color: var(--wp--preset--color--almost-black);
+}
+
+/* Khaki */
+.is-style-outline a.wp-block-button__link.has-khaki-gradient-background:hover,
+.is-style-outline a.wp-block-button__link.has-khaki-gradient-background:focus {
+  background-image: var(--wp--preset--gradient--khaki) !important;
+  border-color: var(--wp--preset--color--foreground);
+}
+
+.is-style-card .is-style-outline a.wp-block-button__link.has-khaki-gradient-background:hover,
+.is-style-card .is-style-outline a.wp-block-button__link.has-khaki-gradient-background:focus {
+  border-color: var(--wp--preset--color--almost-black);
+}
+
+/* Tan */
+.is-style-outline a.wp-block-button__link.has-tan-gradient-background:hover,
+.is-style-outline a.wp-block-button__link.has-tan-gradient-background:focus {
+  background-image: var(--wp--preset--gradient--tan) !important;
+  border-color: var(--wp--preset--color--foreground);
+}
+
+.is-style-card .is-style-outline a.wp-block-button__link.has-tan-gradient-background:hover,
+.is-style-card .is-style-outline a.wp-block-button__link.has-tan-gradient-background:focus {
+  border-color: var(--wp--preset--color--almost-black);
+}
+
+/* Sandstone */
+.is-style-outline a.wp-block-button__link.has-sandstone-gradient-background:hover,
+.is-style-outline a.wp-block-button__link.has-sandstone-gradient-background:focus {
+  background-image: var(--wp--preset--gradient--sandstone) !important;
+  border-color: var(--wp--preset--color--foreground);
+}
+
+.is-style-card .is-style-outline a.wp-block-button__link.has-sandstone-gradient-background:hover,
+.is-style-card .is-style-outline a.wp-block-button__link.has-sandstone-gradient-background:focus {
+  border-color: var(--wp--preset--color--almost-black);
+}

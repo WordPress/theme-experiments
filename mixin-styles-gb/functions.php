@@ -49,11 +49,21 @@ if ( ! function_exists( 'mixin_styles_gb_setup' ) ) :
       './assets/css/base-styles.css',
       './assets/css/blocks.css',
       './assets/css/block-colors.css',
+      './assets/css/block-button-colors.css',
+      './assets/css/block-navigation-colors.css',
       './assets/css/editor-overrides.css',
     ) );
   }
 endif;
 add_action( 'after_setup_theme', 'mixin_styles_gb_setup' );
+
+// Add block pattern functions
+require_once get_template_directory() . '/inc/block-patterns.php';
+
+function mixin_styles_gb_block_styles() {
+	wp_enqueue_script( 'mixin-styles-gb-block-styles', get_theme_file_uri( '/js/block-styles.js' ), array( 'wp-blocks', 'wp-dom-ready', 'wp-edit-post' ), filemtime( get_template_directory_uri() . '/js/blocks-styles.js' ) );
+}
+add_action( 'enqueue_block_editor_assets', 'mixin_styles_gb_block_styles' );
 
 function mixin_styles_gb_scripts() {
   // Stylesheets
