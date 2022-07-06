@@ -168,12 +168,3 @@
 .wp-block-separator:not(.is-style-wide):not(.is-style-dots) {
 	width: 100%;
 }
-
-
-/*--------------------------------------------------------------
-# Single view Post Title
---------------------------------------------------------------*/
-
-h1.wp-block-post-title {
-	font-weight: var(--wp--custom--font-weight--light);
-}
