@@ -193,26 +193,9 @@ hr.is-style-twentytwentyone-separator-thick,
 }
 
 /*--------------------------------------------------------------
-# Site Tagline
---------------------------------------------------------------*/
-
-.wp-block-site-tagline {
-	margin-top: 0;
-	margin-bottom: 0;
-}
-
-/*--------------------------------------------------------------
 # Site Title
 --------------------------------------------------------------*/
 
 h1.wp-block-site-title a:not(:hover):not(:focus):not(:active) {
 	text-decoration: none;
-}
-
-/*--------------------------------------------------------------
-# Single view Post Title
---------------------------------------------------------------*/
-
-h1.wp-block-post-title {
-	font-weight: var(--wp--custom--font-weight--light);
 }
