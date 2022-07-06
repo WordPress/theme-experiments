@@ -21,8 +21,8 @@
 	</div><!-- /wp:column -->
 	<!-- wp:column {"verticalAlignment":"bottom"} -->
 	<div class="wp-block-column is-vertically-aligned-bottom">
-		<!-- wp:group {"className":"is-style-twentytwentyone-border","backgroundColor":"green"} -->
-		<div class="wp-block-group is-style-twentytwentyone-border has-green-background-color has-background">
+		<!-- wp:group {"style":{"border":{"width":"3px"}},"borderColor":"dark-gray","backgroundColor":"green"} -->
+		<div class="wp-block-group has-border-color has-dark-gray-border-color has-green-background-color has-background" style="border-width:3px">
 			<div class="wp-block-group__inner-container">
 				<!-- wp:paragraph {"fontSize":"extra-large","style":{"typography":{"lineHeight":"1.4"}}} -->
 				<p class="has-extra-large-font-size" style="line-height:1.4"><?php esc_html_e( 'Beautiful gardens painted by Berthe Morisot in the late 1800s', 'tt1-blocks' ); ?></p><!-- /wp:paragraph -->
