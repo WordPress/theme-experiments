@@ -29,4 +29,3 @@
 			<!-- /wp:image -->
 	</div><!-- /wp:column -->
 </div><!-- /wp:columns -->
-

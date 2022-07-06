@@ -22,4 +22,3 @@
 		<p class="has-text-align-center has-small-font-size"><?php echo wp_kses_post( __( 'Berthe Morisot<br>(French, 1841-1895)', 'tt1-blocks' ) ); ?></p><!-- /wp:paragraph -->
 	</div>
 </div><!-- /wp:media-text -->
-
