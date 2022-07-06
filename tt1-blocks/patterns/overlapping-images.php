@@ -19,7 +19,7 @@
 			<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/roses-tremieres-hollyhocks-1884.jpg" alt="<?php esc_attr_e( '&#8220;Roses Trémières&#8221; by Berthe Morisot', 'tt1-blocks' ); ?>"/>
 		</figure><!-- /wp:image -->
 		<!-- wp:spacer --><div style="height:100px" aria-hidden="true" class="wp-block-spacer"></div><!-- /wp:spacer -->
-		<!-- wp:image {"align":"full","sizeSlug":"full"} --><figure class="wp-block-image alignfull size-full"><img src="<?php echo esc_url( get_template_directory_uri() ); ?> /assets/images/in-the-bois-de-boulogne.jpg" alt="<?php esc_attr_e( '&#8220;In the Bois de Boulogne&#8221; by Berthe Morisot', 'tt1-blocks' ); ?>"/></figure><!-- /wp:image -->
+		<!-- wp:image {"align":"full","sizeSlug":"full"} --><figure class="wp-block-image alignfull size-full"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/in-the-bois-de-boulogne.jpg" alt="<?php esc_attr_e( '&#8220;In the Bois de Boulogne&#8221; by Berthe Morisot', 'tt1-blocks' ); ?>"/></figure><!-- /wp:image -->
 	</div><!-- /wp:column -->
 	<!-- wp:column {"verticalAlignment":"center"} -->
 	<div class="wp-block-column is-vertically-aligned-center">
