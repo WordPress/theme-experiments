@@ -28,16 +28,6 @@ if ( ! function_exists( 'tt1_blocks_setup' ) ) {
 		 * to change 'tt1-blocks' to the name of your theme in all the template files.
 		 */
 		load_theme_textdomain( 'tt1-blocks', get_template_directory() . '/languages' );
-
-		// Add default posts and comments RSS feed links to head.
-		add_theme_support( 'automatic-feed-links' );
-
-		/*
-		 * Enable support for Post Thumbnails on posts and pages.
-		 *
-		 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
-		 */
-		add_theme_support( 'post-thumbnails' );
 		set_post_thumbnail_size( 1568, 9999 );
 
 		// Add support for Block Styles.

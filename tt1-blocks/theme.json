@@ -1,15 +1,5 @@
 {
-	"version": 1,
-	"templateParts": [
-		{
-			"name": "header",
-			"area": "header"
-		},
-		{
-			"name": "footer",
-			"area": "footer"
-		}
-	],
+	"version": 2,
 	"settings": {
 		"appearanceTools": true,
 		"color": {
@@ -332,8 +322,20 @@
 	},
 	"customTemplates": [
 		{
-			"name": "page-home",
+			"name": "page-without-title",
 			"title": "Page without title"
+		}
+	],
+	"templateParts": [
+		{
+			"name": "header",
+			"area": "header",
+			"title": "Header"
+		},
+		{
+			"name": "footer",
+			"area": "footer",
+			"title": "Footer"
 		}
 	]
 }
