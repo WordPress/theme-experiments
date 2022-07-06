@@ -7,6 +7,10 @@
 
 ?>
 
+<!-- wp:spacer {"height":70} -->
+<div style="height:70px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+
 <!-- wp:comments-query-loop -->
 <div class="wp-block-comments-query-loop">
 	<!-- wp:comments-title {"level":3} /-->
