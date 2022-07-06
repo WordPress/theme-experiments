@@ -295,6 +295,14 @@
 					"width": "var(--wp--custom--border--width)"
 				}
 			},
+			"core/site-tagline": {
+				"spacing": {
+					"margin": {
+						"top": "0",
+						"bottom": "0"
+					}
+				}
+			},
 			"core/site-title": {
 				"typography": {
 					"fontSize": "var(--wp--preset--font-size--large)",
