@@ -1,0 +1,11 @@
+@import "../base/variables";
+/**
+ * Blocks & Features
+ * == Drop Cap ==
+ */
+.edit-post-visual-editor.editor-styles-wrapper {
+  .block-editor-block-list__block[data-type="core/paragraph"] p.has-drop-cap:not(:focus)::first-letter {
+    color: $primary-color;
+    font-size: 4.2rem;
+  }
+}

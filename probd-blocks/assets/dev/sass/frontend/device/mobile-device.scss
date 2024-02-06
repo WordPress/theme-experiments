@@ -1,0 +1,28 @@
+/**
+ * Small Device
+ * == Mobile ==
+ */
+
+@media (max-width: 768px) {
+
+  // logo
+  .wp-block-site-title {
+	  font-size: 2rem;
+	  margin-bottom: 0.2rem;
+  }
+
+  // main nav
+  .wp-block-navigation {
+	  margin-top: 2.5rem;
+  }
+
+  // comment
+  .probd-post-comments h3 {
+	  font-size: 1.5rem;
+	  padding-left: 1rem;
+  }
+  .comment-respond {
+	  padding: 0 1rem;
+  }
+
+}

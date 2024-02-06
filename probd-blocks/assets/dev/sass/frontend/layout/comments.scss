@@ -1,0 +1,85 @@
+@import "../base/variables";
+/**
+ * Comments
+ * == Comment List ==
+ */
+.probd-post-comments {
+  max-width: 580px;
+  margin: 0 auto;
+
+  .commentlist {
+    padding-left: 0;
+    margin-bottom: 2rem;
+
+    .comment {
+      border-left: 1px dashed #ddd;
+      padding-left: 1rem;
+      margin-top: 1rem;
+      margin-bottom: .8rem;
+
+      &.comment:first-child {
+        margin-top: 0;
+      }
+
+      .comment-author {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: .5rem;
+
+        .avatar {
+          margin-right: .5rem;
+          border-radius: 50%;
+        }
+        .fn {
+          margin-right: .5rem;
+        }
+
+      }
+      .comment {
+        margin-top: .8rem;
+      }
+
+	}
+	p {
+		font-size: .85rem;
+	}
+
+  }
+}
+
+/**
+ * Comments
+ * == Comments Form ==
+ */
+.comment-form {
+
+    &-author input,
+    &-email input,
+    &-url input,
+    &-comment textarea {
+      width: 100%;
+      border: 1px solid #dfdfdf;
+      border-radius: 4px;
+	  padding: .5rem;
+	  margin-bottom: 1rem;
+
+	  &:focus {
+		border: 1px solid $primary-color;
+	  }
+    }
+
+  .form-submit {
+    .submit {
+      background-color: $primary-color;
+      padding: .4rem .8rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .submit:hover {
+      background-color: $secondary-color;
+      color: #fff;
+    }
+  }
+
+}
