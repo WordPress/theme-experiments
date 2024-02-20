@@ -1,0 +1,26 @@
+/*
+Theme Name: Mixin' Styles- GB
+Theme URI:
+Description: Mixin' Styles- GB is a full site editing blog theme. Sporting rounded corners on several elements, Mixin' Styles- GB supports single columns and sidebar layouts via a collection of templates and patterns. Custom templates include a page with a left-side fixed vertical header, a page with no sidebar and a no sidebar pattern for posts. The theme offers four header styles including two with hero images.
+Author: jgpws
+Author URI: http://www.jasong-designs.com
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: full-site-editing
+Version: 1.0.1
+Requires at least: 5.0
+Tested up to: 5.6
+Requires PHP: 7.0
+Text Domain: mixin-styles-gb
+Tags: block-patterns, block-styles, blog, custom-colors, custom-menu, featured-images, full-site-editing, left-sidebar, one-column, right-sidebar, sticky-post, threaded comments, two-columns, wide-blocks
+
+Mixin' Styles- GB, (C) 2021 Jason G. Designs
+Mixin' Styles- GB is licensed under the GNU GPL, version 2 or later.
+*/
+
+@import "assets/css/base-styles.css";
+@import "assets/css/blocks.css";
+@import "assets/css/block-colors.css";
+@import "assets/css/block-navigation-colors.css";
+@import "assets/css/block-button-colors.css";
+@import "assets/css/block-button-gradients.css";
